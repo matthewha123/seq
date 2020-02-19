@@ -1,0 +1,13 @@
+.. _exhale_function_ranges_8h_1ab0fe181b6af5e5da78c419dcf3c3672a:
+
+Function fmt::v6::internal::format_str_quoted(bool, const char)
+===============================================================
+
+- Defined in :ref:`file_compiler_util_fmt_ranges.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::format_str_quoted(bool, const char)

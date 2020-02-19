@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1a09119ad072f708d17b88704fa898aff0:
+
+Define FMT_STRING
+=================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_STRING

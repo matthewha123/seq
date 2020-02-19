@@ -1,0 +1,13 @@
+.. _exhale_function_expr_8cpp_1a9ece7098aa597fe699671308a64378b1:
+
+Function isLiteralNegOne
+========================
+
+- Defined in :ref:`file_compiler_lang_expr.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: isLiteralNegOne(Expr *)

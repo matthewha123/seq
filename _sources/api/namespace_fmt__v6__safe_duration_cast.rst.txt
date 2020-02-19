@@ -1,0 +1,24 @@
+
+.. _namespace_fmt__v6__safe_duration_cast:
+
+Namespace fmt::v6::safe_duration_cast
+=====================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_chrono_8h_1a60000f39540ddf655837169d508821c0`
+
+- :ref:`exhale_function_chrono_8h_1a384610175c4b2dc3a8423611cc7d512a`
+
+- :ref:`exhale_function_chrono_8h_1ae34b07f2b32625e8236e94cd116facfd`

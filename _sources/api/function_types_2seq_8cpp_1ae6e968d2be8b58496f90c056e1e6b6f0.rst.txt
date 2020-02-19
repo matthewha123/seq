@@ -1,0 +1,13 @@
+.. _exhale_function_types_2seq_8cpp_1ae6e968d2be8b58496f90c056e1e6b6f0:
+
+Function codegenRevCompByBitShift
+=================================
+
+- Defined in :ref:`file_compiler_types_seq.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: codegenRevCompByBitShift(types::KMer *, Value *, IRBuilder<>&)

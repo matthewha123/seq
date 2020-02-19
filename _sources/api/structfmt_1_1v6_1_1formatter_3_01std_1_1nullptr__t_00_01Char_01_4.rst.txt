@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1formatter_3_01std_1_1nullptr__t_00_01Char_01_4:
+
+Template Struct formatter< std::nullptr_t, Char >
+=================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public fmt::v6::formatter< const void *, Char >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1formatter`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::formatter< std::nullptr_t, Char >
+   :members:
+   :protected-members:
+   :undoc-members:

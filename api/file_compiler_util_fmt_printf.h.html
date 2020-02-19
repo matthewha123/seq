@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>File printf.h &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>File printf.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/file_compiler_util_fmt_printf.h.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-printf-h">
+<span id="file-compiler-util-fmt-printf-h"></span><h1>File printf.h<a class="headerlink" href="#file-printf-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_compiler_util_fmt.html#dir-compiler-util-fmt"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-compiler-util-fmt-printf-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/printf.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id4">Classes</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id5">Functions</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id6">Typedefs</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-compiler-util-fmt-printf-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/printf.h</span></code>)<a class="headerlink" href="#definition-compiler-util-fmt-printf-h" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_compiler_util_fmt_printf.h.html">Program Listing for File printf.h</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">algorithm</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">limits</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ostream.h</span></code> (<a class="reference internal" href="file_compiler_util_fmt_ostream.h.html#file-compiler-util-fmt-ostream-h"><span class="std std-ref">File ostream.h</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_fmt.html#namespace-fmt"><span class="std std-ref">Namespace fmt</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6.html#namespace-fmt-v6"><span class="std std-ref">Namespace fmt::v6</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6__internal.html#namespace-fmt-v6-internal"><span class="std std-ref">Namespace fmt::v6::internal</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1int__checker.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1int-checker"><span class="std std-ref">Template Struct int_checker</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1int__checker_3_01true_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1int-checker-3-01true-01-4"><span class="std std-ref">Template Struct int_checker&lt; true &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1make__unsigned__or__bool.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1make-unsigned-or-bool"><span class="std std-ref">Template Struct make_unsigned_or_bool</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1make__unsigned__or__bool_3_01bool_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1make-unsigned-or-bool-3-01bool-01-4"><span class="std std-ref">Template Struct make_unsigned_or_bool&lt; bool &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1printf__formatter.html#exhale-struct-structfmt-1-1v6-1-1printf-formatter"><span class="std std-ref">Template Struct printf_formatter</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1basic__printf__context.html#exhale-class-classfmt-1-1v6-1-1basic-printf-context"><span class="std std-ref">Template Class basic_printf_context</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1arg__converter.html#exhale-class-classfmt-1-1v6-1-1internal-1-1arg-converter"><span class="std std-ref">Template Class arg_converter</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1char__converter.html#exhale-class-classfmt-1-1v6-1-1internal-1-1char-converter"><span class="std std-ref">Template Class char_converter</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1is__zero__int.html#exhale-class-classfmt-1-1v6-1-1internal-1-1is-zero-int"><span class="std std-ref">Class is_zero_int</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1printf__precision__handler.html#exhale-class-classfmt-1-1v6-1-1internal-1-1printf-precision-handler"><span class="std std-ref">Class printf_precision_handler</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1printf__width__handler.html#exhale-class-classfmt-1-1v6-1-1internal-1-1printf-width-handler"><span class="std std-ref">Template Class printf_width_handler</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1printf__arg__formatter.html#exhale-class-classfmt-1-1v6-1-1printf-arg-formatter"><span class="std std-ref">Template Class printf_arg_formatter</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_printf_8h_1a92789d6f59e813ef0efb21b08919fad8.html#exhale-function-printf-8h-1a92789d6f59e813ef0efb21b08919fad8"><span class="std std-ref">Template Function fmt::v6::fprintf(std::FILE *, const S&amp;, const Args&amp;…)</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a2f6b7907eabe47894da22ed0db58cd61.html#exhale-function-printf-8h-1a2f6b7907eabe47894da22ed0db58cd61"><span class="std std-ref">Template Function fmt::v6::fprintf(std::basic_ostream&lt;Char&gt;&amp;, const S&amp;, const Args&amp;…)</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a96a92f24dbce4d25cfc923b308a5e837.html#exhale-function-printf-8h-1a96a92f24dbce4d25cfc923b308a5e837"><span class="std std-ref">Template Function fmt::v6::internal::convert_arg</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a23ebab821e57b910fbe56870b13b0426.html#exhale-function-printf-8h-1a23ebab821e57b910fbe56870b13b0426"><span class="std std-ref">Template Function fmt::v6::internal::printf(buffer&lt;Char&gt;&amp;, basic_string_view&lt;Char&gt;, basic_format_args&lt;Context&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a4a9fe9f99f3345fc648dbf85201550e1.html#exhale-function-printf-8h-1a4a9fe9f99f3345fc648dbf85201550e1"><span class="std std-ref">Template Function fmt::v6::internal::printf(internal::truncating_iterator&lt;OutputIt&gt;, basic_string_view&lt;Char&gt;, basic_format_args&lt;Context&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a08020a9aa8515dca89852697e1ec8984.html#exhale-function-printf-8h-1a08020a9aa8515dca89852697e1ec8984"><span class="std std-ref">Template Function fmt::v6::make_printf_args</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a7dfbf436e13bd0617d26733042a012a7.html#exhale-function-printf-8h-1a7dfbf436e13bd0617d26733042a012a7"><span class="std std-ref">Template Function fmt::v6::make_wprintf_args</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1ac147373a857097431f58369e87a81002.html#exhale-function-printf-8h-1ac147373a857097431f58369e87a81002"><span class="std std-ref">Template Function fmt::v6::printf</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1ae0d26c23a1b99ea3a223995e38602700.html#exhale-function-printf-8h-1ae0d26c23a1b99ea3a223995e38602700"><span class="std std-ref">Template Function fmt::v6::sprintf</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a184af2c2f92decfd80ad5150707c4ae9.html#exhale-function-printf-8h-1a184af2c2f92decfd80ad5150707c4ae9"><span class="std std-ref">Template Function fmt::v6::vfprintf(std::basic_ostream&lt;Char&gt;&amp;, const S&amp;, basic_format_args&lt;basic_printf_context_t&lt;Char&gt;&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a1fc253ac1ed0cf2cd2f2d6fa2faebc15.html#exhale-function-printf-8h-1a1fc253ac1ed0cf2cd2f2d6fa2faebc15"><span class="std std-ref">Template Function fmt::v6::vfprintf(std::FILE *, const S&amp;, basic_format_args&lt;basic_printf_context_t&lt;Char&gt;&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a8ee18bd326ef0f813c56cf5319960825.html#exhale-function-printf-8h-1a8ee18bd326ef0f813c56cf5319960825"><span class="std std-ref">Template Function fmt::v6::vprintf(const S&amp;, basic_format_args&lt;basic_printf_context_t&lt;Char&gt;&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a09ea4ce0bde37158d9c9b35d1c6bff71.html#exhale-function-printf-8h-1a09ea4ce0bde37158d9c9b35d1c6bff71"><span class="std std-ref">Template Function fmt::v6::vprintf(internal::buffer&lt;Char&gt;&amp;, basic_string_view&lt;Char&gt;, basic_format_args&lt;Context&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_printf_8h_1a340b48706e3999d9c2669f6d3b741f1a.html#exhale-function-printf-8h-1a340b48706e3999d9c2669f6d3b741f1a"><span class="std std-ref">Template Function fmt::v6::vsprintf</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_printf_8h_1a11ac176f64394ee937a199849baca641.html#exhale-typedef-printf-8h-1a11ac176f64394ee937a199849baca641"><span class="std std-ref">Typedef fmt::v6::basic_printf_context_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_printf_8h_1a3bd769b87f9fb9045a8de9586e61159a.html#exhale-typedef-printf-8h-1a3bd769b87f9fb9045a8de9586e61159a"><span class="std std-ref">Typedef fmt::v6::printf_args</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_printf_8h_1ac99e0e451a12eebc84a20ff8b94a7e9f.html#exhale-typedef-printf-8h-1ac99e0e451a12eebc84a20ff8b94a7e9f"><span class="std std-ref">Typedef fmt::v6::printf_context</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_printf_8h_1a6ec9ec781496c801995a1d5589b6db62.html#exhale-typedef-printf-8h-1a6ec9ec781496c801995a1d5589b6db62"><span class="std std-ref">Typedef fmt::v6::wprintf_args</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_printf_8h_1a91f909b09a98ae1772b7a84962145c85.html#exhale-typedef-printf-8h-1a91f909b09a98ae1772b7a84962145c85"><span class="std std-ref">Typedef fmt::v6::wprintf_context</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

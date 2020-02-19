@@ -1,0 +1,59 @@
+
+.. _file_compiler_types_base.h:
+
+File base.h
+===========
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_types>` (``compiler/types``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/types/base.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_types_base.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``types/types.h`` (:ref:`file_compiler_types_types.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_lang_seq.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_seq`
+
+- :ref:`namespace_seq__types`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classseq_1_1types_1_1BaseType`
+

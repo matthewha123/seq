@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1void__t__impl:
+
+Template Struct void_t_impl
+===========================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::void_t_impl
+   :members:
+   :protected-members:
+   :undoc-members:

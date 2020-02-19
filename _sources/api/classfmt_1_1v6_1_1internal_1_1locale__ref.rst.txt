@@ -1,0 +1,16 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1locale__ref:
+
+Class locale_ref
+================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::locale_ref
+   :members:
+   :protected-members:
+   :undoc-members:

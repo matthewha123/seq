@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Class printf_arg_formatter &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class system_error" href="classfmt_1_1v6_1_1system__error.html" />
+    <link rel="prev" title="Template Class width_checker" href="classfmt_1_1v6_1_1internal_1_1width__checker.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Class printf_arg_formatter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1printf__arg__formatter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-class-printf-arg-formatter">
+<span id="exhale-class-classfmt-1-1v6-1-1printf-arg-formatter"></span><h1>Template Class printf_arg_formatter<a class="headerlink" href="#template-class-printf-arg-formatter" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_printf.h.html#file-compiler-util-fmt-printf-h"><span class="std std-ref">File printf.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">fmt::v6::internal::arg_formatter_base&lt;</span> <span class="pre">Range</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1arg__formatter__base.html#exhale-class-classfmt-1-1v6-1-1internal-1-1arg-formatter-base"><span class="std std-ref">Template Class arg_formatter_base</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0EN3fmt2v620printf_arg_formatterE">
+<span id="_CPPv3I0EN3fmt2v620printf_arg_formatterE"></span><span id="_CPPv2I0EN3fmt2v620printf_arg_formatterE"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter"></span>template&lt;typename <code class="sig-name descname">Range</code>&gt;<br /><em class="property">class </em><code class="sig-name descname">printf_arg_formatter</code> : <em class="property">public</em> fmt::v6::internal::arg_formatter_base&lt;<a class="reference internal" href="#_CPPv4I0EN3fmt2v620printf_arg_formatterE" title="fmt::v6::printf_arg_formatter::Range">Range</a>&gt;<a class="headerlink" href="#_CPPv4I0EN3fmt2v620printf_arg_formatterE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><p>The <code class="docutils literal notranslate"><span class="pre">printf</span></code> argument formatter.</p>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v620printf_arg_formatterI5RangeE8iteratorE">
+<span id="_CPPv3IEN3fmt2v620printf_arg_formatterI5RangeE8iteratorE"></span><span id="_CPPv2IEN3fmt2v620printf_arg_formatterI5RangeE8iteratorE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1a573b2228e607fd86fe36bd2eed74a1d8"></span><em class="property">using </em><code class="sig-name descname">iterator</code> = <em class="property">typename</em> Range::iterator<a class="headerlink" href="#_CPPv4IEN3fmt2v620printf_arg_formatterI5RangeE8iteratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v620printf_arg_formatterI5RangeE12format_specsE">
+<span id="_CPPv3IEN3fmt2v620printf_arg_formatterI5RangeE12format_specsE"></span><span id="_CPPv2IEN3fmt2v620printf_arg_formatterI5RangeE12format_specsE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1ab697f2881968718ebe780c6b9eae1ba2"></span><em class="property">using </em><code class="sig-name descname">format_specs</code> = <em class="property">typename</em> base::format_specs<a class="headerlink" href="#_CPPv4IEN3fmt2v620printf_arg_formatterI5RangeE12format_specsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v620printf_arg_formatter20printf_arg_formatterE8iteratorR12format_specsR12context_type">
+<span id="_CPPv3N3fmt2v620printf_arg_formatter20printf_arg_formatterE8iteratorR12format_specsR12context_type"></span><span id="_CPPv2N3fmt2v620printf_arg_formatter20printf_arg_formatterE8iteratorR12format_specsR12context_type"></span><span id="fmt::v6::printf_arg_formatter::printf_arg_formatter__iterator.format_specsR.context_typeR"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1a88f9c8ac5ef97ad336f1d1e197e81d79"></span><code class="sig-name descname">printf_arg_formatter</code><span class="sig-paren">(</span>iterator <em>iter</em>, <a class="reference internal" href="typedef_format_8h_1a6f717b66aca7d8744657053249f0e58e.html#_CPPv4N3fmt2v612format_specsE" title="fmt::v6::format_specs">format_specs</a> &amp;<em>specs</em>, context_type &amp;<em>ctx</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v620printf_arg_formatter20printf_arg_formatterE8iteratorR12format_specsR12context_type" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="simple">
+<dt>Constructs an argument formatter object.</dt><dd><p>buffer* is a reference to the output buffer and <em>specs</em> contains format</p>
+</dd>
+</dl>
+<p>specifier information for standard argument types.</p>
+ </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXN3fmt8internal11is_integralI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE8iterator1T">
+<span id="_CPPv3I0_11enable_if_tIXN3fmt8internal11is_integralI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE1T"></span><span id="_CPPv2I0_11enable_if_tIX(fmt::internal::is_integral<T>::value)EiEEN3fmt2v620printf_arg_formatterclE1T"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1a27c4d5e7e5f29553eac2b2ee8070ce07"></span>template&lt;typename <code class="sig-name descname">T</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(fmt::internal::is_integral&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXN3fmt8internal11is_integralI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE8iterator1T" title="fmt::v6::printf_arg_formatter::operator()::T">T</a>&gt;::value), int&gt; = 0&gt;<br />iterator <code class="sig-name descname">operator()</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0_11enable_if_tIXN3fmt8internal11is_integralI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE8iterator1T" title="fmt::v6::printf_arg_formatter::operator()::T">T</a> <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXN3fmt8internal11is_integralI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE8iterator1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE8iterator1T">
+<span id="_CPPv3I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE1T"></span><span id="_CPPv2I0_11enable_if_tIX(std::is_floating_point<T>::value)EiEEN3fmt2v620printf_arg_formatterclE1T"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1a27c4d5e7e5f29553eac2b2ee8070ce07"></span>template&lt;typename <code class="sig-name descname">T</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(std::is_floating_point&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE8iterator1T" title="fmt::v6::printf_arg_formatter::operator()::T">T</a>&gt;::value), int&gt; = 0&gt;<br />iterator <code class="sig-name descname">operator()</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE8iterator1T" title="fmt::v6::printf_arg_formatter::operator()::T">T</a> <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v620printf_arg_formatterclE8iterator1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v620printf_arg_formatterclEPKc">
+<span id="_CPPv3N3fmt2v620printf_arg_formatterclEPKc"></span><span id="_CPPv2N3fmt2v620printf_arg_formatterclEPKc"></span><span id="fmt::v6::printf_arg_formatter::call-operator__cCP"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1a384befbc358fd08a2acae4016c8918ac"></span>iterator <code class="sig-name descname">operator()</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v620printf_arg_formatterclEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Formats a null-terminated C string. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v620printf_arg_formatterclEPKw">
+<span id="_CPPv3N3fmt2v620printf_arg_formatterclEPKw"></span><span id="_CPPv2N3fmt2v620printf_arg_formatterclEPKw"></span><span id="fmt::v6::printf_arg_formatter::call-operator__wchar_tCP"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1a03d51fee4650b5b17ca1df5806e71f18"></span>iterator <code class="sig-name descname">operator()</code><span class="sig-paren">(</span><em class="property">const</em> wchar_t *<em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v620printf_arg_formatterclEPKw" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Formats a null-terminated wide C string. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v620printf_arg_formatterclE17basic_string_viewI9char_typeE">
+<span id="_CPPv3N3fmt2v620printf_arg_formatterclE17basic_string_viewI9char_typeE"></span><span id="_CPPv2N3fmt2v620printf_arg_formatterclE17basic_string_viewI9char_typeE"></span><span id="fmt::v6::printf_arg_formatter::call-operator__basic_string_view:char_type:"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1a74a64b45255475f5c05e3b2681e0723b"></span>iterator <code class="sig-name descname">operator()</code><span class="sig-paren">(</span>basic_string_view&lt;char_type&gt; <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v620printf_arg_formatterclE17basic_string_viewI9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v620printf_arg_formatterclE9monostate">
+<span id="_CPPv3N3fmt2v620printf_arg_formatterclE9monostate"></span><span id="_CPPv2N3fmt2v620printf_arg_formatterclE9monostate"></span><span id="fmt::v6::printf_arg_formatter::call-operator__monostate"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1a4da5e080be969b3c8ec90706c8cfaaf8"></span>iterator <code class="sig-name descname">operator()</code><span class="sig-paren">(</span><a class="reference internal" href="structfmt_1_1v6_1_1monostate.html#_CPPv4N3fmt2v69monostateE" title="fmt::v6::monostate">monostate</a> <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v620printf_arg_formatterclE9monostate" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v620printf_arg_formatterclEPKv">
+<span id="_CPPv3N3fmt2v620printf_arg_formatterclEPKv"></span><span id="_CPPv2N3fmt2v620printf_arg_formatterclEPKv"></span><span id="fmt::v6::printf_arg_formatter::call-operator__voidCP"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1a35699eb5bec85bc15120261651027f59"></span>iterator <code class="sig-name descname">operator()</code><span class="sig-paren">(</span><em class="property">const</em> void *<em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v620printf_arg_formatterclEPKv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Formats a pointer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v620printf_arg_formatterclEN16basic_format_argI12context_typeE6handleE">
+<span id="_CPPv3N3fmt2v620printf_arg_formatterclEN16basic_format_argI12context_typeE6handleE"></span><span id="_CPPv2N3fmt2v620printf_arg_formatterclEN16basic_format_argI12context_typeE6handleE"></span><span id="fmt::v6::printf_arg_formatter::call-operator__basic_format_arg:context_type:::handle"></span><span class="target" id="classfmt_1_1v6_1_1printf__arg__formatter_1afbdce0259420d5c2123dc4a195b69124"></span>iterator <code class="sig-name descname">operator()</code><span class="sig-paren">(</span><em class="property">typename</em> basic_format_arg&lt;context_type&gt;::handle <em>handle</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v620printf_arg_formatterclEN16basic_format_argI12context_typeE6handleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Formats an argument of a custom (user-defined) type. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1system__error.html" class="btn btn-neutral float-right" title="Class system_error" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1width__checker.html" class="btn btn-neutral float-left" title="Template Class width_checker" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

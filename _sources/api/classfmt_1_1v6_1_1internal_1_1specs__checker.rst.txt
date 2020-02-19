@@ -1,0 +1,25 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1specs__checker:
+
+Template Class specs_checker
+============================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Handler``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::specs_checker
+   :members:
+   :protected-members:
+   :undoc-members:

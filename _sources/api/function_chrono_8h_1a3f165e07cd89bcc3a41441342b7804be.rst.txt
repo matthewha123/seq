@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a3f165e07cd89bcc3a41441342b7804be:
+
+Function fmt::v6::internal::strftime(wchar_t \*, std::size_t, const wchar_t \*, const std::tm \*)
+=================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::strftime(wchar_t *, std::size_t, const wchar_t *, const std::tm *)

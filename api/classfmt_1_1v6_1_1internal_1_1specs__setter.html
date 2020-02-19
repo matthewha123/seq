@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Class specs_setter &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class truncating_iterator" href="classfmt_1_1v6_1_1internal_1_1truncating__iterator.html" />
+    <link rel="prev" title="Template Class specs_handler" href="classfmt_1_1v6_1_1internal_1_1specs__handler.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Class specs_setter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1internal_1_1specs__setter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-class-specs-setter">
+<span id="exhale-class-classfmt-1-1v6-1-1internal-1-1specs-setter"></span><h1>Template Class specs_setter<a class="headerlink" href="#template-class-specs-setter" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0EN3fmt2v68internal12specs_setterE">
+<span id="_CPPv3I0EN3fmt2v68internal12specs_setterE"></span><span id="_CPPv2I0EN3fmt2v68internal12specs_setterE"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter"></span>template&lt;typename <code class="sig-name descname">Char</code>&gt;<br /><em class="property">class </em><code class="sig-name descname">specs_setter</code><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal12specs_setterE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter12specs_setterER18basic_format_specsI4CharE">
+<span id="_CPPv3N3fmt2v68internal12specs_setter12specs_setterER18basic_format_specsI4CharE"></span><span id="_CPPv2N3fmt2v68internal12specs_setter12specs_setterER18basic_format_specsI4CharE"></span><span id="fmt::v6::internal::specs_setter::specs_setter__basic_format_specs:Char:R"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a1a3b4f5b432abd97a87f286133b4388b"></span><code class="sig-name descname">specs_setter</code><span class="sig-paren">(</span>basic_format_specs&lt;Char&gt; &amp;<em>specs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter12specs_setterER18basic_format_specsI4CharE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter12specs_setterERK12specs_setter">
+<span id="_CPPv3N3fmt2v68internal12specs_setter12specs_setterERK12specs_setter"></span><span id="_CPPv2N3fmt2v68internal12specs_setter12specs_setterERK12specs_setter"></span><span id="fmt::v6::internal::specs_setter::specs_setter__specs_setterCR"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a32a6fef65d0f3da1621fffa168b41867"></span><code class="sig-name descname">specs_setter</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N3fmt2v68internal12specs_setter12specs_setterER18basic_format_specsI4CharE" title="fmt::v6::internal::specs_setter::specs_setter">specs_setter</a> &amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter12specs_setterERK12specs_setter" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter8on_alignE7align_t">
+<span id="_CPPv3N3fmt2v68internal12specs_setter8on_alignE7align_t"></span><span id="_CPPv2N3fmt2v68internal12specs_setter8on_alignE7align_t"></span><span id="fmt::v6::internal::specs_setter::on_align__align_t"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a2be6fcf9a6c33b38bad1f52f6ed59e67"></span>void <code class="sig-name descname">on_align</code><span class="sig-paren">(</span><a class="reference internal" href="typedef_format_8h_1a2faeea37943666d7bb5d0f244b343d4c.html#_CPPv4N3fmt2v67align_tE" title="fmt::v6::align_t">align_t</a> <em>align</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter8on_alignE7align_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter7on_fillE4Char">
+<span id="_CPPv3N3fmt2v68internal12specs_setter7on_fillE4Char"></span><span id="_CPPv2N3fmt2v68internal12specs_setter7on_fillE4Char"></span><span id="fmt::v6::internal::specs_setter::on_fill__Char"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1ad9b426bea9d49f513eb0e6611eb042a8"></span>void <code class="sig-name descname">on_fill</code><span class="sig-paren">(</span>Char <em>fill</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter7on_fillE4Char" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter7on_plusEv">
+<span id="_CPPv3N3fmt2v68internal12specs_setter7on_plusEv"></span><span id="_CPPv2N3fmt2v68internal12specs_setter7on_plusEv"></span><span id="fmt::v6::internal::specs_setter::on_plus"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a650d1ee9f58b4081ff275c7dca0a5819"></span>void <code class="sig-name descname">on_plus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter7on_plusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter8on_minusEv">
+<span id="_CPPv3N3fmt2v68internal12specs_setter8on_minusEv"></span><span id="_CPPv2N3fmt2v68internal12specs_setter8on_minusEv"></span><span id="fmt::v6::internal::specs_setter::on_minus"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a76ee1889a24ef899dd0344da046da044"></span>void <code class="sig-name descname">on_minus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter8on_minusEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter8on_spaceEv">
+<span id="_CPPv3N3fmt2v68internal12specs_setter8on_spaceEv"></span><span id="_CPPv2N3fmt2v68internal12specs_setter8on_spaceEv"></span><span id="fmt::v6::internal::specs_setter::on_space"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a48fe454883e2afc011f49306b7d02153"></span>void <code class="sig-name descname">on_space</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter8on_spaceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter7on_hashEv">
+<span id="_CPPv3N3fmt2v68internal12specs_setter7on_hashEv"></span><span id="_CPPv2N3fmt2v68internal12specs_setter7on_hashEv"></span><span id="fmt::v6::internal::specs_setter::on_hash"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1ab4ae4fd3b80707cbf44deb8899df9feb"></span>void <code class="sig-name descname">on_hash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter7on_hashEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter7on_zeroEv">
+<span id="_CPPv3N3fmt2v68internal12specs_setter7on_zeroEv"></span><span id="_CPPv2N3fmt2v68internal12specs_setter7on_zeroEv"></span><span id="fmt::v6::internal::specs_setter::on_zero"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a65ca58e9cc08efd35993107cc484af64"></span>void <code class="sig-name descname">on_zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter7on_zeroEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter8on_widthEi">
+<span id="_CPPv3N3fmt2v68internal12specs_setter8on_widthEi"></span><span id="_CPPv2N3fmt2v68internal12specs_setter8on_widthEi"></span><span id="fmt::v6::internal::specs_setter::on_width__i"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1afd26fe922426f1eaa7a2ceb33df448cd"></span>void <code class="sig-name descname">on_width</code><span class="sig-paren">(</span>int <em>width</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter8on_widthEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter12on_precisionEi">
+<span id="_CPPv3N3fmt2v68internal12specs_setter12on_precisionEi"></span><span id="_CPPv2N3fmt2v68internal12specs_setter12on_precisionEi"></span><span id="fmt::v6::internal::specs_setter::on_precision__i"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a3f5c1fe0a7808b5c10e535bb7e780520"></span>void <code class="sig-name descname">on_precision</code><span class="sig-paren">(</span>int <em>precision</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter12on_precisionEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter13end_precisionEv">
+<span id="_CPPv3N3fmt2v68internal12specs_setter13end_precisionEv"></span><span id="_CPPv2N3fmt2v68internal12specs_setter13end_precisionEv"></span><span id="fmt::v6::internal::specs_setter::end_precision"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a009dbb6a0cbed0e9e0e8525ccc0cf34c"></span>void <code class="sig-name descname">end_precision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter13end_precisionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter7on_typeE4Char">
+<span id="_CPPv3N3fmt2v68internal12specs_setter7on_typeE4Char"></span><span id="_CPPv2N3fmt2v68internal12specs_setter7on_typeE4Char"></span><span id="fmt::v6::internal::specs_setter::on_type__Char"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a52239ff61ef463bc891614f36642f564"></span>void <code class="sig-name descname">on_type</code><span class="sig-paren">(</span>Char <em>type</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter7on_typeE4Char" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Attributes</p>
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal12specs_setter6specs_E">
+<span id="_CPPv3N3fmt2v68internal12specs_setter6specs_E"></span><span id="_CPPv2N3fmt2v68internal12specs_setter6specs_E"></span><span id="fmt::v6::internal::specs_setter::specs___basic_format_specs:Char:R"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1specs__setter_1a738aa7e65670d27cde7b82ac8c3fe5e3"></span>basic_format_specs&lt;Char&gt; &amp;<code class="sig-name descname">specs_</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal12specs_setter6specs_E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1truncating__iterator.html" class="btn btn-neutral float-right" title="Template Class truncating_iterator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1specs__handler.html" class="btn btn-neutral float-left" title="Template Class specs_handler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

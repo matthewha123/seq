@@ -1,0 +1,13 @@
+.. _exhale_function_color_8h_1ac95c41883e4b8d44ba37b6a21d0577eb:
+
+Function fmt::v6::operator|
+===========================
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::operator|(emphasis, emphasis)

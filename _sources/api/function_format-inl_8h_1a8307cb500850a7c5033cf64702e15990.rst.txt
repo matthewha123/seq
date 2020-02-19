@@ -1,0 +1,13 @@
+.. _exhale_function_format-inl_8h_1a8307cb500850a7c5033cf64702e15990:
+
+Function strerror_r
+===================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: strerror_r(int, char *, ...)

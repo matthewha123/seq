@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1int__checker_3_01true_01_4:
+
+Template Struct int_checker< true >
+===================================
+
+- Defined in :ref:`file_compiler_util_fmt_printf.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::int_checker< true >
+   :members:
+   :protected-members:
+   :undoc-members:

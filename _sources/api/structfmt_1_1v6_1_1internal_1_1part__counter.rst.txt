@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1part__counter:
+
+Template Struct part_counter
+============================
+
+- Defined in :ref:`file_compiler_util_fmt_compile.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::part_counter
+   :members:
+   :protected-members:
+   :undoc-members:

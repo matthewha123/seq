@@ -1,0 +1,26 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1truncating__iterator__base:
+
+Template Class truncating_iterator_base
+=======================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public fmt::v6::internal::truncating_iterator< OutputIt, std::false_type >`` (:ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1truncating__iterator_3_01OutputIt_00_01std_1_1false__type_01_4`)
+- ``public fmt::v6::internal::truncating_iterator< OutputIt, std::true_type >`` (:ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1truncating__iterator_3_01OutputIt_00_01std_1_1true__type_01_4`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::truncating_iterator_base
+   :members:
+   :protected-members:
+   :undoc-members:

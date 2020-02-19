@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a9622eded7248d4b0699977679c6ab4d1:
+
+Template Function fmt::v6::internal::isfinite
+=============================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::isfinite(T)

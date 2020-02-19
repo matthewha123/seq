@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a0fb1c3a4ac46aecbb502a0d92da200ee:
+
+Function fmt::v6::internal::get_units< std::tera >
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_units< std::tera >()

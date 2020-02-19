@@ -1,0 +1,16 @@
+.. _exhale_class_classfmt_1_1v6_1_1buffered__file:
+
+Class buffered_file
+===================
+
+- Defined in :ref:`file_compiler_util_fmt_posix.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::buffered_file
+   :members:
+   :protected-members:
+   :undoc-members:

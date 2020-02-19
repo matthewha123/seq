@@ -1,0 +1,73 @@
+
+.. _file_compiler_types_func.h:
+
+File func.h
+===========
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_types>` (``compiler/types``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/types/func.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_types_func.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``types/record.h`` (:ref:`file_compiler_types_record.h`)
+
+- ``types/types.h`` (:ref:`file_compiler_types_types.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_lang_func.h`
+
+- :ref:`file_compiler_lang_pipeline.h`
+
+- :ref:`file_compiler_lang_seq.h`
+
+- :ref:`file_compiler_types_ref.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_seq`
+
+- :ref:`namespace_seq__types`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structseq_1_1types_1_1GenType_1_1InterAlignParams`
+
+- :ref:`exhale_class_classseq_1_1types_1_1FuncType`
+
+- :ref:`exhale_class_classseq_1_1types_1_1GenType`
+
+- :ref:`exhale_class_classseq_1_1types_1_1PartialFuncType`
+

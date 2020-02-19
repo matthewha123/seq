@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a6916d21468733765594f9436690e2607:
+
+Template Function fmt::v6::internal::code_point_index(basic_string_view<Char>, size_t)
+======================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::code_point_index(basic_string_view<Char>, size_t)

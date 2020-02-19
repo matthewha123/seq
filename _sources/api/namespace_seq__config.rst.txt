@@ -1,0 +1,27 @@
+
+.. _namespace_seq__config:
+
+Namespace seq::config
+=====================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structseq_1_1config_1_1Config`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_lang_2seq_8h_1afbb75aca7e9f7520bce30d2120747684`

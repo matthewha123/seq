@@ -1,0 +1,13 @@
+.. _exhale_function_locale_8h_1a5cc196413a18590a11f9171eb04bbd75:
+
+Template Function fmt::v6::vformat(const std::locale&, const S&, basic_format_args<buffer_context<Char>>)
+=========================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_locale.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::vformat(const std::locale&, const S&, basic_format_args<buffer_context<Char>>)

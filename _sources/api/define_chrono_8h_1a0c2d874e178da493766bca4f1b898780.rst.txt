@@ -1,0 +1,13 @@
+.. _exhale_define_chrono_8h_1a0c2d874e178da493766bca4f1b898780:
+
+Define FMT_NOMACRO
+==================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_NOMACRO

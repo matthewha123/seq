@@ -1,0 +1,13 @@
+.. _exhale_typedef_printf_8h_1a6ec9ec781496c801995a1d5589b6db62:
+
+Typedef fmt::v6::wprintf_args
+=============================
+
+- Defined in :ref:`file_compiler_util_fmt_printf.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::wprintf_args

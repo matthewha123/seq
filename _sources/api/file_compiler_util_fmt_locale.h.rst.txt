@@ -1,0 +1,73 @@
+
+.. _file_compiler_util_fmt_locale.h:
+
+File locale.h
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util_fmt>` (``compiler/util/fmt``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/fmt/locale.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_fmt_locale.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``format.h`` (:ref:`file_compiler_util_fmt_format.h`)
+
+- ``locale`` (:ref:`file_compiler_util_fmt_locale.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_util_fmt_chrono.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt`
+
+- :ref:`namespace_fmt__v6`
+
+- :ref:`namespace_fmt__v6__internal`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_locale_8h_1a2ec84897360186ec2eaae9063292eeeb`
+
+- :ref:`exhale_function_locale_8h_1ae7aac6724a66612a52df94230f000043`
+
+- :ref:`exhale_function_locale_8h_1a434903d07a62008cd962c4d26a828f34`
+
+- :ref:`exhale_function_locale_8h_1ac5a0cbe6f80af3b4fbd227ee261ee7bb`
+
+- :ref:`exhale_function_locale_8h_1a5cc196413a18590a11f9171eb04bbd75`
+
+- :ref:`exhale_function_locale_8h_1a629d8ac7cae72e73f74c2dd259744752`
+

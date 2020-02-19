@@ -1,0 +1,26 @@
+.. _exhale_class_classfmt_1_1v6_1_1dynamic__formatter:
+
+Template Class dynamic_formatter
+================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1dynamic__formatter_1_1null__handler`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::dynamic_formatter
+   :members:
+   :protected-members:
+   :undoc-members:

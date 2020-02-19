@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1is__contiguous_3_01internal_1_1buffer_3_01Char_01_4_01_4:
+
+Template Struct is_contiguous< internal::buffer< Char > >
+=========================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public true_type``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::is_contiguous< internal::buffer< Char > >
+   :members:
+   :protected-members:
+   :undoc-members:

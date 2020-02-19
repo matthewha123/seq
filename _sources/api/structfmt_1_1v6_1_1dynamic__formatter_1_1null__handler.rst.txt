@@ -1,0 +1,31 @@
+.. _exhale_struct_structfmt_1_1v6_1_1dynamic__formatter_1_1null__handler:
+
+Struct dynamic_formatter::null_handler
+======================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classfmt_1_1v6_1_1dynamic__formatter`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public fmt::v6::internal::error_handler`` (:ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1error__handler`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::dynamic_formatter::null_handler
+   :members:
+   :protected-members:
+   :undoc-members:

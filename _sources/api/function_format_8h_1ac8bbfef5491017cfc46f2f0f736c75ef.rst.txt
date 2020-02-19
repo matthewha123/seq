@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1ac8bbfef5491017cfc46f2f0f736c75ef:
+
+Template Function fmt::v6::internal::reserve(std::back_insert_iterator<Container>&, std::size_t)
+================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::reserve(std::back_insert_iterator<Container>&, std::size_t)

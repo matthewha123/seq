@@ -1,0 +1,13 @@
+.. _exhale_function_format-inl_8h_1a0a64a30037fcc15acc70a0a35f6d01e0:
+
+Function fmt::v6::internal::get_round_direction
+===============================================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_round_direction(uint64_t, uint64_t, uint64_t)

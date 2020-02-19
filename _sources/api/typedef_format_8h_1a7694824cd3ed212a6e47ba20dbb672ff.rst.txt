@@ -1,0 +1,13 @@
+.. _exhale_typedef_format_8h_1a7694824cd3ed212a6e47ba20dbb672ff:
+
+Typedef fmt::v6::internal::uint32_or_64_or_128_t
+================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::internal::uint32_or_64_or_128_t

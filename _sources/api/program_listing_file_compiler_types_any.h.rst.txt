@@ -1,0 +1,29 @@
+
+.. _program_listing_file_compiler_types_any.h:
+
+Program Listing for File any.h
+==============================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_compiler_types_any.h>` (``compiler/types/any.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include "types/types.h"
+   
+   namespace seq {
+   namespace types {
+   class AnyType : public Type {
+     AnyType();
+   
+   public:
+     AnyType(AnyType const &) = delete;
+     void operator=(AnyType const &) = delete;
+     static AnyType *get() noexcept;
+   };
+   
+   } // namespace types
+   } // namespace seq

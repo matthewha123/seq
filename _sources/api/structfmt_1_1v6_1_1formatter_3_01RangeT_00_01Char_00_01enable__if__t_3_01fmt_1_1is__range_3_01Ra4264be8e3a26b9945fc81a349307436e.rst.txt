@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1formatter_3_01RangeT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__range_3_01Ra4264be8e3a26b9945fc81a349307436e:
+
+Template Struct formatter< RangeT, Char, enable_if_t< fmt::is_range< RangeT, Char >::value > >
+==============================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_ranges.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::formatter< RangeT, Char, enable_if_t< fmt::is_range< RangeT, Char >::value > >
+   :members:
+   :protected-members:
+   :undoc-members:

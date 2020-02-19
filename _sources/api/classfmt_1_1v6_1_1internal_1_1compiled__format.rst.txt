@@ -1,0 +1,25 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1compiled__format:
+
+Template Class compiled_format
+==============================
+
+- Defined in :ref:`file_compiler_util_fmt_compile.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``private fmt::v6::internal::compiled_format_base< S >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1compiled__format__base`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::compiled_format
+   :members:
+   :protected-members:
+   :undoc-members:

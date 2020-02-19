@@ -1,0 +1,13 @@
+.. _exhale_typedef_core_8h_1a4074f7ef8c37b344ef1f77ebe1c7d724:
+
+Typedef fmt::v6::string_view
+============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::string_view

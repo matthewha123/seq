@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a887c191adf8cfaf06ed40b5c4d487343:
+
+Define FMT_BEGIN_NAMESPACE
+==========================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_BEGIN_NAMESPACE

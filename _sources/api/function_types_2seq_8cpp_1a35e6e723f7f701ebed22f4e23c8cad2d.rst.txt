@@ -1,0 +1,13 @@
+.. _exhale_function_types_2seq_8cpp_1a35e6e723f7f701ebed22f4e23c8cad2d:
+
+Function codegenRevCompBySIMD
+=============================
+
+- Defined in :ref:`file_compiler_types_seq.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: codegenRevCompBySIMD(types::KMer *, Value *, IRBuilder<>&)

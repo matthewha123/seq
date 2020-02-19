@@ -1,0 +1,13 @@
+.. _exhale_typedef_format_8h_1a2faeea37943666d7bb5d0f244b343d4c:
+
+Typedef fmt::v6::align_t
+========================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::align_t

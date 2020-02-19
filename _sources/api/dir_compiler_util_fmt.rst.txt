@@ -1,0 +1,31 @@
+.. _dir_compiler_util_fmt:
+
+
+Directory fmt
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util>` (``compiler/util``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``compiler/util/fmt``
+
+
+Files
+-----
+
+- :ref:`file_compiler_util_fmt_chrono.h`
+- :ref:`file_compiler_util_fmt_color.h`
+- :ref:`file_compiler_util_fmt_compile.h`
+- :ref:`file_compiler_util_fmt_core.h`
+- :ref:`file_compiler_util_fmt_format-inl.h`
+- :ref:`file_compiler_util_fmt_format.cpp`
+- :ref:`file_compiler_util_fmt_format.h`
+- :ref:`file_compiler_util_fmt_locale.h`
+- :ref:`file_compiler_util_fmt_ostream.h`
+- :ref:`file_compiler_util_fmt_posix.h`
+- :ref:`file_compiler_util_fmt_printf.h`
+- :ref:`file_compiler_util_fmt_ranges.h`
+
+

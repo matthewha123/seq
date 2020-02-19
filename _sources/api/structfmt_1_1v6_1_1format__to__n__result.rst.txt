@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1format__to__n__result:
+
+Template Struct format_to_n_result
+==================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::format_to_n_result
+   :members:
+   :protected-members:
+   :undoc-members:

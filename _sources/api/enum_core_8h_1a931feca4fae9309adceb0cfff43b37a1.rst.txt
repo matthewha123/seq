@@ -1,0 +1,13 @@
+.. _exhale_enum_core_8h_1a931feca4fae9309adceb0cfff43b37a1:
+
+Enum @3
+=======
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: fmt::v6::internal::@3

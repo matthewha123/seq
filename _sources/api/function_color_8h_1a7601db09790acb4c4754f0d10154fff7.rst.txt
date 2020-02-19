@@ -1,0 +1,13 @@
+.. _exhale_function_color_8h_1a7601db09790acb4c4754f0d10154fff7:
+
+Function fmt::v6::bg
+====================
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::bg(internal::color_type)

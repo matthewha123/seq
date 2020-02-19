@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Struct format_part &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct format_part::replacement" href="structfmt_1_1v6_1_1internal_1_1format__part_1_1replacement.html" />
+    <link rel="prev" title="Struct float_specs" href="structfmt_1_1v6_1_1internal_1_1float__specs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Struct format_part</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/structfmt_1_1v6_1_1internal_1_1format__part.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-struct-format-part">
+<span id="exhale-struct-structfmt-1-1v6-1-1internal-1-1format-part"></span><h1>Template Struct format_part<a class="headerlink" href="#template-struct-format-part" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_compile.h.html#file-compiler-util-fmt-compile-h"><span class="std std-ref">File compile.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1format__part_1_1replacement.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1format-part-1-1replacement"><span class="std std-ref">Struct format_part::replacement</span></a></p></li>
+<li><p><a class="reference internal" href="unionfmt_1_1v6_1_1internal_1_1format__part_1_1value.html#exhale-union-unionfmt-1-1v6-1-1internal-1-1format-part-1-1value"><span class="std std-ref">Union format_part::value</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0EN3fmt2v68internal11format_partE">
+<span id="_CPPv3I0EN3fmt2v68internal11format_partE"></span><span id="_CPPv2I0EN3fmt2v68internal11format_partE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part"></span>template&lt;typename <code class="sig-name descname">Char</code>&gt;<br /><em class="property">struct </em><code class="sig-name descname">format_part</code><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal11format_partE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="enum">
+<dt id="_CPPv4N3fmt2v68internal11format_part4kindE">
+<span id="_CPPv3N3fmt2v68internal11format_part4kindE"></span><span id="_CPPv2N3fmt2v68internal11format_part4kindE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1a3159bb20fa3f4012b0a4c83c7802f320"></span><em class="property">enum </em><code class="sig-name descname">kind</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part4kindE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68internal11format_part9arg_indexE">
+<span id="_CPPv3N3fmt2v68internal11format_part9arg_indexE"></span><span id="_CPPv2N3fmt2v68internal11format_part9arg_indexE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1a3159bb20fa3f4012b0a4c83c7802f320a4c449eecc8bd15774c44597dc02769f0"></span><code class="sig-name descname">arg_index</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part9arg_indexE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68internal11format_part8arg_nameE">
+<span id="_CPPv3N3fmt2v68internal11format_part8arg_nameE"></span><span id="_CPPv2N3fmt2v68internal11format_part8arg_nameE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1a3159bb20fa3f4012b0a4c83c7802f320ab34fe950850d345156fa313fba35e5cf"></span><code class="sig-name descname">arg_name</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part8arg_nameE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68internal11format_part4textE">
+<span id="_CPPv3N3fmt2v68internal11format_part4textE"></span><span id="_CPPv2N3fmt2v68internal11format_part4textE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1a3159bb20fa3f4012b0a4c83c7802f320a1cb251ec0d568de6a929b520c4aed8d1"></span><code class="sig-name descname">text</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part4textE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68internal11format_part11replacementE">
+<span id="_CPPv3N3fmt2v68internal11format_part11replacementE"></span><span id="_CPPv2N3fmt2v68internal11format_part11replacementE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1a3159bb20fa3f4012b0a4c83c7802f320af5300127f646a4550bc4a04fbe393e79"></span><code class="sig-name descname">replacement</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part11replacementE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal11format_part11format_partE4kind5value">
+<span id="_CPPv3N3fmt2v68internal11format_part11format_partE4kind5value"></span><span id="_CPPv2N3fmt2v68internal11format_part11format_partE4kind5value"></span><span id="fmt::v6::internal::format_part::format_part__kind.value"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1a82a5faf85dcfe38150972693d3a99da6"></span><code class="sig-name descname">format_part</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N3fmt2v68internal11format_part4kindE" title="fmt::v6::internal::format_part::kind">kind</a> <em>k</em> = <a class="reference internal" href="#_CPPv4N3fmt2v68internal11format_part4kindE" title="fmt::v6::internal::format_part::kind">kind</a>::arg_index, <a class="reference internal" href="#_CPPv4N3fmt2v68internal11format_part5valueE" title="fmt::v6::internal::format_part::value">value</a> <em>v</em> = {}<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part11format_partE4kind5value" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal11format_part9part_kindE">
+<span id="_CPPv3N3fmt2v68internal11format_part9part_kindE"></span><span id="_CPPv2N3fmt2v68internal11format_part9part_kindE"></span><span id="fmt::v6::internal::format_part::part_kind__kind"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1ad50055a55079290ff4e9576de79fceb9"></span><a class="reference internal" href="#_CPPv4N3fmt2v68internal11format_part4kindE" title="fmt::v6::internal::format_part::kind">kind</a> <code class="sig-name descname">part_kind</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part9part_kindE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal11format_part3valE">
+<span id="_CPPv3N3fmt2v68internal11format_part3valE"></span><span id="_CPPv2N3fmt2v68internal11format_part3valE"></span><span id="fmt::v6::internal::format_part::val__fmt::v6::internal::format_part::value"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1a1785b5a4d707adb501b8499b9e6d6bf2"></span><em class="property">union</em> fmt::v6::internal::format_part::<a class="reference internal" href="#_CPPv4N3fmt2v68internal11format_part5valueE" title="fmt::v6::internal::format_part::value">value</a> <code class="sig-name descname">val</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part3valE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal11format_part10arg_id_endE">
+<span id="_CPPv3N3fmt2v68internal11format_part10arg_id_endE"></span><span id="_CPPv2N3fmt2v68internal11format_part10arg_id_endE"></span><span id="fmt::v6::internal::format_part::arg_id_end__CharCP"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1ab9454d7e0ff31229ff35fd658f1292e0"></span><em class="property">const</em> Char *<code class="sig-name descname">arg_id_end</code> = nullptr<a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part10arg_id_endE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal11format_part14make_arg_indexEi">
+<span id="_CPPv3N3fmt2v68internal11format_part14make_arg_indexEi"></span><span id="_CPPv2N3fmt2v68internal11format_part14make_arg_indexEi"></span><span id="fmt::v6::internal::format_part::make_arg_index__i"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1ac20aabf5945b14ca5d4d988c3b28205e"></span><em class="property">static</em> format_part <code class="sig-name descname">make_arg_index</code><span class="sig-paren">(</span>int <em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part14make_arg_indexEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal11format_part13make_arg_nameE17basic_string_viewI4CharE">
+<span id="_CPPv3N3fmt2v68internal11format_part13make_arg_nameE17basic_string_viewI4CharE"></span><span id="_CPPv2N3fmt2v68internal11format_part13make_arg_nameE17basic_string_viewI4CharE"></span><span id="fmt::v6::internal::format_part::make_arg_name__basic_string_view:Char:"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1af85f81ef9ec3188620105e3b61e23d69"></span><em class="property">static</em> format_part <code class="sig-name descname">make_arg_name</code><span class="sig-paren">(</span>basic_string_view&lt;Char&gt; <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part13make_arg_nameE17basic_string_viewI4CharE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal11format_part9make_textE17basic_string_viewI4CharE">
+<span id="_CPPv3N3fmt2v68internal11format_part9make_textE17basic_string_viewI4CharE"></span><span id="_CPPv2N3fmt2v68internal11format_part9make_textE17basic_string_viewI4CharE"></span><span id="fmt::v6::internal::format_part::make_text__basic_string_view:Char:"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1a03377d51b092719451835b37c144c7c6"></span><em class="property">static</em> format_part <code class="sig-name descname">make_text</code><span class="sig-paren">(</span>basic_string_view&lt;Char&gt; <em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part9make_textE17basic_string_viewI4CharE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal11format_part16make_replacementE11replacement">
+<span id="_CPPv3N3fmt2v68internal11format_part16make_replacementE11replacement"></span><span id="_CPPv2N3fmt2v68internal11format_part16make_replacementE11replacement"></span><span id="fmt::v6::internal::format_part::make_replacement__replacement"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1ac22f863f6a9b68c853771b5bdcbdabe9"></span><em class="property">static</em> format_part <code class="sig-name descname">make_replacement</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N3fmt2v68internal11format_part11replacementE" title="fmt::v6::internal::format_part::replacement">replacement</a> <em>repl</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part16make_replacementE11replacement" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="class">
+<dt id="_CPPv4N3fmt2v68internal11format_part11replacementE">
+<span id="_CPPv3N3fmt2v68internal11format_part11replacementE"></span><span id="fmt::v6::internal::format_part::replacement"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1_1replacement"></span><em class="property">struct </em><code class="sig-name descname">replacement</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4IEN3fmt2v68internal11format_partI4CharE11replacement6arg_idE">
+<span id="_CPPv3IEN3fmt2v68internal11format_partI4CharE11replacement6arg_idE"></span><span id="_CPPv2IEN3fmt2v68internal11format_partI4CharE11replacement6arg_idE"></span>template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1_1replacement_1a70b8a3be9f6779b976e839e6b2b104e8"></span>arg_ref&lt;Char&gt; <code class="sig-name descname">arg_id</code><a class="headerlink" href="#_CPPv4IEN3fmt2v68internal11format_partI4CharE11replacement6arg_idE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4IEN3fmt2v68internal11format_partI4CharE11replacement5specsE">
+<span id="_CPPv3IEN3fmt2v68internal11format_partI4CharE11replacement5specsE"></span><span id="_CPPv2IEN3fmt2v68internal11format_partI4CharE11replacement5specsE"></span>template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1format__part_1_1replacement_1aaaf060ee2a7434052d3096f18ab2d6dc"></span>dynamic_format_specs&lt;Char&gt; <code class="sig-name descname">specs</code><a class="headerlink" href="#_CPPv4IEN3fmt2v68internal11format_partI4CharE11replacement5specsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="union">
+<dt id="_CPPv4N3fmt2v68internal11format_part5valueE">
+<span id="_CPPv3N3fmt2v68internal11format_part5valueE"></span><span id="_CPPv2N3fmt2v68internal11format_part5valueE"></span><span class="target" id="unionfmt_1_1v6_1_1internal_1_1format__part_1_1value"></span><em class="property">union </em><code class="sig-name descname">value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal11format_part5valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4IEN3fmt2v68internal11format_partI4CharE5value5valueEi">
+<span id="_CPPv3IEN3fmt2v68internal11format_partI4CharE5value5valueEi"></span><span id="_CPPv2IEN3fmt2v68internal11format_partI4CharE5value5valueEi"></span><span class="target" id="unionfmt_1_1v6_1_1internal_1_1format__part_1_1value_1a1c83b423bf677e543f90f4433071d77c"></span>template&lt;&gt;<br /><code class="sig-name descname">value</code><span class="sig-paren">(</span>int <em>index</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4IEN3fmt2v68internal11format_partI4CharE5value5valueEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4IEN3fmt2v68internal11format_partI4CharE5value5valueE17basic_string_viewI4CharE">
+<span id="_CPPv3IEN3fmt2v68internal11format_partI4CharE5value5valueE17basic_string_viewI4CharE"></span><span id="_CPPv2IEN3fmt2v68internal11format_partI4CharE5value5valueE17basic_string_viewI4CharE"></span><span class="target" id="unionfmt_1_1v6_1_1internal_1_1format__part_1_1value_1a07f31cd286c388dd72d7acc7e3a57146"></span>template&lt;&gt;<br /><code class="sig-name descname">value</code><span class="sig-paren">(</span>basic_string_view&lt;Char&gt; <em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4IEN3fmt2v68internal11format_partI4CharE5value5valueE17basic_string_viewI4CharE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4IEN3fmt2v68internal11format_partI4CharE5value5valueE11replacement">
+<span id="_CPPv3IEN3fmt2v68internal11format_partI4CharE5value5valueE11replacement"></span><span id="_CPPv2IEN3fmt2v68internal11format_partI4CharE5value5valueE11replacement"></span><span class="target" id="unionfmt_1_1v6_1_1internal_1_1format__part_1_1value_1acf0a3b7251cf6bd0fc60d2c2be5af2e5"></span>template&lt;&gt;<br /><code class="sig-name descname">value</code><span class="sig-paren">(</span>replacement <em>r</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4IEN3fmt2v68internal11format_partI4CharE5value5valueE11replacement" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4IEN3fmt2v68internal11format_partI4CharE5value9arg_indexE">
+<span id="_CPPv3IEN3fmt2v68internal11format_partI4CharE5value9arg_indexE"></span><span id="_CPPv2IEN3fmt2v68internal11format_partI4CharE5value9arg_indexE"></span>template&lt;&gt;<br /><span class="target" id="unionfmt_1_1v6_1_1internal_1_1format__part_1_1value_1acced094ca4ca6fc2105c190432892ecc"></span>int <code class="sig-name descname">arg_index</code><a class="headerlink" href="#_CPPv4IEN3fmt2v68internal11format_partI4CharE5value9arg_indexE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4IEN3fmt2v68internal11format_partI4CharE5value3strE">
+<span id="_CPPv3IEN3fmt2v68internal11format_partI4CharE5value3strE"></span><span id="_CPPv2IEN3fmt2v68internal11format_partI4CharE5value3strE"></span>template&lt;&gt;<br /><span class="target" id="unionfmt_1_1v6_1_1internal_1_1format__part_1_1value_1a201ce29d3a523f837d026c10bd853d4b"></span>basic_string_view&lt;Char&gt; <code class="sig-name descname">str</code><a class="headerlink" href="#_CPPv4IEN3fmt2v68internal11format_partI4CharE5value3strE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4IEN3fmt2v68internal11format_partI4CharE5value4replE">
+<span id="_CPPv3IEN3fmt2v68internal11format_partI4CharE5value4replE"></span><span id="_CPPv2IEN3fmt2v68internal11format_partI4CharE5value4replE"></span>template&lt;&gt;<br /><span class="target" id="unionfmt_1_1v6_1_1internal_1_1format__part_1_1value_1ac7a5dc65ac9451ff68a874e4fd422e36"></span>replacement <code class="sig-name descname">repl</code><a class="headerlink" href="#_CPPv4IEN3fmt2v68internal11format_partI4CharE5value4replE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1format__part_1_1replacement.html" class="btn btn-neutral float-right" title="Struct format_part::replacement" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1float__specs.html" class="btn btn-neutral float-left" title="Struct float_specs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

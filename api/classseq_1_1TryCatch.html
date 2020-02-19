@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class TryCatch &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class TypeExpr" href="classseq_1_1TypeExpr.html" />
+    <link rel="prev" title="Class Throw" href="classseq_1_1Throw.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Class TryCatch</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classseq_1_1TryCatch.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-trycatch">
+<span id="exhale-class-classseq-1-1trycatch"></span><h1>Class TryCatch<a class="headerlink" href="#class-trycatch" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_lang_lang.h.html#file-compiler-lang-lang-h"><span class="std std-ref">File lang.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">seq::Stmt</span></code> (<a class="reference internal" href="classseq_1_1Stmt.html#exhale-class-classseq-1-1stmt"><span class="std std-ref">Class Stmt</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N3seq8TryCatchE">
+<span id="_CPPv3N3seq8TryCatchE"></span><span id="_CPPv2N3seq8TryCatchE"></span><span id="seq::TryCatch"></span><span class="target" id="classseq_1_1TryCatch"></span><em class="property">class </em><code class="sig-name descname">TryCatch</code> : <em class="property">public</em> seq::<a class="reference internal" href="classseq_1_1Stmt.html#_CPPv4N3seq4StmtE" title="seq::Stmt">Stmt</a><a class="headerlink" href="#_CPPv4N3seq8TryCatchE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N8TryCatch8TryCatchEv">
+<span id="_CPPv3N8TryCatch8TryCatchEv"></span><span id="_CPPv2N8TryCatch8TryCatchEv"></span><span id="TryCatch::TryCatch"></span><span class="target" id="classseq_1_1TryCatch_1a148f2a4c2a7dcbe2fa12c9d13f1121af"></span><code class="sig-name descname">TryCatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch8TryCatchEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch8getBlockEv">
+<span id="_CPPv3N8TryCatch8getBlockEv"></span><span id="_CPPv2N8TryCatch8getBlockEv"></span><span id="TryCatch::getBlock"></span><span class="target" id="classseq_1_1TryCatch_1a60ef9a1887054ecf19bf121ce1b7c67b"></span>Block *<code class="sig-name descname">getBlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch8getBlockEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch6getVarEj">
+<span id="_CPPv3N8TryCatch6getVarEj"></span><span id="_CPPv2N8TryCatch6getVarEj"></span><span id="TryCatch::getVar__unsigned"></span><span class="target" id="classseq_1_1TryCatch_1a8db860e30b1306d881c3a92eb166f37b"></span>Var *<code class="sig-name descname">getVar</code><span class="sig-paren">(</span>unsigned <em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch6getVarEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch8addCatchEPN5types4TypeE">
+<span id="_CPPv3N8TryCatch8addCatchEPN5types4TypeE"></span><span id="_CPPv2N8TryCatch8addCatchEPN5types4TypeE"></span><span id="TryCatch::addCatch__types::TypeP"></span><span class="target" id="classseq_1_1TryCatch_1acce8040135decffaa0202039f5147db2"></span>Block *<code class="sig-name descname">addCatch</code><span class="sig-paren">(</span>types::Type *<em>type</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch8addCatchEPN5types4TypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch10getFinallyEv">
+<span id="_CPPv3N8TryCatch10getFinallyEv"></span><span id="_CPPv2N8TryCatch10getFinallyEv"></span><span id="TryCatch::getFinally"></span><span class="target" id="classseq_1_1TryCatch_1a1f1062cc9572e0aeef3125bfe7c35c2a"></span>Block *<code class="sig-name descname">getFinally</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch10getFinallyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch17getExceptionBlockEv">
+<span id="_CPPv3N8TryCatch17getExceptionBlockEv"></span><span id="_CPPv2N8TryCatch17getExceptionBlockEv"></span><span id="TryCatch::getExceptionBlock"></span><span class="target" id="classseq_1_1TryCatch_1ad543c0d9f9a219ef2672929638af2ea7"></span>BasicBlock *<code class="sig-name descname">getExceptionBlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch17getExceptionBlockEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch13codegenReturnEP4ExprRPN4llvm10BasicBlockE">
+<span id="_CPPv3N8TryCatch13codegenReturnEP4ExprRPN4llvm10BasicBlockE"></span><span id="_CPPv2N8TryCatch13codegenReturnEP4ExprRPN4llvm10BasicBlockE"></span><span id="TryCatch::codegenReturn__ExprP.llvm::BasicBlockPR"></span><span class="target" id="classseq_1_1TryCatch_1abd271f1b3dcb90a0a47ed65f5224842c"></span>void <code class="sig-name descname">codegenReturn</code><span class="sig-paren">(</span>Expr *<em>expr</em>, llvm::BasicBlock *&amp;<em>block</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch13codegenReturnEP4ExprRPN4llvm10BasicBlockE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch12codegenBreakERPN4llvm10BasicBlockE">
+<span id="_CPPv3N8TryCatch12codegenBreakERPN4llvm10BasicBlockE"></span><span id="_CPPv2N8TryCatch12codegenBreakERPN4llvm10BasicBlockE"></span><span id="TryCatch::codegenBreak__llvm::BasicBlockPR"></span><span class="target" id="classseq_1_1TryCatch_1a20ab3ede4d57eb05af9ef1615412c6a7"></span>void <code class="sig-name descname">codegenBreak</code><span class="sig-paren">(</span>llvm::BasicBlock *&amp;<em>block</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch12codegenBreakERPN4llvm10BasicBlockE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch15codegenContinueERPN4llvm10BasicBlockE">
+<span id="_CPPv3N8TryCatch15codegenContinueERPN4llvm10BasicBlockE"></span><span id="_CPPv2N8TryCatch15codegenContinueERPN4llvm10BasicBlockE"></span><span id="TryCatch::codegenContinue__llvm::BasicBlockPR"></span><span class="target" id="classseq_1_1TryCatch_1a22d8adc2f8c9bce28dbcd19b4e84dbb4"></span>void <code class="sig-name descname">codegenContinue</code><span class="sig-paren">(</span>llvm::BasicBlock *&amp;<em>block</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch15codegenContinueERPN4llvm10BasicBlockE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch12resolveTypesEv">
+<span id="_CPPv3N8TryCatch12resolveTypesEv"></span><span id="_CPPv2N8TryCatch12resolveTypesEv"></span><span id="TryCatch::resolveTypes"></span><span class="target" id="classseq_1_1TryCatch_1a4e75032fe1699ad48e3d55e18a1fdae1"></span>void <code class="sig-name descname">resolveTypes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch12resolveTypesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Performs type resolution on this statement and all sub-expressions/statements/etc. This is called prior to <a class="reference internal" href="classseq_1_1Expr.html#classseq_1_1Expr_1addce0016a7294cb76121ae0b3d175bd9"><span class="std std-ref">Expr::getType()</span></a>. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch8codegen0ERPN4llvm10BasicBlockE">
+<span id="_CPPv3N8TryCatch8codegen0ERPN4llvm10BasicBlockE"></span><span id="_CPPv2N8TryCatch8codegen0ERPN4llvm10BasicBlockE"></span><span id="TryCatch::codegen0__llvm::BasicBlockPR"></span><span class="target" id="classseq_1_1TryCatch_1aa993d99ee0d8915c4361bf629863211e"></span>void <code class="sig-name descname">codegen0</code><span class="sig-paren">(</span>llvm::BasicBlock *&amp;<em>block</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch8codegen0ERPN4llvm10BasicBlockE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Performs code generation for this statement. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">block</span></code>: reference to block where code should be generated; possibly modified to point to a new block where codegen should resume </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch5cloneEP7Generic">
+<span id="_CPPv3N8TryCatch5cloneEP7Generic"></span><span id="_CPPv2N8TryCatch5cloneEP7Generic"></span><span id="TryCatch::clone__GenericP"></span><span class="target" id="classseq_1_1TryCatch_1ade1c1017e42ab3f8dd61b2f4d7146feb"></span>TryCatch *<code class="sig-name descname">clone</code><span class="sig-paren">(</span>Generic *<em>ref</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch5cloneEP7Generic" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Clones this statement. <code class="docutils literal notranslate"><span class="pre">ref</span></code> is used internally to keep track of cloned objects, and to make sure we don’t clone certain objects twice. <dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>cloned statement </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ref</span></code>: generic object that is being cloned </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="function">
+<dt id="_CPPv4N8TryCatch10getPadTypeERN4llvm11LLVMContextE">
+<span id="_CPPv3N8TryCatch10getPadTypeERN4llvm11LLVMContextE"></span><span id="_CPPv2N8TryCatch10getPadTypeERN4llvm11LLVMContextE"></span><span id="TryCatch::getPadType__llvm::LLVMContextR"></span><span class="target" id="classseq_1_1TryCatch_1a34e9eb952bee324cdd5c2e9dd0d22e98"></span>StructType *<code class="sig-name descname">getPadType</code><span class="sig-paren">(</span>llvm::LLVMContext &amp;<em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch10getPadTypeERN4llvm11LLVMContextE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch10getExcTypeERN4llvm11LLVMContextE">
+<span id="_CPPv3N8TryCatch10getExcTypeERN4llvm11LLVMContextE"></span><span id="_CPPv2N8TryCatch10getExcTypeERN4llvm11LLVMContextE"></span><span id="TryCatch::getExcType__llvm::LLVMContextR"></span><span class="target" id="classseq_1_1TryCatch_1a54b907427526d001c4e67330c0f6c65f"></span>StructType *<code class="sig-name descname">getExcType</code><span class="sig-paren">(</span>llvm::LLVMContext &amp;<em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch10getExcTypeERN4llvm11LLVMContextE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TryCatch13getTypeIdxVarEPN4llvm6ModuleEPN5types4TypeE">
+<span id="_CPPv3N8TryCatch13getTypeIdxVarEPN4llvm6ModuleEPN5types4TypeE"></span><span id="_CPPv2N8TryCatch13getTypeIdxVarEPN4llvm6ModuleEPN5types4TypeE"></span><span id="TryCatch::getTypeIdxVar__llvm::ModuleP.types::TypeP"></span><span class="target" id="classseq_1_1TryCatch_1a58d28db15d5a533ef83985a6ad905139"></span>GlobalVariable *<code class="sig-name descname">getTypeIdxVar</code><span class="sig-paren">(</span>llvm::Module *<em>module</em>, types::Type *<em>catchType</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TryCatch13getTypeIdxVarEPN4llvm6ModuleEPN5types4TypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classseq_1_1TypeExpr.html" class="btn btn-neutral float-right" title="Class TypeExpr" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classseq_1_1Throw.html" class="btn btn-neutral float-left" title="Class Throw" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

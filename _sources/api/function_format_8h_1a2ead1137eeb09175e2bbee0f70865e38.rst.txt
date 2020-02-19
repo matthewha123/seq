@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a2ead1137eeb09175e2bbee0f70865e38:
+
+Template Function fmt::v6::internal::digits10
+=============================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::digits10()

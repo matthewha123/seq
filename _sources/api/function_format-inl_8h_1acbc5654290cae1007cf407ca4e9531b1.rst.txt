@@ -1,0 +1,13 @@
+.. _exhale_function_format-inl_8h_1acbc5654290cae1007cf407ca4e9531b1:
+
+Template Function fmt::v6::internal::grisu_gen_digits
+=====================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::grisu_gen_digits(fp, uint64_t, int&, Handler&)

@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a023c6c178e254d81d578b90921804b1c:
+
+Define FMT_OVERRIDE
+===================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_OVERRIDE

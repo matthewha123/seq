@@ -1,0 +1,13 @@
+.. _exhale_typedef_core_8h_1a6940a48bb049eaa01366b76d11b9caf1:
+
+Typedef fmt::v6::internal::ulong_type
+=====================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::internal::ulong_type

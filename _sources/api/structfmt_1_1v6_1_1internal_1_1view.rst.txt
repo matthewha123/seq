@@ -1,0 +1,26 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1view:
+
+Struct view
+===========
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public fmt::v6::arg_join< It, Char >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1arg__join`)
+- ``public fmt::v6::tuple_arg_join< Char, T >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1tuple__arg__join`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::view
+   :members:
+   :protected-members:
+   :undoc-members:

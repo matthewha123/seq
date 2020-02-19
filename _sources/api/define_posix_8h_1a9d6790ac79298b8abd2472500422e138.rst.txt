@@ -1,0 +1,13 @@
+.. _exhale_define_posix_8h_1a9d6790ac79298b8abd2472500422e138:
+
+Define FMT_RETRY
+================
+
+- Defined in :ref:`file_compiler_util_fmt_posix.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_RETRY

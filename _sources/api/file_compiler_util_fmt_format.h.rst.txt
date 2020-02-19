@@ -1,0 +1,524 @@
+
+.. _file_compiler_util_fmt_format.h:
+
+File format.h
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util_fmt>` (``compiler/util/fmt``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/fmt/format.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_fmt_format.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``cerrno``
+
+- ``cmath``
+
+- ``core.h`` (:ref:`file_compiler_util_fmt_core.h`)
+
+- ``cstdint``
+
+- ``limits``
+
+- ``memory``
+
+- ``stdexcept``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_util_fmt_chrono.h`
+
+- :ref:`file_compiler_util_fmt_locale.h`
+
+- :ref:`file_compiler_util_fmt_color.h`
+
+- :ref:`file_compiler_util_fmt_compile.h`
+
+- :ref:`file_compiler_util_fmt_ostream.h`
+
+- :ref:`file_compiler_util_fmt_posix.h`
+
+- :ref:`file_compiler_util_fmt_ranges.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt`
+
+- :ref:`namespace_fmt__v6`
+
+- :ref:`namespace_fmt__v6__align`
+
+- :ref:`namespace_fmt__v6__internal`
+
+- :ref:`namespace_fmt__v6__sign`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1arg__join`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1basic__format__specs`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1dynamic__formatter_1_1null__handler`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1format__handler`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1format__to__n__result`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01arg__join_3_01It_00_01Char_01_4_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01Char_01_5_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01internal_1_1std__string__view_3_01Char_01_4_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01long_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01short_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01signed_01char_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01std_1_1basic__string_3_01Char_01_4_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01std_1_1nullptr__t_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01T_00_01Char_00_01enable__if__t_3_01internal_1_1type__constant_3f54e3dbba2f0a58acca71210c64ea4d2`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01unsigned_01char_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01unsigned_01long_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01unsigned_01short_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01void_01_5_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__formatter__base_1_1char__spec__handler`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__formatter__base_1_1char__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__formatter__base_1_1cstring__spec__handler`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__ref`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1auto__id`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__data`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1bin__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1dec__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1hex__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1padded__int__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1pointer__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1str__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1counting__iterator_1_1value__type`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1data`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1dynamic__format__specs`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1fallback__uintptr`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1fill__t`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1float__specs`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1id__adapter`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1is__integral`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1is__integral_3_01int128__t_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1is__integral_3_01uint128__t_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1iterator__category`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1iterator__category_3_01It_00_01void__t_3_01typename_01It_1_1iterator__category_01_4_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1iterator__category_3_01T_01_5_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1nonfinite__writer`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1null`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1output__range_1_1sentinel`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1precision__adapter`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1width__adapter`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1arg__formatter`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1basic__memory__buffer`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1buffer__range`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1dynamic__formatter`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1format__error`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1format__int`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1arg__formatter__base`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1basic__writer`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1char__specs__checker`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1counting__iterator`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1cstring__type__checker`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1custom__formatter`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1dynamic__specs__handler`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1float__writer`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1format__string__checker`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1int__type__checker`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1is__output__iterator`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1numeric__specs__checker`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1output__range`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1precision__checker`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1specs__checker`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1specs__handler`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1specs__setter`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1truncating__iterator`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1truncating__iterator_3_01OutputIt_00_01std_1_1false__type_01_4`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1truncating__iterator_3_01OutputIt_00_01std_1_1true__type_01_4`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1truncating__iterator__base`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1width__checker`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1system__error`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1u8string__view`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_format_8h_1a86f3ca3294e39208370e5409e0434ddc`
+
+- :ref:`exhale_enum_format_8h_1a5f407a1c9f477e0e5ba0064c604c1d41`
+
+- :ref:`exhale_enum_format_8h_1a81e7555b55783b9bd796e1d2c4945855`
+
+- :ref:`exhale_enum_format_8h_1a4282b2cb31ff8f2d46f4f63338a8e04a`
+
+- :ref:`exhale_enum_format_8h_1a6f27a7abdcf26a320ce28b45ad5e64a2`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_format_8h_1ad0275dd12a67ae19e9855702a5c45ca0`
+
+- :ref:`exhale_function_format_8h_1a5e260e2ec81021723e4d212a7eda6fa6`
+
+- :ref:`exhale_function_format_8h_1ac0de7d2346167f4a94071e4c7a928b87`
+
+- :ref:`exhale_function_format_8h_1a335d9e38b7794b4ee39a8e9fea94abfe`
+
+- :ref:`exhale_function_format_8h_1aedbde95675e30e230e6a69487c972b31`
+
+- :ref:`exhale_function_format_8h_1a4051dc125f06152e43606b5baf7efd02`
+
+- :ref:`exhale_function_format_8h_1aeb1a62c33b24f9a22ac43462b4ca90fa`
+
+- :ref:`exhale_function_format_8h_1a94467edfed3f4574277a704aaed63506`
+
+- :ref:`exhale_function_format_8h_1a6916d21468733765594f9436690e2607`
+
+- :ref:`exhale_function_format_8h_1a3795cee28c1cc2f28bc42b07f05d0f8f`
+
+- :ref:`exhale_function_format_8h_1a6f4cfe6a30cda50a174aa93d892c3962`
+
+- :ref:`exhale_function_format_8h_1ac7162399794713542e185ae32bfc6bd9`
+
+- :ref:`exhale_function_format_8h_1ad2c1ff3178e0866c55cfd62351976fd1`
+
+- :ref:`exhale_function_format_8h_1a9785874cc91a195d939dcaecdafc229e`
+
+- :ref:`exhale_function_format_8h_1a39a86015083f1b191d3fb869e0ec3fe3`
+
+- :ref:`exhale_function_format_8h_1acc93290c53f740c87ef728d9630cbb89`
+
+- :ref:`exhale_function_format_8h_1a1039b11f80c779f29b7dd7594ac15dd2`
+
+- :ref:`exhale_function_format_8h_1a31ced33a20d2bb2f1a6fd393ca9d5d84`
+
+- :ref:`exhale_function_format_8h_1a2ead1137eeb09175e2bbee0f70865e38`
+
+- :ref:`exhale_function_format_8h_1a186e685052a4f13bedfebb7645076c98`
+
+- :ref:`exhale_function_format_8h_1a130600c4e0bff914ca310984702fd3c8`
+
+- :ref:`exhale_function_format_8h_1a545445d4f6bc47abdfff3ba5a8ca5045`
+
+- :ref:`exhale_function_format_8h_1abc53cc3576698055254b3bca72961b04`
+
+- :ref:`exhale_function_format_8h_1aec0714c46aa771534a8832b5464c5543`
+
+- :ref:`exhale_function_format_8h_1ac9cf3fae174d397a686ea3621d31f81a`
+
+- :ref:`exhale_function_format_8h_1a51cedc5f4cdf3a2ff173db7dd950e99e`
+
+- :ref:`exhale_function_format_8h_1a313af374c38be7d376a983ebe72b0651`
+
+- :ref:`exhale_function_format_8h_1a208ad0977dd14782a5d977ae75d45e99`
+
+- :ref:`exhale_function_format_8h_1ab7eb048b963ca664c057c7ab84a9c57f`
+
+- :ref:`exhale_function_format_8h_1a6a680e171e5a89475680e38869100db0`
+
+- :ref:`exhale_function_format_8h_1aaa28b35af7f9566711df86791945eb0c`
+
+- :ref:`exhale_function_format_8h_1a862d7a8f0c3e7b6fff75e07794b670ef`
+
+- :ref:`exhale_function_format_8h_1ab6f696632b55bddc702e0b3b85135f41`
+
+- :ref:`exhale_function_format_8h_1a2f4769bc99e1706697d711da08aecc66`
+
+- :ref:`exhale_function_format_8h_1a17f67e161854fdb16e2fe8dd45ddd202`
+
+- :ref:`exhale_function_format_8h_1a4ccca963f70702eaa8897f9e6e9174f8`
+
+- :ref:`exhale_function_format_8h_1a9f3b63415ad2042cd62c28d5b1809cb7`
+
+- :ref:`exhale_function_format_8h_1af970e7a655442a95ab6e0c0fae0cc560`
+
+- :ref:`exhale_function_format_8h_1af09ac4a9682e471fb03d3006dbca678e`
+
+- :ref:`exhale_function_format_8h_1a12777556cb9aa0aefde30125a249f604`
+
+- :ref:`exhale_function_format_8h_1a79022802c105c4e354f00b1f9ef48d02`
+
+- :ref:`exhale_function_format_8h_1a797be70916ee4822d8d5c552c99ad206`
+
+- :ref:`exhale_function_format_8h_1a267eed66fffa4b9657bbac8a20c90409`
+
+- :ref:`exhale_function_format_8h_1ab75d762aa02b1efd01a93ca0f9ffaf6b`
+
+- :ref:`exhale_function_format_8h_1a3ef35a703a2f48ce8cbec7c53b329da1`
+
+- :ref:`exhale_function_format_8h_1a504a6a50e9e0da5af5712cee58e69fe5`
+
+- :ref:`exhale_function_format_8h_1a22e54cef90f8d6787d6eb0fa95664d55`
+
+- :ref:`exhale_function_format_8h_1a486bd01e2b8f4b9a89696850f1f2676f`
+
+- :ref:`exhale_function_format_8h_1a525148ee5db49900aba4c07234efd6c0`
+
+- :ref:`exhale_function_format_8h_1a88dc3aed53ce8c61516f27074b9e49a6`
+
+- :ref:`exhale_function_format_8h_1a397a48b8ed036a744438fc8bbf25a281`
+
+- :ref:`exhale_function_format_8h_1a60926edcf73466e4390d61a2c4aa1f15`
+
+- :ref:`exhale_function_format_8h_1a4921b79de073714d3336b06a38e99168`
+
+- :ref:`exhale_function_format_8h_1aacf7d0c15bcb950acf56ca587844da5a`
+
+- :ref:`exhale_function_format_8h_1af7e9253d181a50c0ec032afde47b5cc4`
+
+- :ref:`exhale_function_format_8h_1ae8f5f12b5182a25e40a28747859a76a6`
+
+- :ref:`exhale_function_format_8h_1a738c522a4e174cddeef175fd8c9e20e0`
+
+- :ref:`exhale_function_format_8h_1a37f4e4ed9a2e541c47a2dcf8408bc964`
+
+- :ref:`exhale_function_format_8h_1ac8bbfef5491017cfc46f2f0f736c75ef`
+
+- :ref:`exhale_function_format_8h_1a52cf1e4ed99dd0941178ac139bc320cd`
+
+- :ref:`exhale_function_format_8h_1a517cef82c889004de5e6682cf0cdd22d`
+
+- :ref:`exhale_function_format_8h_1a47e092e5f38e4f8878056f7f19fbf213`
+
+- :ref:`exhale_function_format_8h_1ad12f44e705a79bd7efd404d7b31645e8`
+
+- :ref:`exhale_function_format_8h_1a9b40aa68968723f41b3473e3a2217a46`
+
+- :ref:`exhale_function_format_8h_1a13d81af11ed7e6e58ba60083b36043ee`
+
+- :ref:`exhale_function_format_8h_1a55b1d21c4f8fd39eaeb0f9262883ad76`
+
+- :ref:`exhale_function_format_8h_1add099da05beabeac90f003f3ac125e0e`
+
+- :ref:`exhale_function_format_8h_1a3a4f52b0bb8b82b1a02f671e9054f8b3`
+
+- :ref:`exhale_function_format_8h_1a4960ee0b24e202d1a76e64ac0774d8ec`
+
+- :ref:`exhale_function_format_8h_1a0af62c2a8f6cf14cac6c372b547648a4`
+
+- :ref:`exhale_function_format_8h_1ad1d6bccac8aa7a1098b22f4f73ac231a`
+
+- :ref:`exhale_function_format_8h_1a83a871ee37a89d4137879e6e918d1794`
+
+- :ref:`exhale_function_format_8h_1a911a4414d1a2e498e9e853b6c74040e1`
+
+- :ref:`exhale_function_format_8h_1a74044e0b4a51af8fa32e3528a8116c93`
+
+- :ref:`exhale_function_format_8h_1a3964e0f3550377318d45fb679c6f38f4`
+
+- :ref:`exhale_function_format_8h_1a61faf25068cc6ab8e67c385851b1cb17`
+
+- :ref:`exhale_function_format_8h_1ad83d1b27f8183519f08f2a47b6d1cb58`
+
+- :ref:`exhale_function_format_8h_1a952c8ec0961d7cda9489a487bae5da71`
+
+- :ref:`exhale_function_format_8h_1ab184997b46d0b6bd2b8554d1c6180952`
+
+- :ref:`exhale_function_format_8h_1abd4a7010c93763a1761124f9db389866`
+
+- :ref:`exhale_function_format_8h_1a3af8a0ec35115a26364746bebf94e197`
+
+- :ref:`exhale_function_format_8h_1adbdfaa8eda697d59baab6194db6614e9`
+
+- :ref:`exhale_function_format_8h_1a5390498568a724608f8b74d61070b39c`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_format_8h_1a701339e31b08c541a11ed944cc20b856`
+
+- :ref:`exhale_define_format_8h_1a058e2c3eea88d232a1056a0bc6487e37`
+
+- :ref:`exhale_define_format_8h_1af87bd0133efd40a100a5d27980c75f99`
+
+- :ref:`exhale_define_format_8h_1a1be6f36c83755510a646967d340e8493`
+
+- :ref:`exhale_define_format_8h_1a35d4bc2bf717ac7731de7713c54175bb`
+
+- :ref:`exhale_define_format_8h_1a137cd833c17637f6573327878a9dec4c`
+
+- :ref:`exhale_define_format_8h_1a02c8898388e0ae59aab58be14fcd4e05`
+
+- :ref:`exhale_define_format_8h_1a160d3314a3cdbd49e187b75d6ce2a652`
+
+- :ref:`exhale_define_format_8h_1a061a90c1c2008acd7b0161cde41c1a11`
+
+- :ref:`exhale_define_format_8h_1a63af744c9637f08a1e29893868790c90`
+
+- :ref:`exhale_define_format_8h_1a09119ad072f708d17b88704fa898aff0`
+
+- :ref:`exhale_define_format_8h_1af95479747d61199a48588c47ba9081ef`
+
+- :ref:`exhale_define_format_8h_1ad9e2ed6d3b432a04c9622c34a2495304`
+
+- :ref:`exhale_define_format_8h_1a25c2cdf9765d15576333ed86298422c5`
+
+- :ref:`exhale_define_format_8h_1aa06c9479545f2548568d10b697d7be00`
+
+- :ref:`exhale_define_format_8h_1a7c29e7b4a54045f13bd664979804998d`
+
+- :ref:`exhale_define_format_8h_1a66278651d81592645cef28ca33a6ab92`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_format_8h_1a2faeea37943666d7bb5d0f244b343d4c`
+
+- :ref:`exhale_typedef_format_8h_1ade4c240a7fe32a5c38bc5876a86064d8`
+
+- :ref:`exhale_typedef_format_8h_1ac4b65d31fca2c1d3fbeac7d848fa7ad2`
+
+- :ref:`exhale_typedef_format_8h_1a0c240bc0166ebef7d484dc424a90149e`
+
+- :ref:`exhale_typedef_format_8h_1a6f717b66aca7d8744657053249f0e58e`
+
+- :ref:`exhale_typedef_format_8h_1a777b93772229ea2def6c717d4fc4ec7a`
+
+- :ref:`exhale_typedef_format_8h_1a9f56dd4c44ac6615c0b8da0aa6db4adf`
+
+- :ref:`exhale_typedef_format_8h_1af3598e27b41bc149d4d7d40b40264cf0`
+
+- :ref:`exhale_typedef_format_8h_1a0205a529cec421f89fac2e6373bab406`
+
+- :ref:`exhale_typedef_format_8h_1a9fb0b5638f62f4b3b520de50ac23251d`
+
+- :ref:`exhale_typedef_format_8h_1a934ff55276319e5bed6c010c2a9ed3f7`
+
+- :ref:`exhale_typedef_format_8h_1a7694824cd3ed212a6e47ba20dbb672ff`
+
+- :ref:`exhale_typedef_format_8h_1a7f3a90085a16be4d9eb22e9b9ef22f87`
+
+- :ref:`exhale_typedef_format_8h_1a5a96d99e56db082941b1936cbd973436`
+
+- :ref:`exhale_typedef_format_8h_1a15e5cb5f70cf79b7c2ed12a05c9399a1`
+
+- :ref:`exhale_typedef_format_8h_1a70418e0b1e9c5f578d2c991e10bb89a3`
+
+- :ref:`exhale_typedef_format_8h_1ab53fad6ee4dabf5afdf5203cd2364597`
+
+- :ref:`exhale_typedef_format_8h_1a194cd23cbbc52b7346f41ec3ec0759df`
+
+- :ref:`exhale_typedef_format_8h_1ac22ad5a4ca4066f453d20b2a350d47b0`
+
+
+Unions
+------
+
+
+- :ref:`exhale_union_unionfmt_1_1v6_1_1internal_1_1arg__ref_1_1value`
+

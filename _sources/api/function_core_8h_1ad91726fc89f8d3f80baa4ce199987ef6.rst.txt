@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1ad91726fc89f8d3f80baa4ce199987ef6:
+
+Template Function fmt::v6::internal::get_container
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_container(std::back_insert_iterator<Container>)

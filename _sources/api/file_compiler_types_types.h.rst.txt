@@ -1,0 +1,110 @@
+
+.. _file_compiler_types_types.h:
+
+File types.h
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_types>` (``compiler/types``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/types/types.h``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_types_types.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``functional``
+
+- ``map``
+
+- ``string``
+
+- ``util/llvm.h`` (:ref:`file_compiler_util_llvm.h`)
+
+- ``utility``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_lang_expr.h`
+
+- :ref:`file_compiler_lang_func.h`
+
+- :ref:`file_compiler_lang_patterns.h`
+
+- :ref:`file_compiler_lang_seq.h`
+
+- :ref:`file_compiler_lang_var.h`
+
+- :ref:`file_compiler_types_any.h`
+
+- :ref:`file_compiler_types_array.h`
+
+- :ref:`file_compiler_types_base.h`
+
+- :ref:`file_compiler_types_func.h`
+
+- :ref:`file_compiler_types_generic.h`
+
+- :ref:`file_compiler_types_num.h`
+
+- :ref:`file_compiler_types_optional.h`
+
+- :ref:`file_compiler_types_ptr.h`
+
+- :ref:`file_compiler_types_record.h`
+
+- :ref:`file_compiler_types_seq.h`
+
+- :ref:`file_compiler_types_void.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_seq`
+
+- :ref:`namespace_seq__types`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structseq_1_1MagicMethod`
+
+- :ref:`exhale_struct_structseq_1_1MagicOverload`
+
+- :ref:`exhale_struct_structseq_1_1types_1_1VTable`
+
+- :ref:`exhale_class_classseq_1_1types_1_1Type`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_types_8h_1afdd6758aac53b1222176aade671351f1`
+

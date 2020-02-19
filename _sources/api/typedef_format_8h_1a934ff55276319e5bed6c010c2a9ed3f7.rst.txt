@@ -1,0 +1,13 @@
+.. _exhale_typedef_format_8h_1a934ff55276319e5bed6c010c2a9ed3f7:
+
+Typedef fmt::v6::internal::needs_conversion
+===========================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::internal::needs_conversion

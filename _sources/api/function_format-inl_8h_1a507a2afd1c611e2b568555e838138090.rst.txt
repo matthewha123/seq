@@ -1,0 +1,13 @@
+.. _exhale_function_format-inl_8h_1a507a2afd1c611e2b568555e838138090:
+
+Function fmt::v6::internal::count_digits< 4 >
+=============================================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::count_digits< 4 >(internal::fallback_uintptr)

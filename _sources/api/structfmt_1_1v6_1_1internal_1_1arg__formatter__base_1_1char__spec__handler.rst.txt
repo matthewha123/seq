@@ -1,0 +1,31 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__formatter__base_1_1char__spec__handler:
+
+Struct arg_formatter_base::char_spec_handler
+============================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1arg__formatter__base`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ErrorHandler``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::arg_formatter_base::char_spec_handler
+   :members:
+   :protected-members:
+   :undoc-members:

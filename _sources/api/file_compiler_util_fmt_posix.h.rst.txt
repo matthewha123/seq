@@ -1,0 +1,93 @@
+
+.. _file_compiler_util_fmt_posix.h:
+
+File posix.h
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util_fmt>` (``compiler/util/fmt``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/fmt/posix.h``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_fmt_posix.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cerrno``
+
+- ``clocale``
+
+- ``cstddef``
+
+- ``cstdio``
+
+- ``cstdlib``
+
+- ``format.h`` (:ref:`file_compiler_util_fmt_format.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt`
+
+- :ref:`namespace_fmt__v6`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1basic__cstring__view`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1buffered__file`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1error__code`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_posix_8h_1a6fa0773ef89920062fe6ab8b6e3cf337`
+
+- :ref:`exhale_define_posix_8h_1aa693a9f0c55e9b081f1ea5bf04968dd7`
+
+- :ref:`exhale_define_posix_8h_1a9d6790ac79298b8abd2472500422e138`
+
+- :ref:`exhale_define_posix_8h_1a54f7e73fc1fc6ded8358c6339b51bde7`
+
+- :ref:`exhale_define_posix_8h_1acca658935a0993e7cf549b4a5be255a3`
+
+- :ref:`exhale_define_posix_8h_1a4107274242b7f99d9559aabd297f7534`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_posix_8h_1ae842ed76f0ef8c13542cc93818ecfb78`
+
+- :ref:`exhale_typedef_posix_8h_1ab264dddcc47410ea1abe8124ae3c461a`
+

@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1ab0ab26e51f1eacee7bc3b05ba6533598:
+
+Function fmt::v6::internal::get_units< std::pico >
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_units< std::pico >()

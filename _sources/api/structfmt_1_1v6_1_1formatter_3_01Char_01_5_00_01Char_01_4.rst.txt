@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1formatter_3_01Char_01_5_00_01Char_01_4:
+
+Template Struct formatter< Char *, Char >
+=========================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public fmt::v6::formatter< const Char *, Char >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1formatter`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::formatter< Char *, Char >
+   :members:
+   :protected-members:
+   :undoc-members:

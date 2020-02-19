@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1ad6faeb49ff12a11360a24829dcd0dbb0:
+
+Template Function fmt::v6::visit_format_arg
+===========================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::visit_format_arg(Visitor&&, const basic_format_arg<Context>&)

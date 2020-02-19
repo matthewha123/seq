@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Struct formatting_tuple &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct accumulator" href="structfmt_1_1v6_1_1internal_1_1accumulator.html" />
+    <link rel="prev" title="Template Struct formatting_range" href="structfmt_1_1v6_1_1formatting__range.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Struct formatting_tuple</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/structfmt_1_1v6_1_1formatting__tuple.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-struct-formatting-tuple">
+<span id="exhale-struct-structfmt-1-1v6-1-1formatting-tuple"></span><h1>Template Struct formatting_tuple<a class="headerlink" href="#template-struct-formatting-tuple" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_ranges.h.html#file-compiler-util-fmt-ranges-h"><span class="std std-ref">File ranges.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">fmt::v6::formatting_base&lt;</span> <span class="pre">Char</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="structfmt_1_1v6_1_1formatting__base.html#exhale-struct-structfmt-1-1v6-1-1formatting-base"><span class="std std-ref">Template Struct formatting_base</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I00EN3fmt2v616formatting_tupleE">
+<span id="_CPPv3I00EN3fmt2v616formatting_tupleE"></span><span id="_CPPv2I00EN3fmt2v616formatting_tupleE"></span><span class="target" id="structfmt_1_1v6_1_1formatting__tuple"></span>template&lt;typename <code class="sig-name descname">Char</code>, typename <code class="sig-name descname">Enable</code> = void&gt;<br /><em class="property">struct </em><code class="sig-name descname">formatting_tuple</code> : <em class="property">public</em> fmt::v6::formatting_base&lt;<a class="reference internal" href="#_CPPv4I00EN3fmt2v616formatting_tupleE" title="fmt::v6::formatting_tuple::Char">Char</a>&gt;<a class="headerlink" href="#_CPPv4I00EN3fmt2v616formatting_tupleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v616formatting_tuple16formatting_tupleEv">
+<span id="_CPPv3N3fmt2v616formatting_tuple16formatting_tupleEv"></span><span id="_CPPv2N3fmt2v616formatting_tuple16formatting_tupleEv"></span><span id="fmt::v6::formatting_tuple::formatting_tuple"></span><span class="target" id="structfmt_1_1v6_1_1formatting__tuple_1ad7e6e2e8334d2e572384367503b47c6b"></span><code class="sig-name descname">formatting_tuple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v616formatting_tuple16formatting_tupleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N3fmt2v616formatting_tuple6prefixE">
+<span id="_CPPv3N3fmt2v616formatting_tuple6prefixE"></span><span id="_CPPv2N3fmt2v616formatting_tuple6prefixE"></span><span id="fmt::v6::formatting_tuple::prefix__Char"></span><span class="target" id="structfmt_1_1v6_1_1formatting__tuple_1ac5a3002b8bd022ee9d92fa8516d8a605"></span>Char <code class="sig-name descname">prefix</code><a class="headerlink" href="#_CPPv4N3fmt2v616formatting_tuple6prefixE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v616formatting_tuple9delimiterE">
+<span id="_CPPv3N3fmt2v616formatting_tuple9delimiterE"></span><span id="_CPPv2N3fmt2v616formatting_tuple9delimiterE"></span><span id="fmt::v6::formatting_tuple::delimiter__Char"></span><span class="target" id="structfmt_1_1v6_1_1formatting__tuple_1a5b54eeedf19490edad87ad319de45010"></span>Char <code class="sig-name descname">delimiter</code><a class="headerlink" href="#_CPPv4N3fmt2v616formatting_tuple9delimiterE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v616formatting_tuple7postfixE">
+<span id="_CPPv3N3fmt2v616formatting_tuple7postfixE"></span><span id="_CPPv2N3fmt2v616formatting_tuple7postfixE"></span><span id="fmt::v6::formatting_tuple::postfix__Char"></span><span class="target" id="structfmt_1_1v6_1_1formatting__tuple_1aec1087bb01009b611f0312e3c5b5c052"></span>Char <code class="sig-name descname">postfix</code><a class="headerlink" href="#_CPPv4N3fmt2v616formatting_tuple7postfixE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Attributes</p>
+<dl class="member">
+<dt id="_CPPv4N3fmt2v616formatting_tuple20add_delimiter_spacesE">
+<span id="_CPPv3N3fmt2v616formatting_tuple20add_delimiter_spacesE"></span><span id="_CPPv2N3fmt2v616formatting_tuple20add_delimiter_spacesE"></span><span id="fmt::v6::formatting_tuple::add_delimiter_spaces__bC"></span><span class="target" id="structfmt_1_1v6_1_1formatting__tuple_1a3c1b58a348025adc63d929ca267fd879"></span><em class="property">const</em> bool <code class="sig-name descname">add_delimiter_spaces</code> = true<a class="headerlink" href="#_CPPv4N3fmt2v616formatting_tuple20add_delimiter_spacesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v616formatting_tuple20add_prepostfix_spaceE">
+<span id="_CPPv3N3fmt2v616formatting_tuple20add_prepostfix_spaceE"></span><span id="_CPPv2N3fmt2v616formatting_tuple20add_prepostfix_spaceE"></span><span id="fmt::v6::formatting_tuple::add_prepostfix_space__bC"></span><span class="target" id="structfmt_1_1v6_1_1formatting__tuple_1ac92909fd2a545f741d557c4e16fee536"></span><em class="property">const</em> bool <code class="sig-name descname">add_prepostfix_space</code> = false<a class="headerlink" href="#_CPPv4N3fmt2v616formatting_tuple20add_prepostfix_spaceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1accumulator.html" class="btn btn-neutral float-right" title="Struct accumulator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structfmt_1_1v6_1_1formatting__range.html" class="btn btn-neutral float-left" title="Template Struct formatting_range" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

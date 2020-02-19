@@ -1,0 +1,13 @@
+.. _exhale_typedef_core_8h_1a39869f9f5461e912512bf02c30346864:
+
+Typedef fmt::v6::bool_constant
+==============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::bool_constant

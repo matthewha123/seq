@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1dynamic__format__specs:
+
+Template Struct dynamic_format_specs
+====================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public fmt::v6::basic_format_specs< Char >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1basic__format__specs`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::dynamic_format_specs
+   :members:
+   :protected-members:
+   :undoc-members:

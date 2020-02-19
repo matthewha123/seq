@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Class basic_writer &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class bigint" href="classfmt_1_1v6_1_1internal_1_1bigint.html" />
+    <link rel="prev" title="Template Class arg_map" href="classfmt_1_1v6_1_1internal_1_1arg__map.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Class basic_writer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1internal_1_1basic__writer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-class-basic-writer">
+<span id="exhale-class-classfmt-1-1v6-1-1internal-1-1basic-writer"></span><h1>Template Class basic_writer<a class="headerlink" href="#template-class-basic-writer" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1int-writer"><span class="std std-ref">Template Struct basic_writer::int_writer</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1bin__writer.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1int-writer-1-1bin-writer"><span class="std std-ref">Template Struct int_writer::bin_writer</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1dec__writer.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1int-writer-1-1dec-writer"><span class="std std-ref">Struct int_writer::dec_writer</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1hex__writer.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1int-writer-1-1hex-writer"><span class="std std-ref">Struct int_writer::hex_writer</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1int-writer-1-1num-writer"><span class="std std-ref">Struct int_writer::num_writer</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1padded__int__writer.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1padded-int-writer"><span class="std std-ref">Template Struct basic_writer::padded_int_writer</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1pointer__writer.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1pointer-writer"><span class="std std-ref">Template Struct basic_writer::pointer_writer</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1str__writer.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1str-writer"><span class="std std-ref">Template Struct basic_writer::str_writer</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0EN3fmt2v68internal12basic_writerE">
+<span id="_CPPv3I0EN3fmt2v68internal12basic_writerE"></span><span id="_CPPv2I0EN3fmt2v68internal12basic_writerE"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer"></span>template&lt;typename <code class="sig-name descname">Range</code>&gt;<br /><em class="property">class </em><code class="sig-name descname">basic_writer</code><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal12basic_writerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal12basic_writerI5RangeE9char_typeE">
+<span id="_CPPv3IEN3fmt2v68internal12basic_writerI5RangeE9char_typeE"></span><span id="_CPPv2IEN3fmt2v68internal12basic_writerI5RangeE9char_typeE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1aaa953eb9073900a8e1c9ae8a1cdda699"></span><em class="property">using </em><code class="sig-name descname">char_type</code> = <em class="property">typename</em> Range::value_type<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal12basic_writerI5RangeE9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal12basic_writerI5RangeE8iteratorE">
+<span id="_CPPv3IEN3fmt2v68internal12basic_writerI5RangeE8iteratorE"></span><span id="_CPPv2IEN3fmt2v68internal12basic_writerI5RangeE8iteratorE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a30305bb7c4b680624cb6813016d5a2ee"></span><em class="property">using </em><code class="sig-name descname">iterator</code> = <em class="property">typename</em> Range::iterator<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal12basic_writerI5RangeE8iteratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal12basic_writerI5RangeE12format_specsE">
+<span id="_CPPv3IEN3fmt2v68internal12basic_writerI5RangeE12format_specsE"></span><span id="_CPPv2IEN3fmt2v68internal12basic_writerI5RangeE12format_specsE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a6f33a3a31365adcabe110fad7e2ab5ae"></span><em class="property">using </em><code class="sig-name descname">format_specs</code> = basic_format_specs&lt;<a class="reference internal" href="#_CPPv4IEN3fmt2v68internal12basic_writerI5RangeE9char_typeE" title="fmt::v6::internal::basic_writer&lt;Range&gt;::char_type">char_type</a>&gt;<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal12basic_writerI5RangeE12format_specsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer12basic_writerE5Range10locale_ref">
+<span id="_CPPv3N3fmt2v68internal12basic_writer12basic_writerE5Range10locale_ref"></span><span id="_CPPv2N3fmt2v68internal12basic_writer12basic_writerE5Range10locale_ref"></span><span id="fmt::v6::internal::basic_writer::basic_writer__Range.locale_ref"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1ab0b99bd699255251a19f98353f06613f"></span><code class="sig-name descname">basic_writer</code><span class="sig-paren">(</span>Range <em>out</em>, <a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1locale__ref.html#_CPPv4N3fmt2v68internal10locale_refE" title="fmt::v6::internal::locale_ref">locale_ref</a> <em>loc</em> = <a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1locale__ref.html#_CPPv4N3fmt2v68internal10locale_refE" title="fmt::v6::internal::locale_ref">locale_ref</a>()<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer12basic_writerE5Range10locale_ref" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal12basic_writer3outEv">
+<span id="_CPPv3NK3fmt2v68internal12basic_writer3outEv"></span><span id="_CPPv2NK3fmt2v68internal12basic_writer3outEv"></span><span id="fmt::v6::internal::basic_writer::outC"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1ad74e46d4182d2b02f1953e2f387a0470"></span>iterator <code class="sig-name descname">out</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal12basic_writer3outEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0EN3fmt2v68internal12basic_writer12write_paddedEvRK12format_specsRR1F">
+<span id="_CPPv3I0EN3fmt2v68internal12basic_writer12write_paddedERK12format_specsRR1F"></span><span id="_CPPv2I0EN3fmt2v68internal12basic_writer12write_paddedERK12format_specsRR1F"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a4ad2c1fb34ad12b722274921a9bf1b5a"></span>template&lt;typename <code class="sig-name descname">F</code>&gt;<br />void <code class="sig-name descname">write_padded</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="typedef_format_8h_1a6f717b66aca7d8744657053249f0e58e.html#_CPPv4N3fmt2v612format_specsE" title="fmt::v6::format_specs">format_specs</a> &amp;<em>specs</em>, <a class="reference internal" href="#_CPPv4I0EN3fmt2v68internal12basic_writer12write_paddedEvRK12format_specsRR1F" title="fmt::v6::internal::basic_writer::write_padded::F">F</a> &amp;&amp;<em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal12basic_writer12write_paddedEvRK12format_specsRR1F" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer5writeEi">
+<span id="_CPPv3N3fmt2v68internal12basic_writer5writeEi"></span><span id="_CPPv2N3fmt2v68internal12basic_writer5writeEi"></span><span id="fmt::v6::internal::basic_writer::write__i"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1ab837aca80ae2e98cd2056608cfdef792"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span>int <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer5writeEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer5writeEl">
+<span id="_CPPv3N3fmt2v68internal12basic_writer5writeEl"></span><span id="_CPPv2N3fmt2v68internal12basic_writer5writeEl"></span><span id="fmt::v6::internal::basic_writer::write__l"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a8ecc90ab75cbdc9b298547b29c2c262e"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span>long <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer5writeEl" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer5writeEx">
+<span id="_CPPv3N3fmt2v68internal12basic_writer5writeEx"></span><span id="_CPPv2N3fmt2v68internal12basic_writer5writeEx"></span><span id="fmt::v6::internal::basic_writer::write__l-l"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a685d8a3ebe8ff35601638edea57036d8"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span>long long <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer5writeEx" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer5writeEj">
+<span id="_CPPv3N3fmt2v68internal12basic_writer5writeEj"></span><span id="_CPPv2N3fmt2v68internal12basic_writer5writeEj"></span><span id="fmt::v6::internal::basic_writer::write__unsigned"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a72ca4a3aa6487ec692481567e3f6f4cb"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span>unsigned <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer5writeEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer5writeEm">
+<span id="_CPPv3N3fmt2v68internal12basic_writer5writeEm"></span><span id="_CPPv2N3fmt2v68internal12basic_writer5writeEm"></span><span id="fmt::v6::internal::basic_writer::write__unsigned-l"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a9453dd8077b78e99ead9add48866c34a"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span>unsigned long <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer5writeEm" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer5writeEy">
+<span id="_CPPv3N3fmt2v68internal12basic_writer5writeEy"></span><span id="_CPPv2N3fmt2v68internal12basic_writer5writeEy"></span><span id="fmt::v6::internal::basic_writer::write__unsigned-l-l"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1af5964afa1050145849e346ac16791e45"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span>unsigned long long <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer5writeEy" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I00EN3fmt2v68internal12basic_writer9write_intEv1TRK4Spec">
+<span id="_CPPv3I00EN3fmt2v68internal12basic_writer9write_intE1TRK4Spec"></span><span id="_CPPv2I00EN3fmt2v68internal12basic_writer9write_intE1TRK4Spec"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a7fd1cb7d09f882e4dd2da4ae72d2ad28"></span>template&lt;typename <code class="sig-name descname">T</code>, typename <code class="sig-name descname">Spec</code>&gt;<br />void <code class="sig-name descname">write_int</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00EN3fmt2v68internal12basic_writer9write_intEv1TRK4Spec" title="fmt::v6::internal::basic_writer::write_int::T">T</a> <em>value</em>, <em class="property">const</em> <a class="reference internal" href="#_CPPv4I00EN3fmt2v68internal12basic_writer9write_intEv1TRK4Spec" title="fmt::v6::internal::basic_writer::write_int::Spec">Spec</a> &amp;<em>spec</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I00EN3fmt2v68internal12basic_writer9write_intEv1TRK4Spec" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v68internal12basic_writer5writeEv1T12format_specs">
+<span id="_CPPv3I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v68internal12basic_writer5writeE1T12format_specs"></span><span id="_CPPv2I0_11enable_if_tIX(std::is_floating_point<T>::value)EiEEN3fmt2v68internal12basic_writer5writeE1T12format_specs"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1ab623a92b1471d3f011b1852ae210eb21"></span>template&lt;typename <code class="sig-name descname">T</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(std::is_floating_point&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v68internal12basic_writer5writeEv1T12format_specs" title="fmt::v6::internal::basic_writer::write::T">T</a>&gt;::value), int&gt; = 0&gt;<br />void <code class="sig-name descname">write</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v68internal12basic_writer5writeEv1T12format_specs" title="fmt::v6::internal::basic_writer::write::T">T</a> <em>value</em>, <a class="reference internal" href="typedef_format_8h_1a6f717b66aca7d8744657053249f0e58e.html#_CPPv4N3fmt2v612format_specsE" title="fmt::v6::format_specs">format_specs</a> <em>specs</em> = {}<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXNSt17is_floating_pointI1TE5valueEEiEEN3fmt2v68internal12basic_writer5writeEv1T12format_specs" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer5writeEc">
+<span id="_CPPv3N3fmt2v68internal12basic_writer5writeEc"></span><span id="_CPPv2N3fmt2v68internal12basic_writer5writeEc"></span><span id="fmt::v6::internal::basic_writer::write__c"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a053216d48468eacfb1344b59b23f7e8d"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span>char <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer5writeEc" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXNSt7is_sameI4Char9char_typeE5valueEEiEEN3fmt2v68internal12basic_writer5writeEv4Char">
+<span id="_CPPv3I0_11enable_if_tIXNSt7is_sameI4Char9char_typeE5valueEEiEEN3fmt2v68internal12basic_writer5writeE4Char"></span><span id="_CPPv2I0_11enable_if_tIX(std::is_same<Char, char_type>::value)EiEEN3fmt2v68internal12basic_writer5writeE4Char"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1ad3e14a3964d276edb96b0c35bdef4545"></span>template&lt;typename <code class="sig-name descname">Char</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(std::is_same&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXNSt7is_sameI4Char9char_typeE5valueEEiEEN3fmt2v68internal12basic_writer5writeEv4Char" title="fmt::v6::internal::basic_writer::write::Char">Char</a>, <a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt;::value), int&gt; = 0&gt;<br />void <code class="sig-name descname">write</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0_11enable_if_tIXNSt7is_sameI4Char9char_typeE5valueEEiEEN3fmt2v68internal12basic_writer5writeEv4Char" title="fmt::v6::internal::basic_writer::write::Char">Char</a> <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXNSt7is_sameI4Char9char_typeE5valueEEiEEN3fmt2v68internal12basic_writer5writeEv4Char" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer5writeE11string_view">
+<span id="_CPPv3N3fmt2v68internal12basic_writer5writeE11string_view"></span><span id="_CPPv2N3fmt2v68internal12basic_writer5writeE11string_view"></span><span id="fmt::v6::internal::basic_writer::write__string_view"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1aeb02eb89fde7984c4687577c85ad613c"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span><a class="reference internal" href="typedef_core_8h_1a4074f7ef8c37b344ef1f77ebe1c7d724.html#_CPPv4N3fmt2v611string_viewE" title="fmt::v6::string_view">string_view</a> <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer5writeE11string_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer5writeE12wstring_view">
+<span id="_CPPv3N3fmt2v68internal12basic_writer5writeE12wstring_view"></span><span id="_CPPv2N3fmt2v68internal12basic_writer5writeE12wstring_view"></span><span id="fmt::v6::internal::basic_writer::write__wstring_view"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1ab2e74e5519d6d62357d1c3de4e93f189"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span><a class="reference internal" href="typedef_core_8h_1ab712bf58293acbb6a430130a8bc5a3af.html#_CPPv4N3fmt2v612wstring_viewE" title="fmt::v6::wstring_view">wstring_view</a> <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal12basic_writer5writeE12wstring_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0EN3fmt2v68internal12basic_writer5writeEvPK4CharNSt6size_tERK12format_specs">
+<span id="_CPPv3I0EN3fmt2v68internal12basic_writer5writeEPK4CharNSt6size_tERK12format_specs"></span><span id="_CPPv2I0EN3fmt2v68internal12basic_writer5writeEPK4CharNSt6size_tERK12format_specs"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1ad357401e0e95ebba6b5a4d4eee218c63"></span>template&lt;typename <code class="sig-name descname">Char</code>&gt;<br />void <code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0EN3fmt2v68internal12basic_writer5writeEvPK4CharNSt6size_tERK12format_specs" title="fmt::v6::internal::basic_writer::write::Char">Char</a> *<em>s</em>, std::size_t <em>size</em>, <em class="property">const</em> <a class="reference internal" href="typedef_format_8h_1a6f717b66aca7d8744657053249f0e58e.html#_CPPv4N3fmt2v612format_specsE" title="fmt::v6::format_specs">format_specs</a> &amp;<em>specs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal12basic_writer5writeEvPK4CharNSt6size_tERK12format_specs" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0EN3fmt2v68internal12basic_writer5writeEv17basic_string_viewI4CharERK12format_specs">
+<span id="_CPPv3I0EN3fmt2v68internal12basic_writer5writeE17basic_string_viewI4CharERK12format_specs"></span><span id="_CPPv2I0EN3fmt2v68internal12basic_writer5writeE17basic_string_viewI4CharERK12format_specs"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1add96c34e8b3af26e74414c9bedddf7cb"></span>template&lt;typename <code class="sig-name descname">Char</code>&gt;<br />void <code class="sig-name descname">write</code><span class="sig-paren">(</span>basic_string_view&lt;<a class="reference internal" href="#_CPPv4I0EN3fmt2v68internal12basic_writer5writeEvPK4CharNSt6size_tERK12format_specs" title="fmt::v6::internal::basic_writer::write::Char">Char</a>&gt; <em>s</em>, <em class="property">const</em> <a class="reference internal" href="typedef_format_8h_1a6f717b66aca7d8744657053249f0e58e.html#_CPPv4N3fmt2v612format_specsE" title="fmt::v6::format_specs">format_specs</a> &amp;<em>specs</em> = {}<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal12basic_writer5writeEv17basic_string_viewI4CharERK12format_specs" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0EN3fmt2v68internal12basic_writer13write_pointerEv7UIntPtrPK12format_specs">
+<span id="_CPPv3I0EN3fmt2v68internal12basic_writer13write_pointerE7UIntPtrPK12format_specs"></span><span id="_CPPv2I0EN3fmt2v68internal12basic_writer13write_pointerE7UIntPtrPK12format_specs"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1basic__writer_1a0c906fdb3f4773ea4fdc751d9ad90bc5"></span>template&lt;typename <code class="sig-name descname">UIntPtr</code>&gt;<br />void <code class="sig-name descname">write_pointer</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0EN3fmt2v68internal12basic_writer13write_pointerEv7UIntPtrPK12format_specs" title="fmt::v6::internal::basic_writer::write_pointer::UIntPtr">UIntPtr</a> <em>value</em>, <em class="property">const</em> <a class="reference internal" href="typedef_format_8h_1a6f717b66aca7d8744657053249f0e58e.html#_CPPv4N3fmt2v612format_specsE" title="fmt::v6::format_specs">format_specs</a> *<em>specs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal12basic_writer13write_pointerEv7UIntPtrPK12format_specs" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1bigint.html" class="btn btn-neutral float-right" title="Class bigint" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1arg__map.html" class="btn btn-neutral float-left" title="Template Class arg_map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

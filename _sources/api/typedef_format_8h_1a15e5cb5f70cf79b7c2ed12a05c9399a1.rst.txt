@@ -1,0 +1,13 @@
+.. _exhale_typedef_format_8h_1a15e5cb5f70cf79b7c2ed12a05c9399a1:
+
+Typedef fmt::v6::memory_buffer
+==============================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::memory_buffer

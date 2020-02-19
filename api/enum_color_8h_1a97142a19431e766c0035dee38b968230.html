@@ -1,0 +1,939 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Enum color &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Enum emphasis" href="enum_color_8h_1acd17a9ababc03055ca24785a0bf8c607.html" />
+    <link rel="prev" title="Enum char8_t" href="enum_core_8h_1af08163c436ba67207a745daffa225bfb.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Enum color</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/enum_color_8h_1a97142a19431e766c0035dee38b968230.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="enum-color">
+<span id="exhale-enum-color-8h-1a97142a19431e766c0035dee38b968230"></span><h1>Enum color<a class="headerlink" href="#enum-color" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_color.h.html#file-compiler-util-fmt-color-h"><span class="std std-ref">File color.h</span></a></p></li>
+</ul>
+<div class="section" id="enum-documentation">
+<h2>Enum Documentation<a class="headerlink" href="#enum-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="enum">
+<dt id="_CPPv4N3fmt2v65colorE">
+<span id="_CPPv3N3fmt2v65colorE"></span><span id="_CPPv2N3fmt2v65colorE"></span><span class="target" id="color_8h_1a97142a19431e766c0035dee38b968230"></span><em class="property">enum </em><code class="sig-prename descclassname">fmt::v6<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">color</code><a class="headerlink" href="#_CPPv4N3fmt2v65colorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610alice_blueE">
+<span id="_CPPv3N3fmt2v610alice_blueE"></span><span id="_CPPv2N3fmt2v610alice_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a6d65173999078f89f8d4e01036aea8a4"></span><code class="sig-name descname">alice_blue</code> = 0xF0F8FF<a class="headerlink" href="#_CPPv4N3fmt2v610alice_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v613antique_whiteE">
+<span id="_CPPv3N3fmt2v613antique_whiteE"></span><span id="_CPPv2N3fmt2v613antique_whiteE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a5478409977d30af9f13744df6850c5ac"></span><code class="sig-name descname">antique_white</code> = 0xFAEBD7<a class="headerlink" href="#_CPPv4N3fmt2v613antique_whiteE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64aquaE">
+<span id="_CPPv3N3fmt2v64aquaE"></span><span id="_CPPv2N3fmt2v64aquaE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a65cb59645b852c2394ba3ff8b295e83c"></span><code class="sig-name descname">aqua</code> = 0x00FFFF<a class="headerlink" href="#_CPPv4N3fmt2v64aquaE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610aquamarineE">
+<span id="_CPPv3N3fmt2v610aquamarineE"></span><span id="_CPPv2N3fmt2v610aquamarineE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a39d8e1a1a14670b0a3be357c318867ac"></span><code class="sig-name descname">aquamarine</code> = 0x7FFFD4<a class="headerlink" href="#_CPPv4N3fmt2v610aquamarineE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65azureE">
+<span id="_CPPv3N3fmt2v65azureE"></span><span id="_CPPv2N3fmt2v65azureE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230acf04a02e37b774fc311a48f605c3c597"></span><code class="sig-name descname">azure</code> = 0xF0FFFF<a class="headerlink" href="#_CPPv4N3fmt2v65azureE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65beigeE">
+<span id="_CPPv3N3fmt2v65beigeE"></span><span id="_CPPv2N3fmt2v65beigeE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230aefc5f4b470619b932aed03953e50ce60"></span><code class="sig-name descname">beige</code> = 0xF5F5DC<a class="headerlink" href="#_CPPv4N3fmt2v65beigeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66bisqueE">
+<span id="_CPPv3N3fmt2v66bisqueE"></span><span id="_CPPv2N3fmt2v66bisqueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ac7357031b08389007e6da9f56ea145e0"></span><code class="sig-name descname">bisque</code> = 0xFFE4C4<a class="headerlink" href="#_CPPv4N3fmt2v66bisqueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65blackE">
+<span id="_CPPv3N3fmt2v65blackE"></span><span id="_CPPv2N3fmt2v65blackE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a1ffd9e753c8054cc61456ac7fac1ac89"></span><code class="sig-name descname">black</code> = 0x000000<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v615blanched_almondE">
+<span id="_CPPv3N3fmt2v615blanched_almondE"></span><span id="_CPPv2N3fmt2v615blanched_almondE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a7fbe63cdab154c0227420b368fcaea3d"></span><code class="sig-name descname">blanched_almond</code> = 0xFFEBCD<a class="headerlink" href="#_CPPv4N3fmt2v615blanched_almondE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64blueE">
+<span id="_CPPv3N3fmt2v64blueE"></span><span id="_CPPv2N3fmt2v64blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a48d6215903dff56238e52e8891380c8f"></span><code class="sig-name descname">blue</code> = 0x0000FF<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611blue_violetE">
+<span id="_CPPv3N3fmt2v611blue_violetE"></span><span id="_CPPv2N3fmt2v611blue_violetE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a25d876582c42c77bd9fe6c152f88a752"></span><code class="sig-name descname">blue_violet</code> = 0x8A2BE2<a class="headerlink" href="#_CPPv4N3fmt2v611blue_violetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65brownE">
+<span id="_CPPv3N3fmt2v65brownE"></span><span id="_CPPv2N3fmt2v65brownE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a6ff47afa5dc7daa42cc705a03fca8a9b"></span><code class="sig-name descname">brown</code> = 0xA52A2A<a class="headerlink" href="#_CPPv4N3fmt2v65brownE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610burly_woodE">
+<span id="_CPPv3N3fmt2v610burly_woodE"></span><span id="_CPPv2N3fmt2v610burly_woodE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad238c6c8a44f8e1933911fe10de064f7"></span><code class="sig-name descname">burly_wood</code> = 0xDEB887<a class="headerlink" href="#_CPPv4N3fmt2v610burly_woodE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610cadet_blueE">
+<span id="_CPPv3N3fmt2v610cadet_blueE"></span><span id="_CPPv2N3fmt2v610cadet_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a068e93b58ca276fdd6337535386b0a78"></span><code class="sig-name descname">cadet_blue</code> = 0x5F9EA0<a class="headerlink" href="#_CPPv4N3fmt2v610cadet_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610chartreuseE">
+<span id="_CPPv3N3fmt2v610chartreuseE"></span><span id="_CPPv2N3fmt2v610chartreuseE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a3efea3cccdbed48be1f1db03de4fa20e"></span><code class="sig-name descname">chartreuse</code> = 0x7FFF00<a class="headerlink" href="#_CPPv4N3fmt2v610chartreuseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69chocolateE">
+<span id="_CPPv3N3fmt2v69chocolateE"></span><span id="_CPPv2N3fmt2v69chocolateE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ac378985d629e99a4e86213db0cd5e70d"></span><code class="sig-name descname">chocolate</code> = 0xD2691E<a class="headerlink" href="#_CPPv4N3fmt2v69chocolateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65coralE">
+<span id="_CPPv3N3fmt2v65coralE"></span><span id="_CPPv2N3fmt2v65coralE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad2ebed4eaf58509dcc358e1782c38fea"></span><code class="sig-name descname">coral</code> = 0xFF7F50<a class="headerlink" href="#_CPPv4N3fmt2v65coralE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v615cornflower_blueE">
+<span id="_CPPv3N3fmt2v615cornflower_blueE"></span><span id="_CPPv2N3fmt2v615cornflower_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230abc432826c5179d5332c28e32f2ff58a0"></span><code class="sig-name descname">cornflower_blue</code> = 0x6495ED<a class="headerlink" href="#_CPPv4N3fmt2v615cornflower_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68cornsilkE">
+<span id="_CPPv3N3fmt2v68cornsilkE"></span><span id="_CPPv2N3fmt2v68cornsilkE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230aea26b11983535b3792d71954aa4d41d8"></span><code class="sig-name descname">cornsilk</code> = 0xFFF8DC<a class="headerlink" href="#_CPPv4N3fmt2v68cornsilkE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v67crimsonE">
+<span id="_CPPv3N3fmt2v67crimsonE"></span><span id="_CPPv2N3fmt2v67crimsonE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a5fa3ccc64c973db27e9fcade0810423e"></span><code class="sig-name descname">crimson</code> = 0xDC143C<a class="headerlink" href="#_CPPv4N3fmt2v67crimsonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64cyanE">
+<span id="_CPPv3N3fmt2v64cyanE"></span><span id="_CPPv2N3fmt2v64cyanE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a6411532ba4971f378391776a9db629d3"></span><code class="sig-name descname">cyan</code> = 0x00FFFF<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69dark_blueE">
+<span id="_CPPv3N3fmt2v69dark_blueE"></span><span id="_CPPv2N3fmt2v69dark_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a27e3a57f752eac25c69739545fccef73"></span><code class="sig-name descname">dark_blue</code> = 0x00008B<a class="headerlink" href="#_CPPv4N3fmt2v69dark_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69dark_cyanE">
+<span id="_CPPv3N3fmt2v69dark_cyanE"></span><span id="_CPPv2N3fmt2v69dark_cyanE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230abfa3108ee9c64dae693a704959e2c25e"></span><code class="sig-name descname">dark_cyan</code> = 0x008B8B<a class="headerlink" href="#_CPPv4N3fmt2v69dark_cyanE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v615dark_golden_rodE">
+<span id="_CPPv3N3fmt2v615dark_golden_rodE"></span><span id="_CPPv2N3fmt2v615dark_golden_rodE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a9047140da3bd5d20676eb94102443e5a"></span><code class="sig-name descname">dark_golden_rod</code> = 0xB8860B<a class="headerlink" href="#_CPPv4N3fmt2v615dark_golden_rodE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69dark_grayE">
+<span id="_CPPv3N3fmt2v69dark_grayE"></span><span id="_CPPv2N3fmt2v69dark_grayE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a49dba686026a18435dd23b5e83eb5cfd"></span><code class="sig-name descname">dark_gray</code> = 0xA9A9A9<a class="headerlink" href="#_CPPv4N3fmt2v69dark_grayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610dark_greenE">
+<span id="_CPPv3N3fmt2v610dark_greenE"></span><span id="_CPPv2N3fmt2v610dark_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a609a1b0e5d49d6de91c649fa962e545d"></span><code class="sig-name descname">dark_green</code> = 0x006400<a class="headerlink" href="#_CPPv4N3fmt2v610dark_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610dark_khakiE">
+<span id="_CPPv3N3fmt2v610dark_khakiE"></span><span id="_CPPv2N3fmt2v610dark_khakiE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ae21cb3066a44318e0b096d0d9e010f09"></span><code class="sig-name descname">dark_khaki</code> = 0xBDB76B<a class="headerlink" href="#_CPPv4N3fmt2v610dark_khakiE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612dark_magentaE">
+<span id="_CPPv3N3fmt2v612dark_magentaE"></span><span id="_CPPv2N3fmt2v612dark_magentaE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230aa1876a44fe9d3e277e5a90a14fd1d375"></span><code class="sig-name descname">dark_magenta</code> = 0x8B008B<a class="headerlink" href="#_CPPv4N3fmt2v612dark_magentaE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v616dark_olive_greenE">
+<span id="_CPPv3N3fmt2v616dark_olive_greenE"></span><span id="_CPPv2N3fmt2v616dark_olive_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ab88072f7e28a64cfd1a36370be8450bb"></span><code class="sig-name descname">dark_olive_green</code> = 0x556B2F<a class="headerlink" href="#_CPPv4N3fmt2v616dark_olive_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611dark_orangeE">
+<span id="_CPPv3N3fmt2v611dark_orangeE"></span><span id="_CPPv2N3fmt2v611dark_orangeE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230aaac43a86b5d19ed2ff0aefa6b0758fe3"></span><code class="sig-name descname">dark_orange</code> = 0xFF8C00<a class="headerlink" href="#_CPPv4N3fmt2v611dark_orangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611dark_orchidE">
+<span id="_CPPv3N3fmt2v611dark_orchidE"></span><span id="_CPPv2N3fmt2v611dark_orchidE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a5afa2a600463278912509f72d9d18ba3"></span><code class="sig-name descname">dark_orchid</code> = 0x9932CC<a class="headerlink" href="#_CPPv4N3fmt2v611dark_orchidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68dark_redE">
+<span id="_CPPv3N3fmt2v68dark_redE"></span><span id="_CPPv2N3fmt2v68dark_redE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a9c2398f188d23be4d9676cadf1c2909f"></span><code class="sig-name descname">dark_red</code> = 0x8B0000<a class="headerlink" href="#_CPPv4N3fmt2v68dark_redE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611dark_salmonE">
+<span id="_CPPv3N3fmt2v611dark_salmonE"></span><span id="_CPPv2N3fmt2v611dark_salmonE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a541cf8ef71e19f44c9fa646ad9196b3f"></span><code class="sig-name descname">dark_salmon</code> = 0xE9967A<a class="headerlink" href="#_CPPv4N3fmt2v611dark_salmonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v614dark_sea_greenE">
+<span id="_CPPv3N3fmt2v614dark_sea_greenE"></span><span id="_CPPv2N3fmt2v614dark_sea_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a5546cc776b6e0df7f4fe922f02cb6154"></span><code class="sig-name descname">dark_sea_green</code> = 0x8FBC8F<a class="headerlink" href="#_CPPv4N3fmt2v614dark_sea_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v615dark_slate_blueE">
+<span id="_CPPv3N3fmt2v615dark_slate_blueE"></span><span id="_CPPv2N3fmt2v615dark_slate_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a486c9b835e518cd7b0c998ca7a37c893"></span><code class="sig-name descname">dark_slate_blue</code> = 0x483D8B<a class="headerlink" href="#_CPPv4N3fmt2v615dark_slate_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v615dark_slate_grayE">
+<span id="_CPPv3N3fmt2v615dark_slate_grayE"></span><span id="_CPPv2N3fmt2v615dark_slate_grayE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ae707e58e389e4f7cda44cd1254a6d1fc"></span><code class="sig-name descname">dark_slate_gray</code> = 0x2F4F4F<a class="headerlink" href="#_CPPv4N3fmt2v615dark_slate_grayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v614dark_turquoiseE">
+<span id="_CPPv3N3fmt2v614dark_turquoiseE"></span><span id="_CPPv2N3fmt2v614dark_turquoiseE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230af6b3c061d92535983e73d0e6c1b8338c"></span><code class="sig-name descname">dark_turquoise</code> = 0x00CED1<a class="headerlink" href="#_CPPv4N3fmt2v614dark_turquoiseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611dark_violetE">
+<span id="_CPPv3N3fmt2v611dark_violetE"></span><span id="_CPPv2N3fmt2v611dark_violetE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a4b1668d660111fbf3b86b4238b285677"></span><code class="sig-name descname">dark_violet</code> = 0x9400D3<a class="headerlink" href="#_CPPv4N3fmt2v611dark_violetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69deep_pinkE">
+<span id="_CPPv3N3fmt2v69deep_pinkE"></span><span id="_CPPv2N3fmt2v69deep_pinkE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a350b14335681ec97282ca0452dd5e7dc"></span><code class="sig-name descname">deep_pink</code> = 0xFF1493<a class="headerlink" href="#_CPPv4N3fmt2v69deep_pinkE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v613deep_sky_blueE">
+<span id="_CPPv3N3fmt2v613deep_sky_blueE"></span><span id="_CPPv2N3fmt2v613deep_sky_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a384d3f701794afb076dd9e92980bdd91"></span><code class="sig-name descname">deep_sky_blue</code> = 0x00BFFF<a class="headerlink" href="#_CPPv4N3fmt2v613deep_sky_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68dim_grayE">
+<span id="_CPPv3N3fmt2v68dim_grayE"></span><span id="_CPPv2N3fmt2v68dim_grayE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a75435e6bea50867263766b9e5f9bc08d"></span><code class="sig-name descname">dim_gray</code> = 0x696969<a class="headerlink" href="#_CPPv4N3fmt2v68dim_grayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611dodger_blueE">
+<span id="_CPPv3N3fmt2v611dodger_blueE"></span><span id="_CPPv2N3fmt2v611dodger_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a5c090aa7c47fc1b6a05035e07ec9fbb9"></span><code class="sig-name descname">dodger_blue</code> = 0x1E90FF<a class="headerlink" href="#_CPPv4N3fmt2v611dodger_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610fire_brickE">
+<span id="_CPPv3N3fmt2v610fire_brickE"></span><span id="_CPPv2N3fmt2v610fire_brickE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a306cb0ed46dda6adb63820cb57960bb0"></span><code class="sig-name descname">fire_brick</code> = 0xB22222<a class="headerlink" href="#_CPPv4N3fmt2v610fire_brickE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612floral_whiteE">
+<span id="_CPPv3N3fmt2v612floral_whiteE"></span><span id="_CPPv2N3fmt2v612floral_whiteE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a996483b6f227bb90a1a066a4d1d6ce10"></span><code class="sig-name descname">floral_white</code> = 0xFFFAF0<a class="headerlink" href="#_CPPv4N3fmt2v612floral_whiteE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612forest_greenE">
+<span id="_CPPv3N3fmt2v612forest_greenE"></span><span id="_CPPv2N3fmt2v612forest_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a95084a1747e0d0fbdd9cf4de527e93a6"></span><code class="sig-name descname">forest_green</code> = 0x228B22<a class="headerlink" href="#_CPPv4N3fmt2v612forest_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v67fuchsiaE">
+<span id="_CPPv3N3fmt2v67fuchsiaE"></span><span id="_CPPv2N3fmt2v67fuchsiaE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a9f370737a8ad22210a0dd6b1c8f00896"></span><code class="sig-name descname">fuchsia</code> = 0xFF00FF<a class="headerlink" href="#_CPPv4N3fmt2v67fuchsiaE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69gainsboroE">
+<span id="_CPPv3N3fmt2v69gainsboroE"></span><span id="_CPPv2N3fmt2v69gainsboroE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a2ca891b27d02c8a2fea622359be7c4dd"></span><code class="sig-name descname">gainsboro</code> = 0xDCDCDC<a class="headerlink" href="#_CPPv4N3fmt2v69gainsboroE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611ghost_whiteE">
+<span id="_CPPv3N3fmt2v611ghost_whiteE"></span><span id="_CPPv2N3fmt2v611ghost_whiteE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a396d120e4c6a21d1fad9cd2a57802a6c"></span><code class="sig-name descname">ghost_white</code> = 0xF8F8FF<a class="headerlink" href="#_CPPv4N3fmt2v611ghost_whiteE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64goldE">
+<span id="_CPPv3N3fmt2v64goldE"></span><span id="_CPPv2N3fmt2v64goldE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ae07e81c20cf5935f5225765f0af81755"></span><code class="sig-name descname">gold</code> = 0xFFD700<a class="headerlink" href="#_CPPv4N3fmt2v64goldE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610golden_rodE">
+<span id="_CPPv3N3fmt2v610golden_rodE"></span><span id="_CPPv2N3fmt2v610golden_rodE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a8f0b108fa3efae8069bfeecaef1f0330"></span><code class="sig-name descname">golden_rod</code> = 0xDAA520<a class="headerlink" href="#_CPPv4N3fmt2v610golden_rodE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64grayE">
+<span id="_CPPv3N3fmt2v64grayE"></span><span id="_CPPv2N3fmt2v64grayE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230acda7a650c5856cf2f6738072447d7825"></span><code class="sig-name descname">gray</code> = 0x808080<a class="headerlink" href="#_CPPv4N3fmt2v64grayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65greenE">
+<span id="_CPPv3N3fmt2v65greenE"></span><span id="_CPPv2N3fmt2v65greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a9f27410725ab8cc8854a2769c7a516b8"></span><code class="sig-name descname">green</code> = 0x008000<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612green_yellowE">
+<span id="_CPPv3N3fmt2v612green_yellowE"></span><span id="_CPPv2N3fmt2v612green_yellowE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad3472adca7f1b0edf7dc5d99bd79bb9e"></span><code class="sig-name descname">green_yellow</code> = 0xADFF2F<a class="headerlink" href="#_CPPv4N3fmt2v612green_yellowE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69honey_dewE">
+<span id="_CPPv3N3fmt2v69honey_dewE"></span><span id="_CPPv2N3fmt2v69honey_dewE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad2eed3a4c8bdb8a3523e9fc0f6fdc040"></span><code class="sig-name descname">honey_dew</code> = 0xF0FFF0<a class="headerlink" href="#_CPPv4N3fmt2v69honey_dewE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68hot_pinkE">
+<span id="_CPPv3N3fmt2v68hot_pinkE"></span><span id="_CPPv2N3fmt2v68hot_pinkE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a9c6e5569ecea4e7bfa902bac54f7bbe2"></span><code class="sig-name descname">hot_pink</code> = 0xFF69B4<a class="headerlink" href="#_CPPv4N3fmt2v68hot_pinkE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610indian_redE">
+<span id="_CPPv3N3fmt2v610indian_redE"></span><span id="_CPPv2N3fmt2v610indian_redE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a8e150fc012f9d2eb7b61e16abca9462a"></span><code class="sig-name descname">indian_red</code> = 0xCD5C5C<a class="headerlink" href="#_CPPv4N3fmt2v610indian_redE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66indigoE">
+<span id="_CPPv3N3fmt2v66indigoE"></span><span id="_CPPv2N3fmt2v66indigoE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a8a99d28c3c43cafed58cdbac5f4e9201"></span><code class="sig-name descname">indigo</code> = 0x4B0082<a class="headerlink" href="#_CPPv4N3fmt2v66indigoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65ivoryE">
+<span id="_CPPv3N3fmt2v65ivoryE"></span><span id="_CPPv2N3fmt2v65ivoryE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ac55c68625ca1da0e1d4a922fc8cb373e"></span><code class="sig-name descname">ivory</code> = 0xFFFFF0<a class="headerlink" href="#_CPPv4N3fmt2v65ivoryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65khakiE">
+<span id="_CPPv3N3fmt2v65khakiE"></span><span id="_CPPv2N3fmt2v65khakiE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a12284913bfe16bebd8bc809573f0387a"></span><code class="sig-name descname">khaki</code> = 0xF0E68C<a class="headerlink" href="#_CPPv4N3fmt2v65khakiE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68lavenderE">
+<span id="_CPPv3N3fmt2v68lavenderE"></span><span id="_CPPv2N3fmt2v68lavenderE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a153fa52654465ad67f045dc293f3b16e"></span><code class="sig-name descname">lavender</code> = 0xE6E6FA<a class="headerlink" href="#_CPPv4N3fmt2v68lavenderE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v614lavender_blushE">
+<span id="_CPPv3N3fmt2v614lavender_blushE"></span><span id="_CPPv2N3fmt2v614lavender_blushE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad557e5da14dcbe24b5b54c33bd8d15ee"></span><code class="sig-name descname">lavender_blush</code> = 0xFFF0F5<a class="headerlink" href="#_CPPv4N3fmt2v614lavender_blushE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610lawn_greenE">
+<span id="_CPPv3N3fmt2v610lawn_greenE"></span><span id="_CPPv2N3fmt2v610lawn_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a4109165af5329dd59f9bd749c5a55846"></span><code class="sig-name descname">lawn_green</code> = 0x7CFC00<a class="headerlink" href="#_CPPv4N3fmt2v610lawn_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v613lemon_chiffonE">
+<span id="_CPPv3N3fmt2v613lemon_chiffonE"></span><span id="_CPPv2N3fmt2v613lemon_chiffonE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a8c86fbdd95cf7d3a3bf22d7bd34a3e99"></span><code class="sig-name descname">lemon_chiffon</code> = 0xFFFACD<a class="headerlink" href="#_CPPv4N3fmt2v613lemon_chiffonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610light_blueE">
+<span id="_CPPv3N3fmt2v610light_blueE"></span><span id="_CPPv2N3fmt2v610light_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a61a2783898a9df78bb27edc33f768e6e"></span><code class="sig-name descname">light_blue</code> = 0xADD8E6<a class="headerlink" href="#_CPPv4N3fmt2v610light_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611light_coralE">
+<span id="_CPPv3N3fmt2v611light_coralE"></span><span id="_CPPv2N3fmt2v611light_coralE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a58b516fe6ce07478e0fdfe29e18d62fe"></span><code class="sig-name descname">light_coral</code> = 0xF08080<a class="headerlink" href="#_CPPv4N3fmt2v611light_coralE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610light_cyanE">
+<span id="_CPPv3N3fmt2v610light_cyanE"></span><span id="_CPPv2N3fmt2v610light_cyanE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a4eece7cf37c9db41ed9e016e471fcf2f"></span><code class="sig-name descname">light_cyan</code> = 0xE0FFFF<a class="headerlink" href="#_CPPv4N3fmt2v610light_cyanE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v623light_golden_rod_yellowE">
+<span id="_CPPv3N3fmt2v623light_golden_rod_yellowE"></span><span id="_CPPv2N3fmt2v623light_golden_rod_yellowE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad43a591d2b25a4afe584e778d2d8cdbd"></span><code class="sig-name descname">light_golden_rod_yellow</code> = 0xFAFAD2<a class="headerlink" href="#_CPPv4N3fmt2v623light_golden_rod_yellowE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610light_grayE">
+<span id="_CPPv3N3fmt2v610light_grayE"></span><span id="_CPPv2N3fmt2v610light_grayE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a770e427f6a16eb64e2ece9585ba9d193"></span><code class="sig-name descname">light_gray</code> = 0xD3D3D3<a class="headerlink" href="#_CPPv4N3fmt2v610light_grayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611light_greenE">
+<span id="_CPPv3N3fmt2v611light_greenE"></span><span id="_CPPv2N3fmt2v611light_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ac10bddadd1786a8a12f96ae7db5bafb8"></span><code class="sig-name descname">light_green</code> = 0x90EE90<a class="headerlink" href="#_CPPv4N3fmt2v611light_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610light_pinkE">
+<span id="_CPPv3N3fmt2v610light_pinkE"></span><span id="_CPPv2N3fmt2v610light_pinkE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a617e570ec3920b38e651cf3258d88e47"></span><code class="sig-name descname">light_pink</code> = 0xFFB6C1<a class="headerlink" href="#_CPPv4N3fmt2v610light_pinkE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612light_salmonE">
+<span id="_CPPv3N3fmt2v612light_salmonE"></span><span id="_CPPv2N3fmt2v612light_salmonE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a62c383c02f7de80e5edcbc4f21836c7c"></span><code class="sig-name descname">light_salmon</code> = 0xFFA07A<a class="headerlink" href="#_CPPv4N3fmt2v612light_salmonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v615light_sea_greenE">
+<span id="_CPPv3N3fmt2v615light_sea_greenE"></span><span id="_CPPv2N3fmt2v615light_sea_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a98cf43657dbee14ae37662526484911d"></span><code class="sig-name descname">light_sea_green</code> = 0x20B2AA<a class="headerlink" href="#_CPPv4N3fmt2v615light_sea_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v614light_sky_blueE">
+<span id="_CPPv3N3fmt2v614light_sky_blueE"></span><span id="_CPPv2N3fmt2v614light_sky_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a67d12da6232b36c362a6437332da50bf"></span><code class="sig-name descname">light_sky_blue</code> = 0x87CEFA<a class="headerlink" href="#_CPPv4N3fmt2v614light_sky_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v616light_slate_grayE">
+<span id="_CPPv3N3fmt2v616light_slate_grayE"></span><span id="_CPPv2N3fmt2v616light_slate_grayE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230abca51d13e304e17f34a3e7c598884ae8"></span><code class="sig-name descname">light_slate_gray</code> = 0x778899<a class="headerlink" href="#_CPPv4N3fmt2v616light_slate_grayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v616light_steel_blueE">
+<span id="_CPPv3N3fmt2v616light_steel_blueE"></span><span id="_CPPv2N3fmt2v616light_steel_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ab2fb12c1d8469e020be7d77d0d9cf2dd"></span><code class="sig-name descname">light_steel_blue</code> = 0xB0C4DE<a class="headerlink" href="#_CPPv4N3fmt2v616light_steel_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612light_yellowE">
+<span id="_CPPv3N3fmt2v612light_yellowE"></span><span id="_CPPv2N3fmt2v612light_yellowE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a743b7827c281254e45c305696344535b"></span><code class="sig-name descname">light_yellow</code> = 0xFFFFE0<a class="headerlink" href="#_CPPv4N3fmt2v612light_yellowE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64limeE">
+<span id="_CPPv3N3fmt2v64limeE"></span><span id="_CPPv2N3fmt2v64limeE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a67c0ecaf5a1b782b11146e9fbe80f016"></span><code class="sig-name descname">lime</code> = 0x00FF00<a class="headerlink" href="#_CPPv4N3fmt2v64limeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610lime_greenE">
+<span id="_CPPv3N3fmt2v610lime_greenE"></span><span id="_CPPv2N3fmt2v610lime_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a68db9bf9d92a944f0138e197b7b02fc2"></span><code class="sig-name descname">lime_green</code> = 0x32CD32<a class="headerlink" href="#_CPPv4N3fmt2v610lime_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65linenE">
+<span id="_CPPv3N3fmt2v65linenE"></span><span id="_CPPv2N3fmt2v65linenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230aa6ab62e9da89b20d720c70602624bfc2"></span><code class="sig-name descname">linen</code> = 0xFAF0E6<a class="headerlink" href="#_CPPv4N3fmt2v65linenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v67magentaE">
+<span id="_CPPv3N3fmt2v67magentaE"></span><span id="_CPPv2N3fmt2v67magentaE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a4c2a4a7078da0ac6733464eacfd00f86"></span><code class="sig-name descname">magenta</code> = 0xFF00FF<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66maroonE">
+<span id="_CPPv3N3fmt2v66maroonE"></span><span id="_CPPv2N3fmt2v66maroonE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a04a3da97880fcedeb087378f29c3a102"></span><code class="sig-name descname">maroon</code> = 0x800000<a class="headerlink" href="#_CPPv4N3fmt2v66maroonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v617medium_aquamarineE">
+<span id="_CPPv3N3fmt2v617medium_aquamarineE"></span><span id="_CPPv2N3fmt2v617medium_aquamarineE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a3971b68e2b89dbe29871b9061dff0af9"></span><code class="sig-name descname">medium_aquamarine</code> = 0x66CDAA<a class="headerlink" href="#_CPPv4N3fmt2v617medium_aquamarineE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611medium_blueE">
+<span id="_CPPv3N3fmt2v611medium_blueE"></span><span id="_CPPv2N3fmt2v611medium_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a73bdd29aeb8e3e3274bbb71c30d70eb7"></span><code class="sig-name descname">medium_blue</code> = 0x0000CD<a class="headerlink" href="#_CPPv4N3fmt2v611medium_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v613medium_orchidE">
+<span id="_CPPv3N3fmt2v613medium_orchidE"></span><span id="_CPPv2N3fmt2v613medium_orchidE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230adfcfa24e3022fb4b704f051d98ec0557"></span><code class="sig-name descname">medium_orchid</code> = 0xBA55D3<a class="headerlink" href="#_CPPv4N3fmt2v613medium_orchidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v613medium_purpleE">
+<span id="_CPPv3N3fmt2v613medium_purpleE"></span><span id="_CPPv2N3fmt2v613medium_purpleE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a2a51478b9caafc3a28fef46a916cd92d"></span><code class="sig-name descname">medium_purple</code> = 0x9370DB<a class="headerlink" href="#_CPPv4N3fmt2v613medium_purpleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v616medium_sea_greenE">
+<span id="_CPPv3N3fmt2v616medium_sea_greenE"></span><span id="_CPPv2N3fmt2v616medium_sea_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ac5aaf97240e28904c5b96eab2cbf753b"></span><code class="sig-name descname">medium_sea_green</code> = 0x3CB371<a class="headerlink" href="#_CPPv4N3fmt2v616medium_sea_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v617medium_slate_blueE">
+<span id="_CPPv3N3fmt2v617medium_slate_blueE"></span><span id="_CPPv2N3fmt2v617medium_slate_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a996976a37b7f6296cc3cbf388ac91cee"></span><code class="sig-name descname">medium_slate_blue</code> = 0x7B68EE<a class="headerlink" href="#_CPPv4N3fmt2v617medium_slate_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v619medium_spring_greenE">
+<span id="_CPPv3N3fmt2v619medium_spring_greenE"></span><span id="_CPPv2N3fmt2v619medium_spring_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a5157a28c83d98d39066c60c83a6983f8"></span><code class="sig-name descname">medium_spring_green</code> = 0x00FA9A<a class="headerlink" href="#_CPPv4N3fmt2v619medium_spring_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v616medium_turquoiseE">
+<span id="_CPPv3N3fmt2v616medium_turquoiseE"></span><span id="_CPPv2N3fmt2v616medium_turquoiseE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a4db3022648c31d28b86ad95583d6c3c7"></span><code class="sig-name descname">medium_turquoise</code> = 0x48D1CC<a class="headerlink" href="#_CPPv4N3fmt2v616medium_turquoiseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v617medium_violet_redE">
+<span id="_CPPv3N3fmt2v617medium_violet_redE"></span><span id="_CPPv2N3fmt2v617medium_violet_redE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ae8c7ad982a8c98a38c7e3381043b94d8"></span><code class="sig-name descname">medium_violet_red</code> = 0xC71585<a class="headerlink" href="#_CPPv4N3fmt2v617medium_violet_redE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v613midnight_blueE">
+<span id="_CPPv3N3fmt2v613midnight_blueE"></span><span id="_CPPv2N3fmt2v613midnight_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a83d1d60e0de07e8b1bf164247a77e28b"></span><code class="sig-name descname">midnight_blue</code> = 0x191970<a class="headerlink" href="#_CPPv4N3fmt2v613midnight_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610mint_creamE">
+<span id="_CPPv3N3fmt2v610mint_creamE"></span><span id="_CPPv2N3fmt2v610mint_creamE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a28a62909f84c7a965ea755d99db1ca2b"></span><code class="sig-name descname">mint_cream</code> = 0xF5FFFA<a class="headerlink" href="#_CPPv4N3fmt2v610mint_creamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610misty_roseE">
+<span id="_CPPv3N3fmt2v610misty_roseE"></span><span id="_CPPv2N3fmt2v610misty_roseE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a0552f51c284790d9d0f4b43ebfa9f2a8"></span><code class="sig-name descname">misty_rose</code> = 0xFFE4E1<a class="headerlink" href="#_CPPv4N3fmt2v610misty_roseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68moccasinE">
+<span id="_CPPv3N3fmt2v68moccasinE"></span><span id="_CPPv2N3fmt2v68moccasinE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230adc8a6c38cc98a2c29859c34b26974bc7"></span><code class="sig-name descname">moccasin</code> = 0xFFE4B5<a class="headerlink" href="#_CPPv4N3fmt2v68moccasinE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612navajo_whiteE">
+<span id="_CPPv3N3fmt2v612navajo_whiteE"></span><span id="_CPPv2N3fmt2v612navajo_whiteE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a667b2e78d0dabb83c2ec684e3b4253b1"></span><code class="sig-name descname">navajo_white</code> = 0xFFDEAD<a class="headerlink" href="#_CPPv4N3fmt2v612navajo_whiteE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64navyE">
+<span id="_CPPv3N3fmt2v64navyE"></span><span id="_CPPv2N3fmt2v64navyE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230af3311d3d14c8437553bf3e3f90920736"></span><code class="sig-name descname">navy</code> = 0x000080<a class="headerlink" href="#_CPPv4N3fmt2v64navyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68old_laceE">
+<span id="_CPPv3N3fmt2v68old_laceE"></span><span id="_CPPv2N3fmt2v68old_laceE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a5e84be20fb6dd068f5368e6d245460bd"></span><code class="sig-name descname">old_lace</code> = 0xFDF5E6<a class="headerlink" href="#_CPPv4N3fmt2v68old_laceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65oliveE">
+<span id="_CPPv3N3fmt2v65oliveE"></span><span id="_CPPv2N3fmt2v65oliveE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230af431b0eea3c08186ed101e588bfb3a2f"></span><code class="sig-name descname">olive</code> = 0x808000<a class="headerlink" href="#_CPPv4N3fmt2v65oliveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610olive_drabE">
+<span id="_CPPv3N3fmt2v610olive_drabE"></span><span id="_CPPv2N3fmt2v610olive_drabE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a2fe5734b0399752dfa2a0c93b6c75934"></span><code class="sig-name descname">olive_drab</code> = 0x6B8E23<a class="headerlink" href="#_CPPv4N3fmt2v610olive_drabE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66orangeE">
+<span id="_CPPv3N3fmt2v66orangeE"></span><span id="_CPPv2N3fmt2v66orangeE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230afe01d67a002dfa0f3ac084298142eccd"></span><code class="sig-name descname">orange</code> = 0xFFA500<a class="headerlink" href="#_CPPv4N3fmt2v66orangeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610orange_redE">
+<span id="_CPPv3N3fmt2v610orange_redE"></span><span id="_CPPv2N3fmt2v610orange_redE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ae962684214d1c84dbc6a691b6d9eb60c"></span><code class="sig-name descname">orange_red</code> = 0xFF4500<a class="headerlink" href="#_CPPv4N3fmt2v610orange_redE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66orchidE">
+<span id="_CPPv3N3fmt2v66orchidE"></span><span id="_CPPv2N3fmt2v66orchidE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a93b1453c8ec5a548389c935052536ccb"></span><code class="sig-name descname">orchid</code> = 0xDA70D6<a class="headerlink" href="#_CPPv4N3fmt2v66orchidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v615pale_golden_rodE">
+<span id="_CPPv3N3fmt2v615pale_golden_rodE"></span><span id="_CPPv2N3fmt2v615pale_golden_rodE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a5841e227ac7407c007c4dea330306f08"></span><code class="sig-name descname">pale_golden_rod</code> = 0xEEE8AA<a class="headerlink" href="#_CPPv4N3fmt2v615pale_golden_rodE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610pale_greenE">
+<span id="_CPPv3N3fmt2v610pale_greenE"></span><span id="_CPPv2N3fmt2v610pale_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a573cc0c97e7f05440b7ca67a93e46349"></span><code class="sig-name descname">pale_green</code> = 0x98FB98<a class="headerlink" href="#_CPPv4N3fmt2v610pale_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v614pale_turquoiseE">
+<span id="_CPPv3N3fmt2v614pale_turquoiseE"></span><span id="_CPPv2N3fmt2v614pale_turquoiseE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a707832f12c57d104ccba9158524e8e69"></span><code class="sig-name descname">pale_turquoise</code> = 0xAFEEEE<a class="headerlink" href="#_CPPv4N3fmt2v614pale_turquoiseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v615pale_violet_redE">
+<span id="_CPPv3N3fmt2v615pale_violet_redE"></span><span id="_CPPv2N3fmt2v615pale_violet_redE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ab5bd346b77f564748d4d2743156ed6e8"></span><code class="sig-name descname">pale_violet_red</code> = 0xDB7093<a class="headerlink" href="#_CPPv4N3fmt2v615pale_violet_redE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611papaya_whipE">
+<span id="_CPPv3N3fmt2v611papaya_whipE"></span><span id="_CPPv2N3fmt2v611papaya_whipE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a0ee903fa27ac4513f20d12a86c19e7a2"></span><code class="sig-name descname">papaya_whip</code> = 0xFFEFD5<a class="headerlink" href="#_CPPv4N3fmt2v611papaya_whipE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610peach_puffE">
+<span id="_CPPv3N3fmt2v610peach_puffE"></span><span id="_CPPv2N3fmt2v610peach_puffE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ae74648a463c3d18a05e153977cb39855"></span><code class="sig-name descname">peach_puff</code> = 0xFFDAB9<a class="headerlink" href="#_CPPv4N3fmt2v610peach_puffE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64peruE">
+<span id="_CPPv3N3fmt2v64peruE"></span><span id="_CPPv2N3fmt2v64peruE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a32e8419a7ecb8f918c70fdadf783e3d8"></span><code class="sig-name descname">peru</code> = 0xCD853F<a class="headerlink" href="#_CPPv4N3fmt2v64peruE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64pinkE">
+<span id="_CPPv3N3fmt2v64pinkE"></span><span id="_CPPv2N3fmt2v64pinkE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a4a0b0dcedd48f780778d1cd1bb8f9877"></span><code class="sig-name descname">pink</code> = 0xFFC0CB<a class="headerlink" href="#_CPPv4N3fmt2v64pinkE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64plumE">
+<span id="_CPPv3N3fmt2v64plumE"></span><span id="_CPPv2N3fmt2v64plumE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a3e042037287d6871eec3dbd48556b0b4"></span><code class="sig-name descname">plum</code> = 0xDDA0DD<a class="headerlink" href="#_CPPv4N3fmt2v64plumE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611powder_blueE">
+<span id="_CPPv3N3fmt2v611powder_blueE"></span><span id="_CPPv2N3fmt2v611powder_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a76f258d530f43c55523384b472086771"></span><code class="sig-name descname">powder_blue</code> = 0xB0E0E6<a class="headerlink" href="#_CPPv4N3fmt2v611powder_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66purpleE">
+<span id="_CPPv3N3fmt2v66purpleE"></span><span id="_CPPv2N3fmt2v66purpleE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230abb7aedfa61007447dd6efaf9f37641e3"></span><code class="sig-name descname">purple</code> = 0x800080<a class="headerlink" href="#_CPPv4N3fmt2v66purpleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v614rebecca_purpleE">
+<span id="_CPPv3N3fmt2v614rebecca_purpleE"></span><span id="_CPPv2N3fmt2v614rebecca_purpleE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a7087c7ffb872fac6aba0c893b8bbee42"></span><code class="sig-name descname">rebecca_purple</code> = 0x663399<a class="headerlink" href="#_CPPv4N3fmt2v614rebecca_purpleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v63redE">
+<span id="_CPPv3N3fmt2v63redE"></span><span id="_CPPv2N3fmt2v63redE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230abda9643ac6601722a28f238714274da4"></span><code class="sig-name descname">red</code> = 0xFF0000<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610rosy_brownE">
+<span id="_CPPv3N3fmt2v610rosy_brownE"></span><span id="_CPPv2N3fmt2v610rosy_brownE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a6f6922bd3e51b8d19b4f78df8dec7a52"></span><code class="sig-name descname">rosy_brown</code> = 0xBC8F8F<a class="headerlink" href="#_CPPv4N3fmt2v610rosy_brownE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610royal_blueE">
+<span id="_CPPv3N3fmt2v610royal_blueE"></span><span id="_CPPv2N3fmt2v610royal_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a4108cee2c1205de0bba7a8f3f55ba48b"></span><code class="sig-name descname">royal_blue</code> = 0x4169E1<a class="headerlink" href="#_CPPv4N3fmt2v610royal_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612saddle_brownE">
+<span id="_CPPv3N3fmt2v612saddle_brownE"></span><span id="_CPPv2N3fmt2v612saddle_brownE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a0b1ae0e5580eaa0e6968ec6c8143ecac"></span><code class="sig-name descname">saddle_brown</code> = 0x8B4513<a class="headerlink" href="#_CPPv4N3fmt2v612saddle_brownE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66salmonE">
+<span id="_CPPv3N3fmt2v66salmonE"></span><span id="_CPPv2N3fmt2v66salmonE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a180fd182f9a0742f483619781ccc36c4"></span><code class="sig-name descname">salmon</code> = 0xFA8072<a class="headerlink" href="#_CPPv4N3fmt2v66salmonE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611sandy_brownE">
+<span id="_CPPv3N3fmt2v611sandy_brownE"></span><span id="_CPPv2N3fmt2v611sandy_brownE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a9a19a83d0097df35f7ba7af753f0537d"></span><code class="sig-name descname">sandy_brown</code> = 0xF4A460<a class="headerlink" href="#_CPPv4N3fmt2v611sandy_brownE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69sea_greenE">
+<span id="_CPPv3N3fmt2v69sea_greenE"></span><span id="_CPPv2N3fmt2v69sea_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a2e1e305a440fcfc9109858a7b2e20ca7"></span><code class="sig-name descname">sea_green</code> = 0x2E8B57<a class="headerlink" href="#_CPPv4N3fmt2v69sea_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69sea_shellE">
+<span id="_CPPv3N3fmt2v69sea_shellE"></span><span id="_CPPv2N3fmt2v69sea_shellE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230aefe66dd5675ff42810bbc04512d44c4b"></span><code class="sig-name descname">sea_shell</code> = 0xFFF5EE<a class="headerlink" href="#_CPPv4N3fmt2v69sea_shellE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66siennaE">
+<span id="_CPPv3N3fmt2v66siennaE"></span><span id="_CPPv2N3fmt2v66siennaE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a91c001e5547439063fefe550d83533b6"></span><code class="sig-name descname">sienna</code> = 0xA0522D<a class="headerlink" href="#_CPPv4N3fmt2v66siennaE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66silverE">
+<span id="_CPPv3N3fmt2v66silverE"></span><span id="_CPPv2N3fmt2v66silverE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a97f014516561ef487ec368d6158eb3f4"></span><code class="sig-name descname">silver</code> = 0xC0C0C0<a class="headerlink" href="#_CPPv4N3fmt2v66silverE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v68sky_blueE">
+<span id="_CPPv3N3fmt2v68sky_blueE"></span><span id="_CPPv2N3fmt2v68sky_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad06424e64af2d470476a234e12a48a40"></span><code class="sig-name descname">sky_blue</code> = 0x87CEEB<a class="headerlink" href="#_CPPv4N3fmt2v68sky_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610slate_blueE">
+<span id="_CPPv3N3fmt2v610slate_blueE"></span><span id="_CPPv2N3fmt2v610slate_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a8f72f2a45cee9a5f2e0afe5d2bb9d4b1"></span><code class="sig-name descname">slate_blue</code> = 0x6A5ACD<a class="headerlink" href="#_CPPv4N3fmt2v610slate_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610slate_grayE">
+<span id="_CPPv3N3fmt2v610slate_grayE"></span><span id="_CPPv2N3fmt2v610slate_grayE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230af664bac577c1c520c4a98e63457d2f22"></span><code class="sig-name descname">slate_gray</code> = 0x708090<a class="headerlink" href="#_CPPv4N3fmt2v610slate_grayE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64snowE">
+<span id="_CPPv3N3fmt2v64snowE"></span><span id="_CPPv2N3fmt2v64snowE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a2b93fbdf27d43547bec8794054c28e00"></span><code class="sig-name descname">snow</code> = 0xFFFAFA<a class="headerlink" href="#_CPPv4N3fmt2v64snowE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612spring_greenE">
+<span id="_CPPv3N3fmt2v612spring_greenE"></span><span id="_CPPv2N3fmt2v612spring_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a67485a137fce2085007d93aa115cd093"></span><code class="sig-name descname">spring_green</code> = 0x00FF7F<a class="headerlink" href="#_CPPv4N3fmt2v612spring_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v610steel_blueE">
+<span id="_CPPv3N3fmt2v610steel_blueE"></span><span id="_CPPv2N3fmt2v610steel_blueE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a00885bc107cec87940dfe4beadbab382"></span><code class="sig-name descname">steel_blue</code> = 0x4682B4<a class="headerlink" href="#_CPPv4N3fmt2v610steel_blueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v63tanE">
+<span id="_CPPv3N3fmt2v63tanE"></span><span id="_CPPv2N3fmt2v63tanE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a5b2d4484498235e80d61a233a7c04991"></span><code class="sig-name descname">tan</code> = 0xD2B48C<a class="headerlink" href="#_CPPv4N3fmt2v63tanE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v64tealE">
+<span id="_CPPv3N3fmt2v64tealE"></span><span id="_CPPv2N3fmt2v64tealE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a3c4184e82bb3be8fa32669800fb7373c"></span><code class="sig-name descname">teal</code> = 0x008080<a class="headerlink" href="#_CPPv4N3fmt2v64tealE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v67thistleE">
+<span id="_CPPv3N3fmt2v67thistleE"></span><span id="_CPPv2N3fmt2v67thistleE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a94ec2b8d73527db3da316ad28195219e"></span><code class="sig-name descname">thistle</code> = 0xD8BFD8<a class="headerlink" href="#_CPPv4N3fmt2v67thistleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66tomatoE">
+<span id="_CPPv3N3fmt2v66tomatoE"></span><span id="_CPPv2N3fmt2v66tomatoE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a006f87892f47ef9aa60fa5ed01a440fb"></span><code class="sig-name descname">tomato</code> = 0xFF6347<a class="headerlink" href="#_CPPv4N3fmt2v66tomatoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v69turquoiseE">
+<span id="_CPPv3N3fmt2v69turquoiseE"></span><span id="_CPPv2N3fmt2v69turquoiseE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230adcbb31fdf774bcd3f09d54c4487377c0"></span><code class="sig-name descname">turquoise</code> = 0x40E0D0<a class="headerlink" href="#_CPPv4N3fmt2v69turquoiseE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66violetE">
+<span id="_CPPv3N3fmt2v66violetE"></span><span id="_CPPv2N3fmt2v66violetE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad1d813a48d99f0e102f7d0a1b9068001"></span><code class="sig-name descname">violet</code> = 0xEE82EE<a class="headerlink" href="#_CPPv4N3fmt2v66violetE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65wheatE">
+<span id="_CPPv3N3fmt2v65wheatE"></span><span id="_CPPv2N3fmt2v65wheatE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad29db4ac8712f5bdb343991281b26db1"></span><code class="sig-name descname">wheat</code> = 0xF5DEB3<a class="headerlink" href="#_CPPv4N3fmt2v65wheatE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v65whiteE">
+<span id="_CPPv3N3fmt2v65whiteE"></span><span id="_CPPv2N3fmt2v65whiteE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad508fe45cecaf653904a0e774084bb5c"></span><code class="sig-name descname">white</code> = 0xFFFFFF<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v611white_smokeE">
+<span id="_CPPv3N3fmt2v611white_smokeE"></span><span id="_CPPv2N3fmt2v611white_smokeE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230a37ecf1e4670c4944a0f98bcb39728578"></span><code class="sig-name descname">white_smoke</code> = 0xF5F5F5<a class="headerlink" href="#_CPPv4N3fmt2v611white_smokeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v66yellowE">
+<span id="_CPPv3N3fmt2v66yellowE"></span><span id="_CPPv2N3fmt2v66yellowE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230ad487dd0b55dfcacdd920ccbdaeafa351"></span><code class="sig-name descname">yellow</code> = 0xFFFF00<br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3fmt2v612yellow_greenE">
+<span id="_CPPv3N3fmt2v612yellow_greenE"></span><span id="_CPPv2N3fmt2v612yellow_greenE"></span><span class="target" id="dummy_1a97142a19431e766c0035dee38b968230aa889858bd19327fe8b643b9ff36a1782"></span><code class="sig-name descname">yellow_green</code> = 0x9ACD32<a class="headerlink" href="#_CPPv4N3fmt2v612yellow_greenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="enum_color_8h_1acd17a9ababc03055ca24785a0bf8c607.html" class="btn btn-neutral float-right" title="Enum emphasis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="enum_core_8h_1af08163c436ba67207a745daffa225bfb.html" class="btn btn-neutral float-left" title="Enum char8_t" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

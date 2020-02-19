@@ -1,0 +1,13 @@
+.. _exhale_typedef_format-inl_8h_1afe32394a623ea7114ab37829fd42d098:
+
+Typedef fmt::v6::internal::format_func
+======================================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::internal::format_func

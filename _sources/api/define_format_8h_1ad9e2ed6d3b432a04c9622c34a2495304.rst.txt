@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1ad9e2ed6d3b432a04c9622c34a2495304:
+
+Define FMT_THROW
+================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_THROW

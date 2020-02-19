@@ -1,0 +1,140 @@
+
+.. _file_compiler_util_fmt_ranges.h:
+
+File ranges.h
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util_fmt>` (``compiler/util/fmt``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/fmt/ranges.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_fmt_ranges.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``format.h`` (:ref:`file_compiler_util_fmt_format.h`)
+
+- ``type_traits``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt`
+
+- :ref:`namespace_fmt__v6`
+
+- :ref:`namespace_fmt__v6__internal`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01RangeT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__range_3_01Ra4264be8e3a26b9945fc81a349307436e`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01tuple__arg__join_3_01Char_00_01T_8_8_8_01_4_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_d0d114a086a42cd7496eda1964941dfc`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_4896a7461e8863abb36cb71171ba8916`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatting__base`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatting__range`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatting__tuple`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1conditional__helper`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1integer__sequence`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1is__like__std__string_3_01fmt_1_1basic__string__view_3_01Char_01_4_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1is__range__`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1make__integer__sequence`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1make__integer__sequence_3_01T_00_010_00_01Ns_8_8_8_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1void`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__range`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__tuple__like`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1tuple__arg__join`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1is__like__std__string`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1is__tuple__like__`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_ranges_8h_1a518a986abb0508a289182b94c40fde4b`
+
+- :ref:`exhale_function_ranges_8h_1a1f3f32751180940e23978b2e7ca3e6b3`
+
+- :ref:`exhale_function_ranges_8h_1a4974d8ba9dbdff7cd7d573820b2f2d19`
+
+- :ref:`exhale_function_ranges_8h_1a214187bb7de6fb8b6c295a4c4333be6c`
+
+- :ref:`exhale_function_ranges_8h_1a2d28ef6bd368182fa9cde9a02b24ee82`
+
+- :ref:`exhale_function_ranges_8h_1ac0f6800636b470e6819b09d0c1fbc118`
+
+- :ref:`exhale_function_ranges_8h_1a6d2940bb84d314ea7ca339a32efceef8`
+
+- :ref:`exhale_function_ranges_8h_1ada06cc0ef6b5d36260af59013655c080`
+
+- :ref:`exhale_function_ranges_8h_1ab0fe181b6af5e5da78c419dcf3c3672a`
+
+- :ref:`exhale_function_ranges_8h_1ad929077fc8dae734753fee489595c640`
+
+- :ref:`exhale_function_ranges_8h_1a26f84aeabd4729c33f0af9fab9cac820`
+
+- :ref:`exhale_function_ranges_8h_1a80ca569d721879e23114b03891875aa9`
+
+- :ref:`exhale_function_ranges_8h_1a4b598836c3b37540454ec6ed8fe09b9b`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_ranges_8h_1ad1c3ab4ad2c95d3f313323dbef5585df`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_ranges_8h_1a6c5768f7dc14bc423d395101d95a7108`
+
+- :ref:`exhale_typedef_ranges_8h_1ac26b197a0cd3bf090bd95f4f74d9e645`
+

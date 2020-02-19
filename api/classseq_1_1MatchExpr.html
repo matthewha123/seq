@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class MatchExpr &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class MethodExpr" href="classseq_1_1MethodExpr.html" />
+    <link rel="prev" title="Class Match" href="classseq_1_1Match.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Class MatchExpr</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classseq_1_1MatchExpr.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-matchexpr">
+<span id="exhale-class-classseq-1-1matchexpr"></span><h1>Class MatchExpr<a class="headerlink" href="#class-matchexpr" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_lang_expr.h.html#file-compiler-lang-expr-h"><span class="std std-ref">File expr.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">seq::Expr</span></code> (<a class="reference internal" href="classseq_1_1Expr.html#exhale-class-classseq-1-1expr"><span class="std std-ref">Class Expr</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N3seq9MatchExprE">
+<span id="_CPPv3N3seq9MatchExprE"></span><span id="_CPPv2N3seq9MatchExprE"></span><span id="seq::MatchExpr"></span><span class="target" id="classseq_1_1MatchExpr"></span><em class="property">class </em><code class="sig-name descname">MatchExpr</code> : <em class="property">public</em> seq::<a class="reference internal" href="classseq_1_1Expr.html#_CPPv4N3seq4ExprE" title="seq::Expr">Expr</a><a class="headerlink" href="#_CPPv4N3seq9MatchExprE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N9MatchExpr9MatchExprEv">
+<span id="_CPPv3N9MatchExpr9MatchExprEv"></span><span id="_CPPv2N9MatchExpr9MatchExprEv"></span><span id="MatchExpr::MatchExpr"></span><span class="target" id="classseq_1_1MatchExpr_1a89ca4db932803b33c698cbc873b85f28"></span><code class="sig-name descname">MatchExpr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9MatchExpr9MatchExprEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N9MatchExpr12resolveTypesEv">
+<span id="_CPPv3N9MatchExpr12resolveTypesEv"></span><span id="_CPPv2N9MatchExpr12resolveTypesEv"></span><span id="MatchExpr::resolveTypes"></span><span class="target" id="classseq_1_1MatchExpr_1af520c6059f3624fa90c351f440aceafd"></span>void <code class="sig-name descname">resolveTypes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9MatchExpr12resolveTypesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Performs type resolution on this expression and all sub-expressions/statements/etc. This is called prior to <a class="reference internal" href="classseq_1_1Expr.html#classseq_1_1Expr_1addce0016a7294cb76121ae0b3d175bd9"><span class="std std-ref">Expr::getType()</span></a>. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N9MatchExpr8codegen0EP8BaseFuncRPN4llvm10BasicBlockE">
+<span id="_CPPv3N9MatchExpr8codegen0EP8BaseFuncRPN4llvm10BasicBlockE"></span><span id="_CPPv2N9MatchExpr8codegen0EP8BaseFuncRPN4llvm10BasicBlockE"></span><span id="MatchExpr::codegen0__BaseFuncP.llvm::BasicBlockPR"></span><span class="target" id="classseq_1_1MatchExpr_1a0211f9b230d611321df721a5ac7f48c5"></span>Value *<code class="sig-name descname">codegen0</code><span class="sig-paren">(</span>BaseFunc *<em>base</em>, llvm::BasicBlock *&amp;<em>block</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9MatchExpr8codegen0EP8BaseFuncRPN4llvm10BasicBlockE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Performs code generation for this expression. <dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>value representing expression result; possibly null if type is void </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">base</span></code>: the function containing this expression </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">block</span></code>: reference to block where code should be generated; possibly modified to point to a new block where codegen should resume </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK9MatchExpr8getType0Ev">
+<span id="_CPPv3NK9MatchExpr8getType0Ev"></span><span id="_CPPv2NK9MatchExpr8getType0Ev"></span><span id="MatchExpr::getType0C"></span><span class="target" id="classseq_1_1MatchExpr_1a3d770bd8f36c11db03504977b24f41ab"></span>types::Type *<code class="sig-name descname">getType0</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9MatchExpr8getType0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Determines and returns the type of this expression. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N9MatchExpr5cloneEP7Generic">
+<span id="_CPPv3N9MatchExpr5cloneEP7Generic"></span><span id="_CPPv2N9MatchExpr5cloneEP7Generic"></span><span id="MatchExpr::clone__GenericP"></span><span class="target" id="classseq_1_1MatchExpr_1a1e26acfda7e2bbe1aee641b69bfc0b60"></span>MatchExpr *<code class="sig-name descname">clone</code><span class="sig-paren">(</span>Generic *<em>ref</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9MatchExpr5cloneEP7Generic" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Clones this expression. <code class="docutils literal notranslate"><span class="pre">ref</span></code> is used internally to keep track of cloned objects, and to make sure we don’t clone certain objects twice. <dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>cloned expression </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ref</span></code>: generic object that is being cloned </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N9MatchExpr8setValueEP4Expr">
+<span id="_CPPv3N9MatchExpr8setValueEP4Expr"></span><span id="_CPPv2N9MatchExpr8setValueEP4Expr"></span><span id="MatchExpr::setValue__ExprP"></span><span class="target" id="classseq_1_1MatchExpr_1a8bccb30ac689206bae3de4a574a540c6"></span>void <code class="sig-name descname">setValue</code><span class="sig-paren">(</span>Expr *<em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9MatchExpr8setValueEP4Expr" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N9MatchExpr7addCaseEP7PatternP4Expr">
+<span id="_CPPv3N9MatchExpr7addCaseEP7PatternP4Expr"></span><span id="_CPPv2N9MatchExpr7addCaseEP7PatternP4Expr"></span><span id="MatchExpr::addCase__PatternP.ExprP"></span><span class="target" id="classseq_1_1MatchExpr_1a9609e9b99c66056222e3bef262ca2a1a"></span>void <code class="sig-name descname">addCase</code><span class="sig-paren">(</span>Pattern *<em>pattern</em>, Expr *<em>expr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9MatchExpr7addCaseEP7PatternP4Expr" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classseq_1_1MethodExpr.html" class="btn btn-neutral float-right" title="Class MethodExpr" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classseq_1_1Match.html" class="btn btn-neutral float-left" title="Class Match" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

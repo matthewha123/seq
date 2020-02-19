@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a79022802c105c4e354f00b1f9ef48d02:
+
+Function fmt::v6::internal::is_big_endian
+=========================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::is_big_endian()

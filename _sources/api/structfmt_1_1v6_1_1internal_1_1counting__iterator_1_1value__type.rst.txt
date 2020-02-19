@@ -1,0 +1,22 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1counting__iterator_1_1value__type:
+
+Struct counting_iterator::value_type
+====================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1counting__iterator`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::counting_iterator::value_type
+   :members:
+   :protected-members:
+   :undoc-members:

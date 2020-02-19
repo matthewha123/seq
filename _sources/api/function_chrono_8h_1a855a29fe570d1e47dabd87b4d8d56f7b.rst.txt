@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a855a29fe570d1e47dabd87b4d8d56f7b:
+
+Template Function fmt::v6::internal::format_chrono_duration_unit
+================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::format_chrono_duration_unit(OutputIt)

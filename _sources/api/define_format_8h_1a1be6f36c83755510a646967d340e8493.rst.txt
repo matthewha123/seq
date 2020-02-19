@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1a1be6f36c83755510a646967d340e8493:
+
+Define FMT_DEPRECATED_PERCENT
+=============================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_DEPRECATED_PERCENT

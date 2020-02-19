@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1a63af744c9637f08a1e29893868790c90:
+
+Define FMT_NUMERIC_ALIGN
+========================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_NUMERIC_ALIGN

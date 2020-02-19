@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Class basic_format_parse_context &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class basic_memory_buffer" href="classfmt_1_1v6_1_1basic__memory__buffer.html" />
+    <link rel="prev" title="Template Class basic_format_context" href="classfmt_1_1v6_1_1basic__format__context.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Class basic_format_parse_context</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1basic__format__parse__context.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-class-basic-format-parse-context">
+<span id="exhale-class-classfmt-1-1v6-1-1basic-format-parse-context"></span><h1>Template Class basic_format_parse_context<a class="headerlink" href="#template-class-basic-format-parse-context" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_core.h.html#file-compiler-util-fmt-core-h"><span class="std std-ref">File core.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">private</span> <span class="pre">ErrorHandler</span></code></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I00EN3fmt2v626basic_format_parse_contextE">
+<span id="_CPPv3I00EN3fmt2v626basic_format_parse_contextE"></span><span id="_CPPv2I00EN3fmt2v626basic_format_parse_contextE"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context"></span>template&lt;typename <code class="sig-name descname">Char</code>, typename <code class="sig-name descname">ErrorHandler</code> = internal::<a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1error__handler.html#_CPPv4N3fmt2v68internal13error_handlerE" title="fmt::v6::internal::error_handler">error_handler</a>&gt;<br /><em class="property">class </em><code class="sig-name descname">basic_format_parse_context</code> : <em class="property">private</em> <a class="reference internal" href="#_CPPv4I00EN3fmt2v626basic_format_parse_contextE" title="fmt::v6::basic_format_parse_context::ErrorHandler">ErrorHandler</a><a class="headerlink" href="#_CPPv4I00EN3fmt2v626basic_format_parse_contextE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><p>Parsing context consisting of a format string range being parsed and an
+argument counter for automatic indexing.</p>
+<p>You can use one of the following type aliases for common character types:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Definition</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>format_parse_context</p></td>
+<td><p>basic_format_parse_context&lt;char&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>wformat_parse_context</p></td>
+<td><p>basic_format_parse_context&lt;wchar_t&gt;</p></td>
+</tr>
+</tbody>
+</table>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v626basic_format_parse_contextI4Char12ErrorHandlerE9char_typeE">
+<span id="_CPPv3IEN3fmt2v626basic_format_parse_contextI4Char12ErrorHandlerE9char_typeE"></span><span id="_CPPv2IEN3fmt2v626basic_format_parse_contextI4Char12ErrorHandlerE9char_typeE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1a98ea3af63424e8c2840d200f129a8f2e"></span><em class="property">using </em><code class="sig-name descname">char_type</code> = Char<a class="headerlink" href="#_CPPv4IEN3fmt2v626basic_format_parse_contextI4Char12ErrorHandlerE9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v626basic_format_parse_contextI4Char12ErrorHandlerE8iteratorE">
+<span id="_CPPv3IEN3fmt2v626basic_format_parse_contextI4Char12ErrorHandlerE8iteratorE"></span><span id="_CPPv2IEN3fmt2v626basic_format_parse_contextI4Char12ErrorHandlerE8iteratorE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1aacb573058780bc0354d71cad7a6db770"></span><em class="property">using </em><code class="sig-name descname">iterator</code> = <em class="property">typename</em> basic_string_view::iterator<a class="headerlink" href="#_CPPv4IEN3fmt2v626basic_format_parse_contextI4Char12ErrorHandlerE8iteratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v626basic_format_parse_context26basic_format_parse_contextE17basic_string_viewI4CharE12ErrorHandler">
+<span id="_CPPv3N3fmt2v626basic_format_parse_context26basic_format_parse_contextE17basic_string_viewI4CharE12ErrorHandler"></span><span id="_CPPv2N3fmt2v626basic_format_parse_context26basic_format_parse_contextE17basic_string_viewI4CharE12ErrorHandler"></span><span id="fmt::v6::basic_format_parse_context::basic_format_parse_context__basic_string_view:Char:.ErrorHandler"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1a5cb24f60ed38ed25c14ea8683e0466b5"></span><code class="sig-name descname">basic_format_parse_context</code><span class="sig-paren">(</span>basic_string_view&lt;Char&gt; <em>format_str</em>, ErrorHandler <em>eh</em> = ErrorHandler()<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v626basic_format_parse_context26basic_format_parse_contextE17basic_string_viewI4CharE12ErrorHandler" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v626basic_format_parse_context5beginEv">
+<span id="_CPPv3NK3fmt2v626basic_format_parse_context5beginEv"></span><span id="_CPPv2NK3fmt2v626basic_format_parse_context5beginEv"></span><span id="fmt::v6::basic_format_parse_context::beginC"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1a0185a0160b35be1114bd6085017ce723"></span>iterator <code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v626basic_format_parse_context5beginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns an iterator to the beginning of the format string range being parsed. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v626basic_format_parse_context3endEv">
+<span id="_CPPv3NK3fmt2v626basic_format_parse_context3endEv"></span><span id="_CPPv2NK3fmt2v626basic_format_parse_context3endEv"></span><span id="fmt::v6::basic_format_parse_context::endC"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1a425c8c80984abe5563deba99b2dbe345"></span>iterator <code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v626basic_format_parse_context3endEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns an iterator past the end of the format string range being parsed. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v626basic_format_parse_context10advance_toE8iterator">
+<span id="_CPPv3N3fmt2v626basic_format_parse_context10advance_toE8iterator"></span><span id="_CPPv2N3fmt2v626basic_format_parse_context10advance_toE8iterator"></span><span id="fmt::v6::basic_format_parse_context::advance_to__iterator"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1a4ea149047730210b46bdb106d95a43b7"></span>void <code class="sig-name descname">advance_to</code><span class="sig-paren">(</span>iterator <em>it</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v626basic_format_parse_context10advance_toE8iterator" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Advances the begin iterator to <code class="docutils literal notranslate"><span class="pre">it</span></code>. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v626basic_format_parse_context11next_arg_idEv">
+<span id="_CPPv3N3fmt2v626basic_format_parse_context11next_arg_idEv"></span><span id="_CPPv2N3fmt2v626basic_format_parse_context11next_arg_idEv"></span><span id="fmt::v6::basic_format_parse_context::next_arg_id"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1aa26a3713459cbd4e92d8c5846249959b"></span>int <code class="sig-name descname">next_arg_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v626basic_format_parse_context11next_arg_idEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reports an error if using the manual argument indexing; otherwise returns the next argument index and switches to the automatic indexing. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v626basic_format_parse_context12check_arg_idEi">
+<span id="_CPPv3N3fmt2v626basic_format_parse_context12check_arg_idEi"></span><span id="_CPPv2N3fmt2v626basic_format_parse_context12check_arg_idEi"></span><span id="fmt::v6::basic_format_parse_context::check_arg_id__i"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1a5b42548e00585e148dd76e4bf2e0cdfe"></span>void <code class="sig-name descname">check_arg_id</code><span class="sig-paren">(</span>int<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v626basic_format_parse_context12check_arg_idEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reports an error if using the automatic argument indexing; otherwise switches to the manual indexing. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v626basic_format_parse_context12check_arg_idE17basic_string_viewI4CharE">
+<span id="_CPPv3N3fmt2v626basic_format_parse_context12check_arg_idE17basic_string_viewI4CharE"></span><span id="_CPPv2N3fmt2v626basic_format_parse_context12check_arg_idE17basic_string_viewI4CharE"></span><span id="fmt::v6::basic_format_parse_context::check_arg_id__basic_string_view:Char:"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1ad0f9ed5dc5df8a50ba72eb211e715495"></span>void <code class="sig-name descname">check_arg_id</code><span class="sig-paren">(</span>basic_string_view&lt;Char&gt;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v626basic_format_parse_context12check_arg_idE17basic_string_viewI4CharE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v626basic_format_parse_context8on_errorEPKc">
+<span id="_CPPv3N3fmt2v626basic_format_parse_context8on_errorEPKc"></span><span id="_CPPv2N3fmt2v626basic_format_parse_context8on_errorEPKc"></span><span id="fmt::v6::basic_format_parse_context::on_error__cCP"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1adcdfa3b7c9abd009e06419fa221c090e"></span>void <code class="sig-name descname">on_error</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v626basic_format_parse_context8on_errorEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v626basic_format_parse_context13error_handlerEv">
+<span id="_CPPv3NK3fmt2v626basic_format_parse_context13error_handlerEv"></span><span id="_CPPv2NK3fmt2v626basic_format_parse_context13error_handlerEv"></span><span id="fmt::v6::basic_format_parse_context::error_handlerC"></span><span class="target" id="classfmt_1_1v6_1_1basic__format__parse__context_1a472ea97d2413bf5481798c3137c60c3b"></span>ErrorHandler <code class="sig-name descname">error_handler</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v626basic_format_parse_context13error_handlerEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1basic__memory__buffer.html" class="btn btn-neutral float-right" title="Template Class basic_memory_buffer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1basic__format__context.html" class="btn btn-neutral float-left" title="Template Class basic_format_context" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

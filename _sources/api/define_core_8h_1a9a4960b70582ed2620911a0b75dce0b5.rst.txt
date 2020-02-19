@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a9a4960b70582ed2620911a0b75dce0b5:
+
+Define FMT_API
+==============
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_API

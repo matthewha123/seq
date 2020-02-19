@@ -1,0 +1,22 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1output__range_1_1sentinel:
+
+Struct output_range::sentinel
+=============================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1output__range`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::output_range::sentinel
+   :members:
+   :protected-members:
+   :undoc-members:

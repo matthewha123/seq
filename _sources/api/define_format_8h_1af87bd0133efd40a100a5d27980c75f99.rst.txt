@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1af87bd0133efd40a100a5d27980c75f99:
+
+Define FMT_CUDA_VERSION
+=======================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_CUDA_VERSION

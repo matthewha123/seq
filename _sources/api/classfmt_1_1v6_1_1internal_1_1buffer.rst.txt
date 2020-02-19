@@ -1,0 +1,25 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1buffer:
+
+Template Class buffer
+=====================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public fmt::v6::basic_memory_buffer< T, SIZE, Allocator >`` (:ref:`exhale_class_classfmt_1_1v6_1_1basic__memory__buffer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::buffer
+   :members:
+   :protected-members:
+   :undoc-members:

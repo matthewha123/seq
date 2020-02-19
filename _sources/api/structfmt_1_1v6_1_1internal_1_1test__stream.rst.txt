@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1test__stream:
+
+Template Struct test_stream
+===========================
+
+- Defined in :ref:`file_compiler_util_fmt_ostream.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::basic_ostream< Char >``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::test_stream
+   :members:
+   :protected-members:
+   :undoc-members:

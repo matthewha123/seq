@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1fallback__formatter_3_01T_00_01Char_00_01enable__if__t_3_01is__stedb4bea0053ffd80df91a749f40030ba:
+
+Template Struct fallback_formatter< T, Char, enable_if_t< is_streamable< T, Char >::value > >
+=============================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_ostream.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public fmt::v6::formatter< basic_string_view< Char >, Char >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1formatter`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::fallback_formatter< T, Char, enable_if_t< is_streamable< T, Char >::value > >
+   :members:
+   :protected-members:
+   :undoc-members:

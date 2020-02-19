@@ -1,0 +1,13 @@
+.. _exhale_function_color_8h_1aa2804394eb8645f7e543a18cfaacb21f:
+
+Template Function fmt::v6::vprint(std::FILE \*, const text_style&, const S&, basic_format_args<buffer_context<Char>>)
+=====================================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::vprint(std::FILE *, const text_style&, const S&, basic_format_args<buffer_context<Char>>)

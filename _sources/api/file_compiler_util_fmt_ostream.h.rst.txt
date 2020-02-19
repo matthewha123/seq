@@ -1,0 +1,82 @@
+
+.. _file_compiler_util_fmt_ostream.h:
+
+File ostream.h
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util_fmt>` (``compiler/util/fmt``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/fmt/ostream.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_fmt_ostream.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``format.h`` (:ref:`file_compiler_util_fmt_format.h`)
+
+- ``ostream`` (:ref:`file_compiler_util_fmt_ostream.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_util_fmt_printf.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt`
+
+- :ref:`namespace_fmt__v6`
+
+- :ref:`namespace_fmt__v6__internal`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1fallback__formatter_3_01T_00_01Char_00_01enable__if__t_3_01is__stedb4bea0053ffd80df91a749f40030ba`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1test__stream`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1formatbuf`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1is__streamable`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_ostream_8h_1a33a604d9dc24f7d153e1193bb6a0af33`
+
+- :ref:`exhale_function_ostream_8h_1adc18bf09e32b0d363411dc817d3de0d0`
+
+- :ref:`exhale_function_ostream_8h_1a08bd0beddb9497b38f900722d63c26a1`
+
+- :ref:`exhale_function_ostream_8h_1a27230be204d9bad8e12f24cbd6b2dedb`
+

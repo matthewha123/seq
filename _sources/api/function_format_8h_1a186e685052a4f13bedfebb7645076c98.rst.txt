@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a186e685052a4f13bedfebb7645076c98:
+
+Function fmt::v6::internal::digits10< int128_t >
+================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::digits10< int128_t >()

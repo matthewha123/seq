@@ -1,0 +1,13 @@
+.. _exhale_function_ranges_8h_1a26f84aeabd4729c33f0af9fab9cac820:
+
+Template Function fmt::v6::internal::get_indexes
+================================================
+
+- Defined in :ref:`file_compiler_util_fmt_ranges.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_indexes(T const&)

@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class buffered_file &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class dynamic_formatter" href="classfmt_1_1v6_1_1dynamic__formatter.html" />
+    <link rel="prev" title="Template Class buffer_range" href="classfmt_1_1v6_1_1buffer__range.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Class buffered_file</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1buffered__file.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-buffered-file">
+<span id="exhale-class-classfmt-1-1v6-1-1buffered-file"></span><h1>Class buffered_file<a class="headerlink" href="#class-buffered-file" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_posix.h.html#file-compiler-util-fmt-posix-h"><span class="std std-ref">File posix.h</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N3fmt2v613buffered_fileE">
+<span id="_CPPv3N3fmt2v613buffered_fileE"></span><span id="_CPPv2N3fmt2v613buffered_fileE"></span><span id="fmt::v6::buffered_file"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file"></span><em class="property">class </em><code class="sig-name descname">buffered_file</code><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_fileE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v613buffered_file13buffered_fileERK13buffered_file">
+<span id="_CPPv3N3fmt2v613buffered_file13buffered_fileERK13buffered_file"></span><span id="_CPPv2N3fmt2v613buffered_file13buffered_fileERK13buffered_file"></span><span id="fmt::v6::buffered_file::buffered_file__buffered_fileCR"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1a8149ea50b057ae0a3548ef11c1a95597"></span><code class="sig-name descname">buffered_file</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N3fmt2v613buffered_file13buffered_fileERK13buffered_file" title="fmt::v6::buffered_file::buffered_file">buffered_file</a>&amp;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_file13buffered_fileERK13buffered_file" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v613buffered_fileaSERK13buffered_file">
+<span id="_CPPv3N3fmt2v613buffered_fileaSERK13buffered_file"></span><span id="_CPPv2N3fmt2v613buffered_fileaSERK13buffered_file"></span><span id="fmt::v6::buffered_file::assign-operator__buffered_fileCR"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1a376c3854d4f6b1fbb20fcc8284402176"></span>void <code class="sig-name descname">operator=</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N3fmt2v613buffered_fileE" title="fmt::v6::buffered_file">buffered_file</a>&amp;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_fileaSERK13buffered_file" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v613buffered_file13buffered_fileEv">
+<span id="_CPPv3N3fmt2v613buffered_file13buffered_fileEv"></span><span id="_CPPv2N3fmt2v613buffered_file13buffered_fileEv"></span><span id="fmt::v6::buffered_file::buffered_file"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1a6ff288789f9473891b5d52440367b261"></span><code class="sig-name descname">buffered_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_file13buffered_fileEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v613buffered_fileD0Ev">
+<span id="_CPPv3N3fmt2v613buffered_fileD0Ev"></span><span id="_CPPv2N3fmt2v613buffered_fileD0Ev"></span><span id="fmt::v6::buffered_file::~buffered_file"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1a439c566bdacd0d06a6b143ddb3f41702"></span><code class="sig-name descname">~buffered_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_fileD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v613buffered_file13buffered_fileERR13buffered_file">
+<span id="_CPPv3N3fmt2v613buffered_file13buffered_fileERR13buffered_file"></span><span id="_CPPv2N3fmt2v613buffered_file13buffered_fileERR13buffered_file"></span><span id="fmt::v6::buffered_file::buffered_file__buffered_fileRR"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1a349c6176e522da9089cf66fe6fd575c6"></span><code class="sig-name descname">buffered_file</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N3fmt2v613buffered_file13buffered_fileERK13buffered_file" title="fmt::v6::buffered_file::buffered_file">buffered_file</a> &amp;&amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_file13buffered_fileERR13buffered_file" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v613buffered_fileaSERR13buffered_file">
+<span id="_CPPv3N3fmt2v613buffered_fileaSERR13buffered_file"></span><span id="_CPPv2N3fmt2v613buffered_fileaSERR13buffered_file"></span><span id="fmt::v6::buffered_file::assign-operator__buffered_fileRR"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1a0cdd950e8ace779d65daac2bcdd568b6"></span><a class="reference internal" href="#_CPPv4N3fmt2v613buffered_fileE" title="fmt::v6::buffered_file">buffered_file</a> &amp;<code class="sig-name descname">operator=</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N3fmt2v613buffered_fileE" title="fmt::v6::buffered_file">buffered_file</a> &amp;&amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_fileaSERR13buffered_file" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v613buffered_file13buffered_fileE12cstring_view12cstring_view">
+<span id="_CPPv3N3fmt2v613buffered_file13buffered_fileE12cstring_view12cstring_view"></span><span id="_CPPv2N3fmt2v613buffered_file13buffered_fileE12cstring_view12cstring_view"></span><span id="fmt::v6::buffered_file::buffered_file__cstring_view.cstring_view"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1a1bf098ae883f59acdb3fbadbeb7c5c1b"></span><code class="sig-name descname">buffered_file</code><span class="sig-paren">(</span><a class="reference internal" href="typedef_posix_8h_1ae842ed76f0ef8c13542cc93818ecfb78.html#_CPPv4N3fmt2v612cstring_viewE" title="fmt::v6::cstring_view">cstring_view</a> <em>filename</em>, <a class="reference internal" href="typedef_posix_8h_1ae842ed76f0ef8c13542cc93818ecfb78.html#_CPPv4N3fmt2v612cstring_viewE" title="fmt::v6::cstring_view">cstring_view</a> <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_file13buffered_fileE12cstring_view12cstring_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v613buffered_file5closeEv">
+<span id="_CPPv3N3fmt2v613buffered_file5closeEv"></span><span id="_CPPv2N3fmt2v613buffered_file5closeEv"></span><span id="fmt::v6::buffered_file::close"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1ae0ead2b4b73ca2de5df05d1735e735ff"></span>void <code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_file5closeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v613buffered_file3getEv">
+<span id="_CPPv3NK3fmt2v613buffered_file3getEv"></span><span id="_CPPv2NK3fmt2v613buffered_file3getEv"></span><span id="fmt::v6::buffered_file::getC"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1ac269b93dfebcbaed3b77086832578e9f"></span>FILE *<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v613buffered_file3getEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="classfmt_1_1v6_1_1buffered__file_1ad47a594776c5f184c7bef7e67373e675"></span><code class="sig-name descname">int() fmt::v6::buffered_file::fileno() const</code></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v613buffered_file6vprintE11string_view11format_args">
+<span id="_CPPv3N3fmt2v613buffered_file6vprintE11string_view11format_args"></span><span id="_CPPv2N3fmt2v613buffered_file6vprintE11string_view11format_args"></span><span id="fmt::v6::buffered_file::vprint__string_view.format_args"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1aa6bb26495b371af77575d30c838110cc"></span>void <code class="sig-name descname">vprint</code><span class="sig-paren">(</span><a class="reference internal" href="typedef_core_8h_1a4074f7ef8c37b344ef1f77ebe1c7d724.html#_CPPv4N3fmt2v611string_viewE" title="fmt::v6::string_view">string_view</a> <em>format_str</em>, <a class="reference internal" href="structfmt_1_1v6_1_1format__args.html#_CPPv4N3fmt2v611format_argsE" title="fmt::v6::format_args">format_args</a> <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v613buffered_file6vprintE11string_view11format_args" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4IDpEN3fmt2v613buffered_file5printEv11string_viewDpRK4Args">
+<span id="_CPPv3IDpEN3fmt2v613buffered_file5printE11string_viewDpRK4Args"></span><span id="_CPPv2IDpEN3fmt2v613buffered_file5printE11string_viewDpRK4Args"></span><span class="target" id="classfmt_1_1v6_1_1buffered__file_1a8cc3818f53b1477c0a6ab012a449bd38"></span>template&lt;typename ...<code class="sig-name descname">Args</code>&gt;<br />void <code class="sig-name descname">print</code><span class="sig-paren">(</span><a class="reference internal" href="typedef_core_8h_1a4074f7ef8c37b344ef1f77ebe1c7d724.html#_CPPv4N3fmt2v611string_viewE" title="fmt::v6::string_view">string_view</a> <em>format_str</em>, <em class="property">const</em> <a class="reference internal" href="#_CPPv4IDpEN3fmt2v613buffered_file5printEv11string_viewDpRK4Args" title="fmt::v6::buffered_file::print::Args">Args</a>&amp;... <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4IDpEN3fmt2v613buffered_file5printEv11string_viewDpRK4Args" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1dynamic__formatter.html" class="btn btn-neutral float-right" title="Template Class dynamic_formatter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1buffer__range.html" class="btn btn-neutral float-left" title="Template Class buffer_range" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

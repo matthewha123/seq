@@ -1,0 +1,13 @@
+.. _exhale_function_format_8cpp_1ad1d80144a287168586e0112bd93f1c1c:
+
+Template Function internal::sprintf_format
+==========================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: internal::sprintf_format(Double, internal::buffer<char>&, sprintf_specs)

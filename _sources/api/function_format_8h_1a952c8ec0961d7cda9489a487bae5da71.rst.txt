@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a952c8ec0961d7cda9489a487bae5da71:
+
+Template Function fmt::v6::vformat_to(typename ArgFormatter::range, basic_string_view<Char>, basic_format_args<Context>, internal::locale_ref)
+==============================================================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::vformat_to(typename ArgFormatter::range, basic_string_view<Char>, basic_format_args<Context>, internal::locale_ref)

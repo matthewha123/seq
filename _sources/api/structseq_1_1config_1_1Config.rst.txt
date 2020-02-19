@@ -1,0 +1,16 @@
+.. _exhale_struct_structseq_1_1config_1_1Config:
+
+Struct Config
+=============
+
+- Defined in :ref:`file_compiler_lang_seq.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: seq::config::Config
+   :members:
+   :protected-members:
+   :undoc-members:

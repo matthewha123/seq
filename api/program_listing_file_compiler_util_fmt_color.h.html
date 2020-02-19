@@ -1,0 +1,760 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Program Listing for File color.h &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Program Listing for File color.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/program_listing_file_compiler_util_fmt_color.h.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-color-h">
+<span id="program-listing-file-compiler-util-fmt-color-h"></span><h1>Program Listing for File color.h<a class="headerlink" href="#program-listing-for-file-color-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_compiler_util_fmt_color.h.html#file-compiler-util-fmt-color-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/color.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Formatting library for C++ - color support</span>
+<span class="c1">//</span>
+<span class="c1">// Copyright (c) 2018 - present, Victor Zverovich and fmt contributors</span>
+<span class="c1">// All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// For the license information refer to format.h.</span>
+
+<span class="cp">#ifndef FMT_COLOR_H_</span>
+<span class="cp">#define FMT_COLOR_H_</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;format.h&quot;</span><span class="cp"></span>
+
+<span class="n">FMT_BEGIN_NAMESPACE</span>
+
+<span class="k">enum</span> <span class="k">class</span> <span class="nc">color</span> <span class="o">:</span> <span class="kt">uint32_t</span> <span class="p">{</span>
+  <span class="n">alice_blue</span> <span class="o">=</span> <span class="mh">0xF0F8FF</span><span class="p">,</span>              <span class="c1">// rgb(240,248,255)</span>
+  <span class="n">antique_white</span> <span class="o">=</span> <span class="mh">0xFAEBD7</span><span class="p">,</span>           <span class="c1">// rgb(250,235,215)</span>
+  <span class="n">aqua</span> <span class="o">=</span> <span class="mh">0x00FFFF</span><span class="p">,</span>                    <span class="c1">// rgb(0,255,255)</span>
+  <span class="n">aquamarine</span> <span class="o">=</span> <span class="mh">0x7FFFD4</span><span class="p">,</span>              <span class="c1">// rgb(127,255,212)</span>
+  <span class="n">azure</span> <span class="o">=</span> <span class="mh">0xF0FFFF</span><span class="p">,</span>                   <span class="c1">// rgb(240,255,255)</span>
+  <span class="n">beige</span> <span class="o">=</span> <span class="mh">0xF5F5DC</span><span class="p">,</span>                   <span class="c1">// rgb(245,245,220)</span>
+  <span class="n">bisque</span> <span class="o">=</span> <span class="mh">0xFFE4C4</span><span class="p">,</span>                  <span class="c1">// rgb(255,228,196)</span>
+  <span class="n">black</span> <span class="o">=</span> <span class="mh">0x000000</span><span class="p">,</span>                   <span class="c1">// rgb(0,0,0)</span>
+  <span class="n">blanched_almond</span> <span class="o">=</span> <span class="mh">0xFFEBCD</span><span class="p">,</span>         <span class="c1">// rgb(255,235,205)</span>
+  <span class="n">blue</span> <span class="o">=</span> <span class="mh">0x0000FF</span><span class="p">,</span>                    <span class="c1">// rgb(0,0,255)</span>
+  <span class="n">blue_violet</span> <span class="o">=</span> <span class="mh">0x8A2BE2</span><span class="p">,</span>             <span class="c1">// rgb(138,43,226)</span>
+  <span class="n">brown</span> <span class="o">=</span> <span class="mh">0xA52A2A</span><span class="p">,</span>                   <span class="c1">// rgb(165,42,42)</span>
+  <span class="n">burly_wood</span> <span class="o">=</span> <span class="mh">0xDEB887</span><span class="p">,</span>              <span class="c1">// rgb(222,184,135)</span>
+  <span class="n">cadet_blue</span> <span class="o">=</span> <span class="mh">0x5F9EA0</span><span class="p">,</span>              <span class="c1">// rgb(95,158,160)</span>
+  <span class="n">chartreuse</span> <span class="o">=</span> <span class="mh">0x7FFF00</span><span class="p">,</span>              <span class="c1">// rgb(127,255,0)</span>
+  <span class="n">chocolate</span> <span class="o">=</span> <span class="mh">0xD2691E</span><span class="p">,</span>               <span class="c1">// rgb(210,105,30)</span>
+  <span class="n">coral</span> <span class="o">=</span> <span class="mh">0xFF7F50</span><span class="p">,</span>                   <span class="c1">// rgb(255,127,80)</span>
+  <span class="n">cornflower_blue</span> <span class="o">=</span> <span class="mh">0x6495ED</span><span class="p">,</span>         <span class="c1">// rgb(100,149,237)</span>
+  <span class="n">cornsilk</span> <span class="o">=</span> <span class="mh">0xFFF8DC</span><span class="p">,</span>                <span class="c1">// rgb(255,248,220)</span>
+  <span class="n">crimson</span> <span class="o">=</span> <span class="mh">0xDC143C</span><span class="p">,</span>                 <span class="c1">// rgb(220,20,60)</span>
+  <span class="n">cyan</span> <span class="o">=</span> <span class="mh">0x00FFFF</span><span class="p">,</span>                    <span class="c1">// rgb(0,255,255)</span>
+  <span class="n">dark_blue</span> <span class="o">=</span> <span class="mh">0x00008B</span><span class="p">,</span>               <span class="c1">// rgb(0,0,139)</span>
+  <span class="n">dark_cyan</span> <span class="o">=</span> <span class="mh">0x008B8B</span><span class="p">,</span>               <span class="c1">// rgb(0,139,139)</span>
+  <span class="n">dark_golden_rod</span> <span class="o">=</span> <span class="mh">0xB8860B</span><span class="p">,</span>         <span class="c1">// rgb(184,134,11)</span>
+  <span class="n">dark_gray</span> <span class="o">=</span> <span class="mh">0xA9A9A9</span><span class="p">,</span>               <span class="c1">// rgb(169,169,169)</span>
+  <span class="n">dark_green</span> <span class="o">=</span> <span class="mh">0x006400</span><span class="p">,</span>              <span class="c1">// rgb(0,100,0)</span>
+  <span class="n">dark_khaki</span> <span class="o">=</span> <span class="mh">0xBDB76B</span><span class="p">,</span>              <span class="c1">// rgb(189,183,107)</span>
+  <span class="n">dark_magenta</span> <span class="o">=</span> <span class="mh">0x8B008B</span><span class="p">,</span>            <span class="c1">// rgb(139,0,139)</span>
+  <span class="n">dark_olive_green</span> <span class="o">=</span> <span class="mh">0x556B2F</span><span class="p">,</span>        <span class="c1">// rgb(85,107,47)</span>
+  <span class="n">dark_orange</span> <span class="o">=</span> <span class="mh">0xFF8C00</span><span class="p">,</span>             <span class="c1">// rgb(255,140,0)</span>
+  <span class="n">dark_orchid</span> <span class="o">=</span> <span class="mh">0x9932CC</span><span class="p">,</span>             <span class="c1">// rgb(153,50,204)</span>
+  <span class="n">dark_red</span> <span class="o">=</span> <span class="mh">0x8B0000</span><span class="p">,</span>                <span class="c1">// rgb(139,0,0)</span>
+  <span class="n">dark_salmon</span> <span class="o">=</span> <span class="mh">0xE9967A</span><span class="p">,</span>             <span class="c1">// rgb(233,150,122)</span>
+  <span class="n">dark_sea_green</span> <span class="o">=</span> <span class="mh">0x8FBC8F</span><span class="p">,</span>          <span class="c1">// rgb(143,188,143)</span>
+  <span class="n">dark_slate_blue</span> <span class="o">=</span> <span class="mh">0x483D8B</span><span class="p">,</span>         <span class="c1">// rgb(72,61,139)</span>
+  <span class="n">dark_slate_gray</span> <span class="o">=</span> <span class="mh">0x2F4F4F</span><span class="p">,</span>         <span class="c1">// rgb(47,79,79)</span>
+  <span class="n">dark_turquoise</span> <span class="o">=</span> <span class="mh">0x00CED1</span><span class="p">,</span>          <span class="c1">// rgb(0,206,209)</span>
+  <span class="n">dark_violet</span> <span class="o">=</span> <span class="mh">0x9400D3</span><span class="p">,</span>             <span class="c1">// rgb(148,0,211)</span>
+  <span class="n">deep_pink</span> <span class="o">=</span> <span class="mh">0xFF1493</span><span class="p">,</span>               <span class="c1">// rgb(255,20,147)</span>
+  <span class="n">deep_sky_blue</span> <span class="o">=</span> <span class="mh">0x00BFFF</span><span class="p">,</span>           <span class="c1">// rgb(0,191,255)</span>
+  <span class="n">dim_gray</span> <span class="o">=</span> <span class="mh">0x696969</span><span class="p">,</span>                <span class="c1">// rgb(105,105,105)</span>
+  <span class="n">dodger_blue</span> <span class="o">=</span> <span class="mh">0x1E90FF</span><span class="p">,</span>             <span class="c1">// rgb(30,144,255)</span>
+  <span class="n">fire_brick</span> <span class="o">=</span> <span class="mh">0xB22222</span><span class="p">,</span>              <span class="c1">// rgb(178,34,34)</span>
+  <span class="n">floral_white</span> <span class="o">=</span> <span class="mh">0xFFFAF0</span><span class="p">,</span>            <span class="c1">// rgb(255,250,240)</span>
+  <span class="n">forest_green</span> <span class="o">=</span> <span class="mh">0x228B22</span><span class="p">,</span>            <span class="c1">// rgb(34,139,34)</span>
+  <span class="n">fuchsia</span> <span class="o">=</span> <span class="mh">0xFF00FF</span><span class="p">,</span>                 <span class="c1">// rgb(255,0,255)</span>
+  <span class="n">gainsboro</span> <span class="o">=</span> <span class="mh">0xDCDCDC</span><span class="p">,</span>               <span class="c1">// rgb(220,220,220)</span>
+  <span class="n">ghost_white</span> <span class="o">=</span> <span class="mh">0xF8F8FF</span><span class="p">,</span>             <span class="c1">// rgb(248,248,255)</span>
+  <span class="n">gold</span> <span class="o">=</span> <span class="mh">0xFFD700</span><span class="p">,</span>                    <span class="c1">// rgb(255,215,0)</span>
+  <span class="n">golden_rod</span> <span class="o">=</span> <span class="mh">0xDAA520</span><span class="p">,</span>              <span class="c1">// rgb(218,165,32)</span>
+  <span class="n">gray</span> <span class="o">=</span> <span class="mh">0x808080</span><span class="p">,</span>                    <span class="c1">// rgb(128,128,128)</span>
+  <span class="n">green</span> <span class="o">=</span> <span class="mh">0x008000</span><span class="p">,</span>                   <span class="c1">// rgb(0,128,0)</span>
+  <span class="n">green_yellow</span> <span class="o">=</span> <span class="mh">0xADFF2F</span><span class="p">,</span>            <span class="c1">// rgb(173,255,47)</span>
+  <span class="n">honey_dew</span> <span class="o">=</span> <span class="mh">0xF0FFF0</span><span class="p">,</span>               <span class="c1">// rgb(240,255,240)</span>
+  <span class="n">hot_pink</span> <span class="o">=</span> <span class="mh">0xFF69B4</span><span class="p">,</span>                <span class="c1">// rgb(255,105,180)</span>
+  <span class="n">indian_red</span> <span class="o">=</span> <span class="mh">0xCD5C5C</span><span class="p">,</span>              <span class="c1">// rgb(205,92,92)</span>
+  <span class="n">indigo</span> <span class="o">=</span> <span class="mh">0x4B0082</span><span class="p">,</span>                  <span class="c1">// rgb(75,0,130)</span>
+  <span class="n">ivory</span> <span class="o">=</span> <span class="mh">0xFFFFF0</span><span class="p">,</span>                   <span class="c1">// rgb(255,255,240)</span>
+  <span class="n">khaki</span> <span class="o">=</span> <span class="mh">0xF0E68C</span><span class="p">,</span>                   <span class="c1">// rgb(240,230,140)</span>
+  <span class="n">lavender</span> <span class="o">=</span> <span class="mh">0xE6E6FA</span><span class="p">,</span>                <span class="c1">// rgb(230,230,250)</span>
+  <span class="n">lavender_blush</span> <span class="o">=</span> <span class="mh">0xFFF0F5</span><span class="p">,</span>          <span class="c1">// rgb(255,240,245)</span>
+  <span class="n">lawn_green</span> <span class="o">=</span> <span class="mh">0x7CFC00</span><span class="p">,</span>              <span class="c1">// rgb(124,252,0)</span>
+  <span class="n">lemon_chiffon</span> <span class="o">=</span> <span class="mh">0xFFFACD</span><span class="p">,</span>           <span class="c1">// rgb(255,250,205)</span>
+  <span class="n">light_blue</span> <span class="o">=</span> <span class="mh">0xADD8E6</span><span class="p">,</span>              <span class="c1">// rgb(173,216,230)</span>
+  <span class="n">light_coral</span> <span class="o">=</span> <span class="mh">0xF08080</span><span class="p">,</span>             <span class="c1">// rgb(240,128,128)</span>
+  <span class="n">light_cyan</span> <span class="o">=</span> <span class="mh">0xE0FFFF</span><span class="p">,</span>              <span class="c1">// rgb(224,255,255)</span>
+  <span class="n">light_golden_rod_yellow</span> <span class="o">=</span> <span class="mh">0xFAFAD2</span><span class="p">,</span> <span class="c1">// rgb(250,250,210)</span>
+  <span class="n">light_gray</span> <span class="o">=</span> <span class="mh">0xD3D3D3</span><span class="p">,</span>              <span class="c1">// rgb(211,211,211)</span>
+  <span class="n">light_green</span> <span class="o">=</span> <span class="mh">0x90EE90</span><span class="p">,</span>             <span class="c1">// rgb(144,238,144)</span>
+  <span class="n">light_pink</span> <span class="o">=</span> <span class="mh">0xFFB6C1</span><span class="p">,</span>              <span class="c1">// rgb(255,182,193)</span>
+  <span class="n">light_salmon</span> <span class="o">=</span> <span class="mh">0xFFA07A</span><span class="p">,</span>            <span class="c1">// rgb(255,160,122)</span>
+  <span class="n">light_sea_green</span> <span class="o">=</span> <span class="mh">0x20B2AA</span><span class="p">,</span>         <span class="c1">// rgb(32,178,170)</span>
+  <span class="n">light_sky_blue</span> <span class="o">=</span> <span class="mh">0x87CEFA</span><span class="p">,</span>          <span class="c1">// rgb(135,206,250)</span>
+  <span class="n">light_slate_gray</span> <span class="o">=</span> <span class="mh">0x778899</span><span class="p">,</span>        <span class="c1">// rgb(119,136,153)</span>
+  <span class="n">light_steel_blue</span> <span class="o">=</span> <span class="mh">0xB0C4DE</span><span class="p">,</span>        <span class="c1">// rgb(176,196,222)</span>
+  <span class="n">light_yellow</span> <span class="o">=</span> <span class="mh">0xFFFFE0</span><span class="p">,</span>            <span class="c1">// rgb(255,255,224)</span>
+  <span class="n">lime</span> <span class="o">=</span> <span class="mh">0x00FF00</span><span class="p">,</span>                    <span class="c1">// rgb(0,255,0)</span>
+  <span class="n">lime_green</span> <span class="o">=</span> <span class="mh">0x32CD32</span><span class="p">,</span>              <span class="c1">// rgb(50,205,50)</span>
+  <span class="n">linen</span> <span class="o">=</span> <span class="mh">0xFAF0E6</span><span class="p">,</span>                   <span class="c1">// rgb(250,240,230)</span>
+  <span class="n">magenta</span> <span class="o">=</span> <span class="mh">0xFF00FF</span><span class="p">,</span>                 <span class="c1">// rgb(255,0,255)</span>
+  <span class="n">maroon</span> <span class="o">=</span> <span class="mh">0x800000</span><span class="p">,</span>                  <span class="c1">// rgb(128,0,0)</span>
+  <span class="n">medium_aquamarine</span> <span class="o">=</span> <span class="mh">0x66CDAA</span><span class="p">,</span>       <span class="c1">// rgb(102,205,170)</span>
+  <span class="n">medium_blue</span> <span class="o">=</span> <span class="mh">0x0000CD</span><span class="p">,</span>             <span class="c1">// rgb(0,0,205)</span>
+  <span class="n">medium_orchid</span> <span class="o">=</span> <span class="mh">0xBA55D3</span><span class="p">,</span>           <span class="c1">// rgb(186,85,211)</span>
+  <span class="n">medium_purple</span> <span class="o">=</span> <span class="mh">0x9370DB</span><span class="p">,</span>           <span class="c1">// rgb(147,112,219)</span>
+  <span class="n">medium_sea_green</span> <span class="o">=</span> <span class="mh">0x3CB371</span><span class="p">,</span>        <span class="c1">// rgb(60,179,113)</span>
+  <span class="n">medium_slate_blue</span> <span class="o">=</span> <span class="mh">0x7B68EE</span><span class="p">,</span>       <span class="c1">// rgb(123,104,238)</span>
+  <span class="n">medium_spring_green</span> <span class="o">=</span> <span class="mh">0x00FA9A</span><span class="p">,</span>     <span class="c1">// rgb(0,250,154)</span>
+  <span class="n">medium_turquoise</span> <span class="o">=</span> <span class="mh">0x48D1CC</span><span class="p">,</span>        <span class="c1">// rgb(72,209,204)</span>
+  <span class="n">medium_violet_red</span> <span class="o">=</span> <span class="mh">0xC71585</span><span class="p">,</span>       <span class="c1">// rgb(199,21,133)</span>
+  <span class="n">midnight_blue</span> <span class="o">=</span> <span class="mh">0x191970</span><span class="p">,</span>           <span class="c1">// rgb(25,25,112)</span>
+  <span class="n">mint_cream</span> <span class="o">=</span> <span class="mh">0xF5FFFA</span><span class="p">,</span>              <span class="c1">// rgb(245,255,250)</span>
+  <span class="n">misty_rose</span> <span class="o">=</span> <span class="mh">0xFFE4E1</span><span class="p">,</span>              <span class="c1">// rgb(255,228,225)</span>
+  <span class="n">moccasin</span> <span class="o">=</span> <span class="mh">0xFFE4B5</span><span class="p">,</span>                <span class="c1">// rgb(255,228,181)</span>
+  <span class="n">navajo_white</span> <span class="o">=</span> <span class="mh">0xFFDEAD</span><span class="p">,</span>            <span class="c1">// rgb(255,222,173)</span>
+  <span class="n">navy</span> <span class="o">=</span> <span class="mh">0x000080</span><span class="p">,</span>                    <span class="c1">// rgb(0,0,128)</span>
+  <span class="n">old_lace</span> <span class="o">=</span> <span class="mh">0xFDF5E6</span><span class="p">,</span>                <span class="c1">// rgb(253,245,230)</span>
+  <span class="n">olive</span> <span class="o">=</span> <span class="mh">0x808000</span><span class="p">,</span>                   <span class="c1">// rgb(128,128,0)</span>
+  <span class="n">olive_drab</span> <span class="o">=</span> <span class="mh">0x6B8E23</span><span class="p">,</span>              <span class="c1">// rgb(107,142,35)</span>
+  <span class="n">orange</span> <span class="o">=</span> <span class="mh">0xFFA500</span><span class="p">,</span>                  <span class="c1">// rgb(255,165,0)</span>
+  <span class="n">orange_red</span> <span class="o">=</span> <span class="mh">0xFF4500</span><span class="p">,</span>              <span class="c1">// rgb(255,69,0)</span>
+  <span class="n">orchid</span> <span class="o">=</span> <span class="mh">0xDA70D6</span><span class="p">,</span>                  <span class="c1">// rgb(218,112,214)</span>
+  <span class="n">pale_golden_rod</span> <span class="o">=</span> <span class="mh">0xEEE8AA</span><span class="p">,</span>         <span class="c1">// rgb(238,232,170)</span>
+  <span class="n">pale_green</span> <span class="o">=</span> <span class="mh">0x98FB98</span><span class="p">,</span>              <span class="c1">// rgb(152,251,152)</span>
+  <span class="n">pale_turquoise</span> <span class="o">=</span> <span class="mh">0xAFEEEE</span><span class="p">,</span>          <span class="c1">// rgb(175,238,238)</span>
+  <span class="n">pale_violet_red</span> <span class="o">=</span> <span class="mh">0xDB7093</span><span class="p">,</span>         <span class="c1">// rgb(219,112,147)</span>
+  <span class="n">papaya_whip</span> <span class="o">=</span> <span class="mh">0xFFEFD5</span><span class="p">,</span>             <span class="c1">// rgb(255,239,213)</span>
+  <span class="n">peach_puff</span> <span class="o">=</span> <span class="mh">0xFFDAB9</span><span class="p">,</span>              <span class="c1">// rgb(255,218,185)</span>
+  <span class="n">peru</span> <span class="o">=</span> <span class="mh">0xCD853F</span><span class="p">,</span>                    <span class="c1">// rgb(205,133,63)</span>
+  <span class="n">pink</span> <span class="o">=</span> <span class="mh">0xFFC0CB</span><span class="p">,</span>                    <span class="c1">// rgb(255,192,203)</span>
+  <span class="n">plum</span> <span class="o">=</span> <span class="mh">0xDDA0DD</span><span class="p">,</span>                    <span class="c1">// rgb(221,160,221)</span>
+  <span class="n">powder_blue</span> <span class="o">=</span> <span class="mh">0xB0E0E6</span><span class="p">,</span>             <span class="c1">// rgb(176,224,230)</span>
+  <span class="n">purple</span> <span class="o">=</span> <span class="mh">0x800080</span><span class="p">,</span>                  <span class="c1">// rgb(128,0,128)</span>
+  <span class="n">rebecca_purple</span> <span class="o">=</span> <span class="mh">0x663399</span><span class="p">,</span>          <span class="c1">// rgb(102,51,153)</span>
+  <span class="n">red</span> <span class="o">=</span> <span class="mh">0xFF0000</span><span class="p">,</span>                     <span class="c1">// rgb(255,0,0)</span>
+  <span class="n">rosy_brown</span> <span class="o">=</span> <span class="mh">0xBC8F8F</span><span class="p">,</span>              <span class="c1">// rgb(188,143,143)</span>
+  <span class="n">royal_blue</span> <span class="o">=</span> <span class="mh">0x4169E1</span><span class="p">,</span>              <span class="c1">// rgb(65,105,225)</span>
+  <span class="n">saddle_brown</span> <span class="o">=</span> <span class="mh">0x8B4513</span><span class="p">,</span>            <span class="c1">// rgb(139,69,19)</span>
+  <span class="n">salmon</span> <span class="o">=</span> <span class="mh">0xFA8072</span><span class="p">,</span>                  <span class="c1">// rgb(250,128,114)</span>
+  <span class="n">sandy_brown</span> <span class="o">=</span> <span class="mh">0xF4A460</span><span class="p">,</span>             <span class="c1">// rgb(244,164,96)</span>
+  <span class="n">sea_green</span> <span class="o">=</span> <span class="mh">0x2E8B57</span><span class="p">,</span>               <span class="c1">// rgb(46,139,87)</span>
+  <span class="n">sea_shell</span> <span class="o">=</span> <span class="mh">0xFFF5EE</span><span class="p">,</span>               <span class="c1">// rgb(255,245,238)</span>
+  <span class="n">sienna</span> <span class="o">=</span> <span class="mh">0xA0522D</span><span class="p">,</span>                  <span class="c1">// rgb(160,82,45)</span>
+  <span class="n">silver</span> <span class="o">=</span> <span class="mh">0xC0C0C0</span><span class="p">,</span>                  <span class="c1">// rgb(192,192,192)</span>
+  <span class="n">sky_blue</span> <span class="o">=</span> <span class="mh">0x87CEEB</span><span class="p">,</span>                <span class="c1">// rgb(135,206,235)</span>
+  <span class="n">slate_blue</span> <span class="o">=</span> <span class="mh">0x6A5ACD</span><span class="p">,</span>              <span class="c1">// rgb(106,90,205)</span>
+  <span class="n">slate_gray</span> <span class="o">=</span> <span class="mh">0x708090</span><span class="p">,</span>              <span class="c1">// rgb(112,128,144)</span>
+  <span class="n">snow</span> <span class="o">=</span> <span class="mh">0xFFFAFA</span><span class="p">,</span>                    <span class="c1">// rgb(255,250,250)</span>
+  <span class="n">spring_green</span> <span class="o">=</span> <span class="mh">0x00FF7F</span><span class="p">,</span>            <span class="c1">// rgb(0,255,127)</span>
+  <span class="n">steel_blue</span> <span class="o">=</span> <span class="mh">0x4682B4</span><span class="p">,</span>              <span class="c1">// rgb(70,130,180)</span>
+  <span class="n">tan</span> <span class="o">=</span> <span class="mh">0xD2B48C</span><span class="p">,</span>                     <span class="c1">// rgb(210,180,140)</span>
+  <span class="n">teal</span> <span class="o">=</span> <span class="mh">0x008080</span><span class="p">,</span>                    <span class="c1">// rgb(0,128,128)</span>
+  <span class="n">thistle</span> <span class="o">=</span> <span class="mh">0xD8BFD8</span><span class="p">,</span>                 <span class="c1">// rgb(216,191,216)</span>
+  <span class="n">tomato</span> <span class="o">=</span> <span class="mh">0xFF6347</span><span class="p">,</span>                  <span class="c1">// rgb(255,99,71)</span>
+  <span class="n">turquoise</span> <span class="o">=</span> <span class="mh">0x40E0D0</span><span class="p">,</span>               <span class="c1">// rgb(64,224,208)</span>
+  <span class="n">violet</span> <span class="o">=</span> <span class="mh">0xEE82EE</span><span class="p">,</span>                  <span class="c1">// rgb(238,130,238)</span>
+  <span class="n">wheat</span> <span class="o">=</span> <span class="mh">0xF5DEB3</span><span class="p">,</span>                   <span class="c1">// rgb(245,222,179)</span>
+  <span class="n">white</span> <span class="o">=</span> <span class="mh">0xFFFFFF</span><span class="p">,</span>                   <span class="c1">// rgb(255,255,255)</span>
+  <span class="n">white_smoke</span> <span class="o">=</span> <span class="mh">0xF5F5F5</span><span class="p">,</span>             <span class="c1">// rgb(245,245,245)</span>
+  <span class="n">yellow</span> <span class="o">=</span> <span class="mh">0xFFFF00</span><span class="p">,</span>                  <span class="c1">// rgb(255,255,0)</span>
+  <span class="n">yellow_green</span> <span class="o">=</span> <span class="mh">0x9ACD32</span>             <span class="c1">// rgb(154,205,50)</span>
+<span class="p">};</span>                                    <span class="c1">// enum class color</span>
+
+<span class="k">enum</span> <span class="k">class</span> <span class="nc">terminal_color</span> <span class="o">:</span> <span class="kt">uint8_t</span> <span class="p">{</span>
+  <span class="n">black</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span>
+  <span class="n">red</span><span class="p">,</span>
+  <span class="n">green</span><span class="p">,</span>
+  <span class="n">yellow</span><span class="p">,</span>
+  <span class="n">blue</span><span class="p">,</span>
+  <span class="n">magenta</span><span class="p">,</span>
+  <span class="n">cyan</span><span class="p">,</span>
+  <span class="n">white</span><span class="p">,</span>
+  <span class="n">bright_black</span> <span class="o">=</span> <span class="mi">90</span><span class="p">,</span>
+  <span class="n">bright_red</span><span class="p">,</span>
+  <span class="n">bright_green</span><span class="p">,</span>
+  <span class="n">bright_yellow</span><span class="p">,</span>
+  <span class="n">bright_blue</span><span class="p">,</span>
+  <span class="n">bright_magenta</span><span class="p">,</span>
+  <span class="n">bright_cyan</span><span class="p">,</span>
+  <span class="n">bright_white</span>
+<span class="p">};</span>
+
+<span class="k">enum</span> <span class="k">class</span> <span class="nc">emphasis</span> <span class="o">:</span> <span class="kt">uint8_t</span> <span class="p">{</span>
+  <span class="n">bold</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="n">italic</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="n">underline</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="n">strikethrough</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">3</span>
+<span class="p">};</span>
+
+<span class="c1">// rgb is a struct for red, green and blue colors.</span>
+<span class="c1">// Using the name &quot;rgb&quot; makes some editors show the color in a tooltip.</span>
+<span class="k">struct</span> <span class="n">rgb</span> <span class="p">{</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">rgb</span><span class="p">()</span> <span class="o">:</span> <span class="n">r</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">g</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">b</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">rgb</span><span class="p">(</span><span class="kt">uint8_t</span> <span class="n">r_</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="n">g_</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="n">b_</span><span class="p">)</span> <span class="o">:</span> <span class="n">r</span><span class="p">(</span><span class="n">r_</span><span class="p">),</span> <span class="n">g</span><span class="p">(</span><span class="n">g_</span><span class="p">),</span> <span class="n">b</span><span class="p">(</span><span class="n">b_</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">rgb</span><span class="p">(</span><span class="kt">uint32_t</span> <span class="n">hex</span><span class="p">)</span>
+      <span class="o">:</span> <span class="n">r</span><span class="p">((</span><span class="n">hex</span> <span class="o">&gt;&gt;</span> <span class="mi">16</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">),</span> <span class="n">g</span><span class="p">((</span><span class="n">hex</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">),</span> <span class="n">b</span><span class="p">(</span><span class="n">hex</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">rgb</span><span class="p">(</span><span class="n">color</span> <span class="n">hex</span><span class="p">)</span>
+      <span class="o">:</span> <span class="n">r</span><span class="p">((</span><span class="kt">uint32_t</span><span class="p">(</span><span class="n">hex</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">16</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">),</span> <span class="n">g</span><span class="p">((</span><span class="kt">uint32_t</span><span class="p">(</span><span class="n">hex</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">),</span>
+        <span class="n">b</span><span class="p">(</span><span class="kt">uint32_t</span><span class="p">(</span><span class="n">hex</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">uint8_t</span> <span class="n">r</span><span class="p">;</span>
+  <span class="kt">uint8_t</span> <span class="n">g</span><span class="p">;</span>
+  <span class="kt">uint8_t</span> <span class="n">b</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">namespace</span> <span class="n">internal</span> <span class="p">{</span>
+
+<span class="c1">// color is a struct of either a rgb color or a terminal color.</span>
+<span class="k">struct</span> <span class="n">color_type</span> <span class="p">{</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">color_type</span><span class="p">()</span> <span class="nl">FMT_NOEXCEPT</span> <span class="p">:</span> <span class="n">is_rgb</span><span class="p">(),</span> <span class="n">value</span><span class="p">{}</span> <span class="p">{}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">color_type</span><span class="p">(</span><span class="n">color</span> <span class="n">rgb_color</span><span class="p">)</span> <span class="nl">FMT_NOEXCEPT</span> <span class="p">:</span> <span class="n">is_rgb</span><span class="p">(</span><span class="nb">true</span><span class="p">),</span>
+                                                           <span class="n">value</span><span class="p">{}</span> <span class="p">{</span>
+    <span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">rgb_color</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">color_type</span><span class="p">(</span><span class="n">rgb</span> <span class="n">rgb_color</span><span class="p">)</span> <span class="nl">FMT_NOEXCEPT</span> <span class="p">:</span> <span class="n">is_rgb</span><span class="p">(</span><span class="nb">true</span><span class="p">),</span> <span class="n">value</span><span class="p">{}</span> <span class="p">{</span>
+    <span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span> <span class="o">=</span> <span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">rgb_color</span><span class="p">.</span><span class="n">r</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">)</span> <span class="o">|</span>
+                      <span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">rgb_color</span><span class="p">.</span><span class="n">g</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">|</span> <span class="n">rgb_color</span><span class="p">.</span><span class="n">b</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">color_type</span><span class="p">(</span><span class="n">terminal_color</span> <span class="n">term_color</span><span class="p">)</span> <span class="nl">FMT_NOEXCEPT</span> <span class="p">:</span> <span class="n">is_rgb</span><span class="p">(),</span>
+                                                                     <span class="n">value</span><span class="p">{}</span> <span class="p">{</span>
+    <span class="n">value</span><span class="p">.</span><span class="n">term_color</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">term_color</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="kt">bool</span> <span class="n">is_rgb</span><span class="p">;</span>
+  <span class="k">union</span> <span class="n">color_union</span> <span class="p">{</span>
+    <span class="kt">uint8_t</span> <span class="n">term_color</span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="n">rgb_color</span><span class="p">;</span>
+  <span class="p">}</span> <span class="n">value</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="p">}</span> <span class="c1">// namespace internal</span>
+
+<span class="c1">// Experimental text formatting support.</span>
+<span class="k">class</span> <span class="nc">text_style</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">text_style</span><span class="p">(</span><span class="n">emphasis</span> <span class="n">em</span> <span class="o">=</span> <span class="n">emphasis</span><span class="p">())</span> <span class="nl">FMT_NOEXCEPT</span>
+      <span class="p">:</span> <span class="n">set_foreground_color</span><span class="p">(),</span>
+        <span class="n">set_background_color</span><span class="p">(),</span>
+        <span class="n">ems</span><span class="p">(</span><span class="n">em</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">|=</span><span class="p">(</span><span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">rhs</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">set_foreground_color</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">set_foreground_color</span> <span class="o">=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">set_foreground_color</span><span class="p">;</span>
+      <span class="n">foreground_color</span> <span class="o">=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">foreground_color</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">rhs</span><span class="p">.</span><span class="n">set_foreground_color</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">foreground_color</span><span class="p">.</span><span class="n">is_rgb</span> <span class="o">||</span> <span class="o">!</span><span class="n">rhs</span><span class="p">.</span><span class="n">foreground_color</span><span class="p">.</span><span class="n">is_rgb</span><span class="p">)</span>
+        <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;can&#39;t OR a terminal color&quot;</span><span class="p">));</span>
+      <span class="n">foreground_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span> <span class="o">|=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">foreground_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">set_background_color</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">set_background_color</span> <span class="o">=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">set_background_color</span><span class="p">;</span>
+      <span class="n">background_color</span> <span class="o">=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">background_color</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">rhs</span><span class="p">.</span><span class="n">set_background_color</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">background_color</span><span class="p">.</span><span class="n">is_rgb</span> <span class="o">||</span> <span class="o">!</span><span class="n">rhs</span><span class="p">.</span><span class="n">background_color</span><span class="p">.</span><span class="n">is_rgb</span><span class="p">)</span>
+        <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;can&#39;t OR a terminal color&quot;</span><span class="p">));</span>
+      <span class="n">background_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span> <span class="o">|=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">background_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">ems</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">emphasis</span><span class="o">&gt;</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ems</span><span class="p">)</span> <span class="o">|</span>
+                                <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">rhs</span><span class="p">.</span><span class="n">ems</span><span class="p">));</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">friend</span> <span class="n">FMT_CONSTEXPR</span> <span class="n">text_style</span> <span class="k">operator</span><span class="o">|</span><span class="p">(</span><span class="n">text_style</span> <span class="n">lhs</span><span class="p">,</span>
+                                            <span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">rhs</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">lhs</span> <span class="o">|=</span> <span class="n">rhs</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">&amp;=</span><span class="p">(</span><span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">rhs</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">set_foreground_color</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">set_foreground_color</span> <span class="o">=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">set_foreground_color</span><span class="p">;</span>
+      <span class="n">foreground_color</span> <span class="o">=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">foreground_color</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">rhs</span><span class="p">.</span><span class="n">set_foreground_color</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">foreground_color</span><span class="p">.</span><span class="n">is_rgb</span> <span class="o">||</span> <span class="o">!</span><span class="n">rhs</span><span class="p">.</span><span class="n">foreground_color</span><span class="p">.</span><span class="n">is_rgb</span><span class="p">)</span>
+        <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;can&#39;t AND a terminal color&quot;</span><span class="p">));</span>
+      <span class="n">foreground_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span> <span class="o">&amp;=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">foreground_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">set_background_color</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">set_background_color</span> <span class="o">=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">set_background_color</span><span class="p">;</span>
+      <span class="n">background_color</span> <span class="o">=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">background_color</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">rhs</span><span class="p">.</span><span class="n">set_background_color</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">background_color</span><span class="p">.</span><span class="n">is_rgb</span> <span class="o">||</span> <span class="o">!</span><span class="n">rhs</span><span class="p">.</span><span class="n">background_color</span><span class="p">.</span><span class="n">is_rgb</span><span class="p">)</span>
+        <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;can&#39;t AND a terminal color&quot;</span><span class="p">));</span>
+      <span class="n">background_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span> <span class="o">&amp;=</span> <span class="n">rhs</span><span class="p">.</span><span class="n">background_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">ems</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">emphasis</span><span class="o">&gt;</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ems</span><span class="p">)</span> <span class="o">&amp;</span>
+                                <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">rhs</span><span class="p">.</span><span class="n">ems</span><span class="p">));</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">friend</span> <span class="n">FMT_CONSTEXPR</span> <span class="n">text_style</span> <span class="k">operator</span><span class="o">&amp;</span><span class="p">(</span><span class="n">text_style</span> <span class="n">lhs</span><span class="p">,</span>
+                                            <span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">rhs</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">lhs</span> <span class="o">&amp;=</span> <span class="n">rhs</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="n">FMT_CONSTEXPR</span> <span class="kt">bool</span> <span class="n">has_foreground</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">set_foreground_color</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="kt">bool</span> <span class="n">has_background</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">set_background_color</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="kt">bool</span> <span class="n">has_emphasis</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ems</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">get_foreground</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="n">FMT_ASSERT</span><span class="p">(</span><span class="n">has_foreground</span><span class="p">(),</span> <span class="s">&quot;no foreground specified for this style&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">foreground_color</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">get_background</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="n">FMT_ASSERT</span><span class="p">(</span><span class="n">has_background</span><span class="p">(),</span> <span class="s">&quot;no background specified for this style&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">background_color</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">emphasis</span> <span class="n">get_emphasis</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="n">FMT_ASSERT</span><span class="p">(</span><span class="n">has_emphasis</span><span class="p">(),</span> <span class="s">&quot;no emphasis specified for this style&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">ems</span><span class="p">;</span>
+  <span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">text_style</span><span class="p">(</span><span class="kt">bool</span> <span class="n">is_foreground</span><span class="p">,</span>
+                           <span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">text_color</span><span class="p">)</span> <span class="nl">FMT_NOEXCEPT</span>
+      <span class="p">:</span> <span class="n">set_foreground_color</span><span class="p">(),</span>
+        <span class="n">set_background_color</span><span class="p">(),</span>
+        <span class="n">ems</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">is_foreground</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">foreground_color</span> <span class="o">=</span> <span class="n">text_color</span><span class="p">;</span>
+      <span class="n">set_foreground_color</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">background_color</span> <span class="o">=</span> <span class="n">text_color</span><span class="p">;</span>
+      <span class="n">set_background_color</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">friend</span> <span class="n">FMT_CONSTEXPR_DECL</span> <span class="n">text_style</span> <span class="n">fg</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">foreground</span><span class="p">)</span>
+      <span class="n">FMT_NOEXCEPT</span><span class="p">;</span>
+  <span class="k">friend</span> <span class="n">FMT_CONSTEXPR_DECL</span> <span class="n">text_style</span> <span class="nf">bg</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">background</span><span class="p">)</span>
+      <span class="n">FMT_NOEXCEPT</span><span class="p">;</span>
+
+  <span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">foreground_color</span><span class="p">;</span>
+  <span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">background_color</span><span class="p">;</span>
+  <span class="kt">bool</span> <span class="n">set_foreground_color</span><span class="p">;</span>
+  <span class="kt">bool</span> <span class="n">set_background_color</span><span class="p">;</span>
+  <span class="n">emphasis</span> <span class="n">ems</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="n">FMT_CONSTEXPR</span> <span class="n">text_style</span> <span class="nf">fg</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">foreground</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">text_style</span><span class="p">(</span><span class="cm">/*is_foreground=*/</span><span class="nb">true</span><span class="p">,</span> <span class="n">foreground</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">FMT_CONSTEXPR</span> <span class="n">text_style</span> <span class="nf">bg</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">background</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">text_style</span><span class="p">(</span><span class="cm">/*is_foreground=*/</span><span class="nb">false</span><span class="p">,</span> <span class="n">background</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">FMT_CONSTEXPR</span> <span class="n">text_style</span> <span class="k">operator</span><span class="o">|</span><span class="p">(</span><span class="n">emphasis</span> <span class="n">lhs</span><span class="p">,</span> <span class="n">emphasis</span> <span class="n">rhs</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">text_style</span><span class="p">(</span><span class="n">lhs</span><span class="p">)</span> <span class="o">|</span> <span class="n">rhs</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">namespace</span> <span class="n">internal</span> <span class="p">{</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span> <span class="k">struct</span> <span class="n">ansi_color_escape</span> <span class="p">{</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">ansi_color_escape</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">text_color</span><span class="p">,</span>
+                                  <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">esc</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="c1">// If we have a terminal color, we need to output another escape code</span>
+    <span class="c1">// sequence.</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">text_color</span><span class="p">.</span><span class="n">is_rgb</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kt">bool</span> <span class="n">is_background</span> <span class="o">=</span> <span class="n">esc</span> <span class="o">==</span> <span class="n">internal</span><span class="o">::</span><span class="n">data</span><span class="o">::</span><span class="n">background_color</span><span class="p">;</span>
+      <span class="kt">uint32_t</span> <span class="n">value</span> <span class="o">=</span> <span class="n">text_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">term_color</span><span class="p">;</span>
+      <span class="c1">// Background ASCII codes are the same as the foreground ones but with</span>
+      <span class="c1">// 10 more.</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">is_background</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">+=</span> <span class="mi">10u</span><span class="p">;</span>
+
+      <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;\x1b&#39;</span><span class="p">);</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;[&#39;</span><span class="p">);</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="n">value</span> <span class="o">&gt;=</span> <span class="mi">100u</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;1&#39;</span><span class="p">);</span>
+        <span class="n">value</span> <span class="o">%=</span> <span class="mi">100u</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;0&#39;</span> <span class="o">+</span> <span class="n">value</span> <span class="o">/</span> <span class="mi">10u</span><span class="p">);</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;0&#39;</span> <span class="o">+</span> <span class="n">value</span> <span class="o">%</span> <span class="mi">10u</span><span class="p">);</span>
+
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;m&#39;</span><span class="p">);</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;\0&#39;</span><span class="p">);</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">esc</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="n">rgb</span> <span class="n">color</span><span class="p">(</span><span class="n">text_color</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">rgb_color</span><span class="p">);</span>
+    <span class="n">to_esc</span><span class="p">(</span><span class="n">color</span><span class="p">.</span><span class="n">r</span><span class="p">,</span> <span class="n">buffer</span> <span class="o">+</span> <span class="mi">7</span><span class="p">,</span> <span class="sc">&#39;;&#39;</span><span class="p">);</span>
+    <span class="n">to_esc</span><span class="p">(</span><span class="n">color</span><span class="p">.</span><span class="n">g</span><span class="p">,</span> <span class="n">buffer</span> <span class="o">+</span> <span class="mi">11</span><span class="p">,</span> <span class="sc">&#39;;&#39;</span><span class="p">);</span>
+    <span class="n">to_esc</span><span class="p">(</span><span class="n">color</span><span class="p">.</span><span class="n">b</span><span class="p">,</span> <span class="n">buffer</span> <span class="o">+</span> <span class="mi">15</span><span class="p">,</span> <span class="sc">&#39;m&#39;</span><span class="p">);</span>
+    <span class="n">buffer</span><span class="p">[</span><span class="mi">19</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">ansi_color_escape</span><span class="p">(</span><span class="n">emphasis</span> <span class="n">em</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="kt">uint8_t</span> <span class="n">em_codes</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">{};</span>
+    <span class="kt">uint8_t</span> <span class="n">em_bits</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">em</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">em_bits</span> <span class="o">&amp;</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">emphasis</span><span class="o">::</span><span class="n">bold</span><span class="p">))</span>
+      <span class="n">em_codes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">em_bits</span> <span class="o">&amp;</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">emphasis</span><span class="o">::</span><span class="n">italic</span><span class="p">))</span>
+      <span class="n">em_codes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">em_bits</span> <span class="o">&amp;</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">emphasis</span><span class="o">::</span><span class="n">underline</span><span class="p">))</span>
+      <span class="n">em_codes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">em_bits</span> <span class="o">&amp;</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">emphasis</span><span class="o">::</span><span class="n">strikethrough</span><span class="p">))</span>
+      <span class="n">em_codes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">em_codes</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="k">continue</span><span class="p">;</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;\x1b&#39;</span><span class="p">);</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;[&#39;</span><span class="p">);</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;0&#39;</span> <span class="o">+</span> <span class="n">em_codes</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+      <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;m&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">buffer</span><span class="p">[</span><span class="n">index</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="k">operator</span> <span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span> <span class="k">return</span> <span class="n">buffer</span><span class="p">;</span> <span class="p">}</span>
+
+  <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="n">begin</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span> <span class="k">return</span> <span class="n">buffer</span><span class="p">;</span> <span class="p">}</span>
+  <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="n">end</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">buffer</span> <span class="o">+</span> <span class="n">std</span><span class="o">::</span><span class="n">strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span>
+  <span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+  <span class="n">Char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">7u</span> <span class="o">+</span> <span class="mi">3u</span> <span class="o">*</span> <span class="mi">4u</span> <span class="o">+</span> <span class="mi">1u</span><span class="p">];</span>
+
+  <span class="k">static</span> <span class="n">FMT_CONSTEXPR</span> <span class="kt">void</span> <span class="nf">to_esc</span><span class="p">(</span><span class="kt">uint8_t</span> <span class="n">c</span><span class="p">,</span> <span class="n">Char</span> <span class="o">*</span><span class="n">out</span><span class="p">,</span>
+                                   <span class="kt">char</span> <span class="n">delimiter</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="n">out</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;0&#39;</span> <span class="o">+</span> <span class="n">c</span> <span class="o">/</span> <span class="mi">100</span><span class="p">);</span>
+    <span class="n">out</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;0&#39;</span> <span class="o">+</span> <span class="n">c</span> <span class="o">/</span> <span class="mi">10</span> <span class="o">%</span> <span class="mi">10</span><span class="p">);</span>
+    <span class="n">out</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="sc">&#39;0&#39;</span> <span class="o">+</span> <span class="n">c</span> <span class="o">%</span> <span class="mi">10</span><span class="p">);</span>
+    <span class="n">out</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">delimiter</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span>
+<span class="n">FMT_CONSTEXPR</span> <span class="n">ansi_color_escape</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span>
+<span class="n">make_foreground_color</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">foreground</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">ansi_color_escape</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">foreground</span><span class="p">,</span> <span class="n">internal</span><span class="o">::</span><span class="n">data</span><span class="o">::</span><span class="n">foreground_color</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span>
+<span class="n">FMT_CONSTEXPR</span> <span class="n">ansi_color_escape</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span>
+<span class="n">make_background_color</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">color_type</span> <span class="n">background</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">ansi_color_escape</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">background</span><span class="p">,</span> <span class="n">internal</span><span class="o">::</span><span class="n">data</span><span class="o">::</span><span class="n">background_color</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span>
+<span class="n">FMT_CONSTEXPR</span> <span class="n">ansi_color_escape</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">make_emphasis</span><span class="p">(</span><span class="n">emphasis</span> <span class="n">em</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">ansi_color_escape</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">em</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="kt">void</span> <span class="n">fputs</span><span class="p">(</span><span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="n">chars</span><span class="p">,</span> <span class="kt">FILE</span> <span class="o">*</span><span class="n">stream</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">fputs</span><span class="p">(</span><span class="n">chars</span><span class="p">,</span> <span class="n">stream</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="kr">inline</span> <span class="kt">void</span> <span class="n">fputs</span><span class="o">&lt;</span><span class="kt">wchar_t</span><span class="o">&gt;</span><span class="p">(</span><span class="k">const</span> <span class="kt">wchar_t</span> <span class="o">*</span><span class="n">chars</span><span class="p">,</span> <span class="kt">FILE</span> <span class="o">*</span><span class="n">stream</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">fputws</span><span class="p">(</span><span class="n">chars</span><span class="p">,</span> <span class="n">stream</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">reset_color</span><span class="p">(</span><span class="kt">FILE</span> <span class="o">*</span><span class="n">stream</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="n">fputs</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">data</span><span class="o">::</span><span class="n">reset_color</span><span class="p">,</span> <span class="n">stream</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">reset_color</span><span class="o">&lt;</span><span class="kt">wchar_t</span><span class="o">&gt;</span><span class="p">(</span><span class="kt">FILE</span> <span class="o">*</span><span class="n">stream</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="n">fputs</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">data</span><span class="o">::</span><span class="n">wreset_color</span><span class="p">,</span> <span class="n">stream</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="kt">void</span> <span class="n">reset_color</span><span class="p">(</span><span class="n">basic_memory_buffer</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">buffer</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+  <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">begin</span> <span class="o">=</span> <span class="n">data</span><span class="o">::</span><span class="n">reset_color</span><span class="p">;</span>
+  <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">end</span> <span class="o">=</span> <span class="n">begin</span> <span class="o">+</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">data</span><span class="o">::</span><span class="n">reset_color</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="n">buffer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">end</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">vformat_to</span><span class="p">(</span><span class="n">basic_memory_buffer</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">buf</span><span class="p">,</span> <span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">ts</span><span class="p">,</span>
+                <span class="n">basic_string_view</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">format_str</span><span class="p">,</span>
+                <span class="n">basic_format_args</span><span class="o">&lt;</span><span class="n">buffer_context</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;&gt;</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">bool</span> <span class="n">has_style</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">has_emphasis</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">has_style</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="k">auto</span> <span class="n">emphasis</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">make_emphasis</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">get_emphasis</span><span class="p">());</span>
+    <span class="n">buf</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">emphasis</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">emphasis</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">has_foreground</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">has_style</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="k">auto</span> <span class="n">foreground</span> <span class="o">=</span>
+        <span class="n">internal</span><span class="o">::</span><span class="n">make_foreground_color</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">get_foreground</span><span class="p">());</span>
+    <span class="n">buf</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">foreground</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">foreground</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">has_background</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">has_style</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="k">auto</span> <span class="n">background</span> <span class="o">=</span>
+        <span class="n">internal</span><span class="o">::</span><span class="n">make_background_color</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ts</span><span class="p">.</span><span class="n">get_background</span><span class="p">());</span>
+    <span class="n">buf</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">background</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">background</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="n">vformat_to</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">format_str</span><span class="p">,</span> <span class="n">args</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">has_style</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">internal</span><span class="o">::</span><span class="n">reset_color</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">}</span> <span class="c1">// namespace internal</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">S</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Char</span> <span class="o">=</span> <span class="n">char_t</span><span class="o">&lt;</span><span class="n">S</span><span class="o">&gt;&gt;</span>
+<span class="kt">void</span> <span class="n">vprint</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">FILE</span> <span class="o">*</span><span class="n">f</span><span class="p">,</span> <span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">ts</span><span class="p">,</span> <span class="k">const</span> <span class="n">S</span> <span class="o">&amp;</span><span class="n">format</span><span class="p">,</span>
+            <span class="n">basic_format_args</span><span class="o">&lt;</span><span class="n">buffer_context</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;&gt;</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">basic_memory_buffer</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">buf</span><span class="p">;</span>
+  <span class="n">internal</span><span class="o">::</span><span class="n">vformat_to</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">ts</span><span class="p">,</span> <span class="n">to_string_view</span><span class="p">(</span><span class="n">format</span><span class="p">),</span> <span class="n">args</span><span class="p">);</span>
+  <span class="n">buf</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Char</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+  <span class="n">internal</span><span class="o">::</span><span class="n">fputs</span><span class="p">(</span><span class="n">buf</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">f</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">S</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">is_string</span><span class="o">&lt;</span><span class="n">S</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">FILE</span> <span class="o">*</span><span class="n">f</span><span class="p">,</span> <span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">ts</span><span class="p">,</span> <span class="k">const</span> <span class="n">S</span> <span class="o">&amp;</span><span class="n">format_str</span><span class="p">,</span>
+           <span class="k">const</span> <span class="n">Args</span> <span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">internal</span><span class="o">::</span><span class="n">check_format_string</span><span class="o">&lt;</span><span class="n">Args</span><span class="p">...</span><span class="o">&gt;</span><span class="p">(</span><span class="n">format_str</span><span class="p">);</span>
+  <span class="k">using</span> <span class="n">context</span> <span class="o">=</span> <span class="n">buffer_context</span><span class="o">&lt;</span><span class="n">char_t</span><span class="o">&lt;</span><span class="n">S</span><span class="o">&gt;&gt;</span><span class="p">;</span>
+  <span class="n">format_arg_store</span><span class="o">&lt;</span><span class="n">context</span><span class="p">,</span> <span class="n">Args</span><span class="p">...</span><span class="o">&gt;</span> <span class="n">as</span><span class="p">{</span><span class="n">args</span><span class="p">...};</span>
+  <span class="n">vprint</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">ts</span><span class="p">,</span> <span class="n">format_str</span><span class="p">,</span> <span class="n">basic_format_args</span><span class="o">&lt;</span><span class="n">context</span><span class="o">&gt;</span><span class="p">(</span><span class="n">as</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">S</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">is_string</span><span class="o">&lt;</span><span class="n">S</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">ts</span><span class="p">,</span> <span class="k">const</span> <span class="n">S</span> <span class="o">&amp;</span><span class="n">format_str</span><span class="p">,</span> <span class="k">const</span> <span class="n">Args</span> <span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">print</span><span class="p">(</span><span class="n">stdout</span><span class="p">,</span> <span class="n">ts</span><span class="p">,</span> <span class="n">format_str</span><span class="p">,</span> <span class="n">args</span><span class="p">...);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">S</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Char</span> <span class="o">=</span> <span class="n">char_t</span><span class="o">&lt;</span><span class="n">S</span><span class="o">&gt;&gt;</span>
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span>
+<span class="n">vformat</span><span class="p">(</span><span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">ts</span><span class="p">,</span> <span class="k">const</span> <span class="n">S</span> <span class="o">&amp;</span><span class="n">format_str</span><span class="p">,</span>
+        <span class="n">basic_format_args</span><span class="o">&lt;</span><span class="n">buffer_context</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;&gt;</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">basic_memory_buffer</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">buf</span><span class="p">;</span>
+  <span class="n">internal</span><span class="o">::</span><span class="n">vformat_to</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">ts</span><span class="p">,</span> <span class="n">to_string_view</span><span class="p">(</span><span class="n">format_str</span><span class="p">),</span> <span class="n">args</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">fmt</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">S</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Char</span> <span class="o">=</span> <span class="n">char_t</span><span class="o">&lt;</span><span class="n">S</span><span class="o">&gt;&gt;</span>
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">format</span><span class="p">(</span><span class="k">const</span> <span class="n">text_style</span> <span class="o">&amp;</span><span class="n">ts</span><span class="p">,</span> <span class="k">const</span> <span class="n">S</span> <span class="o">&amp;</span><span class="n">format_str</span><span class="p">,</span>
+                                      <span class="k">const</span> <span class="n">Args</span> <span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">vformat</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">to_string_view</span><span class="p">(</span><span class="n">format_str</span><span class="p">),</span>
+                 <span class="p">{</span><span class="n">internal</span><span class="o">::</span><span class="n">make_args_checked</span><span class="o">&lt;</span><span class="n">Args</span><span class="p">...</span><span class="o">&gt;</span><span class="p">(</span><span class="n">format_str</span><span class="p">,</span> <span class="n">args</span><span class="p">...)});</span>
+<span class="p">}</span>
+
+<span class="n">FMT_END_NAMESPACE</span>
+
+<span class="cp">#endif </span><span class="c1">// FMT_COLOR_H_</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+.. _file_compiler_lang_var.h:
+
+File var.h
+==========
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_lang>` (``compiler/lang``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/lang/var.h``)
+------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_lang_var.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``lang/func.h`` (:ref:`file_compiler_lang_func.h`)
+
+- ``stack``
+
+- ``types/types.h`` (:ref:`file_compiler_types_types.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_lang_lang.h`
+
+- :ref:`file_compiler_lang_seq.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_seq`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classseq_1_1Var`
+

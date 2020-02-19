@@ -1,0 +1,13 @@
+.. _exhale_function_format_8cpp_1a2bff96103e3acbe704684c6b6f5edf8c:
+
+Function internal::locale_ref::get< std::locale >
+=================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: internal::locale_ref::get< std::locale >()

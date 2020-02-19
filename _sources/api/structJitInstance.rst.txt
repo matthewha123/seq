@@ -1,0 +1,16 @@
+.. _exhale_struct_structJitInstance:
+
+Struct JitInstance
+==================
+
+- Defined in :ref:`file_compiler_util_jit.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: JitInstance
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_typedef_format_8h_1a0205a529cec421f89fac2e6373bab406:
+
+Typedef fmt::v6::internal::is_integer
+=====================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::internal::is_integer

@@ -1,0 +1,13 @@
+.. _exhale_function_color_8h_1a54809d5420a4f51018ec4ae42e8284cf:
+
+Template Function fmt::v6::internal::make_background_color
+==========================================================
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::make_background_color(internal::color_type)

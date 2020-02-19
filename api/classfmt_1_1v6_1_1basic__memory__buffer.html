@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Class basic_memory_buffer &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class basic_printf_context" href="classfmt_1_1v6_1_1basic__printf__context.html" />
+    <link rel="prev" title="Template Class basic_format_parse_context" href="classfmt_1_1v6_1_1basic__format__parse__context.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Class basic_memory_buffer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1basic__memory__buffer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-class-basic-memory-buffer">
+<span id="exhale-class-classfmt-1-1v6-1-1basic-memory-buffer"></span><h1>Template Class basic_memory_buffer<a class="headerlink" href="#template-class-basic-memory-buffer" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-types">
+<h3>Base Types<a class="headerlink" href="#base-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">private</span> <span class="pre">Allocator</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">fmt::v6::internal::buffer&lt;</span> <span class="pre">T</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1buffer.html#exhale-class-classfmt-1-1v6-1-1internal-1-1buffer"><span class="std std-ref">Template Class buffer</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0_NSt6size_tE0EN3fmt2v619basic_memory_bufferE">
+<span id="_CPPv3I0_NSt6size_tE0EN3fmt2v619basic_memory_bufferE"></span><span id="_CPPv2I0_NSt6size_tE0EN3fmt2v619basic_memory_bufferE"></span><span class="target" id="classfmt_1_1v6_1_1basic__memory__buffer"></span>template&lt;typename <code class="sig-name descname">T</code>, std::size_t <code class="sig-name descname">SIZE</code> = <a class="reference internal" href="enum_format_8h_1a86f3ca3294e39208370e5409e0434ddc.html#_CPPv4N3fmt2v618inline_buffer_sizeE" title="fmt::v6::inline_buffer_size">inline_buffer_size</a>, typename <code class="sig-name descname">Allocator</code> = std::allocator&lt;<a class="reference internal" href="#_CPPv4I0_NSt6size_tE0EN3fmt2v619basic_memory_bufferE" title="fmt::v6::basic_memory_buffer::T">T</a>&gt;&gt;<br /><em class="property">class </em><code class="sig-name descname">basic_memory_buffer</code> : <em class="property">private</em> <a class="reference internal" href="#_CPPv4I0_NSt6size_tE0EN3fmt2v619basic_memory_bufferE" title="fmt::v6::basic_memory_buffer::Allocator">Allocator</a>, <em class="property">public</em> fmt::v6::internal::buffer&lt;<a class="reference internal" href="#_CPPv4I0_NSt6size_tE0EN3fmt2v619basic_memory_bufferE" title="fmt::v6::basic_memory_buffer::T">T</a>&gt;<a class="headerlink" href="#_CPPv4I0_NSt6size_tE0EN3fmt2v619basic_memory_bufferE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><p>A dynamically growing memory buffer for trivially copyable/constructible types
+with the first <code class="docutils literal notranslate"><span class="pre">SIZE</span></code> elements stored in the object itself.</p>
+<p>You can use one of the following type aliases for common character types:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Definition</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>memory_buffer</p></td>
+<td><p>basic_memory_buffer&lt;char&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>wmemory_buffer</p></td>
+<td><p>basic_memory_buffer&lt;wchar_t&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p><em>Example*</em>:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">fmt</span><span class="o">::</span><span class="n">memory_buffer</span> <span class="n">out</span><span class="p">;</span>
+<span class="n">format_to</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="s">&quot;The answer is {}.&quot;</span><span class="p">,</span> <span class="mi">42</span><span class="p">);</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>This will append the following output to the <code class="docutils literal notranslate"><span class="pre">out</span></code> object:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The answer is 42.
+</pre></div>
+</div>
+<p>The output can be converted to an <code class="docutils literal notranslate"><span class="pre">std::string</span></code> with <code class="docutils literal notranslate"><span class="pre">to_string(out)</span></code>.</p>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v619basic_memory_bufferI1T4SIZE9AllocatorE10value_typeE">
+<span id="_CPPv3IEN3fmt2v619basic_memory_bufferI1T4SIZE9AllocatorE10value_typeE"></span><span id="_CPPv2IEN3fmt2v619basic_memory_bufferI1T4SIZE9AllocatorE10value_typeE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1basic__memory__buffer_1a2cac9889b0fafba05f6110a097eb1bb5"></span><em class="property">using </em><code class="sig-name descname">value_type</code> = T<a class="headerlink" href="#_CPPv4IEN3fmt2v619basic_memory_bufferI1T4SIZE9AllocatorE10value_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v619basic_memory_bufferI1T4SIZE9AllocatorE15const_referenceE">
+<span id="_CPPv3IEN3fmt2v619basic_memory_bufferI1T4SIZE9AllocatorE15const_referenceE"></span><span id="_CPPv2IEN3fmt2v619basic_memory_bufferI1T4SIZE9AllocatorE15const_referenceE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1basic__memory__buffer_1a74f934bb57a092bd18b138d9b506becc"></span><em class="property">using </em><code class="sig-name descname">const_reference</code> = <em class="property">const</em> T&amp;<a class="headerlink" href="#_CPPv4IEN3fmt2v619basic_memory_bufferI1T4SIZE9AllocatorE15const_referenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v619basic_memory_buffer19basic_memory_bufferERK9Allocator">
+<span id="_CPPv3N3fmt2v619basic_memory_buffer19basic_memory_bufferERK9Allocator"></span><span id="_CPPv2N3fmt2v619basic_memory_buffer19basic_memory_bufferERK9Allocator"></span><span id="fmt::v6::basic_memory_buffer::basic_memory_buffer__AllocatorCR"></span><span class="target" id="classfmt_1_1v6_1_1basic__memory__buffer_1ac5380edc5214dee0eb51ef4440745b94"></span><code class="sig-name descname">basic_memory_buffer</code><span class="sig-paren">(</span><em class="property">const</em> Allocator &amp;<em>alloc</em> = Allocator()<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v619basic_memory_buffer19basic_memory_bufferERK9Allocator" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v619basic_memory_bufferD0Ev">
+<span id="_CPPv3N3fmt2v619basic_memory_bufferD0Ev"></span><span id="_CPPv2N3fmt2v619basic_memory_bufferD0Ev"></span><span id="fmt::v6::basic_memory_buffer::~basic_memory_buffer"></span><span class="target" id="classfmt_1_1v6_1_1basic__memory__buffer_1a57fbc6f854adda9dd7ab41df955a5d27"></span><code class="sig-name descname">~basic_memory_buffer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v619basic_memory_bufferD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v619basic_memory_buffer19basic_memory_bufferERR19basic_memory_buffer">
+<span id="_CPPv3N3fmt2v619basic_memory_buffer19basic_memory_bufferERR19basic_memory_buffer"></span><span id="_CPPv2N3fmt2v619basic_memory_buffer19basic_memory_bufferERR19basic_memory_buffer"></span><span id="fmt::v6::basic_memory_buffer::basic_memory_buffer__basic_memory_bufferRR"></span><span class="target" id="classfmt_1_1v6_1_1basic__memory__buffer_1a6174fbbc84b2fd7735af0f9428cf5211"></span><code class="sig-name descname">basic_memory_buffer</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N3fmt2v619basic_memory_buffer19basic_memory_bufferERK9Allocator" title="fmt::v6::basic_memory_buffer::basic_memory_buffer">basic_memory_buffer</a> &amp;&amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v619basic_memory_buffer19basic_memory_bufferERR19basic_memory_buffer" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><p>Constructs a <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">fmt::basic_memory_buffer</span></code> object moving the content
+of the other object to it.</p>
+ </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v619basic_memory_bufferaSERR19basic_memory_buffer">
+<span id="_CPPv3N3fmt2v619basic_memory_bufferaSERR19basic_memory_buffer"></span><span id="_CPPv2N3fmt2v619basic_memory_bufferaSERR19basic_memory_buffer"></span><span id="fmt::v6::basic_memory_buffer::assign-operator__basic_memory_bufferRR"></span><span class="target" id="classfmt_1_1v6_1_1basic__memory__buffer_1a5dbfef26815d926eb72e4d2d0907bd79"></span>basic_memory_buffer &amp;<code class="sig-name descname">operator=</code><span class="sig-paren">(</span>basic_memory_buffer &amp;&amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v619basic_memory_bufferaSERR19basic_memory_buffer" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><p>Moves the content of the other <code class="docutils literal notranslate"><span class="pre">basic_memory_buffer</span></code> object to this one.</p>
+ </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v619basic_memory_buffer13get_allocatorEv">
+<span id="_CPPv3NK3fmt2v619basic_memory_buffer13get_allocatorEv"></span><span id="_CPPv2NK3fmt2v619basic_memory_buffer13get_allocatorEv"></span><span id="fmt::v6::basic_memory_buffer::get_allocatorC"></span><span class="target" id="classfmt_1_1v6_1_1basic__memory__buffer_1a4419a286f469ee2d522a7a3200536897"></span>Allocator <code class="sig-name descname">get_allocator</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v619basic_memory_buffer13get_allocatorEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v619basic_memory_buffer4growENSt6size_tE">
+<span id="_CPPv3N3fmt2v619basic_memory_buffer4growENSt6size_tE"></span><span id="_CPPv2N3fmt2v619basic_memory_buffer4growENSt6size_tE"></span><span id="fmt::v6::basic_memory_buffer::grow__std::s"></span><span class="target" id="classfmt_1_1v6_1_1basic__memory__buffer_1adadd6380d9e3ef7de4694bffc7e552e2"></span>void <code class="sig-name descname">grow</code><span class="sig-paren">(</span>std::size_t <em>capacity</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v619basic_memory_buffer4growENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Increases the buffer capacity to hold at least <em>capacity</em> elements. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1basic__printf__context.html" class="btn btn-neutral float-right" title="Template Class basic_printf_context" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1basic__format__parse__context.html" class="btn btn-neutral float-left" title="Template Class basic_format_parse_context" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

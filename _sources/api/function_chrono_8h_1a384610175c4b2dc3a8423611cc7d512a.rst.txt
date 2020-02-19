@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a384610175c4b2dc3a8423611cc7d512a:
+
+Template Function fmt::v6::safe_duration_cast::safe_duration_cast
+=================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::safe_duration_cast::safe_duration_cast(std::chrono::duration<FromRep, FromPeriod>, int&)

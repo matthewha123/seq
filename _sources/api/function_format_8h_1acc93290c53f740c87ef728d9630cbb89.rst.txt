@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1acc93290c53f740c87ef728d9630cbb89:
+
+Template Function fmt::v6::internal::count_digits(UInt)
+=======================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::count_digits(UInt)

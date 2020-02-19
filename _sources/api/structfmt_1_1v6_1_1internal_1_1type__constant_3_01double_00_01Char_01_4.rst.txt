@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01double_00_01Char_01_4:
+
+Template Struct type_constant< double, Char >
+=============================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::integral_constant< type, double_type >``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::type_constant< double, Char >
+   :members:
+   :protected-members:
+   :undoc-members:

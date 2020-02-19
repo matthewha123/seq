@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a55b1d21c4f8fd39eaeb0f9262883ad76:
+
+Template Function fmt::v6::internal::write_exponent
+===================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::write_exponent(int, It)

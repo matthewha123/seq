@@ -1,0 +1,129 @@
+
+.. _file_compiler_util_fmt_printf.h:
+
+File printf.h
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util_fmt>` (``compiler/util/fmt``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/fmt/printf.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_fmt_printf.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``limits``
+
+- ``ostream.h`` (:ref:`file_compiler_util_fmt_ostream.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt`
+
+- :ref:`namespace_fmt__v6`
+
+- :ref:`namespace_fmt__v6__internal`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1int__checker`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1int__checker_3_01true_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1make__unsigned__or__bool`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1make__unsigned__or__bool_3_01bool_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1printf__formatter`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1basic__printf__context`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1arg__converter`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1char__converter`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1is__zero__int`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1printf__precision__handler`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1printf__width__handler`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1printf__arg__formatter`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_printf_8h_1a92789d6f59e813ef0efb21b08919fad8`
+
+- :ref:`exhale_function_printf_8h_1a2f6b7907eabe47894da22ed0db58cd61`
+
+- :ref:`exhale_function_printf_8h_1a96a92f24dbce4d25cfc923b308a5e837`
+
+- :ref:`exhale_function_printf_8h_1a23ebab821e57b910fbe56870b13b0426`
+
+- :ref:`exhale_function_printf_8h_1a4a9fe9f99f3345fc648dbf85201550e1`
+
+- :ref:`exhale_function_printf_8h_1a08020a9aa8515dca89852697e1ec8984`
+
+- :ref:`exhale_function_printf_8h_1a7dfbf436e13bd0617d26733042a012a7`
+
+- :ref:`exhale_function_printf_8h_1ac147373a857097431f58369e87a81002`
+
+- :ref:`exhale_function_printf_8h_1ae0d26c23a1b99ea3a223995e38602700`
+
+- :ref:`exhale_function_printf_8h_1a184af2c2f92decfd80ad5150707c4ae9`
+
+- :ref:`exhale_function_printf_8h_1a1fc253ac1ed0cf2cd2f2d6fa2faebc15`
+
+- :ref:`exhale_function_printf_8h_1a8ee18bd326ef0f813c56cf5319960825`
+
+- :ref:`exhale_function_printf_8h_1a09ea4ce0bde37158d9c9b35d1c6bff71`
+
+- :ref:`exhale_function_printf_8h_1a340b48706e3999d9c2669f6d3b741f1a`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_printf_8h_1a11ac176f64394ee937a199849baca641`
+
+- :ref:`exhale_typedef_printf_8h_1a3bd769b87f9fb9045a8de9586e61159a`
+
+- :ref:`exhale_typedef_printf_8h_1ac99e0e451a12eebc84a20ff8b94a7e9f`
+
+- :ref:`exhale_typedef_printf_8h_1a6ec9ec781496c801995a1d5589b6db62`
+
+- :ref:`exhale_typedef_printf_8h_1a91f909b09a98ae1772b7a84962145c85`
+

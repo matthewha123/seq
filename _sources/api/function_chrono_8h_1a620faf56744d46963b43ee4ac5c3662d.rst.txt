@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a620faf56744d46963b43ee4ac5c3662d:
+
+Template Function fmt::v6::internal::parse_chrono_format
+========================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::parse_chrono_format(const Char *, const Char *, Handler&&)

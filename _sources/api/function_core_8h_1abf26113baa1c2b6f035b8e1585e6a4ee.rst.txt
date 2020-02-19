@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1abf26113baa1c2b6f035b8e1585e6a4ee:
+
+Function fmt::v6::internal::assert_fail
+=======================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::assert_fail(const char *, int, const char *)

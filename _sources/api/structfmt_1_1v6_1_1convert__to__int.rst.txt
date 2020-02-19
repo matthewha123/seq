@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1convert__to__int:
+
+Template Struct convert_to_int
+==============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public bool_constant<!std::is_arithmetic< T >::value &&std::is_convertible< T, int >::value >``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::convert_to_int
+   :members:
+   :protected-members:
+   :undoc-members:

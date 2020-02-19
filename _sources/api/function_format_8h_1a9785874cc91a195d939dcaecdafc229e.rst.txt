@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a9785874cc91a195d939dcaecdafc229e:
+
+Function fmt::v6::internal::count_code_points(basic_string_view<char8_t>)
+=========================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::count_code_points(basic_string_view<char8_t>)

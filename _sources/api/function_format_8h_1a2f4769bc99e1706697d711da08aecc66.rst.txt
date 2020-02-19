@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a2f4769bc99e1706697d711da08aecc66:
+
+Template Function fmt::v6::internal::get_dynamic_spec
+=====================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_dynamic_spec(FormatArg, ErrorHandler)

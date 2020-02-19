@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a55d7b78b0300ddda018f77208e80f3e9:
+
+Define FMT_HAS_CPP_ATTRIBUTE
+============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_HAS_CPP_ATTRIBUTE

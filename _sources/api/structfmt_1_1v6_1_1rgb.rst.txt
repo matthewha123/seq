@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1rgb:
+
+Struct rgb
+==========
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::rgb
+   :members:
+   :protected-members:
+   :undoc-members:

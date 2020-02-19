@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a2b6d307802175823274f07475e458a34:
+
+Define FMT_DEPRECATED_ALIAS
+===========================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_DEPRECATED_ALIAS

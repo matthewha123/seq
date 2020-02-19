@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1formatter_3_01arg__join_3_01It_00_01Char_01_4_00_01Char_01_4:
+
+Template Struct formatter< arg_join< It, Char >, Char >
+=======================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public fmt::v6::formatter< std::iterator_traits< It >::value_type, Char >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1formatter`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::formatter< arg_join< It, Char >, Char >
+   :members:
+   :protected-members:
+   :undoc-members:

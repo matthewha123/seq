@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a6a680e171e5a89475680e38869100db0:
+
+Template Function fmt::v6::internal::format_uint(It, UInt, int, bool)
+=====================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::format_uint(It, UInt, int, bool)

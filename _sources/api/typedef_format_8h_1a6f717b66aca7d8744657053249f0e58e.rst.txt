@@ -1,0 +1,13 @@
+.. _exhale_typedef_format_8h_1a6f717b66aca7d8744657053249f0e58e:
+
+Typedef fmt::v6::format_specs
+=============================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::format_specs

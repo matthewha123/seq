@@ -1,0 +1,13 @@
+.. _exhale_function_jit_8h_1a2550e64d1d92a1fddfc7c9a7e81dc542:
+
+Function jit_inspect(JitInstance \*, const char \*, int, int)
+=============================================================
+
+- Defined in :ref:`file_compiler_util_jit.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: jit_inspect(JitInstance *, const char *, int, int)

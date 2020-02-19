@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Struct SrcInfo &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct SrcObject" href="structseq_1_1SrcObject.html" />
+    <link rel="prev" title="Struct PipeExpr::PipelineCodegenState" href="structseq_1_1PipeExpr_1_1PipelineCodegenState.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Struct SrcInfo</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/structseq_1_1SrcInfo.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="struct-srcinfo">
+<span id="exhale-struct-structseq-1-1srcinfo"></span><h1>Struct SrcInfo<a class="headerlink" href="#struct-srcinfo" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_common.h.html#file-compiler-util-common-h"><span class="std std-ref">File common.h</span></a></p></li>
+</ul>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N3seq7SrcInfoE">
+<span id="_CPPv3N3seq7SrcInfoE"></span><span id="_CPPv2N3seq7SrcInfoE"></span><span id="seq::SrcInfo"></span><span class="target" id="structseq_1_1SrcInfo"></span><em class="property">struct </em><code class="sig-name descname">SrcInfo</code><a class="headerlink" href="#_CPPv4N3seq7SrcInfoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3seq7SrcInfo7SrcInfoENSt6stringEiiii">
+<span id="_CPPv3N3seq7SrcInfo7SrcInfoENSt6stringEiiii"></span><span id="_CPPv2N3seq7SrcInfo7SrcInfoENSt6stringEiiii"></span><span id="seq::SrcInfo::SrcInfo__ss.i.i.i.i"></span><span class="target" id="structseq_1_1SrcInfo_1a0f256b2d429081a1b7b131ecb4616c41"></span><code class="sig-name descname">SrcInfo</code><span class="sig-paren">(</span>std::string <em>file</em>, int <em>line</em>, int <em>endLine</em>, int <em>col</em>, int <em>endCol</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3seq7SrcInfo7SrcInfoENSt6stringEiiii" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3seq7SrcInfo7SrcInfoEv">
+<span id="_CPPv3N3seq7SrcInfo7SrcInfoEv"></span><span id="_CPPv2N3seq7SrcInfo7SrcInfoEv"></span><span id="seq::SrcInfo::SrcInfo"></span><span class="target" id="structseq_1_1SrcInfo_1adc66a1b5dc71d1c2a1e1e93be5147d5e"></span><code class="sig-name descname">SrcInfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3seq7SrcInfo7SrcInfoEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N3seq7SrcInfo4fileE">
+<span id="_CPPv3N3seq7SrcInfo4fileE"></span><span id="_CPPv2N3seq7SrcInfo4fileE"></span><span id="seq::SrcInfo::file__ss"></span><span class="target" id="structseq_1_1SrcInfo_1ab306653e9199388f418cbbcceac74c18"></span>std::string <code class="sig-name descname">file</code><a class="headerlink" href="#_CPPv4N3seq7SrcInfo4fileE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq7SrcInfo4lineE">
+<span id="_CPPv3N3seq7SrcInfo4lineE"></span><span id="_CPPv2N3seq7SrcInfo4lineE"></span><span id="seq::SrcInfo::line__i"></span><span class="target" id="structseq_1_1SrcInfo_1a937b455f634214ddf50e09c9a9645be2"></span>int <code class="sig-name descname">line</code><a class="headerlink" href="#_CPPv4N3seq7SrcInfo4lineE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq7SrcInfo7endLineE">
+<span id="_CPPv3N3seq7SrcInfo7endLineE"></span><span id="_CPPv2N3seq7SrcInfo7endLineE"></span><span id="seq::SrcInfo::endLine__i"></span><span class="target" id="structseq_1_1SrcInfo_1a5988c757a7ecf9ad948c953aac2bfa7e"></span>int <code class="sig-name descname">endLine</code><a class="headerlink" href="#_CPPv4N3seq7SrcInfo7endLineE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq7SrcInfo3colE">
+<span id="_CPPv3N3seq7SrcInfo3colE"></span><span id="_CPPv2N3seq7SrcInfo3colE"></span><span id="seq::SrcInfo::col__i"></span><span class="target" id="structseq_1_1SrcInfo_1ad1fcda91a38c83ed67502d0b284b266d"></span>int <code class="sig-name descname">col</code><a class="headerlink" href="#_CPPv4N3seq7SrcInfo3colE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq7SrcInfo6endColE">
+<span id="_CPPv3N3seq7SrcInfo6endColE"></span><span id="_CPPv2N3seq7SrcInfo6endColE"></span><span id="seq::SrcInfo::endCol__i"></span><span class="target" id="structseq_1_1SrcInfo_1a5320a4e85d9291ba446e751b6466f1a9"></span>int <code class="sig-name descname">endCol</code><a class="headerlink" href="#_CPPv4N3seq7SrcInfo6endColE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Friends</p>
+<dl class="function">
+<dt id="_CPPv4lsRNSt7ostreamERKN3seq7SrcInfoE">
+<span id="_CPPv3lsRNSt7ostreamERKN3seq7SrcInfoE"></span><span id="_CPPv2lsRNSt7ostreamERKN3seq7SrcInfoE"></span><span id="lshift-operator__osR.seq::SrcInfoCR"></span><span class="target" id="structseq_1_1SrcInfo_1adeb1c2bfabd9a3c501021970ff465e41"></span>std::ostream &amp;<code class="sig-name descname">operator&lt;&lt;</code><span class="sig-paren">(</span>std::ostream &amp;<em>out</em>, <em class="property">const</em> seq::<a class="reference internal" href="#_CPPv4N3seq7SrcInfoE" title="seq::SrcInfo">SrcInfo</a> &amp;<em>c</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4lsRNSt7ostreamERKN3seq7SrcInfoE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structseq_1_1SrcObject.html" class="btn btn-neutral float-right" title="Struct SrcObject" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structseq_1_1PipeExpr_1_1PipelineCodegenState.html" class="btn btn-neutral float-left" title="Struct PipeExpr::PipelineCodegenState" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

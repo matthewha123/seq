@@ -1,0 +1,171 @@
+
+.. _file_compiler_util_fmt_format-inl.h:
+
+File format-inl.h
+=================
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util_fmt>` (``compiler/util/fmt``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/fmt/format-inl.h``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_fmt_format-inl.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cassert``
+
+- ``cctype``
+
+- ``climits``
+
+- ``cmath``
+
+- ``cstdarg``
+
+- ``cstring``
+
+- ``cwchar``
+
+- ``format.h`` (:ref:`file_compiler_util_fmt_format.h`)
+
+- ``locale`` (:ref:`file_compiler_util_fmt_locale.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_util_fmt_format.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt`
+
+- :ref:`namespace_fmt__v6`
+
+- :ref:`namespace_fmt__v6__internal`
+
+- :ref:`namespace_fmt__v6__internal__digits`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter_3_01internal_1_1bigint_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1accumulator`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1bits`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1boundaries`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1fixed__handler`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1grisu__shortest__handler`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1bigint`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1fp`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_format-inl_8h_1a7f8db0dabd02cdde9963cc8c3986e090`
+
+- :ref:`exhale_enum_format-inl_8h_1aa3bd03e5a55849ba469cbe9298e16670`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_format-inl_8h_1abece24b1bb022c6cf07e709b1a96a8c7`
+
+- :ref:`exhale_function_format-inl_8h_1a507a2afd1c611e2b568555e838138090`
+
+- :ref:`exhale_function_format-inl_8h_1a4c3d5703221e0983d001f7076188f274`
+
+- :ref:`exhale_function_format-inl_8h_1ab9483629e605b6a7ac7053f65507f821`
+
+- :ref:`exhale_function_format-inl_8h_1a778f205819bd443d5e5101678bbb3b55`
+
+- :ref:`exhale_function_format-inl_8h_1a31c5db246582632fd32c357189838bc0`
+
+- :ref:`exhale_function_format-inl_8h_1a1d257ccd038b3193fe0e6e62ccb41ff0`
+
+- :ref:`exhale_function_format-inl_8h_1a96b234294d64ecb062c7bfe2d7d4f56f`
+
+- :ref:`exhale_function_format-inl_8h_1a0a64a30037fcc15acc70a0a35f6d01e0`
+
+- :ref:`exhale_function_format-inl_8h_1acbc5654290cae1007cf407ca4e9531b1`
+
+- :ref:`exhale_function_format-inl_8h_1a96fa651ba7af4acf9f5e3cacd1cfe627`
+
+- :ref:`exhale_function_format-inl_8h_1a3079d4184aed449aca12f79b2a16ddbd`
+
+- :ref:`exhale_function_format-inl_8h_1a70cedc229496a0e3892ea3a1a547f944`
+
+- :ref:`exhale_function_format-inl_8h_1a1e60e118fa4e9a101289a763b5831196`
+
+- :ref:`exhale_function_format-inl_8h_1ad7486b8a51de4c770b09877e5f6e13fb`
+
+- :ref:`exhale_function_format-inl_8h_1a6c721cfc11f182e92e548e65cd4a699a`
+
+- :ref:`exhale_function_format-inl_8h_1ab565db92cce9cc62028eef2acafcf970`
+
+- :ref:`exhale_function_format-inl_8h_1a87029dba862475025c387ea18b930dbe`
+
+- :ref:`exhale_function_format-inl_8h_1a723bd49c7472c76b4fde10de069f2f99`
+
+- :ref:`exhale_function_format-inl_8h_1a25b788dd94b8426ff3a93682e2c0dcd4`
+
+- :ref:`exhale_function_format-inl_8h_1a8307cb500850a7c5033cf64702e15990`
+
+- :ref:`exhale_function_format-inl_8h_1a3bbfb7ce6b764966d8cf5d018589375e`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_format-inl_8h_1ab8efe0100a6d7cc74729f5bf7537799c`
+
+- :ref:`exhale_define_format-inl_8h_1aeff75c93a29bc942ca36b31a4b634fe9`
+
+- :ref:`exhale_define_format-inl_8h_1a9a9bb3caa94066b3adc175bb24cb1783`
+
+- :ref:`exhale_define_format-inl_8h_1a4aa79926398ee27fe7d6db8b0dd54edf`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_format-inl_8h_1afe32394a623ea7114ab37829fd42d098`
+

@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1aa254617123ea1e1e852660428fbb72e4:
+
+Template Function fmt::v6::internal::to_unsigned
+================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::to_unsigned(Int)

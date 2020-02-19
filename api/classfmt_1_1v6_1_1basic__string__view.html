@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Class basic_string_view &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class buffer_range" href="classfmt_1_1v6_1_1buffer__range.html" />
+    <link rel="prev" title="Template Class basic_printf_context" href="classfmt_1_1v6_1_1basic__printf__context.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Class basic_string_view</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1basic__string__view.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-class-basic-string-view">
+<span id="exhale-class-classfmt-1-1v6-1-1basic-string-view"></span><h1>Template Class basic_string_view<a class="headerlink" href="#template-class-basic-string-view" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_core.h.html#file-compiler-util-fmt-core-h"><span class="std std-ref">File core.h</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0EN3fmt2v617basic_string_viewE">
+<span id="_CPPv3I0EN3fmt2v617basic_string_viewE"></span><span id="_CPPv2I0EN3fmt2v617basic_string_viewE"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view"></span>template&lt;typename <code class="sig-name descname">Char</code>&gt;<br /><em class="property">class </em><code class="sig-name descname">basic_string_view</code><a class="headerlink" href="#_CPPv4I0EN3fmt2v617basic_string_viewE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An implementation of <code class="docutils literal notranslate"><span class="pre">std::basic_string_view</span></code> for pre-C++17. It provides a subset of the API. <code class="docutils literal notranslate"><span class="pre">fmt::basic_string_view</span></code> is used for format strings even if <code class="docutils literal notranslate"><span class="pre">std::string_view</span></code> is available to prevent issues when a library is compiled with a different <code class="docutils literal notranslate"><span class="pre">-std</span></code> option than the client code (which is not recommended). </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v617basic_string_viewI4CharE9char_typeE">
+<span id="_CPPv3IEN3fmt2v617basic_string_viewI4CharE9char_typeE"></span><span id="_CPPv2IEN3fmt2v617basic_string_viewI4CharE9char_typeE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a47a38afa6246f543a1841f62da6f9cbb"></span><em class="property">using </em><code class="sig-name descname">char_type</code> = Char<a class="headerlink" href="#_CPPv4IEN3fmt2v617basic_string_viewI4CharE9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v617basic_string_viewI4CharE8iteratorE">
+<span id="_CPPv3IEN3fmt2v617basic_string_viewI4CharE8iteratorE"></span><span id="_CPPv2IEN3fmt2v617basic_string_viewI4CharE8iteratorE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a30940ac4fb6b964cb06cf0a9d5f9709f"></span><em class="property">using </em><code class="sig-name descname">iterator</code> = <em class="property">const</em> Char *<a class="headerlink" href="#_CPPv4IEN3fmt2v617basic_string_viewI4CharE8iteratorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v617basic_string_view17basic_string_viewEv">
+<span id="_CPPv3N3fmt2v617basic_string_view17basic_string_viewEv"></span><span id="_CPPv2N3fmt2v617basic_string_view17basic_string_viewEv"></span><span id="fmt::v6::basic_string_view::basic_string_view"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a95bb0128934b1845499b65f6bad7e83e"></span><code class="sig-name descname">basic_string_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v617basic_string_view17basic_string_viewEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v617basic_string_view17basic_string_viewEPK4Char6size_t">
+<span id="_CPPv3N3fmt2v617basic_string_view17basic_string_viewEPK4Char6size_t"></span><span id="_CPPv2N3fmt2v617basic_string_view17basic_string_viewEPK4Char6size_t"></span><span id="fmt::v6::basic_string_view::basic_string_view__CharCP.s"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1aa37b8d17504e62b1c2b2cb845975feba"></span><code class="sig-name descname">basic_string_view</code><span class="sig-paren">(</span><em class="property">const</em> Char *<em>s</em>, size_t <em>count</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v617basic_string_view17basic_string_viewEPK4Char6size_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a string reference object from a C string and a size. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v617basic_string_view17basic_string_viewEPK4Char">
+<span id="_CPPv3N3fmt2v617basic_string_view17basic_string_viewEPK4Char"></span><span id="_CPPv2N3fmt2v617basic_string_view17basic_string_viewEPK4Char"></span><span id="fmt::v6::basic_string_view::basic_string_view__CharCP"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a059ce04b500a0201f8c1ac2d7591513d"></span><code class="sig-name descname">basic_string_view</code><span class="sig-paren">(</span><em class="property">const</em> Char *<em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v617basic_string_view17basic_string_viewEPK4Char" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><p>Constructs a string reference object from a C string computing
+the size with <code class="docutils literal notranslate"><span class="pre">std::char_traits&lt;Char&gt;::length</span></code>.</p>
+ </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I00EN3fmt2v617basic_string_view17basic_string_viewERKNSt12basic_stringI4Char6Traits5AllocEE">
+<span id="_CPPv3I00EN3fmt2v617basic_string_view17basic_string_viewERKNSt12basic_stringI4Char6Traits5AllocEE"></span><span id="_CPPv2I00EN3fmt2v617basic_string_view17basic_string_viewERKNSt12basic_stringI4Char6Traits5AllocEE"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1ad5c61cf5304c348de88300f8b62c836d"></span>template&lt;typename <code class="sig-name descname">Traits</code>, typename <code class="sig-name descname">Alloc</code>&gt;<br /><code class="sig-name descname">basic_string_view</code><span class="sig-paren">(</span><em class="property">const</em> std::basic_string&lt;Char, <a class="reference internal" href="#_CPPv4I00EN3fmt2v617basic_string_view17basic_string_viewERKNSt12basic_stringI4Char6Traits5AllocEE" title="fmt::v6::basic_string_view::basic_string_view::Traits">Traits</a>, <a class="reference internal" href="#_CPPv4I00EN3fmt2v617basic_string_view17basic_string_viewERKNSt12basic_stringI4Char6Traits5AllocEE" title="fmt::v6::basic_string_view::basic_string_view::Alloc">Alloc</a>&gt; &amp;<em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I00EN3fmt2v617basic_string_view17basic_string_viewERKNSt12basic_stringI4Char6Traits5AllocEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a string reference from a <code class="docutils literal notranslate"><span class="pre">std::basic_string</span></code> object. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0EN3fmt2v617basic_string_view17basic_string_viewE1S">
+<span id="_CPPv3I0EN3fmt2v617basic_string_view17basic_string_viewE1S"></span><span id="_CPPv2I0EN3fmt2v617basic_string_view17basic_string_viewE1S"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a34fe47f14b3df370095c4e1a31f84746"></span>template&lt;typename <code class="sig-name descname">S</code>&gt;<br /><code class="sig-name descname">basic_string_view</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0EN3fmt2v617basic_string_view17basic_string_viewE1S" title="fmt::v6::basic_string_view::basic_string_view::S">S</a> <em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3fmt2v617basic_string_view17basic_string_viewE1S" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v617basic_string_view4dataEv">
+<span id="_CPPv3NK3fmt2v617basic_string_view4dataEv"></span><span id="_CPPv2NK3fmt2v617basic_string_view4dataEv"></span><span id="fmt::v6::basic_string_view::dataC"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1aaee42d3736ed77f8eebfb6a65809600f"></span><em class="property">const</em> Char *<code class="sig-name descname">data</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v617basic_string_view4dataEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns a pointer to the string data. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v617basic_string_view4sizeEv">
+<span id="_CPPv3NK3fmt2v617basic_string_view4sizeEv"></span><span id="_CPPv2NK3fmt2v617basic_string_view4sizeEv"></span><span id="fmt::v6::basic_string_view::sizeC"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a2cde9af6a935c71fd1ea0f475c1ad626"></span>size_t <code class="sig-name descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v617basic_string_view4sizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the string size. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v617basic_string_view5beginEv">
+<span id="_CPPv3NK3fmt2v617basic_string_view5beginEv"></span><span id="_CPPv2NK3fmt2v617basic_string_view5beginEv"></span><span id="fmt::v6::basic_string_view::beginC"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a376610c438cf25793b2dacfd5d15fb75"></span>iterator <code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v617basic_string_view5beginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v617basic_string_view3endEv">
+<span id="_CPPv3NK3fmt2v617basic_string_view3endEv"></span><span id="_CPPv2NK3fmt2v617basic_string_view3endEv"></span><span id="fmt::v6::basic_string_view::endC"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1ad64aab1ca9fa3bd6abe48d90d7504308"></span>iterator <code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v617basic_string_view3endEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v617basic_string_viewixE6size_t">
+<span id="_CPPv3NK3fmt2v617basic_string_viewixE6size_t"></span><span id="_CPPv2NK3fmt2v617basic_string_viewixE6size_t"></span><span id="fmt::v6::basic_string_view::subscript-operator__sC"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a4f288434db046d84a98fd1af3f983751"></span><em class="property">const</em> Char &amp;<code class="sig-name descname">operator[]</code><span class="sig-paren">(</span>size_t <em>pos</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v617basic_string_viewixE6size_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v617basic_string_view13remove_prefixE6size_t">
+<span id="_CPPv3N3fmt2v617basic_string_view13remove_prefixE6size_t"></span><span id="_CPPv2N3fmt2v617basic_string_view13remove_prefixE6size_t"></span><span id="fmt::v6::basic_string_view::remove_prefix__s"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a53976fcdc74e6cbe22773ee208f6ab90"></span>void <code class="sig-name descname">remove_prefix</code><span class="sig-paren">(</span>size_t <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v617basic_string_view13remove_prefixE6size_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v617basic_string_view7compareE17basic_string_view">
+<span id="_CPPv3NK3fmt2v617basic_string_view7compareE17basic_string_view"></span><span id="_CPPv2NK3fmt2v617basic_string_view7compareE17basic_string_view"></span><span id="fmt::v6::basic_string_view::compare__basic_string_viewC"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1ac564d0fd75182e3fb46f5c99ff42d2b9"></span>int <code class="sig-name descname">compare</code><span class="sig-paren">(</span>basic_string_view <em>other</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v617basic_string_view7compareE17basic_string_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Friends</p>
+<dl class="function">
+<dt id="_CPPv4eq17basic_string_view17basic_string_view">
+<span id="_CPPv3eq17basic_string_view17basic_string_view"></span><span id="_CPPv2eq17basic_string_view17basic_string_view"></span><span id="eq-operator__basic_string_view.basic_string_view"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1abbcc283ebd35db4ae2d5365a0861a2e2"></span>bool <code class="sig-name descname">operator==</code><span class="sig-paren">(</span>basic_string_view <em>lhs</em>, basic_string_view <em>rhs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4eq17basic_string_view17basic_string_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4ne17basic_string_view17basic_string_view">
+<span id="_CPPv3ne17basic_string_view17basic_string_view"></span><span id="_CPPv2ne17basic_string_view17basic_string_view"></span><span id="neq-operator__basic_string_view.basic_string_view"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a5ceb2a1bfa175c69d7bfda735e901d73"></span>bool <code class="sig-name descname">operator!=</code><span class="sig-paren">(</span>basic_string_view <em>lhs</em>, basic_string_view <em>rhs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4ne17basic_string_view17basic_string_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4lt17basic_string_view17basic_string_view">
+<span id="_CPPv3lt17basic_string_view17basic_string_view"></span><span id="_CPPv2lt17basic_string_view17basic_string_view"></span><span id="lt-operator__basic_string_view.basic_string_view"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a0e53f2258bbcde6cc8426b0a0755029b"></span>bool <code class="sig-name descname">operator&lt;</code><span class="sig-paren">(</span>basic_string_view <em>lhs</em>, basic_string_view <em>rhs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4lt17basic_string_view17basic_string_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4le17basic_string_view17basic_string_view">
+<span id="_CPPv3le17basic_string_view17basic_string_view"></span><span id="_CPPv2le17basic_string_view17basic_string_view"></span><span id="lte-operator__basic_string_view.basic_string_view"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a9b92d9c7a937c6945253fd8adfba7803"></span>bool <code class="sig-name descname">operator&lt;=</code><span class="sig-paren">(</span>basic_string_view <em>lhs</em>, basic_string_view <em>rhs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4le17basic_string_view17basic_string_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4gt17basic_string_view17basic_string_view">
+<span id="_CPPv3gt17basic_string_view17basic_string_view"></span><span id="_CPPv2gt17basic_string_view17basic_string_view"></span><span id="gt-operator__basic_string_view.basic_string_view"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a78b8913fe704e33269d9baa6f310b9b8"></span>bool <code class="sig-name descname">operator&gt;</code><span class="sig-paren">(</span>basic_string_view <em>lhs</em>, basic_string_view <em>rhs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4gt17basic_string_view17basic_string_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4ge17basic_string_view17basic_string_view">
+<span id="_CPPv3ge17basic_string_view17basic_string_view"></span><span id="_CPPv2ge17basic_string_view17basic_string_view"></span><span id="gte-operator__basic_string_view.basic_string_view"></span><span class="target" id="classfmt_1_1v6_1_1basic__string__view_1a13611d21d36e30193ebaf50463cbe75e"></span>bool <code class="sig-name descname">operator&gt;=</code><span class="sig-paren">(</span>basic_string_view <em>lhs</em>, basic_string_view <em>rhs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4ge17basic_string_view17basic_string_view" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1buffer__range.html" class="btn btn-neutral float-right" title="Template Class buffer_range" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1basic__printf__context.html" class="btn btn-neutral float-left" title="Template Class basic_printf_context" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

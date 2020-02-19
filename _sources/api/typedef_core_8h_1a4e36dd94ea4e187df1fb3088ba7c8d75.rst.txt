@@ -1,0 +1,13 @@
+.. _exhale_typedef_core_8h_1a4e36dd94ea4e187df1fb3088ba7c8d75:
+
+Typedef fmt::v6::remove_const_t
+===============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::remove_const_t

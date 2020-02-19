@@ -1,0 +1,13 @@
+.. _exhale_typedef_core_8h_1ababc62cfc8a3af8cdd0694c73a1d24eb:
+
+Typedef fmt::v6::remove_cvref_t
+===============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::remove_cvref_t

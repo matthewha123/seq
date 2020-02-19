@@ -1,0 +1,13 @@
+.. _exhale_function_ostream_8h_1a33a604d9dc24f7d153e1193bb6a0af33:
+
+Template Function fmt::v6::internal::format_value
+=================================================
+
+- Defined in :ref:`file_compiler_util_fmt_ostream.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::format_value(buffer<Char>&, const T&, locale_ref)

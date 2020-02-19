@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1a66278651d81592645cef28ca33a6ab92:
+
+Define FMT_USE_WINDOWS_H
+========================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_USE_WINDOWS_H

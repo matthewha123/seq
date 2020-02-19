@@ -1,0 +1,13 @@
+.. _exhale_function_format_8cpp_1a20d7b5773ee71e021c6a98d0988ac396:
+
+Template Function internal::format_float
+========================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: internal::format_float(char *, std::size_t, const char *, int, T)

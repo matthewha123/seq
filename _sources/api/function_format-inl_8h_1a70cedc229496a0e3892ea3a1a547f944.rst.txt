@@ -1,0 +1,13 @@
+.. _exhale_function_format-inl_8h_1a70cedc229496a0e3892ea3a1a547f944:
+
+Template Function fmt::v6::internal::normalize
+==============================================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::normalize(fp)

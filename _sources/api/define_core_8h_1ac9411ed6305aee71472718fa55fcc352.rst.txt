@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1ac9411ed6305aee71472718fa55fcc352:
+
+Define FMT_NORETURN
+===================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_NORETURN

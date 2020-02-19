@@ -1,0 +1,82 @@
+
+.. _file_compiler_lang_stmt.h:
+
+File stmt.h
+===========
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_lang>` (``compiler/lang``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/lang/stmt.h``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_lang_stmt.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstdint``
+
+- ``iostream``
+
+- ``map``
+
+- ``string``
+
+- ``types/generic.h`` (:ref:`file_compiler_types_generic.h`)
+
+- ``util/common.h`` (:ref:`file_compiler_util_common.h`)
+
+- ``util/llvm.h`` (:ref:`file_compiler_util_llvm.h`)
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_lang_func.h`
+
+- :ref:`file_compiler_lang_lang.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_seq`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structseq_1_1Block`
+
+- :ref:`exhale_class_classseq_1_1Stmt`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_stmt_8h_1a1be62621d5fe10c9ef3300dd59eddada`
+

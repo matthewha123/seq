@@ -1,0 +1,13 @@
+.. _exhale_function_printf_8h_1a92789d6f59e813ef0efb21b08919fad8:
+
+Template Function fmt::v6::fprintf(std::FILE \*, const S&, const Args&...)
+==========================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_printf.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::fprintf(std::FILE *, const S&, const Args&...)

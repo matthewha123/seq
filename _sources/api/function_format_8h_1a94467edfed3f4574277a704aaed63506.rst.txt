@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a94467edfed3f4574277a704aaed63506:
+
+Template Function fmt::v6::internal::check_string_type_spec
+===========================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::check_string_type_spec(Char, ErrorHandler&&)

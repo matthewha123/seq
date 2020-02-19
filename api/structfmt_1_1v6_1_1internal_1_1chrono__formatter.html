@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Struct chrono_formatter &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct color_type" href="structfmt_1_1v6_1_1internal_1_1color__type.html" />
+    <link rel="prev" title="Struct chrono_format_checker" href="structfmt_1_1v6_1_1internal_1_1chrono__format__checker.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Struct chrono_formatter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/structfmt_1_1v6_1_1internal_1_1chrono__formatter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-struct-chrono-formatter">
+<span id="exhale-struct-structfmt-1-1v6-1-1internal-1-1chrono-formatter"></span><h1>Template Struct chrono_formatter<a class="headerlink" href="#template-struct-chrono-formatter" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_chrono.h.html#file-compiler-util-fmt-chrono-h"><span class="std std-ref">File chrono.h</span></a></p></li>
+</ul>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0000EN3fmt2v68internal16chrono_formatterE">
+<span id="_CPPv3I0000EN3fmt2v68internal16chrono_formatterE"></span><span id="_CPPv2I0000EN3fmt2v68internal16chrono_formatterE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter"></span>template&lt;typename <code class="sig-name descname">FormatContext</code>, typename <code class="sig-name descname">OutputIt</code>, typename <code class="sig-name descname">Rep</code>, typename <code class="sig-name descname">Period</code>&gt;<br /><em class="property">struct </em><code class="sig-name descname">chrono_formatter</code><a class="headerlink" href="#_CPPv4I0000EN3fmt2v68internal16chrono_formatterE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE3repE">
+<span id="_CPPv3IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE3repE"></span><span id="_CPPv2IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE3repE"></span>template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a532462ec0c61444f9be0ab3add8d1bfb"></span><em class="property">using </em><code class="sig-name descname">rep</code> = <a class="reference internal" href="typedef_core_8h_1add29051cd8cf9b49c9a1f1fa7780add0.html#_CPPv4N3fmt2v613conditional_tE" title="fmt::v6::conditional_t">conditional_t</a>&lt;std::is_integral&lt;Rep&gt;::value &amp;&amp; sizeof(Rep) &lt; sizeof(int), unsigned, <em class="property">typename</em> <a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1make__unsigned__or__unchanged.html#_CPPv4I0_bEN3fmt2v68internal26make_unsigned_or_unchangedE" title="fmt::v6::internal::make_unsigned_or_unchanged">make_unsigned_or_unchanged</a>&lt;Rep&gt;::type&gt;<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE3repE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE7secondsE">
+<span id="_CPPv3IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE7secondsE"></span><span id="_CPPv2IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE7secondsE"></span>template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ab9d25c424f9944bbc258aabff9a89b8a"></span><em class="property">using </em><code class="sig-name descname">seconds</code> = std::chrono::duration&lt;<a class="reference internal" href="#_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE3repE" title="fmt::v6::internal::chrono_formatter&lt;FormatContext, OutputIt, Rep, Period&gt;::rep">rep</a>&gt;<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE7secondsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE12millisecondsE">
+<span id="_CPPv3IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE12millisecondsE"></span><span id="_CPPv2IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE12millisecondsE"></span>template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ae60f51a74b58b8a5c4dd75721c77f799"></span><em class="property">using </em><code class="sig-name descname">milliseconds</code> = std::chrono::duration&lt;<a class="reference internal" href="#_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE3repE" title="fmt::v6::internal::chrono_formatter&lt;FormatContext, OutputIt, Rep, Period&gt;::rep">rep</a>, std::milli&gt;<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE12millisecondsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE9char_typeE">
+<span id="_CPPv3IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE9char_typeE"></span><span id="_CPPv2IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE9char_typeE"></span>template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a3a982b64188335a69c7bf759139a9e49"></span><em class="property">using </em><code class="sig-name descname">char_type</code> = <em class="property">typename</em> FormatContext::char_type<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal16chrono_formatterI13FormatContext8OutputIt3Rep6PeriodE9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter16chrono_formatterER13FormatContext8OutputItNSt6chrono8durationI3Rep6PeriodEE">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter16chrono_formatterER13FormatContext8OutputItNSt6chrono8durationI3Rep6PeriodEE"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter16chrono_formatterER13FormatContext8OutputItNSt6chrono8durationI3Rep6PeriodEE"></span><span id="fmt::v6::internal::chrono_formatter::chrono_formatter__FormatContextR.OutputIt.std::chrono::duration:Rep.Period:"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a7a6451d6b5a1645540041a02d676d8de"></span><code class="sig-name descname">chrono_formatter</code><span class="sig-paren">(</span>FormatContext &amp;<em>ctx</em>, OutputIt <em>o</em>, std::chrono::duration&lt;Rep, Period&gt; <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter16chrono_formatterER13FormatContext8OutputItNSt6chrono8durationI3Rep6PeriodEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter14handle_nan_infEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter14handle_nan_infEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter14handle_nan_infEv"></span><span id="fmt::v6::internal::chrono_formatter::handle_nan_inf"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a19d637c6cc42cf552c177bc323e547ba"></span>bool <code class="sig-name descname">handle_nan_inf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter14handle_nan_infEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal16chrono_formatter4hourEv">
+<span id="_CPPv3NK3fmt2v68internal16chrono_formatter4hourEv"></span><span id="_CPPv2NK3fmt2v68internal16chrono_formatter4hourEv"></span><span id="fmt::v6::internal::chrono_formatter::hourC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1aa85877d48fcdd50f207f44fbc7530903"></span>Rep <code class="sig-name descname">hour</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal16chrono_formatter4hourEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal16chrono_formatter6hour12Ev">
+<span id="_CPPv3NK3fmt2v68internal16chrono_formatter6hour12Ev"></span><span id="_CPPv2NK3fmt2v68internal16chrono_formatter6hour12Ev"></span><span id="fmt::v6::internal::chrono_formatter::hour12C"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a47fa64b05a4c5ea01373837438f8d243"></span>Rep <code class="sig-name descname">hour12</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal16chrono_formatter6hour12Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal16chrono_formatter6minuteEv">
+<span id="_CPPv3NK3fmt2v68internal16chrono_formatter6minuteEv"></span><span id="_CPPv2NK3fmt2v68internal16chrono_formatter6minuteEv"></span><span id="fmt::v6::internal::chrono_formatter::minuteC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ad9f8ea4d9128bc456f8bdf75ddf607c0"></span>Rep <code class="sig-name descname">minute</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal16chrono_formatter6minuteEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal16chrono_formatter6secondEv">
+<span id="_CPPv3NK3fmt2v68internal16chrono_formatter6secondEv"></span><span id="_CPPv2NK3fmt2v68internal16chrono_formatter6secondEv"></span><span id="fmt::v6::internal::chrono_formatter::secondC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a1551a4b575e4c69d271747168043c28a"></span>Rep <code class="sig-name descname">second</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal16chrono_formatter6secondEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal16chrono_formatter4timeEv">
+<span id="_CPPv3NK3fmt2v68internal16chrono_formatter4timeEv"></span><span id="_CPPv2NK3fmt2v68internal16chrono_formatter4timeEv"></span><span id="fmt::v6::internal::chrono_formatter::timeC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a0e898e423cfa5cc7212dc4733aaee46e"></span>std::tm <code class="sig-name descname">time</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal16chrono_formatter4timeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter10write_signEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter10write_signEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter10write_signEv"></span><span id="fmt::v6::internal::chrono_formatter::write_sign"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1abef9bdefcd746da24416bcc8fd67bfe0"></span>void <code class="sig-name descname">write_sign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter10write_signEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter5writeE3Repi">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter5writeE3Repi"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter5writeE3Repi"></span><span id="fmt::v6::internal::chrono_formatter::write__Rep.i"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1af075fa63279772374b0de3eb0ed27b4d"></span>void <code class="sig-name descname">write</code><span class="sig-paren">(</span>Rep <em>value</em>, int <em>width</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter5writeE3Repi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter9write_nanEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter9write_nanEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter9write_nanEv"></span><span id="fmt::v6::internal::chrono_formatter::write_nan"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1aa5f902d7bcfa85c692bf38ccb9a0d5c3"></span>void <code class="sig-name descname">write_nan</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter9write_nanEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter10write_pinfEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter10write_pinfEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter10write_pinfEv"></span><span id="fmt::v6::internal::chrono_formatter::write_pinf"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1aee6c27cf54bfb5e14ed63fcce7a9ec87"></span>void <code class="sig-name descname">write_pinf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter10write_pinfEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter10write_ninfEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter10write_ninfEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter10write_ninfEv"></span><span id="fmt::v6::internal::chrono_formatter::write_ninf"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a321ce70012b71847c3b4fedce5659a3f"></span>void <code class="sig-name descname">write_ninf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter10write_ninfEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter16format_localizedERK2tmPKc">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter16format_localizedERK2tmPKc"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter16format_localizedERK2tmPKc"></span><span id="fmt::v6::internal::chrono_formatter::format_localized__tmCR.cCP"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ab16fd614a186fc3af67bc03a84f8d0bd"></span>void <code class="sig-name descname">format_localized</code><span class="sig-paren">(</span><em class="property">const</em> tm &amp;<em>time</em>, <em class="property">const</em> char *<em>format</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter16format_localizedERK2tmPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter7on_textEPK9char_typePK9char_type">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter7on_textEPK9char_typePK9char_type"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter7on_textEPK9char_typePK9char_type"></span><span id="fmt::v6::internal::chrono_formatter::on_text__char_typeCP.char_typeCP"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a10ec8b06e2a72eb81b3fb4dd13e8df45"></span>void <code class="sig-name descname">on_text</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> *<em>begin</em>, <em class="property">const</em> <a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> *<em>end</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter7on_textEPK9char_typePK9char_type" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter15on_abbr_weekdayEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter15on_abbr_weekdayEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter15on_abbr_weekdayEv"></span><span id="fmt::v6::internal::chrono_formatter::on_abbr_weekday"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1acf3a2b48d1ee8fbb09b8e1d9955dac2d"></span>void <code class="sig-name descname">on_abbr_weekday</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter15on_abbr_weekdayEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter15on_full_weekdayEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter15on_full_weekdayEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter15on_full_weekdayEv"></span><span id="fmt::v6::internal::chrono_formatter::on_full_weekday"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a44c28a819084ee2c433db75fe916778b"></span>void <code class="sig-name descname">on_full_weekday</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter15on_full_weekdayEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter15on_dec0_weekdayE14numeric_system">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter15on_dec0_weekdayE14numeric_system"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter15on_dec0_weekdayE14numeric_system"></span><span id="fmt::v6::internal::chrono_formatter::on_dec0_weekday__numeric_system"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a61da09a2c8035806f46523fb7dbedb34"></span>void <code class="sig-name descname">on_dec0_weekday</code><span class="sig-paren">(</span><a class="reference internal" href="enum_chrono_8h_1a753c6d542666b4e4881f779e9a6b968d.html#_CPPv4N3fmt2v68internal14numeric_systemE" title="fmt::v6::internal::numeric_system">numeric_system</a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter15on_dec0_weekdayE14numeric_system" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter15on_dec1_weekdayE14numeric_system">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter15on_dec1_weekdayE14numeric_system"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter15on_dec1_weekdayE14numeric_system"></span><span id="fmt::v6::internal::chrono_formatter::on_dec1_weekday__numeric_system"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1aac26ba74482a595ad03f35736b0902e7"></span>void <code class="sig-name descname">on_dec1_weekday</code><span class="sig-paren">(</span><a class="reference internal" href="enum_chrono_8h_1a753c6d542666b4e4881f779e9a6b968d.html#_CPPv4N3fmt2v68internal14numeric_systemE" title="fmt::v6::internal::numeric_system">numeric_system</a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter15on_dec1_weekdayE14numeric_system" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter13on_abbr_monthEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter13on_abbr_monthEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter13on_abbr_monthEv"></span><span id="fmt::v6::internal::chrono_formatter::on_abbr_month"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a52a50a4f7243f13ce144baebc041f5e5"></span>void <code class="sig-name descname">on_abbr_month</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter13on_abbr_monthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter13on_full_monthEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter13on_full_monthEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter13on_full_monthEv"></span><span id="fmt::v6::internal::chrono_formatter::on_full_month"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ad583326d19c73573ef4d71ba865e67f7"></span>void <code class="sig-name descname">on_full_month</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter13on_full_monthEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter11on_datetimeE14numeric_system">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter11on_datetimeE14numeric_system"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter11on_datetimeE14numeric_system"></span><span id="fmt::v6::internal::chrono_formatter::on_datetime__numeric_system"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a30f07fd6d96066487cc0631af7ab886b"></span>void <code class="sig-name descname">on_datetime</code><span class="sig-paren">(</span><a class="reference internal" href="enum_chrono_8h_1a753c6d542666b4e4881f779e9a6b968d.html#_CPPv4N3fmt2v68internal14numeric_systemE" title="fmt::v6::internal::numeric_system">numeric_system</a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter11on_datetimeE14numeric_system" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter11on_loc_dateE14numeric_system">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter11on_loc_dateE14numeric_system"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter11on_loc_dateE14numeric_system"></span><span id="fmt::v6::internal::chrono_formatter::on_loc_date__numeric_system"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ad1a4ca0c7b28847ab191e38b8a2152bb"></span>void <code class="sig-name descname">on_loc_date</code><span class="sig-paren">(</span><a class="reference internal" href="enum_chrono_8h_1a753c6d542666b4e4881f779e9a6b968d.html#_CPPv4N3fmt2v68internal14numeric_systemE" title="fmt::v6::internal::numeric_system">numeric_system</a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter11on_loc_dateE14numeric_system" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter11on_loc_timeE14numeric_system">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter11on_loc_timeE14numeric_system"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter11on_loc_timeE14numeric_system"></span><span id="fmt::v6::internal::chrono_formatter::on_loc_time__numeric_system"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a6d5f2299816906aeef0969ff06bc0423"></span>void <code class="sig-name descname">on_loc_time</code><span class="sig-paren">(</span><a class="reference internal" href="enum_chrono_8h_1a753c6d542666b4e4881f779e9a6b968d.html#_CPPv4N3fmt2v68internal14numeric_systemE" title="fmt::v6::internal::numeric_system">numeric_system</a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter11on_loc_timeE14numeric_system" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter10on_us_dateEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter10on_us_dateEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter10on_us_dateEv"></span><span id="fmt::v6::internal::chrono_formatter::on_us_date"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1abeee6d1d65d9604a95c2c1b2854bb728"></span>void <code class="sig-name descname">on_us_date</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter10on_us_dateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter11on_iso_dateEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter11on_iso_dateEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter11on_iso_dateEv"></span><span id="fmt::v6::internal::chrono_formatter::on_iso_date"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a23b348fe631bbc519efbef6da6db5865"></span>void <code class="sig-name descname">on_iso_date</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter11on_iso_dateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter13on_utc_offsetEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter13on_utc_offsetEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter13on_utc_offsetEv"></span><span id="fmt::v6::internal::chrono_formatter::on_utc_offset"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ac36b9d41cd08a71028fcf16d89998914"></span>void <code class="sig-name descname">on_utc_offset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter13on_utc_offsetEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter10on_tz_nameEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter10on_tz_nameEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter10on_tz_nameEv"></span><span id="fmt::v6::internal::chrono_formatter::on_tz_name"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a26bbe3ae07eaa64bbd406174018ebb2d"></span>void <code class="sig-name descname">on_tz_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter10on_tz_nameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter10on_24_hourE14numeric_system">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter10on_24_hourE14numeric_system"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter10on_24_hourE14numeric_system"></span><span id="fmt::v6::internal::chrono_formatter::on_24_hour__numeric_system"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a9803cfbb3dbe3fa311d90b496b880b4c"></span>void <code class="sig-name descname">on_24_hour</code><span class="sig-paren">(</span><a class="reference internal" href="enum_chrono_8h_1a753c6d542666b4e4881f779e9a6b968d.html#_CPPv4N3fmt2v68internal14numeric_systemE" title="fmt::v6::internal::numeric_system">numeric_system</a> <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter10on_24_hourE14numeric_system" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter10on_12_hourE14numeric_system">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter10on_12_hourE14numeric_system"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter10on_12_hourE14numeric_system"></span><span id="fmt::v6::internal::chrono_formatter::on_12_hour__numeric_system"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a8e9a78cfb548233331536d8521d97173"></span>void <code class="sig-name descname">on_12_hour</code><span class="sig-paren">(</span><a class="reference internal" href="enum_chrono_8h_1a753c6d542666b4e4881f779e9a6b968d.html#_CPPv4N3fmt2v68internal14numeric_systemE" title="fmt::v6::internal::numeric_system">numeric_system</a> <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter10on_12_hourE14numeric_system" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter9on_minuteE14numeric_system">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter9on_minuteE14numeric_system"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter9on_minuteE14numeric_system"></span><span id="fmt::v6::internal::chrono_formatter::on_minute__numeric_system"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a7e61319ee47318d6ba6ff20126ce54e7"></span>void <code class="sig-name descname">on_minute</code><span class="sig-paren">(</span><a class="reference internal" href="enum_chrono_8h_1a753c6d542666b4e4881f779e9a6b968d.html#_CPPv4N3fmt2v68internal14numeric_systemE" title="fmt::v6::internal::numeric_system">numeric_system</a> <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter9on_minuteE14numeric_system" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter9on_secondE14numeric_system">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter9on_secondE14numeric_system"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter9on_secondE14numeric_system"></span><span id="fmt::v6::internal::chrono_formatter::on_second__numeric_system"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a652b18f3f6cebcbbab5129dfe82c31d8"></span>void <code class="sig-name descname">on_second</code><span class="sig-paren">(</span><a class="reference internal" href="enum_chrono_8h_1a753c6d542666b4e4881f779e9a6b968d.html#_CPPv4N3fmt2v68internal14numeric_systemE" title="fmt::v6::internal::numeric_system">numeric_system</a> <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter9on_secondE14numeric_system" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter15on_12_hour_timeEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter15on_12_hour_timeEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter15on_12_hour_timeEv"></span><span id="fmt::v6::internal::chrono_formatter::on_12_hour_time"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a31af2b48ec56755b03811ddd366d4aee"></span>void <code class="sig-name descname">on_12_hour_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter15on_12_hour_timeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter15on_24_hour_timeEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter15on_24_hour_timeEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter15on_24_hour_timeEv"></span><span id="fmt::v6::internal::chrono_formatter::on_24_hour_time"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a6415b578d3407f78d70aa85ef9ffae0e"></span>void <code class="sig-name descname">on_24_hour_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter15on_24_hour_timeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter11on_iso_timeEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter11on_iso_timeEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter11on_iso_timeEv"></span><span id="fmt::v6::internal::chrono_formatter::on_iso_time"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1af5142a19d62d9d4ac8563bd94ea3d7e5"></span>void <code class="sig-name descname">on_iso_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter11on_iso_timeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter8on_am_pmEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter8on_am_pmEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter8on_am_pmEv"></span><span id="fmt::v6::internal::chrono_formatter::on_am_pm"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a26e9bb1aa919415b0367d4ca1253dbe9"></span>void <code class="sig-name descname">on_am_pm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter8on_am_pmEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter17on_duration_valueEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter17on_duration_valueEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter17on_duration_valueEv"></span><span id="fmt::v6::internal::chrono_formatter::on_duration_value"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a7a2517d49725bcda64fec2202f253de6"></span>void <code class="sig-name descname">on_duration_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter17on_duration_valueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter16on_duration_unitEv">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter16on_duration_unitEv"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter16on_duration_unitEv"></span><span id="fmt::v6::internal::chrono_formatter::on_duration_unit"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a661b47f7c3c31674da8b14e259187695"></span>void <code class="sig-name descname">on_duration_unit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter16on_duration_unitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter7contextE">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter7contextE"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter7contextE"></span><span id="fmt::v6::internal::chrono_formatter::context__FormatContextR"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1aa182649508e8d1193629ace59d079114"></span>FormatContext &amp;<code class="sig-name descname">context</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter7contextE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter3outE">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter3outE"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter3outE"></span><span id="fmt::v6::internal::chrono_formatter::out__OutputIt"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ac09d5eb248b8d95b8891ebf3b7b5bd59"></span>OutputIt <code class="sig-name descname">out</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter3outE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter9precisionE">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter9precisionE"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter9precisionE"></span><span id="fmt::v6::internal::chrono_formatter::precision__i"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ae55016f4c3cab07ad5d3caac85ed692a"></span>int <code class="sig-name descname">precision</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter9precisionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter3valE">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter3valE"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter3valE"></span><span id="fmt::v6::internal::chrono_formatter::val__rep"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1ac3fff639a2ffa0e441f56c2bc68e0d69"></span>rep <code class="sig-name descname">val</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter3valE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter1sE">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter1sE"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter1sE"></span><span id="fmt::v6::internal::chrono_formatter::s__seconds"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1a2f89a3703ec28a9e15010ed7d8fe21c6"></span>seconds <code class="sig-name descname">s</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter1sE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal16chrono_formatter8negativeE">
+<span id="_CPPv3N3fmt2v68internal16chrono_formatter8negativeE"></span><span id="_CPPv2N3fmt2v68internal16chrono_formatter8negativeE"></span><span id="fmt::v6::internal::chrono_formatter::negative__b"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1chrono__formatter_1aec0c575168c2a22eb89599793557ff2f"></span>bool <code class="sig-name descname">negative</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal16chrono_formatter8negativeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1color__type.html" class="btn btn-neutral float-right" title="Struct color_type" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1chrono__format__checker.html" class="btn btn-neutral float-left" title="Struct chrono_format_checker" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

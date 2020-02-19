@@ -1,0 +1,13 @@
+.. _exhale_function_printf_8h_1a184af2c2f92decfd80ad5150707c4ae9:
+
+Template Function fmt::v6::vfprintf(std::basic_ostream<Char>&, const S&, basic_format_args<basic_printf_context_t<Char>>)
+=========================================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_printf.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::vfprintf(std::basic_ostream<Char>&, const S&, basic_format_args<basic_printf_context_t<Char>>)

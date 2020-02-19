@@ -1,0 +1,13 @@
+.. _exhale_enum_color_8h_1a603c9b2d110d6685f76d358dd4d8f777:
+
+Enum terminal_color
+===================
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: fmt::v6::terminal_color

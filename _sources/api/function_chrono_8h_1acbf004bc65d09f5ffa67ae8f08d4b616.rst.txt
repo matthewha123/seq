@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1acbf004bc65d09f5ffa67ae8f08d4b616:
+
+Function fmt::v6::internal::localtime_s
+=======================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::localtime_s(...)

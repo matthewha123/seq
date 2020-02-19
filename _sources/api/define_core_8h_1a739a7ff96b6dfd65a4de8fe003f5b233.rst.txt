@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a739a7ff96b6dfd65a4de8fe003f5b233:
+
+Define FMT_USE_CONSTEXPR
+========================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_USE_CONSTEXPR

@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a363cb0623e6975ff2b357a52a03e4728:
+
+Define FMT_MSC_VER
+==================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_MSC_VER

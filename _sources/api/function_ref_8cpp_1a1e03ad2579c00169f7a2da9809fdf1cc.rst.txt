@@ -1,0 +1,13 @@
+.. _exhale_function_ref_8cpp_1a1e03ad2579c00169f7a2da9809fdf1cc:
+
+Function codegenNotNoneCheck
+============================
+
+- Defined in :ref:`file_compiler_types_ref.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: codegenNotNoneCheck(Value *, const std::string&, BasicBlock *)

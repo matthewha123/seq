@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1nonfinite__writer:
+
+Template Struct nonfinite_writer
+================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::nonfinite_writer
+   :members:
+   :protected-members:
+   :undoc-members:

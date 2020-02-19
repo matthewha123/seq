@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Class format_string_checker &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class format_string_compiler" href="classfmt_1_1v6_1_1internal_1_1format__string__compiler.html" />
+    <link rel="prev" title="Template Class float_writer" href="classfmt_1_1v6_1_1internal_1_1float__writer.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Class format_string_checker</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1internal_1_1format__string__checker.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-class-format-string-checker">
+<span id="exhale-class-classfmt-1-1v6-1-1internal-1-1format-string-checker"></span><h1>Template Class format_string_checker<a class="headerlink" href="#template-class-format-string-checker" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I00DpEN3fmt2v68internal21format_string_checkerE">
+<span id="_CPPv3I00DpEN3fmt2v68internal21format_string_checkerE"></span><span id="_CPPv2I00DpEN3fmt2v68internal21format_string_checkerE"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1format__string__checker"></span>template&lt;typename <code class="sig-name descname">Char</code>, typename <code class="sig-name descname">ErrorHandler</code>, typename ...<code class="sig-name descname">Args</code>&gt;<br /><em class="property">class </em><code class="sig-name descname">format_string_checker</code><a class="headerlink" href="#_CPPv4I00DpEN3fmt2v68internal21format_string_checkerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal21format_string_checker21format_string_checkerE17basic_string_viewI4CharE12ErrorHandler">
+<span id="_CPPv3N3fmt2v68internal21format_string_checker21format_string_checkerE17basic_string_viewI4CharE12ErrorHandler"></span><span id="_CPPv2N3fmt2v68internal21format_string_checker21format_string_checkerE17basic_string_viewI4CharE12ErrorHandler"></span><span id="fmt::v6::internal::format_string_checker::format_string_checker__basic_string_view:Char:.ErrorHandler"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1format__string__checker_1a73f95309530cd1c91cb12feb71135a73"></span><code class="sig-name descname">format_string_checker</code><span class="sig-paren">(</span>basic_string_view&lt;Char&gt; <em>format_str</em>, ErrorHandler <em>eh</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal21format_string_checker21format_string_checkerE17basic_string_viewI4CharE12ErrorHandler" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal21format_string_checker7on_textEPK4CharPK4Char">
+<span id="_CPPv3N3fmt2v68internal21format_string_checker7on_textEPK4CharPK4Char"></span><span id="_CPPv2N3fmt2v68internal21format_string_checker7on_textEPK4CharPK4Char"></span><span id="fmt::v6::internal::format_string_checker::on_text__CharCP.CharCP"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1format__string__checker_1ac28f5dcc4edc80db3773c7192ac78f30"></span>void <code class="sig-name descname">on_text</code><span class="sig-paren">(</span><em class="property">const</em> Char *, <em class="property">const</em> Char *<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal21format_string_checker7on_textEPK4CharPK4Char" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal21format_string_checker9on_arg_idEv">
+<span id="_CPPv3N3fmt2v68internal21format_string_checker9on_arg_idEv"></span><span id="_CPPv2N3fmt2v68internal21format_string_checker9on_arg_idEv"></span><span id="fmt::v6::internal::format_string_checker::on_arg_id"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1format__string__checker_1a4f2820b8032e28bf41348257ff993f9a"></span>void <code class="sig-name descname">on_arg_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal21format_string_checker9on_arg_idEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal21format_string_checker9on_arg_idEi">
+<span id="_CPPv3N3fmt2v68internal21format_string_checker9on_arg_idEi"></span><span id="_CPPv2N3fmt2v68internal21format_string_checker9on_arg_idEi"></span><span id="fmt::v6::internal::format_string_checker::on_arg_id__i"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1format__string__checker_1abe80ab383884532c05864ee483f2a5ca"></span>void <code class="sig-name descname">on_arg_id</code><span class="sig-paren">(</span>int <em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal21format_string_checker9on_arg_idEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal21format_string_checker9on_arg_idE17basic_string_viewI4CharE">
+<span id="_CPPv3N3fmt2v68internal21format_string_checker9on_arg_idE17basic_string_viewI4CharE"></span><span id="_CPPv2N3fmt2v68internal21format_string_checker9on_arg_idE17basic_string_viewI4CharE"></span><span id="fmt::v6::internal::format_string_checker::on_arg_id__basic_string_view:Char:"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1format__string__checker_1a5d5ef063bfe2d32caa3a3060dc9ad331"></span>void <code class="sig-name descname">on_arg_id</code><span class="sig-paren">(</span>basic_string_view&lt;Char&gt;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal21format_string_checker9on_arg_idE17basic_string_viewI4CharE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal21format_string_checker20on_replacement_fieldEPK4Char">
+<span id="_CPPv3N3fmt2v68internal21format_string_checker20on_replacement_fieldEPK4Char"></span><span id="_CPPv2N3fmt2v68internal21format_string_checker20on_replacement_fieldEPK4Char"></span><span id="fmt::v6::internal::format_string_checker::on_replacement_field__CharCP"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1format__string__checker_1a395c9edb088bb94955fdf2c06075ce0d"></span>void <code class="sig-name descname">on_replacement_field</code><span class="sig-paren">(</span><em class="property">const</em> Char *<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal21format_string_checker20on_replacement_fieldEPK4Char" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal21format_string_checker15on_format_specsEPK4CharPK4Char">
+<span id="_CPPv3N3fmt2v68internal21format_string_checker15on_format_specsEPK4CharPK4Char"></span><span id="_CPPv2N3fmt2v68internal21format_string_checker15on_format_specsEPK4CharPK4Char"></span><span id="fmt::v6::internal::format_string_checker::on_format_specs__CharCP.CharCP"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1format__string__checker_1a96927465ab9ae1349e4ee21de741b7ee"></span><em class="property">const</em> Char *<code class="sig-name descname">on_format_specs</code><span class="sig-paren">(</span><em class="property">const</em> Char *<em>begin</em>, <em class="property">const</em> Char *<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal21format_string_checker15on_format_specsEPK4CharPK4Char" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal21format_string_checker8on_errorEPKc">
+<span id="_CPPv3N3fmt2v68internal21format_string_checker8on_errorEPKc"></span><span id="_CPPv2N3fmt2v68internal21format_string_checker8on_errorEPKc"></span><span id="fmt::v6::internal::format_string_checker::on_error__cCP"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1format__string__checker_1ae821a50738d54488fe99f5304b47ba13"></span>void <code class="sig-name descname">on_error</code><span class="sig-paren">(</span><em class="property">const</em> char *<em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal21format_string_checker8on_errorEPKc" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1format__string__compiler.html" class="btn btn-neutral float-right" title="Template Class format_string_compiler" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1float__writer.html" class="btn btn-neutral float-left" title="Template Class float_writer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

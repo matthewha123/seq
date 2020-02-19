@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a47e092e5f38e4f8878056f7f19fbf213:
+
+Function fmt::v6::internal::thousands_sep(locale_ref)
+=====================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::thousands_sep(locale_ref)

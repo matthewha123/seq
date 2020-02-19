@@ -1,0 +1,25 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1specs__handler:
+
+Template Class specs_handler
+============================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public fmt::v6::internal::specs_setter< Context::char_type >`` (:ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1specs__setter`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::specs_handler
+   :members:
+   :protected-members:
+   :undoc-members:

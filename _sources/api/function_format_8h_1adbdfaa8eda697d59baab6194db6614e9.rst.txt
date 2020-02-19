@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1adbdfaa8eda697d59baab6194db6614e9:
+
+Template Function fmt::v6::vprint(std::FILE \*, basic_string_view<Char>, wformat_args)
+======================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::vprint(std::FILE *, basic_string_view<Char>, wformat_args)

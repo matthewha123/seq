@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Class buffer &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class char_converter" href="classfmt_1_1v6_1_1internal_1_1char__converter.html" />
+    <link rel="prev" title="Class bigint" href="classfmt_1_1v6_1_1internal_1_1bigint.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Class buffer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1internal_1_1buffer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-class-buffer">
+<span id="exhale-class-classfmt-1-1v6-1-1internal-1-1buffer"></span><h1>Template Class buffer<a class="headerlink" href="#template-class-buffer" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_core.h.html#file-compiler-util-fmt-core-h"><span class="std std-ref">File core.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">fmt::v6::basic_memory_buffer&lt;</span> <span class="pre">T,</span> <span class="pre">SIZE,</span> <span class="pre">Allocator</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="classfmt_1_1v6_1_1basic__memory__buffer.html#exhale-class-classfmt-1-1v6-1-1basic-memory-buffer"><span class="std std-ref">Template Class basic_memory_buffer</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0EN3fmt2v68internal6bufferE">
+<span id="_CPPv3I0EN3fmt2v68internal6bufferE"></span><span id="_CPPv2I0EN3fmt2v68internal6bufferE"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><em class="property">class </em><code class="sig-name descname">buffer</code><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal6bufferE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A contiguous memory buffer with an optional growing ability. </p>
+<p>Subclassed by <a class="reference internal" href="classfmt_1_1v6_1_1basic__memory__buffer.html#classfmt_1_1v6_1_1basic__memory__buffer"><span class="std std-ref">fmt::v6::basic_memory_buffer&lt; T, SIZE, Allocator &gt;</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal6bufferI1TE10value_typeE">
+<span id="_CPPv3IEN3fmt2v68internal6bufferI1TE10value_typeE"></span><span id="_CPPv2IEN3fmt2v68internal6bufferI1TE10value_typeE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a9f9effc6f89d9edbd3cd1a90e2e92558"></span><em class="property">using </em><code class="sig-name descname">value_type</code> = T<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal6bufferI1TE10value_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal6bufferI1TE15const_referenceE">
+<span id="_CPPv3IEN3fmt2v68internal6bufferI1TE15const_referenceE"></span><span id="_CPPv2IEN3fmt2v68internal6bufferI1TE15const_referenceE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1aabd611b523a494e638a22fefa32c998c"></span><em class="property">using </em><code class="sig-name descname">const_reference</code> = <em class="property">const</em> T&amp;<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal6bufferI1TE15const_referenceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer6bufferERK6buffer">
+<span id="_CPPv3N3fmt2v68internal6buffer6bufferERK6buffer"></span><span id="_CPPv2N3fmt2v68internal6buffer6bufferERK6buffer"></span><span id="fmt::v6::internal::buffer::buffer__bufferCR"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a9814bd17f9fcea6569ed3124fa0b0232"></span><code class="sig-name descname">buffer</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N3fmt2v68internal6buffer6bufferENSt6size_tE" title="fmt::v6::internal::buffer::buffer">buffer</a>&amp;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer6bufferERK6buffer" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6bufferaSERK6buffer">
+<span id="_CPPv3N3fmt2v68internal6bufferaSERK6buffer"></span><span id="_CPPv2N3fmt2v68internal6bufferaSERK6buffer"></span><span id="fmt::v6::internal::buffer::assign-operator__bufferCR"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1ace5bb40758b8291c470b6c8cf24bd305"></span>void <code class="sig-name descname">operator=</code><span class="sig-paren">(</span><em class="property">const</em> buffer&amp;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6bufferaSERK6buffer" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6bufferD0Ev">
+<span id="_CPPv3N3fmt2v68internal6bufferD0Ev"></span><span id="_CPPv2N3fmt2v68internal6bufferD0Ev"></span><span id="fmt::v6::internal::buffer::~buffer"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a33adede5b8556790276148b6c3f19e16"></span><em class="property">virtual</em> <code class="sig-name descname">~buffer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6bufferD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer5beginEv">
+<span id="_CPPv3N3fmt2v68internal6buffer5beginEv"></span><span id="_CPPv2N3fmt2v68internal6buffer5beginEv"></span><span id="fmt::v6::internal::buffer::begin"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1ab0928a727796d7be52d52235ae2a5a0b"></span>T *<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer5beginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer3endEv">
+<span id="_CPPv3N3fmt2v68internal6buffer3endEv"></span><span id="_CPPv2N3fmt2v68internal6buffer3endEv"></span><span id="fmt::v6::internal::buffer::end"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a91769264cc024a0e3a3888974d634a69"></span>T *<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer3endEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal6buffer4sizeEv">
+<span id="_CPPv3NK3fmt2v68internal6buffer4sizeEv"></span><span id="_CPPv2NK3fmt2v68internal6buffer4sizeEv"></span><span id="fmt::v6::internal::buffer::sizeC"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a8b193993a781f803af0dd3eb8eb0e1c5"></span>std::size_t <code class="sig-name descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal6buffer4sizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the size of this buffer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal6buffer8capacityEv">
+<span id="_CPPv3NK3fmt2v68internal6buffer8capacityEv"></span><span id="_CPPv2NK3fmt2v68internal6buffer8capacityEv"></span><span id="fmt::v6::internal::buffer::capacityC"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a26c536633cee7dc93247e79c0adaf265"></span>std::size_t <code class="sig-name descname">capacity</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal6buffer8capacityEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the capacity of this buffer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer4dataEv">
+<span id="_CPPv3N3fmt2v68internal6buffer4dataEv"></span><span id="_CPPv2N3fmt2v68internal6buffer4dataEv"></span><span id="fmt::v6::internal::buffer::data"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a9ff03d7666ecea043a6b8de4c76344ca"></span>T *<code class="sig-name descname">data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer4dataEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns a pointer to the buffer data. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal6buffer4dataEv">
+<span id="_CPPv3NK3fmt2v68internal6buffer4dataEv"></span><span id="_CPPv2NK3fmt2v68internal6buffer4dataEv"></span><span id="fmt::v6::internal::buffer::dataC"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a1a3b3fcd0d2686c4be0c26247b563eae"></span><em class="property">const</em> T *<code class="sig-name descname">data</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal6buffer4dataEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns a pointer to the buffer data. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer6resizeENSt6size_tE">
+<span id="_CPPv3N3fmt2v68internal6buffer6resizeENSt6size_tE"></span><span id="_CPPv2N3fmt2v68internal6buffer6resizeENSt6size_tE"></span><span id="fmt::v6::internal::buffer::resize__std::s"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a28202c1f9ffe4877d404390850ef1a26"></span>void <code class="sig-name descname">resize</code><span class="sig-paren">(</span>std::size_t <em>new_size</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer6resizeENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Resizes the buffer. If T is a POD type new elements may not be initialized. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer5clearEv">
+<span id="_CPPv3N3fmt2v68internal6buffer5clearEv"></span><span id="_CPPv2N3fmt2v68internal6buffer5clearEv"></span><span id="fmt::v6::internal::buffer::clear"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a38233101b81cc67045f00fcf56217280"></span>void <code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer5clearEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Clears this buffer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer7reserveENSt6size_tE">
+<span id="_CPPv3N3fmt2v68internal6buffer7reserveENSt6size_tE"></span><span id="_CPPv2N3fmt2v68internal6buffer7reserveENSt6size_tE"></span><span id="fmt::v6::internal::buffer::reserve__std::s"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1acac920a3115adbc0943517b375f9ccbb"></span>void <code class="sig-name descname">reserve</code><span class="sig-paren">(</span>std::size_t <em>new_capacity</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer7reserveENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reserves space to store at least <em>capacity</em> elements. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer9push_backERK1T">
+<span id="_CPPv3N3fmt2v68internal6buffer9push_backERK1T"></span><span id="_CPPv2N3fmt2v68internal6buffer9push_backERK1T"></span><span id="fmt::v6::internal::buffer::push_back__TCR"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a4565d813960fd97f74e0d329cc503615"></span>void <code class="sig-name descname">push_back</code><span class="sig-paren">(</span><em class="property">const</em> T &amp;<em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer9push_backERK1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0EN3fmt2v68internal6buffer6appendEvPK1UPK1U">
+<span id="_CPPv3I0EN3fmt2v68internal6buffer6appendEPK1UPK1U"></span><span id="_CPPv2I0EN3fmt2v68internal6buffer6appendEPK1UPK1U"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a40472cb504f4cb2fc819f1f1dfcf9c9b"></span>template&lt;typename <code class="sig-name descname">U</code>&gt;<br />void <code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0EN3fmt2v68internal6buffer6appendEvPK1UPK1U" title="fmt::v6::internal::buffer::append::U">U</a> *<em>begin</em>, <em class="property">const</em> <a class="reference internal" href="#_CPPv4I0EN3fmt2v68internal6buffer6appendEvPK1UPK1U" title="fmt::v6::internal::buffer::append::U">U</a> *<em>end</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal6buffer6appendEvPK1UPK1U" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Appends data to the end of the buffer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6bufferixENSt6size_tE">
+<span id="_CPPv3N3fmt2v68internal6bufferixENSt6size_tE"></span><span id="_CPPv2N3fmt2v68internal6bufferixENSt6size_tE"></span><span id="fmt::v6::internal::buffer::subscript-operator__std::s"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a3a8cf9e61dd4d43114304860b20dd2b7"></span>T &amp;<code class="sig-name descname">operator[]</code><span class="sig-paren">(</span>std::size_t <em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6bufferixENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v68internal6bufferixENSt6size_tE">
+<span id="_CPPv3NK3fmt2v68internal6bufferixENSt6size_tE"></span><span id="_CPPv2NK3fmt2v68internal6bufferixENSt6size_tE"></span><span id="fmt::v6::internal::buffer::subscript-operator__std::sC"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a1116b5df15fa48ad5389f0605f2294f1"></span><em class="property">const</em> T &amp;<code class="sig-name descname">operator[]</code><span class="sig-paren">(</span>std::size_t <em>index</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v68internal6bufferixENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer6bufferENSt6size_tE">
+<span id="_CPPv3N3fmt2v68internal6buffer6bufferENSt6size_tE"></span><span id="_CPPv2N3fmt2v68internal6buffer6bufferENSt6size_tE"></span><span id="fmt::v6::internal::buffer::buffer__std::s"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a977fc1ca25c973d994ca9abb96580944"></span><code class="sig-name descname">buffer</code><span class="sig-paren">(</span>std::size_t <em>sz</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer6bufferENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer6bufferEP1TNSt6size_tENSt6size_tE">
+<span id="_CPPv3N3fmt2v68internal6buffer6bufferEP1TNSt6size_tENSt6size_tE"></span><span id="_CPPv2N3fmt2v68internal6buffer6bufferEP1TNSt6size_tENSt6size_tE"></span><span id="fmt::v6::internal::buffer::buffer__TP.std::s.std::s"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1a6dae1c722ce36157636182771c1bf312"></span><code class="sig-name descname">buffer</code><span class="sig-paren">(</span>T *<em>p</em> = nullptr, std::size_t <em>sz</em> = 0, std::size_t <em>cap</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer6bufferEP1TNSt6size_tENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer3setEP1TNSt6size_tE">
+<span id="_CPPv3N3fmt2v68internal6buffer3setEP1TNSt6size_tE"></span><span id="_CPPv2N3fmt2v68internal6buffer3setEP1TNSt6size_tE"></span><span id="fmt::v6::internal::buffer::set__TP.std::s"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1ac534901af525a2d391e8476a16a68666"></span>void <code class="sig-name descname">set</code><span class="sig-paren">(</span>T *<em>buf_data</em>, std::size_t <em>buf_capacity</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer3setEP1TNSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Sets the buffer data and capacity. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal6buffer4growENSt6size_tE">
+<span id="_CPPv3N3fmt2v68internal6buffer4growENSt6size_tE"></span><span id="_CPPv2N3fmt2v68internal6buffer4growENSt6size_tE"></span><span id="fmt::v6::internal::buffer::grow__std::s"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1buffer_1aca89335d85ecd894eb7945821882c906"></span><em class="property">virtual</em> void <code class="sig-name descname">grow</code><span class="sig-paren">(</span>std::size_t <em>capacity</em><span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N3fmt2v68internal6buffer4growENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Increases the buffer capacity to hold at least <em>capacity</em> elements. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1char__converter.html" class="btn btn-neutral float-right" title="Template Class char_converter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1bigint.html" class="btn btn-neutral float-left" title="Class bigint" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a6e4b6206d33af31e2ada44a5addef4de:
+
+Template Function fmt::v6::internal::to_nonnegative_int
+=======================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::to_nonnegative_int(T, int)

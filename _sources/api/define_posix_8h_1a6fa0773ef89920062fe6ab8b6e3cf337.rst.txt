@@ -1,0 +1,13 @@
+.. _exhale_define_posix_8h_1a6fa0773ef89920062fe6ab8b6e3cf337:
+
+Define FMT_POSIX
+================
+
+- Defined in :ref:`file_compiler_util_fmt_posix.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_POSIX

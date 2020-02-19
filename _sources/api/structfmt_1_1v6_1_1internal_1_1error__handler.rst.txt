@@ -1,0 +1,29 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1error__handler:
+
+Struct error_handler
+====================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``private fmt::v6::basic_format_parse_context< Char >`` (:ref:`exhale_class_classfmt_1_1v6_1_1basic__format__parse__context`)
+- ``private fmt::v6::basic_format_parse_context< char_type >`` (:ref:`exhale_class_classfmt_1_1v6_1_1basic__format__parse__context`)
+- ``public fmt::v6::format_handler< ArgFormatter, Char, Context >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1format__handler`)
+- ``public fmt::v6::internal::arg_formatter_base< Range, ErrorHandler >::cstring_spec_handler`` (:ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__formatter__base_1_1cstring__spec__handler`)
+- ``public fmt::v6::internal::format_string_compiler< Char, PartHandler >`` (:ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1format__string__compiler`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::error_handler
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1precision__adapter:
+
+Template Struct precision_adapter
+=================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::precision_adapter
+   :members:
+   :protected-members:
+   :undoc-members:

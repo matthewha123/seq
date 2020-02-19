@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Struct basic_data &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Struct basic_writer::int_writer" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer.html" />
+    <link rel="prev" title="Struct basic_compiled_format" href="structfmt_1_1v6_1_1internal_1_1basic__compiled__format.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Struct basic_data</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/structfmt_1_1v6_1_1internal_1_1basic__data.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-struct-basic-data">
+<span id="exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-data"></span><h1>Template Struct basic_data<a class="headerlink" href="#template-struct-basic-data" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a></p></li>
+</ul>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0EN3fmt2v68internal10basic_dataE">
+<span id="_CPPv3I0EN3fmt2v68internal10basic_dataE"></span><span id="_CPPv2I0EN3fmt2v68internal10basic_dataE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data"></span>template&lt;typename <code class="sig-name descname">T</code> = void&gt;<br /><em class="property">struct </em><code class="sig-name descname">basic_data</code><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal10basic_dataE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Attributes</p>
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data15powers_of_10_64E">
+<span id="_CPPv3N3fmt2v68internal10basic_data15powers_of_10_64E"></span><span id="_CPPv2N3fmt2v68internal10basic_data15powers_of_10_64E"></span><span id="fmt::v6::internal::basic_data::powers_of_10_64__uint64_tC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1a73be6de809e06ea72e2f43566ac0f01d"></span><em class="property">const</em> uint64_t <code class="sig-name descname">powers_of_10_64</code> = {1, 1 * 10, (1) * 100, (1) * 1000, (1) * 10000, (1) * 100000, (1) * 1000000, (1) * 10000000, (1) * 100000000, (1) * 1000000000, 1000000000ULL * 10, (1000000000ULL) * 100, (1000000000ULL) * 1000, (1000000000ULL) * 10000, (1000000000ULL) * 100000, (1000000000ULL) * 1000000, (1000000000ULL) * 10000000, (1000000000ULL) * 100000000, (1000000000ULL) * 1000000000, 10000000000000000000ULL}<a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data15powers_of_10_64E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data23zero_or_powers_of_10_32E">
+<span id="_CPPv3N3fmt2v68internal10basic_data23zero_or_powers_of_10_32E"></span><span id="_CPPv2N3fmt2v68internal10basic_data23zero_or_powers_of_10_32E"></span><span id="fmt::v6::internal::basic_data::zero_or_powers_of_10_32__uint32_tC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1a45e93230a66facd00b30a69482b3ed6a"></span><em class="property">const</em> uint32_t <code class="sig-name descname">zero_or_powers_of_10_32</code> = {0, 1 * 10, (1) * 100, (1) * 1000, (1) * 10000, (1) * 100000, (1) * 1000000, (1) * 10000000, (1) * 100000000, (1) * 1000000000}<a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data23zero_or_powers_of_10_32E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data23zero_or_powers_of_10_64E">
+<span id="_CPPv3N3fmt2v68internal10basic_data23zero_or_powers_of_10_64E"></span><span id="_CPPv2N3fmt2v68internal10basic_data23zero_or_powers_of_10_64E"></span><span id="fmt::v6::internal::basic_data::zero_or_powers_of_10_64__uint64_tC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1aea3b071526729265f2c880dd5f777a0a"></span><em class="property">const</em> uint64_t <code class="sig-name descname">zero_or_powers_of_10_64</code> = {0, 1 * 10, (1) * 100, (1) * 1000, (1) * 10000, (1) * 100000, (1) * 1000000, (1) * 10000000, (1) * 100000000, (1) * 1000000000, 1000000000ULL * 10, (1000000000ULL) * 100, (1000000000ULL) * 1000, (1000000000ULL) * 10000, (1000000000ULL) * 100000, (1000000000ULL) * 1000000, (1000000000ULL) * 10000000, (1000000000ULL) * 100000000, (1000000000ULL) * 1000000000, 10000000000000000000ULL}<a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data23zero_or_powers_of_10_64E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data18pow10_significandsE">
+<span id="_CPPv3N3fmt2v68internal10basic_data18pow10_significandsE"></span><span id="_CPPv2N3fmt2v68internal10basic_data18pow10_significandsE"></span><span id="fmt::v6::internal::basic_data::pow10_significands__uint64_tC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1a57ee79cd632ed27f77875b59c86fc55c"></span><em class="property">const</em> uint64_t <code class="sig-name descname">pow10_significands</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data18pow10_significandsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data15pow10_exponentsE">
+<span id="_CPPv3N3fmt2v68internal10basic_data15pow10_exponentsE"></span><span id="_CPPv2N3fmt2v68internal10basic_data15pow10_exponentsE"></span><span id="fmt::v6::internal::basic_data::pow10_exponents__int16_tC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1a428b8cbb27a0cb8a4584fdd98ae51f53"></span><em class="property">const</em> int16_t <code class="sig-name descname">pow10_exponents</code> = {-1220, -1193, -1166, -1140, -1113, -1087, -1060, -1034, -1007, -980, -954, -927, -901, -874, -847, -821, -794, -768, -741, -715, -688, -661, -635, -608, -582, -555, -529, -502, -475, -449, -422, -396, -369, -343, -316, -289, -263, -236, -210, -183, -157, -130, -103, -77, -50, -24, 3, 30, 56, 83, 109, 136, 162, 189, 216, 242, 269, 295, 322, 348, 375, 402, 428, 455, 481, 508, 534, 561, 588, 614, 641, 667, 694, 720, 747, 774, 800, 827, 853, 880, 907, 933, 960, 986, 1013, 1039, 1066}<a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data15pow10_exponentsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt>
+<span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1a51e415e62c50ff5febd0e0c8820bb635"></span><code class="sig-name descname">const char fmt::v6::internal::basic_data::digits= &quot;0001020304050607080910111213141516171819&quot;                                     &quot;2021222324252627282930313233343536373839&quot;                                     &quot;4041424344454647484950515253545556575859&quot;                                     &quot;6061626364656667686970717273747576777879&quot;                                     &quot;8081828384858687888990919293949596979899&quot;</code></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data10hex_digitsE">
+<span id="_CPPv3N3fmt2v68internal10basic_data10hex_digitsE"></span><span id="_CPPv2N3fmt2v68internal10basic_data10hex_digitsE"></span><span id="fmt::v6::internal::basic_data::hex_digits__cC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1a7c487b954280ca15c192d205e01dd851"></span><em class="property">const</em> char <code class="sig-name descname">hex_digits</code> = &quot;0123456789abcdef&quot;<a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data10hex_digitsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data16foreground_colorE">
+<span id="_CPPv3N3fmt2v68internal10basic_data16foreground_colorE"></span><span id="_CPPv2N3fmt2v68internal10basic_data16foreground_colorE"></span><span id="fmt::v6::internal::basic_data::foreground_color__cC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1a6e22e48c0e8ae83b147349a17d0b5e95"></span><em class="property">const</em> char <code class="sig-name descname">foreground_color</code> = &quot;x1b[38;2;&quot;<a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data16foreground_colorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data16background_colorE">
+<span id="_CPPv3N3fmt2v68internal10basic_data16background_colorE"></span><span id="_CPPv2N3fmt2v68internal10basic_data16background_colorE"></span><span id="fmt::v6::internal::basic_data::background_color__cC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1ac113ed1a48ecd368248663c9f8e7ab69"></span><em class="property">const</em> char <code class="sig-name descname">background_color</code> = &quot;x1b[48;2;&quot;<a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data16background_colorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data11reset_colorE">
+<span id="_CPPv3N3fmt2v68internal10basic_data11reset_colorE"></span><span id="_CPPv2N3fmt2v68internal10basic_data11reset_colorE"></span><span id="fmt::v6::internal::basic_data::reset_color__cC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1a5960939fc64bec5f5304c956bda229da"></span><em class="property">const</em> char <code class="sig-name descname">reset_color</code> = &quot;x1b[0m&quot;<a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data11reset_colorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt>
+<span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1a684e9f6132d5c3970b0cd37a07a6b1eb"></span><code class="sig-name descname">const wchar_t fmt::v6::internal::basic_data::wreset_color = L&quot;x1b[0m&quot;</code></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal10basic_data5signsE">
+<span id="_CPPv3N3fmt2v68internal10basic_data5signsE"></span><span id="_CPPv2N3fmt2v68internal10basic_data5signsE"></span><span id="fmt::v6::internal::basic_data::signs__cC"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__data_1adecd206ee835aed6c8becb4afc21e44d"></span><em class="property">const</em> char <code class="sig-name descname">signs</code> = {0, '-', '+', ' '}<a class="headerlink" href="#_CPPv4N3fmt2v68internal10basic_data5signsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer.html" class="btn btn-neutral float-right" title="Template Struct basic_writer::int_writer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1basic__compiled__format.html" class="btn btn-neutral float-left" title="Struct basic_compiled_format" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

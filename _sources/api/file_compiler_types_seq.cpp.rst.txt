@@ -1,0 +1,64 @@
+
+.. _file_compiler_types_seq.cpp:
+
+File seq.cpp
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_types>` (``compiler/types``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/types/seq.cpp``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_types_seq.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``iostream``
+
+- ``lang/seq.h`` (:ref:`file_compiler_lang_seq.h`)
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_types_2seq_8cpp_1ae6e968d2be8b58496f90c056e1e6b6f0`
+
+- :ref:`exhale_function_types_2seq_8cpp_1a60cdf094a8ff0b25c5afe256a8a50aeb`
+
+- :ref:`exhale_function_types_2seq_8cpp_1a35e6e723f7f701ebed22f4e23c8cad2d`
+
+- :ref:`exhale_function_types_2seq_8cpp_1a2f71090620419042a27fa102980bb117`
+
+- :ref:`exhale_function_types_2seq_8cpp_1a90862a844003b2a1707ffd1e2216d437`
+
+- :ref:`exhale_function_types_2seq_8cpp_1af31f70182a29ac7bf31fc2c9c7a66587`
+
+- :ref:`exhale_function_types_2seq_8cpp_1aeabd9b47e13d8400cc56696bf2b29bf9`
+
+- :ref:`exhale_function_types_2seq_8cpp_1a05f0971edc69518ae2b8249655926597`
+
+- :ref:`exhale_function_types_2seq_8cpp_1aa6b908224c7865b1f098da637976c666`
+
+- :ref:`exhale_function_types_2seq_8cpp_1ad65e0a61110f94655beb2d3b94dd5996`
+

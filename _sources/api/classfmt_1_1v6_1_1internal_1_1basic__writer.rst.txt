@@ -1,0 +1,33 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1basic__writer:
+
+Template Class basic_writer
+===========================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer`
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1bin__writer`
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1dec__writer`
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1hex__writer`
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer`
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1padded__int__writer`
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1pointer__writer`
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__writer_1_1str__writer`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::basic_writer
+   :members:
+   :protected-members:
+   :undoc-members:

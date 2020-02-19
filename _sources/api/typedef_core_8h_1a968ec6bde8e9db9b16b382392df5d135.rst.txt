@@ -1,0 +1,13 @@
+.. _exhale_typedef_core_8h_1a968ec6bde8e9db9b16b382392df5d135:
+
+Typedef fmt::v6::has_formatter
+==============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::has_formatter

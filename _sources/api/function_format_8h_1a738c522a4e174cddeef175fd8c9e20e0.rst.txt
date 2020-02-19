@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a738c522a4e174cddeef175fd8c9e20e0:
+
+Template Function fmt::v6::internal::promote_float(T)
+=====================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::promote_float(T)

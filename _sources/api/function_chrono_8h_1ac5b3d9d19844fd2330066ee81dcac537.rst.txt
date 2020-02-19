@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1ac5b3d9d19844fd2330066ee81dcac537:
+
+Template Function fmt::v6::internal::isnan
+==========================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::isnan(T)

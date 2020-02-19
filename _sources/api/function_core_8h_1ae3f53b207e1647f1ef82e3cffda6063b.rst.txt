@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1ae3f53b207e1647f1ef82e3cffda6063b:
+
+Template Function fmt::v6::to_string_view(const Char \*)
+========================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::to_string_view(const Char *)

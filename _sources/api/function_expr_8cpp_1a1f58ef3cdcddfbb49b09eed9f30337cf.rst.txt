@@ -1,0 +1,13 @@
+.. _exhale_function_expr_8cpp_1a1f58ef3cdcddfbb49b09eed9f30337cf:
+
+Function isLiteralFalse
+=======================
+
+- Defined in :ref:`file_compiler_lang_expr.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: isLiteralFalse(Expr *)

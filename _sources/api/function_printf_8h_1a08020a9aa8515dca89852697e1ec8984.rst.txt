@@ -1,0 +1,13 @@
+.. _exhale_function_printf_8h_1a08020a9aa8515dca89852697e1ec8984:
+
+Template Function fmt::v6::make_printf_args
+===========================================
+
+- Defined in :ref:`file_compiler_util_fmt_printf.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::make_printf_args(const Args&...)

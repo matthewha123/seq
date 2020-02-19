@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1a891dc3dccd63681685a5e8cafd1f1d82:
+
+Template Function fmt::v6::internal::vformat(basic_string_view<Char>, basic_format_args<buffer_context<Char>>)
+==============================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::vformat(basic_string_view<Char>, basic_format_args<buffer_context<Char>>)

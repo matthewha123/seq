@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1a058e2c3eea88d232a1056a0bc6487e37:
+
+Define FMT_CLANG_VERSION
+========================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_CLANG_VERSION

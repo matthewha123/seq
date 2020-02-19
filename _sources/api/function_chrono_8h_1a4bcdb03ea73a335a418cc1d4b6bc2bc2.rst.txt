@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a4bcdb03ea73a335a418cc1d4b6bc2bc2:
+
+Function fmt::v6::internal::get_units< std::atto >
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_units< std::atto >()

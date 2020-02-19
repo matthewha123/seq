@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class format_int &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class arg_converter" href="classfmt_1_1v6_1_1internal_1_1arg__converter.html" />
+    <link rel="prev" title="Class format_error" href="classfmt_1_1v6_1_1format__error.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Class format_int</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1format__int.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-format-int">
+<span id="exhale-class-classfmt-1-1v6-1-1format-int"></span><h1>Class format_int<a class="headerlink" href="#class-format-int" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N3fmt2v610format_intE">
+<span id="_CPPv3N3fmt2v610format_intE"></span><span id="_CPPv2N3fmt2v610format_intE"></span><span id="fmt::v6::format_int"></span><span class="target" id="classfmt_1_1v6_1_1format__int"></span><em class="property">class </em><code class="sig-name descname">format_int</code><a class="headerlink" href="#_CPPv4N3fmt2v610format_intE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Fast integer formatter. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v610format_int10format_intEi">
+<span id="_CPPv3N3fmt2v610format_int10format_intEi"></span><span id="_CPPv2N3fmt2v610format_int10format_intEi"></span><span id="fmt::v6::format_int::format_int__i"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1a1a35343609712cca531dfe2777de9e92"></span><code class="sig-name descname">format_int</code><span class="sig-paren">(</span>int <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v610format_int10format_intEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v610format_int10format_intEl">
+<span id="_CPPv3N3fmt2v610format_int10format_intEl"></span><span id="_CPPv2N3fmt2v610format_int10format_intEl"></span><span id="fmt::v6::format_int::format_int__l"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1a64cf9a99b4744abf520694a5ea8f8889"></span><code class="sig-name descname">format_int</code><span class="sig-paren">(</span>long <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v610format_int10format_intEl" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v610format_int10format_intEx">
+<span id="_CPPv3N3fmt2v610format_int10format_intEx"></span><span id="_CPPv2N3fmt2v610format_int10format_intEx"></span><span id="fmt::v6::format_int::format_int__l-l"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1a75b61bfdd2aeb4957f3af74f8c999ae9"></span><code class="sig-name descname">format_int</code><span class="sig-paren">(</span>long long <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v610format_int10format_intEx" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v610format_int10format_intEj">
+<span id="_CPPv3N3fmt2v610format_int10format_intEj"></span><span id="_CPPv2N3fmt2v610format_int10format_intEj"></span><span id="fmt::v6::format_int::format_int__unsigned"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1acfa6070aaf64fa0292de541f9853b35e"></span><code class="sig-name descname">format_int</code><span class="sig-paren">(</span>unsigned <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v610format_int10format_intEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v610format_int10format_intEm">
+<span id="_CPPv3N3fmt2v610format_int10format_intEm"></span><span id="_CPPv2N3fmt2v610format_int10format_intEm"></span><span id="fmt::v6::format_int::format_int__unsigned-l"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1ae31cc2d40c31bb0c8a365be5ee49f67b"></span><code class="sig-name descname">format_int</code><span class="sig-paren">(</span>unsigned long <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v610format_int10format_intEm" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v610format_int10format_intEy">
+<span id="_CPPv3N3fmt2v610format_int10format_intEy"></span><span id="_CPPv2N3fmt2v610format_int10format_intEy"></span><span id="fmt::v6::format_int::format_int__unsigned-l-l"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1a5f401fbb424391b4461bb91871e41c0c"></span><code class="sig-name descname">format_int</code><span class="sig-paren">(</span>unsigned long long <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v610format_int10format_intEy" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v610format_int4sizeEv">
+<span id="_CPPv3NK3fmt2v610format_int4sizeEv"></span><span id="_CPPv2NK3fmt2v610format_int4sizeEv"></span><span id="fmt::v6::format_int::sizeC"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1af11fe56157beabd14c0cfb1dac7b90ca"></span>std::size_t <code class="sig-name descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v610format_int4sizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the number of characters written to the output buffer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v610format_int4dataEv">
+<span id="_CPPv3NK3fmt2v610format_int4dataEv"></span><span id="_CPPv2NK3fmt2v610format_int4dataEv"></span><span id="fmt::v6::format_int::dataC"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1a70db2ecdeee8906cf6e9cf58af6c8e4d"></span><em class="property">const</em> char *<code class="sig-name descname">data</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v610format_int4dataEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns a pointer to the output buffer content. No terminating null character is appended. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v610format_int5c_strEv">
+<span id="_CPPv3NK3fmt2v610format_int5c_strEv"></span><span id="_CPPv2NK3fmt2v610format_int5c_strEv"></span><span id="fmt::v6::format_int::c_strC"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1abeded66a04740b4626e6d0435cefb1b9"></span><em class="property">const</em> char *<code class="sig-name descname">c_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v610format_int5c_strEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns a pointer to the output buffer content with terminating null character appended. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK3fmt2v610format_int3strEv">
+<span id="_CPPv3NK3fmt2v610format_int3strEv"></span><span id="_CPPv2NK3fmt2v610format_int3strEv"></span><span id="fmt::v6::format_int::strC"></span><span class="target" id="classfmt_1_1v6_1_1format__int_1a7034333285436586aa6cb7306532add9"></span>std::string <code class="sig-name descname">str</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3fmt2v610format_int3strEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><p>Returns the content of the output buffer as an <code class="docutils literal notranslate"><span class="pre">std::string</span></code>.</p>
+ </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1arg__converter.html" class="btn btn-neutral float-right" title="Template Class arg_converter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1format__error.html" class="btn btn-neutral float-left" title="Class format_error" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1ad9b9ab9accf8bb1d75d4a53651c9482a:
+
+Template Function fmt::v6::arg(const S&, const T&)
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::arg(const S&, const T&)

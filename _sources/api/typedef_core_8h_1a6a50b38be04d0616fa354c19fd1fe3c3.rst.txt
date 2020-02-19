@@ -1,0 +1,13 @@
+.. _exhale_typedef_core_8h_1a6a50b38be04d0616fa354c19fd1fe3c3:
+
+Typedef fmt::v6::char_t
+=======================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::char_t

@@ -1,0 +1,13 @@
+.. _exhale_function_jit_8h_1aec4c121966fc3e4efc3f5db06b0ab6dd:
+
+Function jit_complete(JitInstance \*, const char \*)
+====================================================
+
+- Defined in :ref:`file_compiler_util_jit.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: jit_complete(JitInstance *, const char *)

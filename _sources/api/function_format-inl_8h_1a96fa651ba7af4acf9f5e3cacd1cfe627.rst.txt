@@ -1,0 +1,13 @@
+.. _exhale_function_format-inl_8h_1a96fa651ba7af4acf9f5e3cacd1cfe627:
+
+Template Function fmt::v6::internal::grouping_impl
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::grouping_impl(locale_ref)

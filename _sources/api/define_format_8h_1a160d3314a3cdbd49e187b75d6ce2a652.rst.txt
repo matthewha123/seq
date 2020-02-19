@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1a160d3314a3cdbd49e187b75d6ce2a652:
+
+Define FMT_HAS_BUILTIN
+======================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_HAS_BUILTIN

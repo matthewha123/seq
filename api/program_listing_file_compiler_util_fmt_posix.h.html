@@ -1,0 +1,502 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Program Listing for File posix.h &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Program Listing for File posix.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/program_listing_file_compiler_util_fmt_posix.h.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-posix-h">
+<span id="program-listing-file-compiler-util-fmt-posix-h"></span><h1>Program Listing for File posix.h<a class="headerlink" href="#program-listing-for-file-posix-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_compiler_util_fmt_posix.h.html#file-compiler-util-fmt-posix-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/posix.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// A C++ interface to POSIX functions.</span>
+<span class="c1">//</span>
+<span class="c1">// Copyright (c) 2012 - 2016, Victor Zverovich</span>
+<span class="c1">// All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// For the license information refer to format.h.</span>
+
+<span class="cp">#ifndef FMT_POSIX_H_</span>
+<span class="cp">#define FMT_POSIX_H_</span>
+
+<span class="cp">#if defined(__MINGW32__) || defined(__CYGWIN__)</span>
+<span class="c1">// Workaround MinGW bug https://sourceforge.net/p/mingw/bugs/2024/.</span>
+<span class="cp">#undef __STRICT_ANSI__</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;cerrno&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;clocale&gt; // for locale_t</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;cstdio&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;cstdlib&gt; // for strtod_l</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;cstddef&gt;</span><span class="cp"></span>
+
+<span class="cp">#if defined __APPLE__ || defined(__FreeBSD__)</span>
+<span class="cp">#include</span> <span class="cpf">&lt;xlocale.h&gt; // for LC_NUMERIC_MASK on OS X</span><span class="cp"></span>
+<span class="cp">#endif</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;format.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// UWP doesn&#39;t provide _pipe.</span>
+<span class="cp">#if FMT_HAS_INCLUDE(&quot;winapifamily.h&quot;)</span>
+<span class="cp">#include</span> <span class="cpf">&lt;winapifamily.h&gt;</span><span class="cp"></span>
+<span class="cp">#endif</span>
+<span class="cp">#if FMT_HAS_INCLUDE(&quot;fcntl.h&quot;) &amp;&amp;                                              \</span>
+<span class="cp">    (!defined(WINAPI_FAMILY) || (WINAPI_FAMILY == WINAPI_FAMILY_DESKTOP_APP))</span>
+<span class="cp">#include</span> <span class="cpf">&lt;fcntl.h&gt; // for O_RDONLY</span><span class="cp"></span>
+<span class="cp">#define FMT_USE_FCNTL 1</span>
+<span class="cp">#else</span>
+<span class="cp">#define FMT_USE_FCNTL 0</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#ifndef FMT_POSIX</span>
+<span class="cp">#if defined(_WIN32) &amp;&amp; !defined(__MINGW32__)</span>
+<span class="c1">// Fix warnings about deprecated symbols.</span>
+<span class="cp">#define FMT_POSIX(call) _##call</span>
+<span class="cp">#else</span>
+<span class="cp">#define FMT_POSIX(call) call</span>
+<span class="cp">#endif</span>
+<span class="cp">#endif</span>
+
+<span class="c1">// Calls to system functions are wrapped in FMT_SYSTEM for testability.</span>
+<span class="cp">#ifdef FMT_SYSTEM</span>
+<span class="cp">#define FMT_POSIX_CALL(call) FMT_SYSTEM(call)</span>
+<span class="cp">#else</span>
+<span class="cp">#define FMT_SYSTEM(call) call</span>
+<span class="cp">#ifdef _WIN32</span>
+<span class="c1">// Fix warnings about deprecated symbols.</span>
+<span class="cp">#define FMT_POSIX_CALL(call) ::_##call</span>
+<span class="cp">#else</span>
+<span class="cp">#define FMT_POSIX_CALL(call) ::call</span>
+<span class="cp">#endif</span>
+<span class="cp">#endif</span>
+
+<span class="c1">// Retries the expression while it evaluates to error_result and errno</span>
+<span class="c1">// equals to EINTR.</span>
+<span class="cp">#ifndef _WIN32</span>
+<span class="cp">#define FMT_RETRY_VAL(result, expression, error_result)                        \</span>
+<span class="cp">  do {                                                                         \</span>
+<span class="cp">    (result) = (expression);                                                   \</span>
+<span class="cp">  } while ((result) == (error_result) &amp;&amp; errno == EINTR)</span>
+<span class="cp">#else</span>
+<span class="cp">#define FMT_RETRY_VAL(result, expression, error_result) result = (expression)</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#define FMT_RETRY(result, expression) FMT_RETRY_VAL(result, expression, -1)</span>
+
+<span class="n">FMT_BEGIN_NAMESPACE</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span> <span class="k">class</span> <span class="nc">basic_cstring_view</span> <span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+  <span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="n">data_</span><span class="p">;</span>
+
+<span class="k">public</span><span class="o">:</span>
+  <span class="n">basic_cstring_view</span><span class="p">(</span><span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="n">s</span><span class="p">)</span> <span class="o">:</span> <span class="n">data_</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="n">basic_cstring_view</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">basic_string</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="o">:</span> <span class="n">data_</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">c_str</span><span class="p">())</span> <span class="p">{}</span>
+
+  <span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="n">c_str</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">data_</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">using</span> <span class="n">cstring_view</span> <span class="o">=</span> <span class="n">basic_cstring_view</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">wcstring_view</span> <span class="o">=</span> <span class="n">basic_cstring_view</span><span class="o">&lt;</span><span class="kt">wchar_t</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="c1">// An error code.</span>
+<span class="k">class</span> <span class="nc">error_code</span> <span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+  <span class="kt">int</span> <span class="n">value_</span><span class="p">;</span>
+
+<span class="k">public</span><span class="o">:</span>
+  <span class="k">explicit</span> <span class="n">error_code</span><span class="p">(</span><span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="nl">FMT_NOEXCEPT</span> <span class="p">:</span> <span class="n">value_</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="kt">int</span> <span class="n">get</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span> <span class="k">return</span> <span class="n">value_</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="c1">// A buffered file.</span>
+<span class="k">class</span> <span class="nc">buffered_file</span> <span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+  <span class="kt">FILE</span> <span class="o">*</span><span class="n">file_</span><span class="p">;</span>
+
+  <span class="k">friend</span> <span class="k">class</span> <span class="nc">file</span><span class="p">;</span>
+
+  <span class="k">explicit</span> <span class="nf">buffered_file</span><span class="p">(</span><span class="kt">FILE</span> <span class="o">*</span><span class="n">f</span><span class="p">)</span> <span class="o">:</span> <span class="n">file_</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="p">{}</span>
+
+<span class="k">public</span><span class="o">:</span>
+  <span class="n">buffered_file</span><span class="p">(</span><span class="k">const</span> <span class="n">buffered_file</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+  <span class="kt">void</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">buffered_file</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+
+  <span class="c1">// Constructs a buffered_file object which doesn&#39;t represent any file.</span>
+  <span class="n">buffered_file</span><span class="p">()</span> <span class="nl">FMT_NOEXCEPT</span> <span class="p">:</span> <span class="n">file_</span><span class="p">(</span><span class="k">nullptr</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="c1">// Destroys the object closing the file it represents if any.</span>
+  <span class="n">FMT_API</span> <span class="o">~</span><span class="n">buffered_file</span><span class="p">()</span> <span class="n">FMT_NOEXCEPT</span><span class="p">;</span>
+
+<span class="k">public</span><span class="o">:</span>
+  <span class="n">buffered_file</span><span class="p">(</span><span class="n">buffered_file</span> <span class="o">&amp;&amp;</span><span class="n">other</span><span class="p">)</span> <span class="nl">FMT_NOEXCEPT</span> <span class="p">:</span> <span class="n">file_</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">file_</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">other</span><span class="p">.</span><span class="n">file_</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="n">buffered_file</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">buffered_file</span> <span class="o">&amp;&amp;</span><span class="n">other</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">close</span><span class="p">();</span>
+    <span class="n">file_</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">file_</span><span class="p">;</span>
+    <span class="n">other</span><span class="p">.</span><span class="n">file_</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Opens a file.</span>
+  <span class="n">FMT_API</span> <span class="n">buffered_file</span><span class="p">(</span><span class="n">cstring_view</span> <span class="n">filename</span><span class="p">,</span> <span class="n">cstring_view</span> <span class="n">mode</span><span class="p">);</span>
+
+  <span class="c1">// Closes the file.</span>
+  <span class="n">FMT_API</span> <span class="kt">void</span> <span class="nf">close</span><span class="p">();</span>
+
+  <span class="c1">// Returns the pointer to a FILE object representing this file.</span>
+  <span class="kt">FILE</span> <span class="o">*</span><span class="nf">get</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span> <span class="k">return</span> <span class="n">file_</span><span class="p">;</span> <span class="p">}</span>
+
+  <span class="c1">// We place parentheses around fileno to workaround a bug in some versions</span>
+  <span class="c1">// of MinGW that define fileno as a macro.</span>
+  <span class="n">FMT_API</span> <span class="nf">int</span><span class="p">(</span><span class="n">fileno</span><span class="p">)()</span> <span class="k">const</span><span class="p">;</span>
+
+  <span class="kt">void</span> <span class="nf">vprint</span><span class="p">(</span><span class="n">string_view</span> <span class="n">format_str</span><span class="p">,</span> <span class="n">format_args</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">fmt</span><span class="o">::</span><span class="n">vprint</span><span class="p">(</span><span class="n">file_</span><span class="p">,</span> <span class="n">format_str</span><span class="p">,</span> <span class="n">args</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="o">&gt;</span>
+  <span class="kr">inline</span> <span class="kt">void</span> <span class="n">print</span><span class="p">(</span><span class="n">string_view</span> <span class="n">format_str</span><span class="p">,</span> <span class="k">const</span> <span class="n">Args</span> <span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">vprint</span><span class="p">(</span><span class="n">format_str</span><span class="p">,</span> <span class="n">make_format_args</span><span class="p">(</span><span class="n">args</span><span class="p">...));</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="cp">#if FMT_USE_FCNTL</span>
+<span class="c1">// A file. Closed file is represented by a file object with descriptor -1.</span>
+<span class="c1">// Methods that are not declared with FMT_NOEXCEPT may throw</span>
+<span class="c1">// fmt::system_error in case of failure. Note that some errors such as</span>
+<span class="c1">// closing the file multiple times will cause a crash on Windows rather</span>
+<span class="c1">// than an exception. You can get standard behavior by overriding the</span>
+<span class="c1">// invalid parameter handler with _set_invalid_parameter_handler.</span>
+<span class="k">class</span> <span class="nc">file</span> <span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+  <span class="kt">int</span> <span class="n">fd_</span><span class="p">;</span> <span class="c1">// File descriptor.</span>
+
+  <span class="c1">// Constructs a file object with a given descriptor.</span>
+  <span class="k">explicit</span> <span class="nf">file</span><span class="p">(</span><span class="kt">int</span> <span class="n">fd</span><span class="p">)</span> <span class="o">:</span> <span class="n">fd_</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span> <span class="p">{}</span>
+
+<span class="k">public</span><span class="o">:</span>
+  <span class="c1">// Possible values for the oflag argument to the constructor.</span>
+  <span class="k">enum</span> <span class="p">{</span>
+    <span class="n">RDONLY</span> <span class="o">=</span> <span class="n">FMT_POSIX</span><span class="p">(</span><span class="n">O_RDONLY</span><span class="p">),</span> <span class="c1">// Open for reading only.</span>
+    <span class="n">WRONLY</span> <span class="o">=</span> <span class="n">FMT_POSIX</span><span class="p">(</span><span class="n">O_WRONLY</span><span class="p">),</span> <span class="c1">// Open for writing only.</span>
+    <span class="n">RDWR</span> <span class="o">=</span> <span class="n">FMT_POSIX</span><span class="p">(</span><span class="n">O_RDWR</span><span class="p">)</span>      <span class="c1">// Open for reading and writing.</span>
+  <span class="p">};</span>
+
+  <span class="c1">// Constructs a file object which doesn&#39;t represent any file.</span>
+  <span class="n">file</span><span class="p">()</span> <span class="nl">FMT_NOEXCEPT</span> <span class="p">:</span> <span class="n">fd_</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="c1">// Opens a file and constructs a file object representing this file.</span>
+  <span class="n">FMT_API</span> <span class="n">file</span><span class="p">(</span><span class="n">cstring_view</span> <span class="n">path</span><span class="p">,</span> <span class="kt">int</span> <span class="n">oflag</span><span class="p">);</span>
+
+<span class="k">public</span><span class="o">:</span>
+  <span class="n">file</span><span class="p">(</span><span class="k">const</span> <span class="n">file</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+  <span class="kt">void</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">file</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+
+  <span class="n">file</span><span class="p">(</span><span class="n">file</span> <span class="o">&amp;&amp;</span><span class="n">other</span><span class="p">)</span> <span class="nl">FMT_NOEXCEPT</span> <span class="p">:</span> <span class="n">fd_</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">fd_</span><span class="p">)</span> <span class="p">{</span> <span class="n">other</span><span class="p">.</span><span class="n">fd_</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="p">}</span>
+
+  <span class="n">file</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">file</span> <span class="o">&amp;&amp;</span><span class="n">other</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span>
+    <span class="n">close</span><span class="p">();</span>
+    <span class="n">fd_</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">fd_</span><span class="p">;</span>
+    <span class="n">other</span><span class="p">.</span><span class="n">fd_</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Destroys the object closing the file it represents if any.</span>
+  <span class="n">FMT_API</span> <span class="o">~</span><span class="n">file</span><span class="p">()</span> <span class="n">FMT_NOEXCEPT</span><span class="p">;</span>
+
+  <span class="c1">// Returns the file descriptor.</span>
+  <span class="kt">int</span> <span class="nf">descriptor</span><span class="p">()</span> <span class="k">const</span> <span class="n">FMT_NOEXCEPT</span> <span class="p">{</span> <span class="k">return</span> <span class="n">fd_</span><span class="p">;</span> <span class="p">}</span>
+
+  <span class="c1">// Closes the file.</span>
+  <span class="n">FMT_API</span> <span class="kt">void</span> <span class="nf">close</span><span class="p">();</span>
+
+  <span class="c1">// Returns the file size. The size has signed type for consistency with</span>
+  <span class="c1">// stat::st_size.</span>
+  <span class="n">FMT_API</span> <span class="kt">long</span> <span class="kt">long</span> <span class="nf">size</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+  <span class="c1">// Attempts to read count bytes from the file into the specified buffer.</span>
+  <span class="n">FMT_API</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">read</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">buffer</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">count</span><span class="p">);</span>
+
+  <span class="c1">// Attempts to write count bytes from the specified buffer to the file.</span>
+  <span class="n">FMT_API</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">write</span><span class="p">(</span><span class="k">const</span> <span class="kt">void</span> <span class="o">*</span><span class="n">buffer</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">count</span><span class="p">);</span>
+
+  <span class="c1">// Duplicates a file descriptor with the dup function and returns</span>
+  <span class="c1">// the duplicate as a file object.</span>
+  <span class="n">FMT_API</span> <span class="k">static</span> <span class="n">file</span> <span class="nf">dup</span><span class="p">(</span><span class="kt">int</span> <span class="n">fd</span><span class="p">);</span>
+
+  <span class="c1">// Makes fd be the copy of this file descriptor, closing fd first if</span>
+  <span class="c1">// necessary.</span>
+  <span class="n">FMT_API</span> <span class="kt">void</span> <span class="nf">dup2</span><span class="p">(</span><span class="kt">int</span> <span class="n">fd</span><span class="p">);</span>
+
+  <span class="c1">// Makes fd be the copy of this file descriptor, closing fd first if</span>
+  <span class="c1">// necessary.</span>
+  <span class="n">FMT_API</span> <span class="kt">void</span> <span class="nf">dup2</span><span class="p">(</span><span class="kt">int</span> <span class="n">fd</span><span class="p">,</span> <span class="n">error_code</span> <span class="o">&amp;</span><span class="n">ec</span><span class="p">)</span> <span class="n">FMT_NOEXCEPT</span><span class="p">;</span>
+
+  <span class="c1">// Creates a pipe setting up read_end and write_end file objects for reading</span>
+  <span class="c1">// and writing respectively.</span>
+  <span class="n">FMT_API</span> <span class="k">static</span> <span class="kt">void</span> <span class="nf">pipe</span><span class="p">(</span><span class="n">file</span> <span class="o">&amp;</span><span class="n">read_end</span><span class="p">,</span> <span class="n">file</span> <span class="o">&amp;</span><span class="n">write_end</span><span class="p">);</span>
+
+  <span class="c1">// Creates a buffered_file object associated with this file and detaches</span>
+  <span class="c1">// this file object from the file.</span>
+  <span class="n">FMT_API</span> <span class="n">buffered_file</span> <span class="nf">fdopen</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">mode</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">// Returns the memory page size.</span>
+<span class="kt">long</span> <span class="nf">getpagesize</span><span class="p">();</span>
+<span class="cp">#endif </span><span class="c1">// FMT_USE_FCNTL</span>
+
+<span class="cp">#ifdef FMT_LOCALE</span>
+<span class="c1">// A &quot;C&quot; numeric locale.</span>
+<span class="k">class</span> <span class="nc">Locale</span> <span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="cp">#ifdef _WIN32</span>
+  <span class="k">using</span> <span class="n">locale_t</span> <span class="o">=</span> <span class="n">_locale_t</span><span class="p">;</span>
+
+  <span class="k">enum</span> <span class="p">{</span> <span class="n">LC_NUMERIC_MASK</span> <span class="o">=</span> <span class="n">LC_NUMERIC</span> <span class="p">};</span>
+
+  <span class="k">static</span> <span class="n">locale_t</span> <span class="nf">newlocale</span><span class="p">(</span><span class="kt">int</span> <span class="n">category_mask</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">locale</span><span class="p">,</span> <span class="n">locale_t</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">_create_locale</span><span class="p">(</span><span class="n">category_mask</span><span class="p">,</span> <span class="n">locale</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">static</span> <span class="kt">void</span> <span class="nf">freelocale</span><span class="p">(</span><span class="n">locale_t</span> <span class="n">locale</span><span class="p">)</span> <span class="p">{</span> <span class="n">_free_locale</span><span class="p">(</span><span class="n">locale</span><span class="p">);</span> <span class="p">}</span>
+
+  <span class="k">static</span> <span class="kt">double</span> <span class="nf">strtod_l</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">nptr</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">endptr</span><span class="p">,</span> <span class="n">_locale_t</span> <span class="n">locale</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">_strtod_l</span><span class="p">(</span><span class="n">nptr</span><span class="p">,</span> <span class="n">endptr</span><span class="p">,</span> <span class="n">locale</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="cp">#endif</span>
+
+  <span class="n">locale_t</span> <span class="n">locale_</span><span class="p">;</span>
+
+<span class="k">public</span><span class="o">:</span>
+  <span class="k">using</span> <span class="n">type</span> <span class="o">=</span> <span class="n">locale_t</span><span class="p">;</span>
+  <span class="n">Locale</span><span class="p">(</span><span class="k">const</span> <span class="n">Locale</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+  <span class="kt">void</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Locale</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
+
+  <span class="n">Locale</span><span class="p">()</span> <span class="o">:</span> <span class="n">locale_</span><span class="p">(</span><span class="n">newlocale</span><span class="p">(</span><span class="n">LC_NUMERIC_MASK</span><span class="p">,</span> <span class="s">&quot;C&quot;</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">locale_</span><span class="p">)</span>
+      <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">system_error</span><span class="p">(</span><span class="n">errno</span><span class="p">,</span> <span class="s">&quot;cannot create locale&quot;</span><span class="p">));</span>
+  <span class="p">}</span>
+  <span class="o">~</span><span class="n">Locale</span><span class="p">()</span> <span class="p">{</span> <span class="n">freelocale</span><span class="p">(</span><span class="n">locale_</span><span class="p">);</span> <span class="p">}</span>
+
+  <span class="n">type</span> <span class="n">get</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">locale_</span><span class="p">;</span> <span class="p">}</span>
+
+  <span class="c1">// Converts string to floating-point number and advances str past the end</span>
+  <span class="c1">// of the parsed input.</span>
+  <span class="kt">double</span> <span class="n">strtod</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*&amp;</span><span class="n">str</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">end</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">result</span> <span class="o">=</span> <span class="n">strtod_l</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">end</span><span class="p">,</span> <span class="n">locale_</span><span class="p">);</span>
+    <span class="n">str</span> <span class="o">=</span> <span class="n">end</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="cp">#endif </span><span class="c1">// FMT_LOCALE</span>
+<span class="n">FMT_END_NAMESPACE</span>
+
+<span class="cp">#endif </span><span class="c1">// FMT_POSIX_H_</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

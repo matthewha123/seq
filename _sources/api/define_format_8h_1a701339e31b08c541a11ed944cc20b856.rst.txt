@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1a701339e31b08c541a11ed944cc20b856:
+
+Define FMT_ALWAYS_INLINE
+========================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_ALWAYS_INLINE

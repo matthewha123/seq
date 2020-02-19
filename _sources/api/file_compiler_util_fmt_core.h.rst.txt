@@ -1,0 +1,399 @@
+
+.. _file_compiler_util_fmt_core.h:
+
+File core.h
+===========
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util_fmt>` (``compiler/util/fmt``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/fmt/core.h``)
+-----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_fmt_core.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstdio``
+
+- ``cstring``
+
+- ``iterator``
+
+- ``string``
+
+- ``type_traits``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_util_fmt_format.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt`
+
+- :ref:`namespace_fmt__v6`
+
+- :ref:`namespace_fmt__v6__internal`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1compile__string`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1convert__to__int`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1format__args`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1formatter`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__map_1_1entry`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__mapper`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1bool__pack`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1char__t__impl`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1char__t__impl_3_01S_00_01enable__if__t_3_01is__string_3_01S_01_4_1_1value_01_4_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1custom__value`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1error__handler`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1fallback__formatter`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1int128__t`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1is__contiguous__back__insert__iterator`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1is__contiguous__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01Container_01_4_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1is__string`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1named__arg`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1named__arg__base`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1std__string__view`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1string__value`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01basic__string__view_3_01Char_01_4_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01bool_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01Char_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01const_01Char_01_5_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01const_01named__arg__base_3_01Char_01_4_01_6_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01const_01void_01_5_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01double_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01float_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01int_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01int128__t_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01long_01double_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01long_01long_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01uint128__t_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01unsigned_01long_01long_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1type__constant_3_01unsigned_00_01Char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1uint128__t`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1view`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1void__t__impl`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__char`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__char_3_01char_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__char_3_01char16__t_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__char_3_01char32__t_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__char_3_01char8__t_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__char_3_01wchar__t_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__compile__string`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__contiguous`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__contiguous_3_01internal_1_1buffer_3_01Char_01_4_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1is__contiguous_3_01std_1_1basic__string_3_01Char_01_4_01_4`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1monostate`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1wformat__args`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1basic__format__arg`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1basic__format__arg_1_1handle`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1basic__format__args`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1basic__format__context`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1basic__format__parse__context`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1basic__string__view`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1format__arg__store`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1arg__map`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1buffer`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1container__buffer`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1locale__ref`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1internal_1_1value`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_core_8h_1af08163c436ba67207a745daffa225bfb`
+
+- :ref:`exhale_enum_core_8h_1a2b13874777fd501e786d2e9b682274e0`
+
+- :ref:`exhale_enum_core_8h_1ae1334eaba12e46e8f368496bd172a959`
+
+- :ref:`exhale_enum_core_8h_1a931feca4fae9309adceb0cfff43b37a1`
+
+- :ref:`exhale_enum_core_8h_1a0efb42e4e8bc84f6f34e0ad7b1b62107`
+
+- :ref:`exhale_enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_core_8h_1ad9b9ab9accf8bb1d75d4a53651c9482a`
+
+- :ref:`exhale_function_core_8h_1a5126ff01030f035283ab891ec7957d40`
+
+- :ref:`exhale_function_core_8h_1a6201de37c165002543f87e5f5a75719c`
+
+- :ref:`exhale_function_core_8h_1a3f991966fdedf02545dd890bcd93d2d9`
+
+- :ref:`exhale_function_core_8h_1abf26113baa1c2b6f035b8e1585e6a4ee`
+
+- :ref:`exhale_function_core_8h_1af295f48c90046fb6046f5f0c13ea644c`
+
+- :ref:`exhale_function_core_8h_1ada88b14cdd0d90144e17ed39a6d58970`
+
+- :ref:`exhale_function_core_8h_1afb6d44090d9d2786a6c3d1cc14c6c71a`
+
+- :ref:`exhale_function_core_8h_1ac8578672999712ad0cf35260b729fee1`
+
+- :ref:`exhale_function_core_8h_1ad91726fc89f8d3f80baa4ce199987ef6`
+
+- :ref:`exhale_function_core_8h_1a3073337c84761e2415cec61530c32ae4`
+
+- :ref:`exhale_function_core_8h_1a31967441eb827685b0439a6f549ead4e`
+
+- :ref:`exhale_function_core_8h_1a56de0cdb4e57b50c616f2aea2eda1477`
+
+- :ref:`exhale_function_core_8h_1a65599175429d2e49c3794edf97bf3076`
+
+- :ref:`exhale_function_core_8h_1aa53e26733465fc8050b5a8e9d045765b`
+
+- :ref:`exhale_function_core_8h_1a28ad5718cb13fcc215bb654b1d48661b`
+
+- :ref:`exhale_function_core_8h_1a3d8b5f8728769829b9d27c988daad110`
+
+- :ref:`exhale_function_core_8h_1aa254617123ea1e1e852660428fbb72e4`
+
+- :ref:`exhale_function_core_8h_1a891dc3dccd63681685a5e8cafd1f1d82`
+
+- :ref:`exhale_function_core_8h_1afb32f9d16c2c92928043f6375ee4c656`
+
+- :ref:`exhale_function_core_8h_1a7e2064bf1f27519b224cdb25cc342752`
+
+- :ref:`exhale_function_core_8h_1a77e7a7933b2c28baecf8dfd1058c1ff0`
+
+- :ref:`exhale_function_core_8h_1aff8c7d8f80ef5113e915e5fd650f92d8`
+
+- :ref:`exhale_function_core_8h_1ae3f53b207e1647f1ef82e3cffda6063b`
+
+- :ref:`exhale_function_core_8h_1af82b6e13d3ee7f5c282756e06a843368`
+
+- :ref:`exhale_function_core_8h_1addc1e698cbf387aed3f85dd62b54b13b`
+
+- :ref:`exhale_function_core_8h_1a884e8106adb78c92250a0f421a1f45a7`
+
+- :ref:`exhale_function_core_8h_1a25e1184203469696f040dd9730e65147`
+
+- :ref:`exhale_function_core_8h_1ac16bfaab45defb27a8c91d699e216ed6`
+
+- :ref:`exhale_function_core_8h_1af4b0b7a11cd8487e64e8e993e4223975`
+
+- :ref:`exhale_function_core_8h_1ad6faeb49ff12a11360a24829dcd0dbb0`
+
+- :ref:`exhale_function_core_8h_1aa56c01e46058b8277ebb27b03794a026`
+
+- :ref:`exhale_function_core_8h_1a4bf183a377065c5fad90cd6b633ac14c`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_core_8h_1a9a4960b70582ed2620911a0b75dce0b5`
+
+- :ref:`exhale_define_core_8h_1a03e7ee720f43adc7d83c652a6a5dd5f8`
+
+- :ref:`exhale_define_core_8h_1a887c191adf8cfaf06ed40b5c4d487343`
+
+- :ref:`exhale_define_core_8h_1a69201cb276383873487bf68b4ef8b4cd`
+
+- :ref:`exhale_define_core_8h_1af4388801466a5994a363d6005616371a`
+
+- :ref:`exhale_define_core_8h_1a8aba8a78c514e176e0dd0a159de7a369`
+
+- :ref:`exhale_define_core_8h_1a2b6d307802175823274f07475e458a34`
+
+- :ref:`exhale_define_core_8h_1a809ce36bdf78b55c536fbca340bfec9c`
+
+- :ref:`exhale_define_core_8h_1ab02671eb0d43965fe2957e844f427451`
+
+- :ref:`exhale_define_core_8h_1ae0d2fbdf031547a949fc7e1c0b3c97f1`
+
+- :ref:`exhale_define_core_8h_1a5d3b416a99857b69e3b7de8e88c71ff3`
+
+- :ref:`exhale_define_core_8h_1a3823320bf1dc3274b4352b910a679e4f`
+
+- :ref:`exhale_define_core_8h_1ac2dae898017bb434b6cffd0df3c5fc0c`
+
+- :ref:`exhale_define_core_8h_1a4f5db4f97e31a127b1236d1ff412bb0c`
+
+- :ref:`exhale_define_core_8h_1a55d7b78b0300ddda018f77208e80f3e9`
+
+- :ref:`exhale_define_core_8h_1a8e7a33185c7fc32dd026773a8ece00b8`
+
+- :ref:`exhale_define_core_8h_1a749169f277bb21ccf12b1c665e68e88a`
+
+- :ref:`exhale_define_core_8h_1a1e3ffe834c427bc295b6880efcd17976`
+
+- :ref:`exhale_define_core_8h_1afa144e698f8df527d6e51688eb9abbd1`
+
+- :ref:`exhale_define_core_8h_1a750d1276ba35fb73b8f2998389a5f8c6`
+
+- :ref:`exhale_define_core_8h_1a363cb0623e6975ff2b357a52a03e4728`
+
+- :ref:`exhale_define_core_8h_1aef128913e8400683b1cbd1a3a2e11df3`
+
+- :ref:`exhale_define_core_8h_1ac9411ed6305aee71472718fa55fcc352`
+
+- :ref:`exhale_define_core_8h_1a52376c1ced87b19c8b3ece64cc64f22e`
+
+- :ref:`exhale_define_core_8h_1a023c6c178e254d81d578b90921804b1c`
+
+- :ref:`exhale_define_core_8h_1a1b33b94a68ab12b7b4e7051da8a361f5`
+
+- :ref:`exhale_define_core_8h_1a739a7ff96b6dfd65a4de8fe003f5b233`
+
+- :ref:`exhale_define_core_8h_1a13e53e6202856108f878beff6278417b`
+
+- :ref:`exhale_define_core_8h_1a65490b89e8bd22fd0b8ae4491643d60c`
+
+- :ref:`exhale_define_core_8h_1a1a322107307b020b6eac933958da94f6`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_core_8h_1a4857428a0c57b3f8d5e02490fe1b3611`
+
+- :ref:`exhale_typedef_core_8h_1a39869f9f5461e912512bf02c30346864`
+
+- :ref:`exhale_typedef_core_8h_1a27eae41b1915cad828a4e9d7a3dc878d`
+
+- :ref:`exhale_typedef_core_8h_1a6a50b38be04d0616fa354c19fd1fe3c3`
+
+- :ref:`exhale_typedef_core_8h_1add29051cd8cf9b49c9a1f1fa7780add0`
+
+- :ref:`exhale_typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70`
+
+- :ref:`exhale_typedef_core_8h_1aed3c5c3c9167d5cbdfeb3782ef8b7959`
+
+- :ref:`exhale_typedef_core_8h_1acff11c68830a9c08781d1acea4a09ee6`
+
+- :ref:`exhale_typedef_core_8h_1a968ec6bde8e9db9b16b382392df5d135`
+
+- :ref:`exhale_typedef_core_8h_1af90c3b40be924daa2646c06914e8dd0d`
+
+- :ref:`exhale_typedef_core_8h_1a201ff17a0aab14ec0f5ba3cc5e3b3fff`
+
+- :ref:`exhale_typedef_core_8h_1ae4e8c7425dbd630330fbfbe6cf2ae2f9`
+
+- :ref:`exhale_typedef_core_8h_1ae8fc25414d5d31741853e94fc54df432`
+
+- :ref:`exhale_typedef_core_8h_1a6940a48bb049eaa01366b76d11b9caf1`
+
+- :ref:`exhale_typedef_core_8h_1a31fdb8f3ae52ac3227f24cc0b6ee0b85`
+
+- :ref:`exhale_typedef_core_8h_1a4e36dd94ea4e187df1fb3088ba7c8d75`
+
+- :ref:`exhale_typedef_core_8h_1ababc62cfc8a3af8cdd0694c73a1d24eb`
+
+- :ref:`exhale_typedef_core_8h_1ae4e48b15c26068e3e106bcde05e4b120`
+
+- :ref:`exhale_typedef_core_8h_1a4074f7ef8c37b344ef1f77ebe1c7d724`
+
+- :ref:`exhale_typedef_core_8h_1a47869670d22f3ca94d82b51c47386e76`
+
+- :ref:`exhale_typedef_core_8h_1ae514fba8ccc510222d12b1cacbe8f2f0`
+
+- :ref:`exhale_typedef_core_8h_1a7a6bfa33b0737e85cdb2c3d16e68663c`
+
+- :ref:`exhale_typedef_core_8h_1a2eefc755d9285267c1a21edf371593ab`
+
+- :ref:`exhale_typedef_core_8h_1ab712bf58293acbb6a430130a8bc5a3af`
+

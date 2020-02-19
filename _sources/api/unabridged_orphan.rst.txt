@@ -1,0 +1,343 @@
+:orphan:
+
+
+Full API
+========
+
+Directories
+***********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_compiler.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_compiler_lang.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_compiler_types.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_compiler_util.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_compiler_util_fmt.rst
+
+Files
+*****
+
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_any.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_any.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_array.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_array.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_base.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_base.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_chrono.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_color.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_common.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_compile.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_core.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_expr.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_expr.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_format-inl.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_format.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_format.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_func.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_func.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_func.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_func.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_generic.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_generic.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_jit.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_jit.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_lang.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_lang.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_llvm.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_locale.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_num.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_num.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_ops.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_ops.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_optional.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_optional.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_ostream.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_patterns.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_patterns.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_pipeline.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_pipeline.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_posix.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_printf.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_ptr.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_ptr.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_fmt_ranges.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_record.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_record.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_ref.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_ref.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_seq.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_seq.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_seq.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_seq.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_stmt.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_stmt.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_util_tapir.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_types.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_types.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_var.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_lang_var.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_void.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_compiler_types_void.h.rst

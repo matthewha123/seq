@@ -1,0 +1,22 @@
+.. _exhale_struct_structseq_1_1PipeExpr_1_1PipelineCodegenState:
+
+Struct PipeExpr::PipelineCodegenState
+=====================================
+
+- Defined in :ref:`file_compiler_lang_pipeline.cpp`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classseq_1_1PipeExpr`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: seq::PipeExpr::PipelineCodegenState
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,29 @@
+
+.. _namespace_internal:
+
+Namespace internal
+==================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structinternal_1_1sprintf__specs`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_format_8cpp_1a20d7b5773ee71e021c6a98d0988ac396`
+
+- :ref:`exhale_function_format_8cpp_1ad1d80144a287168586e0112bd93f1c1c`

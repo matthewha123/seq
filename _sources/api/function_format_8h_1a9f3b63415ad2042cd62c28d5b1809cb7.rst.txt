@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a9f3b63415ad2042cd62c28d5b1809cb7:
+
+Template Function fmt::v6::internal::handle_char_specs
+======================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::handle_char_specs(const basic_format_specs<Char> *, Handler&&)

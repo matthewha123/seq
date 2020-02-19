@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a03e7ee720f43adc7d83c652a6a5dd5f8:
+
+Define FMT_ASSERT
+=================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_ASSERT

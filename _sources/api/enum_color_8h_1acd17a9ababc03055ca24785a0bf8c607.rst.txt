@@ -1,0 +1,13 @@
+.. _exhale_enum_color_8h_1acd17a9ababc03055ca24785a0bf8c607:
+
+Enum emphasis
+=============
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: fmt::v6::emphasis

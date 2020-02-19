@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1afb6d44090d9d2786a6c3d1cc14c6c71a:
+
+Template Function fmt::v6::internal::encode_types()
+===================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::encode_types()

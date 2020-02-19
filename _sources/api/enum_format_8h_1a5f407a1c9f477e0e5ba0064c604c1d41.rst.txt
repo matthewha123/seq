@@ -1,0 +1,13 @@
+.. _exhale_enum_format_8h_1a5f407a1c9f477e0e5ba0064c604c1d41:
+
+Enum type
+=========
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: fmt::v6::align::type

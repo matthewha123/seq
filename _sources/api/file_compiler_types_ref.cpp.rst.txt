@@ -1,0 +1,46 @@
+
+.. _file_compiler_types_ref.cpp:
+
+File ref.cpp
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_types>` (``compiler/types``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/types/ref.cpp``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_types_ref.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cassert``
+
+- ``lang/seq.h`` (:ref:`file_compiler_lang_seq.h`)
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_ref_8cpp_1a1e03ad2579c00169f7a2da9809fdf1cc`
+

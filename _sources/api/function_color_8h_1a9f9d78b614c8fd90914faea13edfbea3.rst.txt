@@ -1,0 +1,13 @@
+.. _exhale_function_color_8h_1a9f9d78b614c8fd90914faea13edfbea3:
+
+Template Function fmt::v6::internal::reset_color(FILE \*)
+=========================================================
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::reset_color(FILE *)

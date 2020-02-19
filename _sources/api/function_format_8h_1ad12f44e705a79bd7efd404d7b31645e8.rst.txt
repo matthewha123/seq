@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1ad12f44e705a79bd7efd404d7b31645e8:
+
+Function fmt::v6::internal::to_char8_t
+======================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::to_char8_t(char)

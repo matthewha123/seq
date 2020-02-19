@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1aa53e26733465fc8050b5a8e9d045765b:
+
+Template Function fmt::v6::internal::make_arg(const T&)
+=======================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::make_arg(const T&)

@@ -1,0 +1,13 @@
+.. _exhale_function_format-inl_8h_1a6c721cfc11f182e92e548e65cd4a699a:
+
+Function fmt::v6::internal::report_error
+========================================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::report_error(format_func, int, string_view)

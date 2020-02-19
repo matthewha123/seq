@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1af295f48c90046fb6046f5f0c13ea644c:
+
+Template Function fmt::v6::internal::check_format_string(const S&)
+==================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::check_format_string(const S&)

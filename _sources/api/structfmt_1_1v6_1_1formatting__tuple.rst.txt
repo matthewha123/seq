@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1formatting__tuple:
+
+Template Struct formatting_tuple
+================================
+
+- Defined in :ref:`file_compiler_util_fmt_ranges.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public fmt::v6::formatting_base< Char >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1formatting__base`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::formatting_tuple
+   :members:
+   :protected-members:
+   :undoc-members:

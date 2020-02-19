@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class VarStmt &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class While" href="classseq_1_1While.html" />
+    <link rel="prev" title="Class VarPtrExpr" href="classseq_1_1VarPtrExpr.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Class VarStmt</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classseq_1_1VarStmt.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-varstmt">
+<span id="exhale-class-classseq-1-1varstmt"></span><h1>Class VarStmt<a class="headerlink" href="#class-varstmt" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_lang_lang.h.html#file-compiler-lang-lang-h"><span class="std std-ref">File lang.h</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">seq::Stmt</span></code> (<a class="reference internal" href="classseq_1_1Stmt.html#exhale-class-classseq-1-1stmt"><span class="std std-ref">Class Stmt</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N3seq7VarStmtE">
+<span id="_CPPv3N3seq7VarStmtE"></span><span id="_CPPv2N3seq7VarStmtE"></span><span id="seq::VarStmt"></span><span class="target" id="classseq_1_1VarStmt"></span><em class="property">class </em><code class="sig-name descname">VarStmt</code> : <em class="property">public</em> seq::<a class="reference internal" href="classseq_1_1Stmt.html#_CPPv4N3seq4StmtE" title="seq::Stmt">Stmt</a><a class="headerlink" href="#_CPPv4N3seq7VarStmtE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N7VarStmt7VarStmtEP4ExprPN5types4TypeE">
+<span id="_CPPv3N7VarStmt7VarStmtEP4ExprPN5types4TypeE"></span><span id="_CPPv2N7VarStmt7VarStmtEP4ExprPN5types4TypeE"></span><span id="VarStmt::VarStmt__ExprP.types::TypeP"></span><span class="target" id="classseq_1_1VarStmt_1a3dc59d4bb4b48ab455c071f42ac3e5cc"></span><code class="sig-name descname">VarStmt</code><span class="sig-paren">(</span>Expr *<em>init</em>, types::Type *<em>type</em> = nullptr<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7VarStmt7VarStmtEP4ExprPN5types4TypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N7VarStmt6getVarEv">
+<span id="_CPPv3N7VarStmt6getVarEv"></span><span id="_CPPv2N7VarStmt6getVarEv"></span><span id="VarStmt::getVar"></span><span class="target" id="classseq_1_1VarStmt_1a5a594af1dfcc4880cdcbd7d8e4dc5ce8"></span>Var *<code class="sig-name descname">getVar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7VarStmt6getVarEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N7VarStmt12resolveTypesEv">
+<span id="_CPPv3N7VarStmt12resolveTypesEv"></span><span id="_CPPv2N7VarStmt12resolveTypesEv"></span><span id="VarStmt::resolveTypes"></span><span class="target" id="classseq_1_1VarStmt_1a1f9112394bba101cce95300e3ef5fe12"></span>void <code class="sig-name descname">resolveTypes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7VarStmt12resolveTypesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Performs type resolution on this statement and all sub-expressions/statements/etc. This is called prior to <a class="reference internal" href="classseq_1_1Expr.html#classseq_1_1Expr_1addce0016a7294cb76121ae0b3d175bd9"><span class="std std-ref">Expr::getType()</span></a>. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N7VarStmt8codegen0ERPN4llvm10BasicBlockE">
+<span id="_CPPv3N7VarStmt8codegen0ERPN4llvm10BasicBlockE"></span><span id="_CPPv2N7VarStmt8codegen0ERPN4llvm10BasicBlockE"></span><span id="VarStmt::codegen0__llvm::BasicBlockPR"></span><span class="target" id="classseq_1_1VarStmt_1a9e24bd851f5d190ea47283044f501c8e"></span>void <code class="sig-name descname">codegen0</code><span class="sig-paren">(</span>llvm::BasicBlock *&amp;<em>block</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7VarStmt8codegen0ERPN4llvm10BasicBlockE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Performs code generation for this statement. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">block</span></code>: reference to block where code should be generated; possibly modified to point to a new block where codegen should resume </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N7VarStmt5cloneEP7Generic">
+<span id="_CPPv3N7VarStmt5cloneEP7Generic"></span><span id="_CPPv2N7VarStmt5cloneEP7Generic"></span><span id="VarStmt::clone__GenericP"></span><span class="target" id="classseq_1_1VarStmt_1ab8d120cabcf55e2f95c0efa4f8ee5855"></span>VarStmt *<code class="sig-name descname">clone</code><span class="sig-paren">(</span>Generic *<em>ref</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7VarStmt5cloneEP7Generic" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Clones this statement. <code class="docutils literal notranslate"><span class="pre">ref</span></code> is used internally to keep track of cloned objects, and to make sure we don’t clone certain objects twice. <dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>cloned statement </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ref</span></code>: generic object that is being cloned </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classseq_1_1While.html" class="btn btn-neutral float-right" title="Class While" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classseq_1_1VarPtrExpr.html" class="btn btn-neutral float-left" title="Class VarPtrExpr" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

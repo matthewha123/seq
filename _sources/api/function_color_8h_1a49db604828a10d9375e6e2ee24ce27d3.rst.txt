@@ -1,0 +1,13 @@
+.. _exhale_function_color_8h_1a49db604828a10d9375e6e2ee24ce27d3:
+
+Function fmt::v6::internal::reset_color< wchar_t >
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::reset_color< wchar_t >(FILE *)

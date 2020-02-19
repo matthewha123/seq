@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>File core.h &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>File core.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/file_compiler_util_fmt_core.h.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-core-h">
+<span id="file-compiler-util-fmt-core-h"></span><h1>File core.h<a class="headerlink" href="#file-core-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_compiler_util_fmt.html#dir-compiler-util-fmt"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-compiler-util-fmt-core-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/core.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id6">Enums</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id7">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id8">Defines</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id9">Typedefs</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-compiler-util-fmt-core-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/core.h</span></code>)<a class="headerlink" href="#definition-compiler-util-fmt-core-h" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_compiler_util_fmt_core.h.html">Program Listing for File core.h</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cstdio</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstring</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">iterator</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">type_traits</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_fmt.html#namespace-fmt"><span class="std std-ref">Namespace fmt</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6.html#namespace-fmt-v6"><span class="std std-ref">Namespace fmt::v6</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6__internal.html#namespace-fmt-v6-internal"><span class="std std-ref">Namespace fmt::v6::internal</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1compile__string.html#exhale-struct-structfmt-1-1v6-1-1compile-string"><span class="std std-ref">Struct compile_string</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1convert__to__int.html#exhale-struct-structfmt-1-1v6-1-1convert-to-int"><span class="std std-ref">Template Struct convert_to_int</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1format__args.html#exhale-struct-structfmt-1-1v6-1-1format-args"><span class="std std-ref">Struct format_args</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1formatter.html#exhale-struct-structfmt-1-1v6-1-1formatter"><span class="std std-ref">Template Struct formatter</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1arg__map_1_1entry.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1arg-map-1-1entry"><span class="std std-ref">Struct arg_map::entry</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1arg__mapper.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1arg-mapper"><span class="std std-ref">Template Struct arg_mapper</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1bool__pack.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1bool-pack"><span class="std std-ref">Template Struct bool_pack</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1char__t__impl.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1char-t-impl"><span class="std std-ref">Template Struct char_t_impl</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1char__t__impl_3_01S_00_01enable__if__t_3_01is__string_3_01S_01_4_1_1value_01_4_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1char-t-impl-3-01s-00-01enable-if-t-3-01is-string-3-01s-01-4-1-1value-01-4-01-4"><span class="std std-ref">Template Struct char_t_impl&lt; S, enable_if_t&lt; is_string&lt; S &gt;::value &gt; &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1custom__value.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1custom-value"><span class="std std-ref">Template Struct custom_value</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1error__handler.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1error-handler"><span class="std std-ref">Struct error_handler</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1fallback__formatter.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1fallback-formatter"><span class="std std-ref">Template Struct fallback_formatter</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1int128__t.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1int128-t"><span class="std std-ref">Struct int128_t</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1is__contiguous__back__insert__iterator.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1is-contiguous-back-insert-iterator"><span class="std std-ref">Template Struct is_contiguous_back_insert_iterator</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1is__contiguous__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01Container_01_4_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1is-contiguous-back-insert-iterator-3-01std-1-1back-insert-iterator-3-01container-01-4-01-4"><span class="std std-ref">Template Struct is_contiguous_back_insert_iterator&lt; std::back_insert_iterator&lt; Container &gt; &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1is__string.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1is-string"><span class="std std-ref">Template Struct is_string</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1named__arg.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1named-arg"><span class="std std-ref">Template Struct named_arg</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1named__arg__base.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1named-arg-base"><span class="std std-ref">Template Struct named_arg_base</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1std__string__view.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1std-string-view"><span class="std std-ref">Template Struct std_string_view</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1string__value.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1string-value"><span class="std std-ref">Template Struct string_value</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant"><span class="std std-ref">Template Struct type_constant</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01basic__string__view_3_01Char_01_4_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01basic-string-view-3-01char-01-4-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; basic_string_view&lt; Char &gt;, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01bool_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01bool-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; bool, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01Char_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01char-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; Char, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01const_01Char_01_5_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01const-01char-01-5-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; const Char *, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01const_01named__arg__base_3_01Char_01_4_01_6_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01const-01named-arg-base-3-01char-01-4-01-6-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; const named_arg_base&lt; Char &gt; &amp;, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01const_01void_01_5_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01const-01void-01-5-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; const void *, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01double_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01double-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; double, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01float_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01float-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; float, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01int_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01int-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; int, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01int128__t_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01int128-t-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; int128_t, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01long_01double_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01long-01double-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; long double, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01long_01long_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01long-01long-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; long long, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01uint128__t_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01uint128-t-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; uint128_t, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01unsigned_01long_01long_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01unsigned-01long-01long-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; unsigned long long, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1type__constant_3_01unsigned_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1type-constant-3-01unsigned-00-01char-01-4"><span class="std std-ref">Template Struct type_constant&lt; unsigned, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1uint128__t.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1uint128-t"><span class="std std-ref">Struct uint128_t</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1view.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1view"><span class="std std-ref">Struct view</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1void__t__impl.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1void-t-impl"><span class="std std-ref">Template Struct void_t_impl</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__char.html#exhale-struct-structfmt-1-1v6-1-1is-char"><span class="std std-ref">Template Struct is_char</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__char_3_01char_01_4.html#exhale-struct-structfmt-1-1v6-1-1is-char-3-01char-01-4"><span class="std std-ref">Template Struct is_char&lt; char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__char_3_01char16__t_01_4.html#exhale-struct-structfmt-1-1v6-1-1is-char-3-01char16-t-01-4"><span class="std std-ref">Template Struct is_char&lt; char16_t &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__char_3_01char32__t_01_4.html#exhale-struct-structfmt-1-1v6-1-1is-char-3-01char32-t-01-4"><span class="std std-ref">Template Struct is_char&lt; char32_t &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__char_3_01char8__t_01_4.html#exhale-struct-structfmt-1-1v6-1-1is-char-3-01char8-t-01-4"><span class="std std-ref">Template Struct is_char&lt; char8_t &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__char_3_01wchar__t_01_4.html#exhale-struct-structfmt-1-1v6-1-1is-char-3-01wchar-t-01-4"><span class="std std-ref">Template Struct is_char&lt; wchar_t &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__compile__string.html#exhale-struct-structfmt-1-1v6-1-1is-compile-string"><span class="std std-ref">Template Struct is_compile_string</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__contiguous.html#exhale-struct-structfmt-1-1v6-1-1is-contiguous"><span class="std std-ref">Template Struct is_contiguous</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__contiguous_3_01internal_1_1buffer_3_01Char_01_4_01_4.html#exhale-struct-structfmt-1-1v6-1-1is-contiguous-3-01internal-1-1buffer-3-01char-01-4-01-4"><span class="std std-ref">Template Struct is_contiguous&lt; internal::buffer&lt; Char &gt; &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__contiguous_3_01std_1_1basic__string_3_01Char_01_4_01_4.html#exhale-struct-structfmt-1-1v6-1-1is-contiguous-3-01std-1-1basic-string-3-01char-01-4-01-4"><span class="std std-ref">Template Struct is_contiguous&lt; std::basic_string&lt; Char &gt; &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1monostate.html#exhale-struct-structfmt-1-1v6-1-1monostate"><span class="std std-ref">Struct monostate</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1wformat__args.html#exhale-struct-structfmt-1-1v6-1-1wformat-args"><span class="std std-ref">Struct wformat_args</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1basic__format__arg.html#exhale-class-classfmt-1-1v6-1-1basic-format-arg"><span class="std std-ref">Template Class basic_format_arg</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1basic__format__arg_1_1handle.html#exhale-class-classfmt-1-1v6-1-1basic-format-arg-1-1handle"><span class="std std-ref">Class basic_format_arg::handle</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1basic__format__args.html#exhale-class-classfmt-1-1v6-1-1basic-format-args"><span class="std std-ref">Template Class basic_format_args</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1basic__format__context.html#exhale-class-classfmt-1-1v6-1-1basic-format-context"><span class="std std-ref">Template Class basic_format_context</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1basic__format__parse__context.html#exhale-class-classfmt-1-1v6-1-1basic-format-parse-context"><span class="std std-ref">Template Class basic_format_parse_context</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1basic__string__view.html#exhale-class-classfmt-1-1v6-1-1basic-string-view"><span class="std std-ref">Template Class basic_string_view</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1format__arg__store.html#exhale-class-classfmt-1-1v6-1-1format-arg-store"><span class="std std-ref">Template Class format_arg_store</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1arg__map.html#exhale-class-classfmt-1-1v6-1-1internal-1-1arg-map"><span class="std std-ref">Template Class arg_map</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1buffer.html#exhale-class-classfmt-1-1v6-1-1internal-1-1buffer"><span class="std std-ref">Template Class buffer</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1container__buffer.html#exhale-class-classfmt-1-1v6-1-1internal-1-1container-buffer"><span class="std std-ref">Template Class container_buffer</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1locale__ref.html#exhale-class-classfmt-1-1v6-1-1internal-1-1locale-ref"><span class="std std-ref">Class locale_ref</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1value.html#exhale-class-classfmt-1-1v6-1-1internal-1-1value"><span class="std std-ref">Template Class value</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_core_8h_1af08163c436ba67207a745daffa225bfb.html#exhale-enum-core-8h-1af08163c436ba67207a745daffa225bfb"><span class="std std-ref">Enum char8_t</span></a></p></li>
+<li><p><a class="reference internal" href="enum_core_8h_1a2b13874777fd501e786d2e9b682274e0.html#exhale-enum-core-8h-1a2b13874777fd501e786d2e9b682274e0"><span class="std std-ref">Enum &#64;1</span></a></p></li>
+<li><p><a class="reference internal" href="enum_core_8h_1ae1334eaba12e46e8f368496bd172a959.html#exhale-enum-core-8h-1ae1334eaba12e46e8f368496bd172a959"><span class="std std-ref">Enum &#64;2</span></a></p></li>
+<li><p><a class="reference internal" href="enum_core_8h_1a931feca4fae9309adceb0cfff43b37a1.html#exhale-enum-core-8h-1a931feca4fae9309adceb0cfff43b37a1"><span class="std std-ref">Enum &#64;3</span></a></p></li>
+<li><p><a class="reference internal" href="enum_core_8h_1a0efb42e4e8bc84f6f34e0ad7b1b62107.html#exhale-enum-core-8h-1a0efb42e4e8bc84f6f34e0ad7b1b62107"><span class="std std-ref">Enum &#64;4</span></a></p></li>
+<li><p><a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#exhale-enum-core-8h-1a5c0a00674d31fcf5980a3824b3ebcb66"><span class="std std-ref">Enum type</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_core_8h_1ad9b9ab9accf8bb1d75d4a53651c9482a.html#exhale-function-core-8h-1ad9b9ab9accf8bb1d75d4a53651c9482a"><span class="std std-ref">Template Function fmt::v6::arg(const S&amp;, const T&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a5126ff01030f035283ab891ec7957d40.html#exhale-function-core-8h-1a5126ff01030f035283ab891ec7957d40"><span class="std std-ref">Template Function fmt::v6::arg(S, internal::named_arg&lt;T, Char&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a6201de37c165002543f87e5f5a75719c.html#exhale-function-core-8h-1a6201de37c165002543f87e5f5a75719c"><span class="std std-ref">Template Function fmt::v6::format(const S&amp;, Args&amp;&amp;…)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a3f991966fdedf02545dd890bcd93d2d9.html#exhale-function-core-8h-1a3f991966fdedf02545dd890bcd93d2d9"><span class="std std-ref">Template Function fmt::v6::format_to(std::back_insert_iterator&lt;Container&gt;, const S&amp;, Args&amp;&amp;…)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1abf26113baa1c2b6f035b8e1585e6a4ee.html#exhale-function-core-8h-1abf26113baa1c2b6f035b8e1585e6a4ee"><span class="std std-ref">Function fmt::v6::internal::assert_fail</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1af295f48c90046fb6046f5f0c13ea644c.html#exhale-function-core-8h-1af295f48c90046fb6046f5f0c13ea644c"><span class="std std-ref">Template Function fmt::v6::internal::check_format_string(const S&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1ada88b14cdd0d90144e17ed39a6d58970.html#exhale-function-core-8h-1ada88b14cdd0d90144e17ed39a6d58970"><span class="std std-ref">Template Function fmt::v6::internal::check_format_string(S)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1afb6d44090d9d2786a6c3d1cc14c6c71a.html#exhale-function-core-8h-1afb6d44090d9d2786a6c3d1cc14c6c71a"><span class="std std-ref">Template Function fmt::v6::internal::encode_types()</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1ac8578672999712ad0cf35260b729fee1.html#exhale-function-core-8h-1ac8578672999712ad0cf35260b729fee1"><span class="std std-ref">Template Function fmt::v6::internal::encode_types()</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1ad91726fc89f8d3f80baa4ce199987ef6.html#exhale-function-core-8h-1ad91726fc89f8d3f80baa4ce199987ef6"><span class="std std-ref">Template Function fmt::v6::internal::get_container</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a3073337c84761e2415cec61530c32ae4.html#exhale-function-core-8h-1a3073337c84761e2415cec61530c32ae4"><span class="std std-ref">Function fmt::v6::internal::is_arithmetic_type</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a31967441eb827685b0439a6f549ead4e.html#exhale-function-core-8h-1a31967441eb827685b0439a6f549ead4e"><span class="std std-ref">Function fmt::v6::internal::is_integral_type</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a56de0cdb4e57b50c616f2aea2eda1477.html#exhale-function-core-8h-1a56de0cdb4e57b50c616f2aea2eda1477"><span class="std std-ref">Template Function fmt::v6::internal::make_arg(const T&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a65599175429d2e49c3794edf97bf3076.html#exhale-function-core-8h-1a65599175429d2e49c3794edf97bf3076"><span class="std std-ref">Template Function fmt::v6::internal::make_arg(const T&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1aa53e26733465fc8050b5a8e9d045765b.html#exhale-function-core-8h-1aa53e26733465fc8050b5a8e9d045765b"><span class="std std-ref">Template Function fmt::v6::internal::make_arg(const T&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a28ad5718cb13fcc215bb654b1d48661b.html#exhale-function-core-8h-1a28ad5718cb13fcc215bb654b1d48661b"><span class="std std-ref">Template Function fmt::v6::internal::make_args_checked</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a3d8b5f8728769829b9d27c988daad110.html#exhale-function-core-8h-1a3d8b5f8728769829b9d27c988daad110"><span class="std std-ref">Function fmt::v6::internal::to_string_view</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1aa254617123ea1e1e852660428fbb72e4.html#exhale-function-core-8h-1aa254617123ea1e1e852660428fbb72e4"><span class="std std-ref">Template Function fmt::v6::internal::to_unsigned</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a891dc3dccd63681685a5e8cafd1f1d82.html#exhale-function-core-8h-1a891dc3dccd63681685a5e8cafd1f1d82"><span class="std std-ref">Template Function fmt::v6::internal::vformat(basic_string_view&lt;Char&gt;, basic_format_args&lt;buffer_context&lt;Char&gt;&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1afb32f9d16c2c92928043f6375ee4c656.html#exhale-function-core-8h-1afb32f9d16c2c92928043f6375ee4c656"><span class="std std-ref">Template Function fmt::v6::internal::vformat_to(buffer&lt;Char&gt;&amp;, basic_string_view&lt;Char&gt;, basic_format_args&lt;buffer_context&lt;Char&gt;&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a7e2064bf1f27519b224cdb25cc342752.html#exhale-function-core-8h-1a7e2064bf1f27519b224cdb25cc342752"><span class="std std-ref">Template Function fmt::v6::make_format_args</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a77e7a7933b2c28baecf8dfd1058c1ff0.html#exhale-function-core-8h-1a77e7a7933b2c28baecf8dfd1058c1ff0"><span class="std std-ref">Template Function fmt::v6::print(std::FILE *, const S&amp;, Args&amp;&amp;…)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1aff8c7d8f80ef5113e915e5fd650f92d8.html#exhale-function-core-8h-1aff8c7d8f80ef5113e915e5fd650f92d8"><span class="std std-ref">Template Function fmt::v6::print(const S&amp;, Args&amp;&amp;…)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1ae3f53b207e1647f1ef82e3cffda6063b.html#exhale-function-core-8h-1ae3f53b207e1647f1ef82e3cffda6063b"><span class="std std-ref">Template Function fmt::v6::to_string_view(const Char *)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1af82b6e13d3ee7f5c282756e06a843368.html#exhale-function-core-8h-1af82b6e13d3ee7f5c282756e06a843368"><span class="std std-ref">Template Function fmt::v6::to_string_view(const std::basic_string&lt;Char, Traits, Alloc&gt;&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1addc1e698cbf387aed3f85dd62b54b13b.html#exhale-function-core-8h-1addc1e698cbf387aed3f85dd62b54b13b"><span class="std std-ref">Template Function fmt::v6::to_string_view(basic_string_view&lt;Char&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a884e8106adb78c92250a0f421a1f45a7.html#exhale-function-core-8h-1a884e8106adb78c92250a0f421a1f45a7"><span class="std std-ref">Template Function fmt::v6::to_string_view(internal::std_string_view&lt;Char&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a25e1184203469696f040dd9730e65147.html#exhale-function-core-8h-1a25e1184203469696f040dd9730e65147"><span class="std std-ref">Template Function fmt::v6::to_string_view(const S&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1ac16bfaab45defb27a8c91d699e216ed6.html#exhale-function-core-8h-1ac16bfaab45defb27a8c91d699e216ed6"><span class="std std-ref">Template Function fmt::v6::vformat(const S&amp;, basic_format_args&lt;buffer_context&lt;Char&gt;&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1af4b0b7a11cd8487e64e8e993e4223975.html#exhale-function-core-8h-1af4b0b7a11cd8487e64e8e993e4223975"><span class="std std-ref">Template Function fmt::v6::vformat_to(OutputIt, const S&amp;, basic_format_args&lt;buffer_context&lt;Char&gt;&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1ad6faeb49ff12a11360a24829dcd0dbb0.html#exhale-function-core-8h-1ad6faeb49ff12a11360a24829dcd0dbb0"><span class="std std-ref">Template Function fmt::v6::visit_format_arg</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1aa56c01e46058b8277ebb27b03794a026.html#exhale-function-core-8h-1aa56c01e46058b8277ebb27b03794a026"><span class="std std-ref">Function fmt::v6::vprint(std::FILE *, string_view, format_args)</span></a></p></li>
+<li><p><a class="reference internal" href="function_core_8h_1a4bf183a377065c5fad90cd6b633ac14c.html#exhale-function-core-8h-1a4bf183a377065c5fad90cd6b633ac14c"><span class="std std-ref">Function fmt::v6::vprint(string_view, format_args)</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_core_8h_1a9a4960b70582ed2620911a0b75dce0b5.html#exhale-define-core-8h-1a9a4960b70582ed2620911a0b75dce0b5"><span class="std std-ref">Define FMT_API</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a03e7ee720f43adc7d83c652a6a5dd5f8.html#exhale-define-core-8h-1a03e7ee720f43adc7d83c652a6a5dd5f8"><span class="std std-ref">Define FMT_ASSERT</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a887c191adf8cfaf06ed40b5c4d487343.html#exhale-define-core-8h-1a887c191adf8cfaf06ed40b5c4d487343"><span class="std std-ref">Define FMT_BEGIN_NAMESPACE</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a69201cb276383873487bf68b4ef8b4cd.html#exhale-define-core-8h-1a69201cb276383873487bf68b4ef8b4cd"><span class="std std-ref">Define FMT_CONSTEXPR</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1af4388801466a5994a363d6005616371a.html#exhale-define-core-8h-1af4388801466a5994a363d6005616371a"><span class="std std-ref">Define FMT_CONSTEXPR_DECL</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a8aba8a78c514e176e0dd0a159de7a369.html#exhale-define-core-8h-1a8aba8a78c514e176e0dd0a159de7a369"><span class="std std-ref">Define FMT_DEPRECATED</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a2b6d307802175823274f07475e458a34.html#exhale-define-core-8h-1a2b6d307802175823274f07475e458a34"><span class="std std-ref">Define FMT_DEPRECATED_ALIAS</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a809ce36bdf78b55c536fbca340bfec9c.html#exhale-define-core-8h-1a809ce36bdf78b55c536fbca340bfec9c"><span class="std std-ref">Define FMT_DETECTED_NOEXCEPT</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1ab02671eb0d43965fe2957e844f427451.html#exhale-define-core-8h-1ab02671eb0d43965fe2957e844f427451"><span class="std std-ref">Define FMT_ENABLE_IF</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1ae0d2fbdf031547a949fc7e1c0b3c97f1.html#exhale-define-core-8h-1ae0d2fbdf031547a949fc7e1c0b3c97f1"><span class="std std-ref">Define FMT_END_NAMESPACE</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a5d3b416a99857b69e3b7de8e88c71ff3.html#exhale-define-core-8h-1a5d3b416a99857b69e3b7de8e88c71ff3"><span class="std std-ref">Define FMT_EXCEPTIONS</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a3823320bf1dc3274b4352b910a679e4f.html#exhale-define-core-8h-1a3823320bf1dc3274b4352b910a679e4f"><span class="std std-ref">Define FMT_EXTERN</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1ac2dae898017bb434b6cffd0df3c5fc0c.html#exhale-define-core-8h-1ac2dae898017bb434b6cffd0df3c5fc0c"><span class="std std-ref">Define FMT_EXTERN_TEMPLATE_API</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a4f5db4f97e31a127b1236d1ff412bb0c.html#exhale-define-core-8h-1a4f5db4f97e31a127b1236d1ff412bb0c"><span class="std std-ref">Define FMT_GCC_VERSION</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a55d7b78b0300ddda018f77208e80f3e9.html#exhale-define-core-8h-1a55d7b78b0300ddda018f77208e80f3e9"><span class="std std-ref">Define FMT_HAS_CPP_ATTRIBUTE</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a8e7a33185c7fc32dd026773a8ece00b8.html#exhale-define-core-8h-1a8e7a33185c7fc32dd026773a8ece00b8"><span class="std std-ref">Define FMT_HAS_CXX11_NOEXCEPT</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a749169f277bb21ccf12b1c665e68e88a.html#exhale-define-core-8h-1a749169f277bb21ccf12b1c665e68e88a"><span class="std std-ref">Define FMT_HAS_FEATURE</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a1e3ffe834c427bc295b6880efcd17976.html#exhale-define-core-8h-1a1e3ffe834c427bc295b6880efcd17976"><span class="std std-ref">Define FMT_HAS_GXX_CXX11</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1afa144e698f8df527d6e51688eb9abbd1.html#exhale-define-core-8h-1afa144e698f8df527d6e51688eb9abbd1"><span class="std std-ref">Define FMT_HAS_INCLUDE</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a750d1276ba35fb73b8f2998389a5f8c6.html#exhale-define-core-8h-1a750d1276ba35fb73b8f2998389a5f8c6"><span class="std std-ref">Define FMT_INLINE_NAMESPACE</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a363cb0623e6975ff2b357a52a03e4728.html#exhale-define-core-8h-1a363cb0623e6975ff2b357a52a03e4728"><span class="std std-ref">Define FMT_MSC_VER</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1aef128913e8400683b1cbd1a3a2e11df3.html#exhale-define-core-8h-1aef128913e8400683b1cbd1a3a2e11df3"><span class="std std-ref">Define FMT_NOEXCEPT</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1ac9411ed6305aee71472718fa55fcc352.html#exhale-define-core-8h-1ac9411ed6305aee71472718fa55fcc352"><span class="std std-ref">Define FMT_NORETURN</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a52376c1ced87b19c8b3ece64cc64f22e.html#exhale-define-core-8h-1a52376c1ced87b19c8b3ece64cc64f22e"><span class="std std-ref">Define FMT_NVCC</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a023c6c178e254d81d578b90921804b1c.html#exhale-define-core-8h-1a023c6c178e254d81d578b90921804b1c"><span class="std std-ref">Define FMT_OVERRIDE</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a1b33b94a68ab12b7b4e7051da8a361f5.html#exhale-define-core-8h-1a1b33b94a68ab12b7b4e7051da8a361f5"><span class="std std-ref">Define FMT_TYPE_CONSTANT</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a739a7ff96b6dfd65a4de8fe003f5b233.html#exhale-define-core-8h-1a739a7ff96b6dfd65a4de8fe003f5b233"><span class="std std-ref">Define FMT_USE_CONSTEXPR</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a13e53e6202856108f878beff6278417b.html#exhale-define-core-8h-1a13e53e6202856108f878beff6278417b"><span class="std std-ref">Define FMT_USE_INT128</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a65490b89e8bd22fd0b8ae4491643d60c.html#exhale-define-core-8h-1a65490b89e8bd22fd0b8ae4491643d60c"><span class="std std-ref">Define FMT_USE_NOEXCEPT</span></a></p></li>
+<li><p><a class="reference internal" href="define_core_8h_1a1a322107307b020b6eac933958da94f6.html#exhale-define-core-8h-1a1a322107307b020b6eac933958da94f6"><span class="std std-ref">Define FMT_VERSION</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_core_8h_1a4857428a0c57b3f8d5e02490fe1b3611.html#exhale-typedef-core-8h-1a4857428a0c57b3f8d5e02490fe1b3611"><span class="std std-ref">Typedef fmt::v6::basic_parse_context</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a39869f9f5461e912512bf02c30346864.html#exhale-typedef-core-8h-1a39869f9f5461e912512bf02c30346864"><span class="std std-ref">Typedef fmt::v6::bool_constant</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a27eae41b1915cad828a4e9d7a3dc878d.html#exhale-typedef-core-8h-1a27eae41b1915cad828a4e9d7a3dc878d"><span class="std std-ref">Typedef fmt::v6::buffer_context</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a6a50b38be04d0616fa354c19fd1fe3c3.html#exhale-typedef-core-8h-1a6a50b38be04d0616fa354c19fd1fe3c3"><span class="std std-ref">Typedef fmt::v6::char_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1add29051cd8cf9b49c9a1f1fa7780add0.html#exhale-typedef-core-8h-1add29051cd8cf9b49c9a1f1fa7780add0"><span class="std std-ref">Typedef fmt::v6::conditional_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#exhale-typedef-core-8h-1a43da2a686e8ee8b319a4c63faa9f0e70"><span class="std std-ref">Typedef fmt::v6::enable_if_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1aed3c5c3c9167d5cbdfeb3782ef8b7959.html#exhale-typedef-core-8h-1aed3c5c3c9167d5cbdfeb3782ef8b7959"><span class="std std-ref">Typedef fmt::v6::format_context</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1acff11c68830a9c08781d1acea4a09ee6.html#exhale-typedef-core-8h-1acff11c68830a9c08781d1acea4a09ee6"><span class="std std-ref">Typedef fmt::v6::format_parse_context</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a968ec6bde8e9db9b16b382392df5d135.html#exhale-typedef-core-8h-1a968ec6bde8e9db9b16b382392df5d135"><span class="std std-ref">Typedef fmt::v6::has_formatter</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1af90c3b40be924daa2646c06914e8dd0d.html#exhale-typedef-core-8h-1af90c3b40be924daa2646c06914e8dd0d"><span class="std std-ref">Typedef fmt::v6::internal::all_true</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a201ff17a0aab14ec0f5ba3cc5e3b3fff.html#exhale-typedef-core-8h-1a201ff17a0aab14ec0f5ba3cc5e3b3fff"><span class="std std-ref">Typedef fmt::v6::internal::has_fallback_formatter</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1ae4e8c7425dbd630330fbfbe6cf2ae2f9.html#exhale-typedef-core-8h-1ae4e8c7425dbd630330fbfbe6cf2ae2f9"><span class="std std-ref">Typedef fmt::v6::internal::long_type</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1ae8fc25414d5d31741853e94fc54df432.html#exhale-typedef-core-8h-1ae8fc25414d5d31741853e94fc54df432"><span class="std std-ref">Typedef fmt::v6::internal::mapped_type_constant</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a6940a48bb049eaa01366b76d11b9caf1.html#exhale-typedef-core-8h-1a6940a48bb049eaa01366b76d11b9caf1"><span class="std std-ref">Typedef fmt::v6::internal::ulong_type</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a31fdb8f3ae52ac3227f24cc0b6ee0b85.html#exhale-typedef-core-8h-1a31fdb8f3ae52ac3227f24cc0b6ee0b85"><span class="std std-ref">Typedef fmt::v6::parse_context</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a4e36dd94ea4e187df1fb3088ba7c8d75.html#exhale-typedef-core-8h-1a4e36dd94ea4e187df1fb3088ba7c8d75"><span class="std std-ref">Typedef fmt::v6::remove_const_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1ababc62cfc8a3af8cdd0694c73a1d24eb.html#exhale-typedef-core-8h-1ababc62cfc8a3af8cdd0694c73a1d24eb"><span class="std std-ref">Typedef fmt::v6::remove_cvref_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1ae4e48b15c26068e3e106bcde05e4b120.html#exhale-typedef-core-8h-1ae4e48b15c26068e3e106bcde05e4b120"><span class="std std-ref">Typedef fmt::v6::remove_reference_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a4074f7ef8c37b344ef1f77ebe1c7d724.html#exhale-typedef-core-8h-1a4074f7ef8c37b344ef1f77ebe1c7d724"><span class="std std-ref">Typedef fmt::v6::string_view</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a47869670d22f3ca94d82b51c47386e76.html#exhale-typedef-core-8h-1a47869670d22f3ca94d82b51c47386e76"><span class="std std-ref">Typedef fmt::v6::void_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1ae514fba8ccc510222d12b1cacbe8f2f0.html#exhale-typedef-core-8h-1ae514fba8ccc510222d12b1cacbe8f2f0"><span class="std std-ref">Typedef fmt::v6::wformat_context</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a7a6bfa33b0737e85cdb2c3d16e68663c.html#exhale-typedef-core-8h-1a7a6bfa33b0737e85cdb2c3d16e68663c"><span class="std std-ref">Typedef fmt::v6::wformat_parse_context</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1a2eefc755d9285267c1a21edf371593ab.html#exhale-typedef-core-8h-1a2eefc755d9285267c1a21edf371593ab"><span class="std std-ref">Typedef fmt::v6::wparse_context</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_core_8h_1ab712bf58293acbb6a430130a8bc5a3af.html#exhale-typedef-core-8h-1ab712bf58293acbb6a430130a8bc5a3af"><span class="std std-ref">Typedef fmt::v6::wstring_view</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

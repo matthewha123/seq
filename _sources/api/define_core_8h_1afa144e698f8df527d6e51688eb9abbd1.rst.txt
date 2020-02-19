@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1afa144e698f8df527d6e51688eb9abbd1:
+
+Define FMT_HAS_INCLUDE
+======================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_HAS_INCLUDE

@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Struct int_writer::num_writer &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Struct basic_writer::padded_int_writer" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1padded__int__writer.html" />
+    <link rel="prev" title="Struct int_writer::hex_writer" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1hex__writer.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Struct int_writer::num_writer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="struct-int-writer-num-writer">
+<span id="exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1int-writer-1-1num-writer"></span><h1>Struct int_writer::num_writer<a class="headerlink" href="#struct-int-writer-num-writer" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<p>This struct is a nested type of <a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1basic-writer-1-1int-writer"><span class="std std-ref">Template Struct basic_writer::int_writer</span></a>.</p>
+</div>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N3fmt2v68internal12basic_writer10int_writer10num_writerE">
+<span id="_CPPv3N3fmt2v68internal12basic_writer10int_writer10num_writerE"></span><span id="_CPPv2N3fmt2v68internal12basic_writer10int_writer10num_writerE"></span><span id="fmt::v6::internal::basic_writer::int_writer::num_writer"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer"></span><em class="property">struct </em><code class="sig-name descname">num_writer</code><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4IEI0ENK3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writerclEvRR2It">
+<span id="_CPPv3IEI0ENK3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writerclERR2It"></span><span id="_CPPv2IEI0ENK3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writerclERR2It"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer_1a9a44c01222678adac69ad622836b4265"></span>template&lt;&gt;<br />template&lt;typename <code class="sig-name descname">It</code>&gt;<br />void <code class="sig-name descname">operator()</code><span class="sig-paren">(</span>It &amp;&amp;<em>it</em><span class="sig-paren">)</span> <em class="property">const</em><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer9abs_valueE">
+<span id="_CPPv3IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer9abs_valueE"></span><span id="_CPPv2IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer9abs_valueE"></span>template&lt;&gt;<br />template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer_1ac14a7085c2d3186303cf81087f42a2c7"></span><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer.html#_CPPv4IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE13unsigned_typeE" title="fmt::v6::internal::basic_writer&lt;Range&gt;::int_writer&lt;Int, Specs&gt;::unsigned_type">unsigned_type</a> <code class="sig-name descname">abs_value</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer4sizeE">
+<span id="_CPPv3IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer4sizeE"></span><span id="_CPPv2IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer4sizeE"></span>template&lt;&gt;<br />template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer_1aebf19cdb800cc496ba5613aae03d7453"></span>int <code class="sig-name descname">size</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer6groupsE">
+<span id="_CPPv3IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer6groupsE"></span><span id="_CPPv2IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer6groupsE"></span>template&lt;&gt;<br />template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer_1ae05adf11260de53911ce12ed94541189"></span><em class="property">const</em> std::string &amp;<code class="sig-name descname">groups</code><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer3sepE">
+<span id="_CPPv3IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer3sepE"></span><span id="_CPPv2IEIEN3fmt2v68internal12basic_writerI5RangeE10int_writerI3Int5SpecsE10num_writer3sepE"></span>template&lt;&gt;<br />template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1num__writer_1a32d7e2c579736b9cc3a69262144a1646"></span><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1basic__writer.html#_CPPv4IEN3fmt2v68internal12basic_writerI5RangeE9char_typeE" title="fmt::v6::internal::basic_writer&lt;Range&gt;::char_type">char_type</a> <code class="sig-name descname">sep</code><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1padded__int__writer.html" class="btn btn-neutral float-right" title="Template Struct basic_writer::padded_int_writer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1basic__writer_1_1int__writer_1_1hex__writer.html" class="btn btn-neutral float-left" title="Struct int_writer::hex_writer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

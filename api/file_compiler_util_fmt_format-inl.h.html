@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>File format-inl.h &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>File format-inl.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/file_compiler_util_fmt_format-inl.h.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-format-inl-h">
+<span id="file-compiler-util-fmt-format-inl-h"></span><h1>File format-inl.h<a class="headerlink" href="#file-format-inl-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_compiler_util_fmt.html#dir-compiler-util-fmt"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-compiler-util-fmt-format-inl-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/format-inl.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id6">Enums</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id7">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id8">Defines</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id9">Typedefs</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-compiler-util-fmt-format-inl-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/format-inl.h</span></code>)<a class="headerlink" href="#definition-compiler-util-fmt-format-inl-h" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_compiler_util_fmt_format-inl.h.html">Program Listing for File format-inl.h</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cassert</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cctype</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">climits</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmath</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstdarg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstring</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cwchar</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">format.h</span></code> (<a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">locale</span></code> (<a class="reference internal" href="file_compiler_util_fmt_locale.h.html#file-compiler-util-fmt-locale-h"><span class="std std-ref">File locale.h</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_compiler_util_fmt_format.cpp.html#file-compiler-util-fmt-format-cpp"><span class="std std-ref">File format.cpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_fmt.html#namespace-fmt"><span class="std std-ref">Namespace fmt</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6.html#namespace-fmt-v6"><span class="std std-ref">Namespace fmt::v6</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6__internal.html#namespace-fmt-v6-internal"><span class="std std-ref">Namespace fmt::v6::internal</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6__internal__digits.html#namespace-fmt-v6-internal-digits"><span class="std std-ref">Namespace fmt::v6::internal::digits</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1formatter_3_01internal_1_1bigint_01_4.html#exhale-struct-structfmt-1-1v6-1-1formatter-3-01internal-1-1bigint-01-4"><span class="std std-ref">Template Struct formatter&lt; internal::bigint &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1accumulator.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1accumulator"><span class="std std-ref">Struct accumulator</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1bits.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1bits"><span class="std std-ref">Template Struct bits</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1boundaries.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1boundaries"><span class="std std-ref">Struct boundaries</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1fixed__handler.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1fixed-handler"><span class="std std-ref">Struct fixed_handler</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1grisu__shortest__handler.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1grisu-shortest-handler"><span class="std std-ref">Struct grisu_shortest_handler</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1bigint.html#exhale-class-classfmt-1-1v6-1-1internal-1-1bigint"><span class="std std-ref">Class bigint</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1fp.html#exhale-class-classfmt-1-1v6-1-1internal-1-1fp"><span class="std std-ref">Class fp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_format-inl_8h_1a7f8db0dabd02cdde9963cc8c3986e090.html#exhale-enum-format-inl-8h-1a7f8db0dabd02cdde9963cc8c3986e090"><span class="std std-ref">Enum result</span></a></p></li>
+<li><p><a class="reference internal" href="enum_format-inl_8h_1aa3bd03e5a55849ba469cbe9298e16670.html#exhale-enum-format-inl-8h-1aa3bd03e5a55849ba469cbe9298e16670"><span class="std std-ref">Enum round_direction</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_format-inl_8h_1abece24b1bb022c6cf07e709b1a96a8c7.html#exhale-function-format-inl-8h-1abece24b1bb022c6cf07e709b1a96a8c7"><span class="std std-ref">Function fmt::v6::format_system_error</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a507a2afd1c611e2b568555e838138090.html#exhale-function-format-inl-8h-1a507a2afd1c611e2b568555e838138090"><span class="std std-ref">Function fmt::v6::internal::count_digits&lt; 4 &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a4c3d5703221e0983d001f7076188f274.html#exhale-function-format-inl-8h-1a4c3d5703221e0983d001f7076188f274"><span class="std std-ref">Template Function fmt::v6::internal::decimal_point_impl</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1ab9483629e605b6a7ac7053f65507f821.html#exhale-function-format-inl-8h-1ab9483629e605b6a7ac7053f65507f821"><span class="std std-ref">Template Function fmt::v6::internal::fallback_format</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a778f205819bd443d5e5101678bbb3b55.html#exhale-function-format-inl-8h-1a778f205819bd443d5e5101678bbb3b55"><span class="std std-ref">Function fmt::v6::internal::format_error_code</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a31c5db246582632fd32c357189838bc0.html#exhale-function-format-inl-8h-1a31c5db246582632fd32c357189838bc0"><span class="std std-ref">Template Function fmt::v6::internal::format_float</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a1d257ccd038b3193fe0e6e62ccb41ff0.html#exhale-function-format-inl-8h-1a1d257ccd038b3193fe0e6e62ccb41ff0"><span class="std std-ref">Function fmt::v6::internal::fwrite_fully</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a96b234294d64ecb062c7bfe2d7d4f56f.html#exhale-function-format-inl-8h-1a96b234294d64ecb062c7bfe2d7d4f56f"><span class="std std-ref">Function fmt::v6::internal::get_cached_power</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a0a64a30037fcc15acc70a0a35f6d01e0.html#exhale-function-format-inl-8h-1a0a64a30037fcc15acc70a0a35f6d01e0"><span class="std std-ref">Function fmt::v6::internal::get_round_direction</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1acbc5654290cae1007cf407ca4e9531b1.html#exhale-function-format-inl-8h-1acbc5654290cae1007cf407ca4e9531b1"><span class="std std-ref">Template Function fmt::v6::internal::grisu_gen_digits</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a96fa651ba7af4acf9f5e3cacd1cfe627.html#exhale-function-format-inl-8h-1a96fa651ba7af4acf9f5e3cacd1cfe627"><span class="std std-ref">Template Function fmt::v6::internal::grouping_impl</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a3079d4184aed449aca12f79b2a16ddbd.html#exhale-function-format-inl-8h-1a3079d4184aed449aca12f79b2a16ddbd"><span class="std std-ref">Function fmt::v6::internal::multiply</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a70cedc229496a0e3892ea3a1a547f944.html#exhale-function-format-inl-8h-1a70cedc229496a0e3892ea3a1a547f944"><span class="std std-ref">Template Function fmt::v6::internal::normalize</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a1e60e118fa4e9a101289a763b5831196.html#exhale-function-format-inl-8h-1a1e60e118fa4e9a101289a763b5831196"><span class="std std-ref">Function fmt::v6::internal::operator*</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1ad7486b8a51de4c770b09877e5f6e13fb.html#exhale-function-format-inl-8h-1ad7486b8a51de4c770b09877e5f6e13fb"><span class="std std-ref">Function fmt::v6::internal::operator==</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a6c721cfc11f182e92e548e65cd4a699a.html#exhale-function-format-inl-8h-1a6c721cfc11f182e92e548e65cd4a699a"><span class="std std-ref">Function fmt::v6::internal::report_error</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1ab565db92cce9cc62028eef2acafcf970.html#exhale-function-format-inl-8h-1ab565db92cce9cc62028eef2acafcf970"><span class="std std-ref">Function fmt::v6::internal::safe_strerror</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a87029dba862475025c387ea18b930dbe.html#exhale-function-format-inl-8h-1a87029dba862475025c387ea18b930dbe"><span class="std std-ref">Template Function fmt::v6::internal::snprintf_float</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a723bd49c7472c76b4fde10de069f2f99.html#exhale-function-format-inl-8h-1a723bd49c7472c76b4fde10de069f2f99"><span class="std std-ref">Template Function fmt::v6::internal::thousands_sep_impl</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a25b788dd94b8426ff3a93682e2c0dcd4.html#exhale-function-format-inl-8h-1a25b788dd94b8426ff3a93682e2c0dcd4"><span class="std std-ref">Function fmt::v6::report_system_error</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a8307cb500850a7c5033cf64702e15990.html#exhale-function-format-inl-8h-1a8307cb500850a7c5033cf64702e15990"><span class="std std-ref">Function strerror_r</span></a></p></li>
+<li><p><a class="reference internal" href="function_format-inl_8h_1a3bbfb7ce6b764966d8cf5d018589375e.html#exhale-function-format-inl-8h-1a3bbfb7ce6b764966d8cf5d018589375e"><span class="std std-ref">Function strerror_s</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_format-inl_8h_1ab8efe0100a6d7cc74729f5bf7537799c.html#exhale-define-format-inl-8h-1ab8efe0100a6d7cc74729f5bf7537799c"><span class="std std-ref">Define FMT_CATCH</span></a></p></li>
+<li><p><a class="reference internal" href="define_format-inl_8h_1aeff75c93a29bc942ca36b31a4b634fe9.html#exhale-define-format-inl-8h-1aeff75c93a29bc942ca36b31a4b634fe9"><span class="std std-ref">Define FMT_POWERS_OF_10</span></a></p></li>
+<li><p><a class="reference internal" href="define_format-inl_8h_1a9a9bb3caa94066b3adc175bb24cb1783.html#exhale-define-format-inl-8h-1a9a9bb3caa94066b3adc175bb24cb1783"><span class="std std-ref">Define FMT_SNPRINTF</span></a></p></li>
+<li><p><a class="reference internal" href="define_format-inl_8h_1a4aa79926398ee27fe7d6db8b0dd54edf.html#exhale-define-format-inl-8h-1a4aa79926398ee27fe7d6db8b0dd54edf"><span class="std std-ref">Define FMT_TRY</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_format-inl_8h_1afe32394a623ea7114ab37829fd42d098.html#exhale-typedef-format-inl-8h-1afe32394a623ea7114ab37829fd42d098"><span class="std std-ref">Typedef fmt::v6::internal::format_func</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

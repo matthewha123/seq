@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>File ranges.h &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>File ranges.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/file_compiler_util_fmt_ranges.h.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-ranges-h">
+<span id="file-compiler-util-fmt-ranges-h"></span><h1>File ranges.h<a class="headerlink" href="#file-ranges-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_compiler_util_fmt.html#dir-compiler-util-fmt"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-compiler-util-fmt-ranges-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/ranges.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id4">Classes</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id5">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id6">Defines</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id7">Typedefs</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-compiler-util-fmt-ranges-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/ranges.h</span></code>)<a class="headerlink" href="#definition-compiler-util-fmt-ranges-h" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_compiler_util_fmt_ranges.h.html">Program Listing for File ranges.h</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">format.h</span></code> (<a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">type_traits</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_fmt.html#namespace-fmt"><span class="std std-ref">Namespace fmt</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6.html#namespace-fmt-v6"><span class="std std-ref">Namespace fmt::v6</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6__internal.html#namespace-fmt-v6-internal"><span class="std std-ref">Namespace fmt::v6::internal</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1formatter_3_01RangeT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__range_3_01Ra4264be8e3a26b9945fc81a349307436e.html#exhale-struct-structfmt-1-1v6-1-1formatter-3-01ranget-00-01char-00-01enable-if-t-3-01fmt-1-1is-range-3-01ra4264be8e3a26b9945fc81a349307436e"><span class="std std-ref">Template Struct formatter&lt; RangeT, Char, enable_if_t&lt; fmt::is_range&lt; RangeT, Char &gt;::value &gt; &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1formatter_3_01tuple__arg__join_3_01Char_00_01T_8_8_8_01_4_00_01Char_01_4.html#exhale-struct-structfmt-1-1v6-1-1formatter-3-01tuple-arg-join-3-01char-00-01t-8-8-8-01-4-00-01char-01-4"><span class="std std-ref">Template Struct formatter&lt; tuple_arg_join&lt; Char, T… &gt;, Char &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1formatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_d0d114a086a42cd7496eda1964941dfc.html#exhale-struct-structfmt-1-1v6-1-1formatter-3-01tuplet-00-01char-00-01enable-if-t-3-01fmt-1-1is-tuple-like-d0d114a086a42cd7496eda1964941dfc"><span class="std std-ref">Template Struct formatter&lt; TupleT, Char, enable_if_t&lt; fmt::is_tuple_like&lt; TupleT &gt;::value &gt; &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1formatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_4896a7461e8863abb36cb71171ba8916.html#exhale-struct-structfmt-1-1v6-1-1formatter-3-01tuplet-00-01char-00-01enable-if-t-3-01fmt-1-1is-tuple-like-4896a7461e8863abb36cb71171ba8916"><span class="std std-ref">Template Struct value &gt; &gt;::formatter&lt; TupleT, Char, enable_if_t&lt; fmt::is_tuple_like&lt; TupleT &gt;::value &gt; &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1formatting__base.html#exhale-struct-structfmt-1-1v6-1-1formatting-base"><span class="std std-ref">Template Struct formatting_base</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1formatting__range.html#exhale-struct-structfmt-1-1v6-1-1formatting-range"><span class="std std-ref">Template Struct formatting_range</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1formatting__tuple.html#exhale-struct-structfmt-1-1v6-1-1formatting-tuple"><span class="std std-ref">Template Struct formatting_tuple</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1conditional__helper.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1conditional-helper"><span class="std std-ref">Template Struct conditional_helper</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1integer__sequence.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1integer-sequence"><span class="std std-ref">Template Struct integer_sequence</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1is__like__std__string_3_01fmt_1_1basic__string__view_3_01Char_01_4_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1is-like-std-string-3-01fmt-1-1basic-string-view-3-01char-01-4-01-4"><span class="std std-ref">Template Struct is_like_std_string&lt; fmt::basic_string_view&lt; Char &gt; &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1is__range__.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1is-range"><span class="std std-ref">Template Struct is_range_</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1make__integer__sequence.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1make-integer-sequence"><span class="std std-ref">Template Struct make_integer_sequence</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1make__integer__sequence_3_01T_00_010_00_01Ns_8_8_8_01_4.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1make-integer-sequence-3-01t-00-010-00-01ns-8-8-8-01-4"><span class="std std-ref">Template Struct make_integer_sequence&lt; T, 0, Ns… &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1void.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1void"><span class="std std-ref">Template Struct void</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__range.html#exhale-struct-structfmt-1-1v6-1-1is-range"><span class="std std-ref">Template Struct is_range</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1is__tuple__like.html#exhale-struct-structfmt-1-1v6-1-1is-tuple-like"><span class="std std-ref">Template Struct is_tuple_like</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1tuple__arg__join.html#exhale-struct-structfmt-1-1v6-1-1tuple-arg-join"><span class="std std-ref">Template Struct tuple_arg_join</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1is__like__std__string.html#exhale-class-classfmt-1-1v6-1-1internal-1-1is-like-std-string"><span class="std std-ref">Template Class is_like_std_string</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1internal_1_1is__tuple__like__.html#exhale-class-classfmt-1-1v6-1-1internal-1-1is-tuple-like"><span class="std std-ref">Template Class is_tuple_like_</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_ranges_8h_1a518a986abb0508a289182b94c40fde4b.html#exhale-function-ranges-8h-1a518a986abb0508a289182b94c40fde4b"><span class="std std-ref">Template Function fmt::v6::internal::copy(const RangeT&amp;, OutputIterator)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1a1f3f32751180940e23978b2e7ca3e6b3.html#exhale-function-ranges-8h-1a1f3f32751180940e23978b2e7ca3e6b3"><span class="std std-ref">Template Function fmt::v6::internal::copy(const char *, OutputIterator)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1a4974d8ba9dbdff7cd7d573820b2f2d19.html#exhale-function-ranges-8h-1a4974d8ba9dbdff7cd7d573820b2f2d19"><span class="std std-ref">Template Function fmt::v6::internal::copy(char, OutputIterator)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1a214187bb7de6fb8b6c295a4c4333be6c.html#exhale-function-ranges-8h-1a214187bb7de6fb8b6c295a4c4333be6c"><span class="std std-ref">Template Function fmt::v6::internal::for_each(index_sequence&lt;Is…&gt;, Tuple&amp;&amp;, F&amp;&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1a2d28ef6bd368182fa9cde9a02b24ee82.html#exhale-function-ranges-8h-1a2d28ef6bd368182fa9cde9a02b24ee82"><span class="std std-ref">Template Function fmt::v6::internal::for_each(Tuple&amp;&amp;, F&amp;&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1ac0f6800636b470e6819b09d0c1fbc118.html#exhale-function-ranges-8h-1ac0f6800636b470e6819b09d0c1fbc118"><span class="std std-ref">Template Function fmt::v6::internal::format_str_quoted(bool, const Arg&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1a6d2940bb84d314ea7ca339a32efceef8.html#exhale-function-ranges-8h-1a6d2940bb84d314ea7ca339a32efceef8"><span class="std std-ref">Function fmt::v6::internal::format_str_quoted(bool, const char *)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1ada06cc0ef6b5d36260af59013655c080.html#exhale-function-ranges-8h-1ada06cc0ef6b5d36260af59013655c080"><span class="std std-ref">Function fmt::v6::internal::format_str_quoted(bool, const wchar_t *)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1ab0fe181b6af5e5da78c419dcf3c3672a.html#exhale-function-ranges-8h-1ab0fe181b6af5e5da78c419dcf3c3672a"><span class="std std-ref">Function fmt::v6::internal::format_str_quoted(bool, const char)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1ad929077fc8dae734753fee489595c640.html#exhale-function-ranges-8h-1ad929077fc8dae734753fee489595c640"><span class="std std-ref">Function fmt::v6::internal::format_str_quoted(bool, const wchar_t)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1a26f84aeabd4729c33f0af9fab9cac820.html#exhale-function-ranges-8h-1a26f84aeabd4729c33f0af9fab9cac820"><span class="std std-ref">Template Function fmt::v6::internal::get_indexes</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1a80ca569d721879e23114b03891875aa9.html#exhale-function-ranges-8h-1a80ca569d721879e23114b03891875aa9"><span class="std std-ref">Template Function fmt::v6::join(const std::tuple&lt;T…&gt;&amp;, string_view)</span></a></p></li>
+<li><p><a class="reference internal" href="function_ranges_8h_1a4b598836c3b37540454ec6ed8fe09b9b.html#exhale-function-ranges-8h-1a4b598836c3b37540454ec6ed8fe09b9b"><span class="std std-ref">Template Function fmt::v6::join(const std::tuple&lt;T…&gt;&amp;, wstring_view)</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_ranges_8h_1ad1c3ab4ad2c95d3f313323dbef5585df.html#exhale-define-ranges-8h-1ad1c3ab4ad2c95d3f313323dbef5585df"><span class="std std-ref">Define FMT_RANGE_OUTPUT_LENGTH_LIMIT</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_ranges_8h_1a6c5768f7dc14bc423d395101d95a7108.html#exhale-typedef-ranges-8h-1a6c5768f7dc14bc423d395101d95a7108"><span class="std std-ref">Typedef fmt::v6::internal::index_sequence</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ranges_8h_1ac26b197a0cd3bf090bd95f4f74d9e645.html#exhale-typedef-ranges-8h-1ac26b197a0cd3bf090bd95f4f74d9e645"><span class="std std-ref">Typedef fmt::v6::internal::make_index_sequence</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

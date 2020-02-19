@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a13d81af11ed7e6e58ba60083b36043ee:
+
+Template Function fmt::v6::internal::use_grisu
+==============================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::use_grisu()

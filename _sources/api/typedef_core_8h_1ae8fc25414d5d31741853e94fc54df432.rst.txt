@@ -1,0 +1,13 @@
+.. _exhale_typedef_core_8h_1ae8fc25414d5d31741853e94fc54df432:
+
+Typedef fmt::v6::internal::mapped_type_constant
+===============================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::internal::mapped_type_constant

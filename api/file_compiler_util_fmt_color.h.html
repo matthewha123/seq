@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>File color.h &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>File color.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/file_compiler_util_fmt_color.h.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-color-h">
+<span id="file-compiler-util-fmt-color-h"></span><h1>File color.h<a class="headerlink" href="#file-color-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_compiler_util_fmt.html#dir-compiler-util-fmt"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-compiler-util-fmt-color-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/color.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id4">Classes</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id5">Enums</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id6">Functions</a></p></li>
+<li><p><a class="reference internal" href="#unions" id="id7">Unions</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-compiler-util-fmt-color-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/color.h</span></code>)<a class="headerlink" href="#definition-compiler-util-fmt-color-h" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_compiler_util_fmt_color.h.html">Program Listing for File color.h</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">format.h</span></code> (<a class="reference internal" href="file_compiler_util_fmt_format.h.html#file-compiler-util-fmt-format-h"><span class="std std-ref">File format.h</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_fmt.html#namespace-fmt"><span class="std std-ref">Namespace fmt</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6.html#namespace-fmt-v6"><span class="std std-ref">Namespace fmt::v6</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_fmt__v6__internal.html#namespace-fmt-v6-internal"><span class="std std-ref">Namespace fmt::v6::internal</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1ansi__color__escape.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1ansi-color-escape"><span class="std std-ref">Template Struct ansi_color_escape</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1color__type.html#exhale-struct-structfmt-1-1v6-1-1internal-1-1color-type"><span class="std std-ref">Struct color_type</span></a></p></li>
+<li><p><a class="reference internal" href="structfmt_1_1v6_1_1rgb.html#exhale-struct-structfmt-1-1v6-1-1rgb"><span class="std std-ref">Struct rgb</span></a></p></li>
+<li><p><a class="reference internal" href="classfmt_1_1v6_1_1text__style.html#exhale-class-classfmt-1-1v6-1-1text-style"><span class="std std-ref">Class text_style</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_color_8h_1a97142a19431e766c0035dee38b968230.html#exhale-enum-color-8h-1a97142a19431e766c0035dee38b968230"><span class="std std-ref">Enum color</span></a></p></li>
+<li><p><a class="reference internal" href="enum_color_8h_1acd17a9ababc03055ca24785a0bf8c607.html#exhale-enum-color-8h-1acd17a9ababc03055ca24785a0bf8c607"><span class="std std-ref">Enum emphasis</span></a></p></li>
+<li><p><a class="reference internal" href="enum_color_8h_1a603c9b2d110d6685f76d358dd4d8f777.html#exhale-enum-color-8h-1a603c9b2d110d6685f76d358dd4d8f777"><span class="std std-ref">Enum terminal_color</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_color_8h_1a7601db09790acb4c4754f0d10154fff7.html#exhale-function-color-8h-1a7601db09790acb4c4754f0d10154fff7"><span class="std std-ref">Function fmt::v6::bg</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a24691b58587c1c8ed445e2119390e850.html#exhale-function-color-8h-1a24691b58587c1c8ed445e2119390e850"><span class="std std-ref">Function fmt::v6::fg</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a63f64c5c57c74a97bde125a4047e6f00.html#exhale-function-color-8h-1a63f64c5c57c74a97bde125a4047e6f00"><span class="std std-ref">Template Function fmt::v6::format(const text_style&amp;, const S&amp;, const Args&amp;…)</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1af20b2b518c462a31f690d3d47dc370d5.html#exhale-function-color-8h-1af20b2b518c462a31f690d3d47dc370d5"><span class="std std-ref">Template Function fmt::v6::internal::fputs</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1ae03d8fa7e9d7e621f9a575318ea2a1cb.html#exhale-function-color-8h-1ae03d8fa7e9d7e621f9a575318ea2a1cb"><span class="std std-ref">Function fmt::v6::internal::fputs&lt; wchar_t &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a54809d5420a4f51018ec4ae42e8284cf.html#exhale-function-color-8h-1a54809d5420a4f51018ec4ae42e8284cf"><span class="std std-ref">Template Function fmt::v6::internal::make_background_color</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a3c4c99dbd7d42461828c8d48cb97f3fe.html#exhale-function-color-8h-1a3c4c99dbd7d42461828c8d48cb97f3fe"><span class="std std-ref">Template Function fmt::v6::internal::make_emphasis</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1aa6c7e23597ed33e65619e5c0748c0b54.html#exhale-function-color-8h-1aa6c7e23597ed33e65619e5c0748c0b54"><span class="std std-ref">Template Function fmt::v6::internal::make_foreground_color</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a9f9d78b614c8fd90914faea13edfbea3.html#exhale-function-color-8h-1a9f9d78b614c8fd90914faea13edfbea3"><span class="std std-ref">Template Function fmt::v6::internal::reset_color(FILE *)</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a1639d7fd77a031834f1c1dfb49db64d1.html#exhale-function-color-8h-1a1639d7fd77a031834f1c1dfb49db64d1"><span class="std std-ref">Template Function fmt::v6::internal::reset_color(basic_memory_buffer&lt;Char&gt;&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a49db604828a10d9375e6e2ee24ce27d3.html#exhale-function-color-8h-1a49db604828a10d9375e6e2ee24ce27d3"><span class="std std-ref">Function fmt::v6::internal::reset_color&lt; wchar_t &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a883bbe3f2d66e4a1e663b0b710f42ca2.html#exhale-function-color-8h-1a883bbe3f2d66e4a1e663b0b710f42ca2"><span class="std std-ref">Template Function fmt::v6::internal::vformat_to(basic_memory_buffer&lt;Char&gt;&amp;, const text_style&amp;, basic_string_view&lt;Char&gt;, basic_format_args&lt;buffer_context&lt;Char&gt;&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1ac95c41883e4b8d44ba37b6a21d0577eb.html#exhale-function-color-8h-1ac95c41883e4b8d44ba37b6a21d0577eb"><span class="std std-ref">Function fmt::v6::operator|</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a62f76c7643c427a985189174c9936f73.html#exhale-function-color-8h-1a62f76c7643c427a985189174c9936f73"><span class="std std-ref">Template Function fmt::v6::print(const text_style&amp;, const S&amp;, const Args&amp;…)</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a512d2abb9ee2d74c3d80ee1b210d317c.html#exhale-function-color-8h-1a512d2abb9ee2d74c3d80ee1b210d317c"><span class="std std-ref">Template Function fmt::v6::print(std::FILE *, const text_style&amp;, const S&amp;, const Args&amp;…)</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1a3070f136b0da83d57b73c62809794c20.html#exhale-function-color-8h-1a3070f136b0da83d57b73c62809794c20"><span class="std std-ref">Template Function fmt::v6::vformat(const text_style&amp;, const S&amp;, basic_format_args&lt;buffer_context&lt;Char&gt;&gt;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_color_8h_1aa2804394eb8645f7e543a18cfaacb21f.html#exhale-function-color-8h-1aa2804394eb8645f7e543a18cfaacb21f"><span class="std std-ref">Template Function fmt::v6::vprint(std::FILE *, const text_style&amp;, const S&amp;, basic_format_args&lt;buffer_context&lt;Char&gt;&gt;)</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="unions">
+<h2>Unions<a class="headerlink" href="#unions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="unionfmt_1_1v6_1_1internal_1_1color__type_1_1color__union.html#exhale-union-unionfmt-1-1v6-1-1internal-1-1color-type-1-1color-union"><span class="std std-ref">Union color_type::color_union</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

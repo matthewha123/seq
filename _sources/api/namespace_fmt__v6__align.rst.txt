@@ -1,0 +1,20 @@
+
+.. _namespace_fmt__v6__align:
+
+Namespace fmt::v6::align
+========================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_format_8h_1a5f407a1c9f477e0e5ba0064c604c1d41`

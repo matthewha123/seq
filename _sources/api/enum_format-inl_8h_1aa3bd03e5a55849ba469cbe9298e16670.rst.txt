@@ -1,0 +1,13 @@
+.. _exhale_enum_format-inl_8h_1aa3bd03e5a55849ba469cbe9298e16670:
+
+Enum round_direction
+====================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: fmt::v6::internal::round_direction

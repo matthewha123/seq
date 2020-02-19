@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1aff8c7d8f80ef5113e915e5fd650f92d8:
+
+Template Function fmt::v6::print(const S&, Args&&...)
+=====================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::print(const S&, Args&&...)

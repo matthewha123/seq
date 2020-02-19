@@ -1,0 +1,43 @@
+
+.. _file_compiler_util_tapir.h:
+
+File tapir.h
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util>` (``compiler/util``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/tapir.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_tapir.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``util/common.h`` (:ref:`file_compiler_util_common.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_lang_seq.h`
+
+
+

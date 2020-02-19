@@ -1,0 +1,22 @@
+.. _exhale_class_classfmt_1_1v6_1_1basic__format__arg_1_1handle:
+
+Class basic_format_arg::handle
+==============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_classfmt_1_1v6_1_1basic__format__arg`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::basic_format_arg::handle
+   :members:
+   :protected-members:
+   :undoc-members:

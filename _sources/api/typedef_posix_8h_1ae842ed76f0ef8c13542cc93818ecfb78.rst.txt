@@ -1,0 +1,13 @@
+.. _exhale_typedef_posix_8h_1ae842ed76f0ef8c13542cc93818ecfb78:
+
+Typedef fmt::v6::cstring_view
+=============================
+
+- Defined in :ref:`file_compiler_util_fmt_posix.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::cstring_view

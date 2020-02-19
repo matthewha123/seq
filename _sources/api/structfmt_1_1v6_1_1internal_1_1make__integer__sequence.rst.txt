@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1make__integer__sequence:
+
+Template Struct make_integer_sequence
+=====================================
+
+- Defined in :ref:`file_compiler_util_fmt_ranges.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::make_integer_sequence
+   :members:
+   :protected-members:
+   :undoc-members:

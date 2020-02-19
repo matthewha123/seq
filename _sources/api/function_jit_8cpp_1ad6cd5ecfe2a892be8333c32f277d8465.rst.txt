@@ -1,0 +1,13 @@
+.. _exhale_function_jit_8cpp_1ad6cd5ecfe2a892be8333c32f277d8465:
+
+Function jit_init()
+===================
+
+- Defined in :ref:`file_compiler_util_jit.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: jit_init()

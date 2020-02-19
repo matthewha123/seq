@@ -1,0 +1,118 @@
+
+.. _file_compiler_util_fmt_color.h:
+
+File color.h
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util_fmt>` (``compiler/util/fmt``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/fmt/color.h``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_fmt_color.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``format.h`` (:ref:`file_compiler_util_fmt_format.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt`
+
+- :ref:`namespace_fmt__v6`
+
+- :ref:`namespace_fmt__v6__internal`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1ansi__color__escape`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1color__type`
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1rgb`
+
+- :ref:`exhale_class_classfmt_1_1v6_1_1text__style`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_color_8h_1a97142a19431e766c0035dee38b968230`
+
+- :ref:`exhale_enum_color_8h_1acd17a9ababc03055ca24785a0bf8c607`
+
+- :ref:`exhale_enum_color_8h_1a603c9b2d110d6685f76d358dd4d8f777`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_color_8h_1a7601db09790acb4c4754f0d10154fff7`
+
+- :ref:`exhale_function_color_8h_1a24691b58587c1c8ed445e2119390e850`
+
+- :ref:`exhale_function_color_8h_1a63f64c5c57c74a97bde125a4047e6f00`
+
+- :ref:`exhale_function_color_8h_1af20b2b518c462a31f690d3d47dc370d5`
+
+- :ref:`exhale_function_color_8h_1ae03d8fa7e9d7e621f9a575318ea2a1cb`
+
+- :ref:`exhale_function_color_8h_1a54809d5420a4f51018ec4ae42e8284cf`
+
+- :ref:`exhale_function_color_8h_1a3c4c99dbd7d42461828c8d48cb97f3fe`
+
+- :ref:`exhale_function_color_8h_1aa6c7e23597ed33e65619e5c0748c0b54`
+
+- :ref:`exhale_function_color_8h_1a9f9d78b614c8fd90914faea13edfbea3`
+
+- :ref:`exhale_function_color_8h_1a1639d7fd77a031834f1c1dfb49db64d1`
+
+- :ref:`exhale_function_color_8h_1a49db604828a10d9375e6e2ee24ce27d3`
+
+- :ref:`exhale_function_color_8h_1a883bbe3f2d66e4a1e663b0b710f42ca2`
+
+- :ref:`exhale_function_color_8h_1ac95c41883e4b8d44ba37b6a21d0577eb`
+
+- :ref:`exhale_function_color_8h_1a62f76c7643c427a985189174c9936f73`
+
+- :ref:`exhale_function_color_8h_1a512d2abb9ee2d74c3d80ee1b210d317c`
+
+- :ref:`exhale_function_color_8h_1a3070f136b0da83d57b73c62809794c20`
+
+- :ref:`exhale_function_color_8h_1aa2804394eb8645f7e543a18cfaacb21f`
+
+
+Unions
+------
+
+
+- :ref:`exhale_union_unionfmt_1_1v6_1_1internal_1_1color__type_1_1color__union`
+

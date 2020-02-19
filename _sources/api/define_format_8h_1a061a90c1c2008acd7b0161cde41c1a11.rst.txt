@@ -1,0 +1,13 @@
+.. _exhale_define_format_8h_1a061a90c1c2008acd7b0161cde41c1a11:
+
+Define FMT_ICC_VERSION
+======================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_ICC_VERSION

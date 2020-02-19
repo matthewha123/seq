@@ -1,0 +1,16 @@
+.. _exhale_class_classfmt_1_1v6_1_1basic__cstring__view:
+
+Template Class basic_cstring_view
+=================================
+
+- Defined in :ref:`file_compiler_util_fmt_posix.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::basic_cstring_view
+   :members:
+   :protected-members:
+   :undoc-members:

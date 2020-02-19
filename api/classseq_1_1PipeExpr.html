@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class PipeExpr &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Print" href="classseq_1_1Print.html" />
+    <link rel="prev" title="Class Pattern" href="classseq_1_1Pattern.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Class PipeExpr</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classseq_1_1PipeExpr.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-pipeexpr">
+<span id="exhale-class-classseq-1-1pipeexpr"></span><h1>Class PipeExpr<a class="headerlink" href="#class-pipeexpr" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_lang_pipeline.h.html#file-compiler-lang-pipeline-h"><span class="std std-ref">File pipeline.h</span></a></p></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="structseq_1_1PipeExpr_1_1PipelineCodegenState.html#exhale-struct-structseq-1-1pipeexpr-1-1pipelinecodegenstate"><span class="std std-ref">Struct PipeExpr::PipelineCodegenState</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">seq::Expr</span></code> (<a class="reference internal" href="classseq_1_1Expr.html#exhale-class-classseq-1-1expr"><span class="std std-ref">Class Expr</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N3seq8PipeExprE">
+<span id="_CPPv3N3seq8PipeExprE"></span><span id="_CPPv2N3seq8PipeExprE"></span><span id="seq::PipeExpr"></span><span class="target" id="classseq_1_1PipeExpr"></span><em class="property">class </em><code class="sig-name descname">PipeExpr</code> : <em class="property">public</em> seq::<a class="reference internal" href="classseq_1_1Expr.html#_CPPv4N3seq4ExprE" title="seq::Expr">Expr</a><a class="headerlink" href="#_CPPv4N3seq8PipeExprE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N8PipeExpr8PipeExprENSt6vectorIP4ExprEENSt6vectorIbEE">
+<span id="_CPPv3N8PipeExpr8PipeExprENSt6vectorIP4ExprEENSt6vectorIbEE"></span><span id="_CPPv2N8PipeExpr8PipeExprENSt6vectorIP4ExprEENSt6vectorIbEE"></span><span id="PipeExpr::PipeExpr__std::vector:ExprP:.std::vector:b:"></span><span class="target" id="classseq_1_1PipeExpr_1a7ad96b4860a960e85f0e822b4ca596f7"></span><code class="sig-name descname">PipeExpr</code><span class="sig-paren">(</span>std::vector&lt;Expr *&gt; <em>stages</em>, std::vector&lt;bool&gt; <em>parallel</em> = {}<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8PipeExpr8PipeExprENSt6vectorIP4ExprEENSt6vectorIbEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8PipeExpr11setParallelEj">
+<span id="_CPPv3N8PipeExpr11setParallelEj"></span><span id="_CPPv2N8PipeExpr11setParallelEj"></span><span id="PipeExpr::setParallel__unsigned"></span><span class="target" id="classseq_1_1PipeExpr_1a4565c28421d171701dd0c0de13be955d"></span>void <code class="sig-name descname">setParallel</code><span class="sig-paren">(</span>unsigned <em>which</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8PipeExpr11setParallelEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8PipeExpr12resolveTypesEv">
+<span id="_CPPv3N8PipeExpr12resolveTypesEv"></span><span id="_CPPv2N8PipeExpr12resolveTypesEv"></span><span id="PipeExpr::resolveTypes"></span><span class="target" id="classseq_1_1PipeExpr_1af45d13b922c5e2825b12d0fa051419f3"></span>void <code class="sig-name descname">resolveTypes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8PipeExpr12resolveTypesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Performs type resolution on this expression and all sub-expressions/statements/etc. This is called prior to <a class="reference internal" href="classseq_1_1Expr.html#classseq_1_1Expr_1addce0016a7294cb76121ae0b3d175bd9"><span class="std std-ref">Expr::getType()</span></a>. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8PipeExpr8codegen0EP8BaseFuncRPN4llvm10BasicBlockE">
+<span id="_CPPv3N8PipeExpr8codegen0EP8BaseFuncRPN4llvm10BasicBlockE"></span><span id="_CPPv2N8PipeExpr8codegen0EP8BaseFuncRPN4llvm10BasicBlockE"></span><span id="PipeExpr::codegen0__BaseFuncP.llvm::BasicBlockPR"></span><span class="target" id="classseq_1_1PipeExpr_1a7bc26ba28f7d641ffbe1d8d2d97d86f3"></span>Value *<code class="sig-name descname">codegen0</code><span class="sig-paren">(</span>BaseFunc *<em>base</em>, llvm::BasicBlock *&amp;<em>block</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8PipeExpr8codegen0EP8BaseFuncRPN4llvm10BasicBlockE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Performs code generation for this expression. <dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>value representing expression result; possibly null if type is void </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">base</span></code>: the function containing this expression </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">block</span></code>: reference to block where code should be generated; possibly modified to point to a new block where codegen should resume </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8PipeExpr8getType0Ev">
+<span id="_CPPv3NK8PipeExpr8getType0Ev"></span><span id="_CPPv2NK8PipeExpr8getType0Ev"></span><span id="PipeExpr::getType0C"></span><span class="target" id="classseq_1_1PipeExpr_1a1119f71c20a0ae137dd865b04719af46"></span>types::Type *<code class="sig-name descname">getType0</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8PipeExpr8getType0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Determines and returns the type of this expression. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8PipeExpr5cloneEP7Generic">
+<span id="_CPPv3N8PipeExpr5cloneEP7Generic"></span><span id="_CPPv2N8PipeExpr5cloneEP7Generic"></span><span id="PipeExpr::clone__GenericP"></span><span class="target" id="classseq_1_1PipeExpr_1acdd1085407b9bf6301dbdd2d27975c62"></span>PipeExpr *<code class="sig-name descname">clone</code><span class="sig-paren">(</span>Generic *<em>ref</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8PipeExpr5cloneEP7Generic" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Clones this expression. <code class="docutils literal notranslate"><span class="pre">ref</span></code> is used internally to keep track of cloned objects, and to make sure we don’t clone certain objects twice. <dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>cloned expression </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ref</span></code>: generic object that is being cloned </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="function">
+<dt id="_CPPv4N8PipeExpr22getInterAlignYieldTypeEv">
+<span id="_CPPv3N8PipeExpr22getInterAlignYieldTypeEv"></span><span id="_CPPv2N8PipeExpr22getInterAlignYieldTypeEv"></span><span id="PipeExpr::getInterAlignYieldType"></span><span class="target" id="classseq_1_1PipeExpr_1aac07b4a6322b7a8bd0b7158bbcc90664"></span>types::RecordType *<code class="sig-name descname">getInterAlignYieldType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8PipeExpr22getInterAlignYieldTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8PipeExpr23getInterAlignParamsTypeEv">
+<span id="_CPPv3N8PipeExpr23getInterAlignParamsTypeEv"></span><span id="_CPPv2N8PipeExpr23getInterAlignParamsTypeEv"></span><span id="PipeExpr::getInterAlignParamsType"></span><span class="target" id="classseq_1_1PipeExpr_1aece8ee4599056375aca8d55ce62e0a97"></span>types::RecordType *<code class="sig-name descname">getInterAlignParamsType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8PipeExpr23getInterAlignParamsTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8PipeExpr24getInterAlignSeqPairTypeEv">
+<span id="_CPPv3N8PipeExpr24getInterAlignSeqPairTypeEv"></span><span id="_CPPv2N8PipeExpr24getInterAlignSeqPairTypeEv"></span><span id="PipeExpr::getInterAlignSeqPairType"></span><span class="target" id="classseq_1_1PipeExpr_1a1994ddc31619775480a22707a1428d44"></span>types::RecordType *<code class="sig-name descname">getInterAlignSeqPairType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8PipeExpr24getInterAlignSeqPairTypeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8PipeExpr34validateAndCodegenInterAlignParamsERN5types7GenType16InterAlignParamsEP8BaseFuncPN4llvm10BasicBlockE">
+<span id="_CPPv3N8PipeExpr34validateAndCodegenInterAlignParamsERN5types7GenType16InterAlignParamsEP8BaseFuncPN4llvm10BasicBlockE"></span><span id="_CPPv2N8PipeExpr34validateAndCodegenInterAlignParamsERN5types7GenType16InterAlignParamsEP8BaseFuncPN4llvm10BasicBlockE"></span><span id="PipeExpr::validateAndCodegenInterAlignParams__types::GenType::InterAlignParamsR.BaseFuncP.llvm::BasicBlockP"></span><span class="target" id="classseq_1_1PipeExpr_1a25fbebc326cf86eb1e43187c419b92fd"></span>Value *<code class="sig-name descname">validateAndCodegenInterAlignParams</code><span class="sig-paren">(</span>types::GenType::InterAlignParams &amp;<em>paramExprs</em>, BaseFunc *<em>base</em>, llvm::BasicBlock *<em>block</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8PipeExpr34validateAndCodegenInterAlignParamsERN5types7GenType16InterAlignParamsEP8BaseFuncPN4llvm10BasicBlockE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Attributes</p>
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20SCHED_WIDTH_PREFETCHE">
+<span id="_CPPv3N3seq8PipeExpr20SCHED_WIDTH_PREFETCHE"></span><span id="_CPPv2N3seq8PipeExpr20SCHED_WIDTH_PREFETCHE"></span><span id="seq::PipeExpr::SCHED_WIDTH_PREFETCH__unsignedC"></span><span class="target" id="classseq_1_1PipeExpr_1a2f3e57f95c94efcdf8d74bd6bcfa5db6"></span><em class="property">const</em> unsigned <code class="sig-name descname">SCHED_WIDTH_PREFETCH</code> = 16<a class="headerlink" href="#_CPPv4N3seq8PipeExpr20SCHED_WIDTH_PREFETCHE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr22SCHED_WIDTH_INTERALIGNE">
+<span id="_CPPv3N3seq8PipeExpr22SCHED_WIDTH_INTERALIGNE"></span><span id="_CPPv2N3seq8PipeExpr22SCHED_WIDTH_INTERALIGNE"></span><span id="seq::PipeExpr::SCHED_WIDTH_INTERALIGN__unsignedC"></span><span class="target" id="classseq_1_1PipeExpr_1a197df43616abb2122d29fdb5d1433242"></span><em class="property">const</em> unsigned <code class="sig-name descname">SCHED_WIDTH_INTERALIGN</code> = 2048<a class="headerlink" href="#_CPPv4N3seq8PipeExpr22SCHED_WIDTH_INTERALIGNE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="class">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenStateE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenStateE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenStateE"></span><span id="seq::PipeExpr::PipelineCodegenState"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState"></span><em class="property">struct </em><code class="sig-name descname">PipelineCodegenState</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenStateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState20PipelineCodegenStateEP10BasicBlockNSt5queueIP4ExprEENSt5queueIbEE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState20PipelineCodegenStateEP10BasicBlockNSt5queueIP4ExprEENSt5queueIbEE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState20PipelineCodegenStateEP10BasicBlockNSt5queueIP4ExprEENSt5queueIbEE"></span><span id="seq::PipeExpr::PipelineCodegenState::PipelineCodegenState__BasicBlockP.std::queue:ExprP:.std::queue:b:"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a300e754408f0b15ff98b1b02eeada9fd"></span><code class="sig-name descname">PipelineCodegenState</code><span class="sig-paren">(</span>BasicBlock *<em>block</em>, std::queue&lt;<a class="reference internal" href="classseq_1_1Expr.html#_CPPv4N3seq4ExprE" title="seq::Expr">Expr</a> *&gt; <em>stages</em>, std::queue&lt;bool&gt; <em>parallel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState20PipelineCodegenStateEP10BasicBlockNSt5queueIP4ExprEENSt5queueIbEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState13getDrainStateEP5ValuePN5types4TypeEP10BasicBlock">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState13getDrainStateEP5ValuePN5types4TypeEP10BasicBlock"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState13getDrainStateEP5ValuePN5types4TypeEP10BasicBlock"></span><span id="seq::PipeExpr::PipelineCodegenState::getDrainState__ValueP.types::TypeP.BasicBlockP"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a0d40ec608b778ebece4dc79fec5509d9"></span><a class="reference internal" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenStateE" title="seq::PipeExpr::PipelineCodegenState">PipelineCodegenState</a> <code class="sig-name descname">getDrainState</code><span class="sig-paren">(</span>Value *<em>val</em>, types::<a class="reference internal" href="classseq_1_1types_1_1Type.html#_CPPv4N3seq5types4TypeE" title="seq::types::Type">Type</a> *<em>type</em>, BasicBlock *<em>block</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState13getDrainStateEP5ValuePN5types4TypeEP10BasicBlock" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState4typeE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState4typeE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState4typeE"></span><span id="seq::PipeExpr::PipelineCodegenState::type__types::TypeP"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a0d0852aa8cd3d2bfaf6f96f2ef5990fd"></span>types::<a class="reference internal" href="classseq_1_1types_1_1Type.html#_CPPv4N3seq5types4TypeE" title="seq::types::Type">Type</a> *<code class="sig-name descname">type</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState4typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState3valE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState3valE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState3valE"></span><span id="seq::PipeExpr::PipelineCodegenState::val__ValueP"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a0aa101d7daab466761c65f92f98a54b7"></span>Value *<code class="sig-name descname">val</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState3valE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState5blockE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState5blockE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState5blockE"></span><span id="seq::PipeExpr::PipelineCodegenState::block__BasicBlockP"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1af298eb109b0d4b9e3e5354246049bcf5"></span>BasicBlock *<code class="sig-name descname">block</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState5blockE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState6stagesE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState6stagesE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState6stagesE"></span><span id="seq::PipeExpr::PipelineCodegenState::stages__std::queue:ExprP:"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a0a69cd1724469a139d65da8082b8c596"></span>std::queue&lt;<a class="reference internal" href="classseq_1_1Expr.html#_CPPv4N3seq4ExprE" title="seq::Expr">Expr</a> *&gt; <code class="sig-name descname">stages</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState6stagesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState8parallelE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState8parallelE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState8parallelE"></span><span id="seq::PipeExpr::PipelineCodegenState::parallel__std::queue:b:"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a8c3f6c1f73020226f1aec5d71c4b1a6a"></span>std::queue&lt;bool&gt; <code class="sig-name descname">parallel</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState8parallelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState10inParallelE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState10inParallelE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState10inParallelE"></span><span id="seq::PipeExpr::PipelineCodegenState::inParallel__b"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a774520e2c926183d33f574e8ce483789"></span>bool <code class="sig-name descname">inParallel</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState10inParallelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState6inLoopE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState6inLoopE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState6inLoopE"></span><span id="seq::PipeExpr::PipelineCodegenState::inLoop__b"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a8390763928f6d3267252f749af7df9e5"></span>bool <code class="sig-name descname">inLoop</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState6inLoopE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState14nestedParallelE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState14nestedParallelE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState14nestedParallelE"></span><span id="seq::PipeExpr::PipelineCodegenState::nestedParallel__b"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a33f7d4233c510f48599fba1e6db74909"></span>bool <code class="sig-name descname">nestedParallel</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState14nestedParallelE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3seq8PipeExpr20PipelineCodegenState5drainE">
+<span id="_CPPv3N3seq8PipeExpr20PipelineCodegenState5drainE"></span><span id="_CPPv2N3seq8PipeExpr20PipelineCodegenState5drainE"></span><span id="seq::PipeExpr::PipelineCodegenState::drain__DrainState"></span><span class="target" id="structseq_1_1PipeExpr_1_1PipelineCodegenState_1a9d26c4a8e0c9bc905fa3188a0fe3351c"></span><a class="reference internal" href="structDrainState.html#_CPPv410DrainState" title="DrainState">DrainState</a> <code class="sig-name descname">drain</code><a class="headerlink" href="#_CPPv4N3seq8PipeExpr20PipelineCodegenState5drainE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classseq_1_1Print.html" class="btn btn-neutral float-right" title="Class Print" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classseq_1_1Pattern.html" class="btn btn-neutral float-left" title="Class Pattern" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

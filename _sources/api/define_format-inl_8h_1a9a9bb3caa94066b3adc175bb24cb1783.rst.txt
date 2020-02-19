@@ -1,0 +1,13 @@
+.. _exhale_define_format-inl_8h_1a9a9bb3caa94066b3adc175bb24cb1783:
+
+Define FMT_SNPRINTF
+===================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_SNPRINTF

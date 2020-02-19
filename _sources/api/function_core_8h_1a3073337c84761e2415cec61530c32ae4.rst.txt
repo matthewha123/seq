@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1a3073337c84761e2415cec61530c32ae4:
+
+Function fmt::v6::internal::is_arithmetic_type
+==============================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::is_arithmetic_type(type)

@@ -1,0 +1,13 @@
+.. _exhale_function_printf_8h_1a09ea4ce0bde37158d9c9b35d1c6bff71:
+
+Template Function fmt::v6::vprintf(internal::buffer<Char>&, basic_string_view<Char>, basic_format_args<Context>)
+================================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_printf.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::vprintf(internal::buffer<Char>&, basic_string_view<Char>, basic_format_args<Context>)

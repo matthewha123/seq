@@ -1,0 +1,73 @@
+
+.. _file_compiler_types_ref.h:
+
+File ref.h
+==========
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_types>` (``compiler/types``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/types/ref.h``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_types_ref.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``map``
+
+- ``types/func.h`` (:ref:`file_compiler_types_func.h`)
+
+- ``types/generic.h`` (:ref:`file_compiler_types_generic.h`)
+
+- ``types/record.h`` (:ref:`file_compiler_types_record.h`)
+
+- ``utility``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_lang_expr.h`
+
+- :ref:`file_compiler_lang_seq.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_seq`
+
+- :ref:`namespace_seq__types`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classseq_1_1types_1_1MethodType`
+
+- :ref:`exhale_class_classseq_1_1types_1_1RefType`
+

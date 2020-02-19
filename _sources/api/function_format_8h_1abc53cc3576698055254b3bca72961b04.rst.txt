@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1abc53cc3576698055254b3bca72961b04:
+
+Template Function fmt::v6::internal::find
+=========================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::find(Ptr, Ptr, T, Ptr&)

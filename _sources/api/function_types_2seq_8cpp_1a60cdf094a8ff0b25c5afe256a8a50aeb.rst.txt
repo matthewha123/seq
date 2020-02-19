@@ -1,0 +1,13 @@
+.. _exhale_function_types_2seq_8cpp_1a60cdf094a8ff0b25c5afe256a8a50aeb:
+
+Function codegenRevCompByLookup
+===============================
+
+- Defined in :ref:`file_compiler_types_seq.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: codegenRevCompByLookup(types::KMer *, Value *, IRBuilder<>&)

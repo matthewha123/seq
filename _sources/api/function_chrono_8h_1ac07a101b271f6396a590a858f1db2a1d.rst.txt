@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1ac07a101b271f6396a590a858f1db2a1d:
+
+Function fmt::v6::internal::get_units< std::nano >
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_units< std::nano >()

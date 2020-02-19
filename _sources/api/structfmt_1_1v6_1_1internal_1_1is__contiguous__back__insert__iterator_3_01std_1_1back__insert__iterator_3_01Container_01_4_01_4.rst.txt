@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1is__contiguous__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01Container_01_4_01_4:
+
+Template Struct is_contiguous_back_insert_iterator< std::back_insert_iterator< Container > >
+============================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public fmt::v6::is_contiguous< Container >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1is__contiguous`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::is_contiguous_back_insert_iterator< std::back_insert_iterator< Container > >
+   :members:
+   :protected-members:
+   :undoc-members:

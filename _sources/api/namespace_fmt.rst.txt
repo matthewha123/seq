@@ -1,0 +1,20 @@
+
+.. _namespace_fmt:
+
+Namespace fmt
+=============
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fmt__v6`

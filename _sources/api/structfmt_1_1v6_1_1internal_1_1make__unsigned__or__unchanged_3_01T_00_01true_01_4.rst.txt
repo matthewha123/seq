@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1make__unsigned__or__unchanged_3_01T_00_01true_01_4:
+
+Template Struct make_unsigned_or_unchanged< T, true >
+=====================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::make_unsigned_or_unchanged< T, true >
+   :members:
+   :protected-members:
+   :undoc-members:

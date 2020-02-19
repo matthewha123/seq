@@ -1,0 +1,78 @@
+
+.. _file_compiler_util_jit.h:
+
+File jit.h
+==========
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_util>` (``compiler/util``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/util/jit.h``)
+------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_util_jit.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``memory``
+
+- ``parser/context.h``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_util_jit.cpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structJitInstance`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_jit_8h_1aec4c121966fc3e4efc3f5db06b0ab6dd`
+
+- :ref:`exhale_function_jit_8h_1ac0c7f73e4b7b53527eb8e047253031ff`
+
+- :ref:`exhale_function_jit_8h_1ad097b3b46935bef0c0da0664dc073506`
+
+- :ref:`exhale_function_jit_8h_1ad6cd5ecfe2a892be8333c32f277d8465`
+
+- :ref:`exhale_function_jit_8h_1a2550e64d1d92a1fddfc7c9a7e81dc542`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_jit_8h_1af039cc21a3132fdb4f8d4a9c57ac0250`
+

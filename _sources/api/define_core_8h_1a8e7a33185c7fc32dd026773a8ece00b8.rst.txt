@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a8e7a33185c7fc32dd026773a8ece00b8:
+
+Define FMT_HAS_CXX11_NOEXCEPT
+=============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_HAS_CXX11_NOEXCEPT

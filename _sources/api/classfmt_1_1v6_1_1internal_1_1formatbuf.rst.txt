@@ -1,0 +1,25 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1formatbuf:
+
+Template Class formatbuf
+========================
+
+- Defined in :ref:`file_compiler_util_fmt_ostream.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::basic_streambuf< Char >``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::formatbuf
+   :members:
+   :protected-members:
+   :undoc-members:

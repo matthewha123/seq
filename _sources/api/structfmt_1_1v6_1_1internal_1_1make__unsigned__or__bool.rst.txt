@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1make__unsigned__or__bool:
+
+Template Struct make_unsigned_or_bool
+=====================================
+
+- Defined in :ref:`file_compiler_util_fmt_printf.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::make_unsigned< T >``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::make_unsigned_or_bool
+   :members:
+   :protected-members:
+   :undoc-members:

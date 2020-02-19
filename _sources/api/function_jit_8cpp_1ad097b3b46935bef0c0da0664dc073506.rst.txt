@@ -1,0 +1,13 @@
+.. _exhale_function_jit_8cpp_1ad097b3b46935bef0c0da0664dc073506:
+
+Function jit_execute(JitInstance \*, const char \*)
+===================================================
+
+- Defined in :ref:`file_compiler_util_jit.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: jit_execute(JitInstance *, const char *)

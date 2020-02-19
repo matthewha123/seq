@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a60926edcf73466e4390d61a2c4aa1f15:
+
+Template Function fmt::v6::internal::parse_format_specs(ParseContext&)
+======================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::parse_format_specs(ParseContext&)

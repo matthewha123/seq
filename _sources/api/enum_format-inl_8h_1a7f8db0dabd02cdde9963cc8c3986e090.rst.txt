@@ -1,0 +1,13 @@
+.. _exhale_enum_format-inl_8h_1a7f8db0dabd02cdde9963cc8c3986e090:
+
+Enum result
+===========
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: fmt::v6::internal::digits::result

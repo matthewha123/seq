@@ -1,0 +1,13 @@
+.. _exhale_function_types_8cpp_1a8d25d85242b7de78adcda48a1cc63c0f:
+
+Function argsVecToStrElem
+=========================
+
+- Defined in :ref:`file_compiler_types_types.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: argsVecToStrElem(const std::vector<types::Type *>&, const std::vector<std::string>&, const unsigned)

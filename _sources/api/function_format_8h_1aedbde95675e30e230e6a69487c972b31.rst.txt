@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1aedbde95675e30e230e6a69487c972b31:
+
+Template Function fmt::v6::formatted_size(string_view, const Args&...)
+======================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::formatted_size(string_view, const Args&...)

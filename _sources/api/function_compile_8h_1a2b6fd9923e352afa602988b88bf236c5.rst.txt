@@ -1,0 +1,13 @@
+.. _exhale_function_compile_8h_1a2b6fd9923e352afa602988b88bf236c5:
+
+Template Function fmt::v6::internal::format_arg
+===============================================
+
+- Defined in :ref:`file_compiler_util_fmt_compile.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::format_arg(basic_format_parse_context<typename Range::value_type>&, Context&, Id)

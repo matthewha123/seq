@@ -1,0 +1,27 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1basic__compiled__format:
+
+Struct basic_compiled_format
+============================
+
+- Defined in :ref:`file_compiler_util_fmt_compile.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public fmt::v6::internal::compiled_format_base< S >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1compiled__format__base`)
+- ``public fmt::v6::internal::compiled_format_base< S, typename >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1compiled__format__base`)
+- ``public fmt::v6::internal::compiled_format_base< S, enable_if_t< is_compile_string< S >::value > >`` (:ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1compiled__format__base_3_01S_00_01enable__if__t_3_01is__compile__1808f1f3cd535447be6c42bec56bf8e8`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::basic_compiled_format
+   :members:
+   :protected-members:
+   :undoc-members:

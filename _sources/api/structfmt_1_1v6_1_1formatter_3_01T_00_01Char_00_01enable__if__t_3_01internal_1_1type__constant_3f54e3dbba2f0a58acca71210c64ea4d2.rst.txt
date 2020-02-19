@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1formatter_3_01T_00_01Char_00_01enable__if__t_3_01internal_1_1type__constant_3f54e3dbba2f0a58acca71210c64ea4d2:
+
+Template Struct formatter< T, Char, enable_if_t< internal::type_constant< T, Char >::value!=internal::custom_type > >
+=====================================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::formatter< T, Char, enable_if_t< internal::type_constant< T, Char >::value!=internal::custom_type > >
+   :members:
+   :protected-members:
+   :undoc-members:

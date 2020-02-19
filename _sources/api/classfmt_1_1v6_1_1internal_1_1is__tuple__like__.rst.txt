@@ -1,0 +1,16 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1is__tuple__like__:
+
+Template Class is_tuple_like_
+=============================
+
+- Defined in :ref:`file_compiler_util_fmt_ranges.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::is_tuple_like_
+   :members:
+   :protected-members:
+   :undoc-members:

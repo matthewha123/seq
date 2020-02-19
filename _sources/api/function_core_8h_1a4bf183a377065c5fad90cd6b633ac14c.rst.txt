@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1a4bf183a377065c5fad90cd6b633ac14c:
+
+Function fmt::v6::vprint(string_view, format_args)
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::vprint(string_view, format_args)

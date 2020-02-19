@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1fixed__handler:
+
+Struct fixed_handler
+====================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::fixed_handler
+   :members:
+   :protected-members:
+   :undoc-members:

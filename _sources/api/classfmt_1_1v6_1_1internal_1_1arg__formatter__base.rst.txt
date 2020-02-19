@@ -1,0 +1,28 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1arg__formatter__base:
+
+Template Class arg_formatter_base
+=================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__formatter__base_1_1char__spec__handler`
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__formatter__base_1_1char__writer`
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__formatter__base_1_1cstring__spec__handler`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::arg_formatter_base
+   :members:
+   :protected-members:
+   :undoc-members:

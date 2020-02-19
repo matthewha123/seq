@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a809ce36bdf78b55c536fbca340bfec9c:
+
+Define FMT_DETECTED_NOEXCEPT
+============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_DETECTED_NOEXCEPT

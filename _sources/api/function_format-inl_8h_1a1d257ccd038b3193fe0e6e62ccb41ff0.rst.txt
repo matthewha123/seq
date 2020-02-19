@@ -1,0 +1,13 @@
+.. _exhale_function_format-inl_8h_1a1d257ccd038b3193fe0e6e62ccb41ff0:
+
+Function fmt::v6::internal::fwrite_fully
+========================================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::fwrite_fully(const void *, size_t, size_t, FILE *)

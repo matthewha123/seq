@@ -1,0 +1,25 @@
+.. _exhale_struct_structfmt_1_1v6_1_1is__compile__string:
+
+Template Struct is_compile_string
+=================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::is_base_of< compile_string, S >``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::is_compile_string
+   :members:
+   :protected-members:
+   :undoc-members:

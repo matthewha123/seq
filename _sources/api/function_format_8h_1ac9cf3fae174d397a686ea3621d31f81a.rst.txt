@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1ac9cf3fae174d397a686ea3621d31f81a:
+
+Template Function fmt::v6::internal::format_decimal(Char \*, UInt, int, F)
+==========================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::format_decimal(Char *, UInt, int, F)

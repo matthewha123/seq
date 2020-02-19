@@ -1,0 +1,1326 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Program Listing for File chrono.h &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Program Listing for File chrono.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/program_listing_file_compiler_util_fmt_chrono.h.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-chrono-h">
+<span id="program-listing-file-compiler-util-fmt-chrono-h"></span><h1>Program Listing for File chrono.h<a class="headerlink" href="#program-listing-for-file-chrono-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_compiler_util_fmt_chrono.h.html#file-compiler-util-fmt-chrono-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/chrono.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Formatting library for C++ - chrono support</span>
+<span class="c1">//</span>
+<span class="c1">// Copyright (c) 2012 - present, Victor Zverovich</span>
+<span class="c1">// All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// For the license information refer to format.h.</span>
+
+<span class="cp">#ifndef FMT_CHRONO_H_</span>
+<span class="cp">#define FMT_CHRONO_H_</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;format.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;locale.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;chrono&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;ctime&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;locale&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;sstream&gt;</span><span class="cp"></span>
+
+<span class="n">FMT_BEGIN_NAMESPACE</span>
+
+<span class="c1">// Enable safe chrono durations, unless explicitly disabled.</span>
+<span class="cp">#ifndef FMT_SAFE_DURATION_CAST</span>
+<span class="cp">#define FMT_SAFE_DURATION_CAST 1</span>
+<span class="cp">#endif</span>
+<span class="cp">#if FMT_SAFE_DURATION_CAST</span>
+
+<span class="c1">// For conversion between std::chrono::durations without undefined</span>
+<span class="c1">// behaviour or erroneous results.</span>
+<span class="c1">// This is a stripped down version of duration_cast, for inclusion in fmt.</span>
+<span class="c1">// See https://github.com/pauldreik/safe_duration_cast</span>
+<span class="c1">//</span>
+<span class="c1">// Copyright Paul Dreik 2019</span>
+<span class="k">namespace</span> <span class="n">safe_duration_cast</span> <span class="p">{</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="p">,</span> <span class="k">typename</span> <span class="n">From</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="o">!</span><span class="n">std</span><span class="o">::</span><span class="n">is_same</span><span class="o">&lt;</span><span class="n">From</span><span class="p">,</span> <span class="n">To</span><span class="o">&gt;::</span><span class="n">value</span> <span class="o">&amp;&amp;</span>
+                        <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">From</span><span class="o">&gt;::</span><span class="n">is_signed</span> <span class="o">==</span>
+                            <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;::</span><span class="n">is_signed</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="n">FMT_CONSTEXPR</span> <span class="n">To</span> <span class="n">lossless_integral_conversion</span><span class="p">(</span><span class="k">const</span> <span class="n">From</span> <span class="n">from</span><span class="p">,</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">ec</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">F</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">From</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">T</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">F</span><span class="o">::</span><span class="n">is_integer</span><span class="p">,</span> <span class="s">&quot;From must be integral&quot;</span><span class="p">);</span>
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">T</span><span class="o">::</span><span class="n">is_integer</span><span class="p">,</span> <span class="s">&quot;To must be integral&quot;</span><span class="p">);</span>
+
+  <span class="c1">// A and B are both signed, or both unsigned.</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">F</span><span class="o">::</span><span class="n">digits</span> <span class="o">&lt;=</span> <span class="n">T</span><span class="o">::</span><span class="n">digits</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// From fits in To without any problem.</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// From does not always fit in To, resort to a dynamic check.</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">from</span> <span class="o">&lt;</span> <span class="n">T</span><span class="o">::</span><span class="n">min</span><span class="p">()</span> <span class="o">||</span> <span class="n">from</span> <span class="o">&gt;</span> <span class="n">T</span><span class="o">::</span><span class="n">max</span><span class="p">())</span> <span class="p">{</span>
+      <span class="c1">// outside range.</span>
+      <span class="n">ec</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="p">{};</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;</span><span class="p">(</span><span class="n">from</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="p">,</span> <span class="k">typename</span> <span class="n">From</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="o">!</span><span class="n">std</span><span class="o">::</span><span class="n">is_same</span><span class="o">&lt;</span><span class="n">From</span><span class="p">,</span> <span class="n">To</span><span class="o">&gt;::</span><span class="n">value</span> <span class="o">&amp;&amp;</span>
+                        <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">From</span><span class="o">&gt;::</span><span class="n">is_signed</span> <span class="o">!=</span>
+                            <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;::</span><span class="n">is_signed</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="n">FMT_CONSTEXPR</span> <span class="n">To</span> <span class="n">lossless_integral_conversion</span><span class="p">(</span><span class="k">const</span> <span class="n">From</span> <span class="n">from</span><span class="p">,</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">ec</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">F</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">From</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">T</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">F</span><span class="o">::</span><span class="n">is_integer</span><span class="p">,</span> <span class="s">&quot;From must be integral&quot;</span><span class="p">);</span>
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">T</span><span class="o">::</span><span class="n">is_integer</span><span class="p">,</span> <span class="s">&quot;To must be integral&quot;</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">F</span><span class="o">::</span><span class="n">is_signed</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">T</span><span class="o">::</span><span class="n">is_signed</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// From may be negative, not allowed!</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">fmt</span><span class="o">::</span><span class="n">internal</span><span class="o">::</span><span class="n">is_negative</span><span class="p">(</span><span class="n">from</span><span class="p">))</span> <span class="p">{</span>
+      <span class="n">ec</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="p">{};</span>
+    <span class="p">}</span>
+
+    <span class="c1">// From is positive. Can it always fit in To?</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">F</span><span class="o">::</span><span class="n">digits</span> <span class="o">&lt;=</span> <span class="n">T</span><span class="o">::</span><span class="n">digits</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// yes, From always fits in To.</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">// from may not fit in To, we have to do a dynamic check</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">from</span> <span class="o">&gt;</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">From</span><span class="o">&gt;</span><span class="p">(</span><span class="n">T</span><span class="o">::</span><span class="n">max</span><span class="p">()))</span> <span class="p">{</span>
+        <span class="n">ec</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">return</span> <span class="p">{};</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">F</span><span class="o">::</span><span class="n">is_signed</span> <span class="o">&amp;&amp;</span> <span class="n">T</span><span class="o">::</span><span class="n">is_signed</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// can from be held in To?</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">F</span><span class="o">::</span><span class="n">digits</span> <span class="o">&lt;</span> <span class="n">T</span><span class="o">::</span><span class="n">digits</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// yes, From always fits in To.</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">// from may not fit in To, we have to do a dynamic check</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">from</span> <span class="o">&gt;</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">From</span><span class="o">&gt;</span><span class="p">(</span><span class="n">T</span><span class="o">::</span><span class="n">max</span><span class="p">()))</span> <span class="p">{</span>
+        <span class="c1">// outside range.</span>
+        <span class="n">ec</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">return</span> <span class="p">{};</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">// reaching here means all is ok for lossless conversion.</span>
+  <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;</span><span class="p">(</span><span class="n">from</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="c1">// function</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="p">,</span> <span class="k">typename</span> <span class="n">From</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same</span><span class="o">&lt;</span><span class="n">From</span><span class="p">,</span> <span class="n">To</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="n">FMT_CONSTEXPR</span> <span class="n">To</span> <span class="n">lossless_integral_conversion</span><span class="p">(</span><span class="k">const</span> <span class="n">From</span> <span class="n">from</span><span class="p">,</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">ec</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">from</span><span class="p">;</span>
+<span class="p">}</span> <span class="c1">// function</span>
+
+<span class="c1">// clang-format off</span>
+<span class="c1">// clang-format on</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="p">,</span> <span class="k">typename</span> <span class="n">From</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="o">!</span><span class="n">std</span><span class="o">::</span><span class="n">is_same</span><span class="o">&lt;</span><span class="n">From</span><span class="p">,</span> <span class="n">To</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="n">FMT_CONSTEXPR</span> <span class="n">To</span> <span class="n">safe_float_conversion</span><span class="p">(</span><span class="k">const</span> <span class="n">From</span> <span class="n">from</span><span class="p">,</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">ec</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">T</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">From</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">,</span> <span class="s">&quot;From must be floating&quot;</span><span class="p">);</span>
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">,</span> <span class="s">&quot;To must be floating&quot;</span><span class="p">);</span>
+
+  <span class="c1">// catch the only happy case</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">from</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">from</span> <span class="o">&gt;=</span> <span class="n">T</span><span class="o">::</span><span class="n">lowest</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">from</span> <span class="o">&lt;=</span> <span class="n">T</span><span class="o">::</span><span class="n">max</span><span class="p">())</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;</span><span class="p">(</span><span class="n">from</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// not within range.</span>
+    <span class="n">ec</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">return</span> <span class="p">{};</span>
+  <span class="p">}</span>
+
+  <span class="c1">// nan and inf will be preserved</span>
+  <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;</span><span class="p">(</span><span class="n">from</span><span class="p">);</span>
+<span class="p">}</span> <span class="c1">// function</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="p">,</span> <span class="k">typename</span> <span class="n">From</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same</span><span class="o">&lt;</span><span class="n">From</span><span class="p">,</span> <span class="n">To</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="n">FMT_CONSTEXPR</span> <span class="n">To</span> <span class="n">safe_float_conversion</span><span class="p">(</span><span class="k">const</span> <span class="n">From</span> <span class="n">from</span><span class="p">,</span> <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">ec</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">From</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">,</span> <span class="s">&quot;From must be floating&quot;</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">from</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="p">,</span> <span class="k">typename</span> <span class="n">FromRep</span><span class="p">,</span> <span class="k">typename</span> <span class="n">FromPeriod</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="n">FromRep</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">),</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="o">::</span><span class="n">rep</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="n">To</span> <span class="n">safe_duration_cast</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">FromRep</span><span class="p">,</span> <span class="n">FromPeriod</span><span class="o">&gt;</span> <span class="n">from</span><span class="p">,</span>
+                      <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">using</span> <span class="n">From</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">FromRep</span><span class="p">,</span> <span class="n">FromPeriod</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="n">ec</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="c1">// the basic idea is that we need to convert from count() in the from type</span>
+  <span class="c1">// to count() in the To type, by multiplying it with this:</span>
+  <span class="k">struct</span> <span class="nl">Factor</span>
+      <span class="p">:</span> <span class="n">std</span><span class="o">::</span><span class="n">ratio_divide</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">From</span><span class="o">::</span><span class="n">period</span><span class="p">,</span> <span class="k">typename</span> <span class="n">To</span><span class="o">::</span><span class="n">period</span><span class="o">&gt;</span> <span class="p">{};</span>
+
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&quot;num must be positive&quot;</span><span class="p">);</span>
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">den</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&quot;den must be positive&quot;</span><span class="p">);</span>
+
+  <span class="c1">// the conversion is like this: multiply from.count() with Factor::num</span>
+  <span class="c1">// /Factor::den and convert it to To::rep, all this without</span>
+  <span class="c1">// overflow/underflow. let&#39;s start by finding a suitable type that can hold</span>
+  <span class="c1">// both To, From and Factor::num</span>
+  <span class="k">using</span> <span class="n">IntermediateRep</span> <span class="o">=</span>
+      <span class="k">typename</span> <span class="n">std</span><span class="o">::</span><span class="n">common_type</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">From</span><span class="o">::</span><span class="n">rep</span><span class="p">,</span> <span class="k">typename</span> <span class="n">To</span><span class="o">::</span><span class="n">rep</span><span class="p">,</span>
+                                <span class="k">decltype</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">num</span><span class="p">)</span><span class="o">&gt;::</span><span class="n">type</span><span class="p">;</span>
+
+  <span class="c1">// safe conversion to IntermediateRep</span>
+  <span class="n">IntermediateRep</span> <span class="n">count</span> <span class="o">=</span>
+      <span class="n">lossless_integral_conversion</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">from</span><span class="p">.</span><span class="n">count</span><span class="p">(),</span> <span class="n">ec</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{};</span>
+  <span class="p">}</span>
+  <span class="c1">// multiply with Factor::num without overflow or underflow</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">num</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">const</span> <span class="k">auto</span> <span class="n">max1</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">max_value</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">/</span> <span class="n">Factor</span><span class="o">::</span><span class="n">num</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="n">max1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">ec</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="p">{};</span>
+    <span class="p">}</span>
+    <span class="k">const</span> <span class="k">auto</span> <span class="n">min1</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="o">&gt;::</span><span class="n">min</span><span class="p">()</span> <span class="o">/</span> <span class="n">Factor</span><span class="o">::</span><span class="n">num</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="n">min1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">ec</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="p">{};</span>
+    <span class="p">}</span>
+    <span class="n">count</span> <span class="o">*=</span> <span class="n">Factor</span><span class="o">::</span><span class="n">num</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// this can&#39;t go wrong, right? den&gt;0 is checked earlier.</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">den</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">count</span> <span class="o">/=</span> <span class="n">Factor</span><span class="o">::</span><span class="n">den</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// convert to the to type, safely</span>
+  <span class="k">using</span> <span class="n">ToRep</span> <span class="o">=</span> <span class="k">typename</span> <span class="n">To</span><span class="o">::</span><span class="n">rep</span><span class="p">;</span>
+  <span class="k">const</span> <span class="n">ToRep</span> <span class="n">tocount</span> <span class="o">=</span> <span class="n">lossless_integral_conversion</span><span class="o">&lt;</span><span class="n">ToRep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">ec</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{};</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">To</span><span class="p">{</span><span class="n">tocount</span><span class="p">};</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="p">,</span> <span class="k">typename</span> <span class="n">FromRep</span><span class="p">,</span> <span class="k">typename</span> <span class="n">FromPeriod</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">FromRep</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">),</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="o">::</span><span class="n">rep</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="n">To</span> <span class="n">safe_duration_cast</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">FromRep</span><span class="p">,</span> <span class="n">FromPeriod</span><span class="o">&gt;</span> <span class="n">from</span><span class="p">,</span>
+                      <span class="kt">int</span> <span class="o">&amp;</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">using</span> <span class="n">From</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">FromRep</span><span class="p">,</span> <span class="n">FromPeriod</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="n">ec</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isnan</span><span class="p">(</span><span class="n">from</span><span class="p">.</span><span class="n">count</span><span class="p">()))</span> <span class="p">{</span>
+    <span class="c1">// nan in, gives nan out. easy.</span>
+    <span class="k">return</span> <span class="n">To</span><span class="p">{</span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="o">::</span><span class="n">rep</span><span class="o">&gt;::</span><span class="n">quiet_NaN</span><span class="p">()};</span>
+  <span class="p">}</span>
+  <span class="c1">// maybe we should also check if from is denormal, and decide what to do about</span>
+  <span class="c1">// it.</span>
+
+  <span class="c1">// +-inf should be preserved.</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isinf</span><span class="p">(</span><span class="n">from</span><span class="p">.</span><span class="n">count</span><span class="p">()))</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">To</span><span class="p">{</span><span class="n">from</span><span class="p">.</span><span class="n">count</span><span class="p">()};</span>
+  <span class="p">}</span>
+
+  <span class="c1">// the basic idea is that we need to convert from count() in the from type</span>
+  <span class="c1">// to count() in the To type, by multiplying it with this:</span>
+  <span class="k">struct</span> <span class="nl">Factor</span>
+      <span class="p">:</span> <span class="n">std</span><span class="o">::</span><span class="n">ratio_divide</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">From</span><span class="o">::</span><span class="n">period</span><span class="p">,</span> <span class="k">typename</span> <span class="n">To</span><span class="o">::</span><span class="n">period</span><span class="o">&gt;</span> <span class="p">{};</span>
+
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&quot;num must be positive&quot;</span><span class="p">);</span>
+  <span class="k">static_assert</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">den</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&quot;den must be positive&quot;</span><span class="p">);</span>
+
+  <span class="c1">// the conversion is like this: multiply from.count() with Factor::num</span>
+  <span class="c1">// /Factor::den and convert it to To::rep, all this without</span>
+  <span class="c1">// overflow/underflow. let&#39;s start by finding a suitable type that can hold</span>
+  <span class="c1">// both To, From and Factor::num</span>
+  <span class="k">using</span> <span class="n">IntermediateRep</span> <span class="o">=</span>
+      <span class="k">typename</span> <span class="n">std</span><span class="o">::</span><span class="n">common_type</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">From</span><span class="o">::</span><span class="n">rep</span><span class="p">,</span> <span class="k">typename</span> <span class="n">To</span><span class="o">::</span><span class="n">rep</span><span class="p">,</span>
+                                <span class="k">decltype</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">num</span><span class="p">)</span><span class="o">&gt;::</span><span class="n">type</span><span class="p">;</span>
+
+  <span class="c1">// force conversion of From::rep -&gt; IntermediateRep to be safe,</span>
+  <span class="c1">// even if it will never happen be narrowing in this context.</span>
+  <span class="n">IntermediateRep</span> <span class="n">count</span> <span class="o">=</span>
+      <span class="n">safe_float_conversion</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">from</span><span class="p">.</span><span class="n">count</span><span class="p">(),</span> <span class="n">ec</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{};</span>
+  <span class="p">}</span>
+
+  <span class="c1">// multiply with Factor::num without overflow or underflow</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">num</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">max1</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">max_value</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">/</span>
+                          <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">num</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="n">max1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">ec</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="p">{};</span>
+    <span class="p">}</span>
+    <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">min1</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="o">&gt;::</span><span class="n">lowest</span><span class="p">()</span> <span class="o">/</span>
+                          <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">num</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="n">min1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">ec</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="p">{};</span>
+    <span class="p">}</span>
+    <span class="n">count</span> <span class="o">*=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">num</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// this can&#39;t go wrong, right? den&gt;0 is checked earlier.</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">den</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">using</span> <span class="n">common_t</span> <span class="o">=</span> <span class="k">typename</span> <span class="n">std</span><span class="o">::</span><span class="n">common_type</span><span class="o">&lt;</span><span class="n">IntermediateRep</span><span class="p">,</span> <span class="kt">intmax_t</span><span class="o">&gt;::</span><span class="n">type</span><span class="p">;</span>
+    <span class="n">count</span> <span class="o">/=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">common_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Factor</span><span class="o">::</span><span class="n">den</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// convert to the to type, safely</span>
+  <span class="k">using</span> <span class="n">ToRep</span> <span class="o">=</span> <span class="k">typename</span> <span class="n">To</span><span class="o">::</span><span class="n">rep</span><span class="p">;</span>
+
+  <span class="k">const</span> <span class="n">ToRep</span> <span class="n">tocount</span> <span class="o">=</span> <span class="n">safe_float_conversion</span><span class="o">&lt;</span><span class="n">ToRep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">ec</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ec</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{};</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">To</span><span class="p">{</span><span class="n">tocount</span><span class="p">};</span>
+<span class="p">}</span>
+<span class="p">}</span> <span class="c1">// namespace safe_duration_cast</span>
+<span class="cp">#endif</span>
+
+<span class="c1">// Prevents expansion of a preceding token as a function-style macro.</span>
+<span class="c1">// Usage: f FMT_NOMACRO()</span>
+<span class="cp">#define FMT_NOMACRO</span>
+
+<span class="k">namespace</span> <span class="n">internal</span> <span class="p">{</span>
+<span class="kr">inline</span> <span class="n">null</span><span class="o">&lt;&gt;</span> <span class="n">localtime_r</span> <span class="n">FMT_NOMACRO</span><span class="p">(...)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">null</span><span class="o">&lt;&gt;</span><span class="p">();</span> <span class="p">}</span>
+<span class="kr">inline</span> <span class="n">null</span><span class="o">&lt;&gt;</span> <span class="n">localtime_s</span><span class="p">(...)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">null</span><span class="o">&lt;&gt;</span><span class="p">();</span> <span class="p">}</span>
+<span class="kr">inline</span> <span class="n">null</span><span class="o">&lt;&gt;</span> <span class="n">gmtime_r</span><span class="p">(...)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">null</span><span class="o">&lt;&gt;</span><span class="p">();</span> <span class="p">}</span>
+<span class="kr">inline</span> <span class="n">null</span><span class="o">&lt;&gt;</span> <span class="n">gmtime_s</span><span class="p">(...)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">null</span><span class="o">&lt;&gt;</span><span class="p">();</span> <span class="p">}</span>
+<span class="p">}</span> <span class="c1">// namespace internal</span>
+
+<span class="c1">// Thread-safe replacement for std::localtime</span>
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="n">localtime</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">time_t</span> <span class="n">time</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">struct</span> <span class="n">dispatcher</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="kt">time_t</span> <span class="n">time_</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="n">tm_</span><span class="p">;</span>
+
+    <span class="n">dispatcher</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">time_t</span> <span class="n">t</span><span class="p">)</span> <span class="o">:</span> <span class="n">time_</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="p">{}</span>
+
+    <span class="kt">bool</span> <span class="n">run</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">using</span> <span class="k">namespace</span> <span class="n">fmt</span><span class="o">::</span><span class="n">internal</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nf">handle</span><span class="p">(</span><span class="n">localtime_r</span><span class="p">(</span><span class="o">&amp;</span><span class="n">time_</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">tm_</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="kt">bool</span> <span class="n">handle</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="o">*</span><span class="n">tm</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">tm</span> <span class="o">!=</span> <span class="k">nullptr</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="kt">bool</span> <span class="n">handle</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">null</span><span class="o">&lt;&gt;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">using</span> <span class="k">namespace</span> <span class="n">fmt</span><span class="o">::</span><span class="n">internal</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nf">fallback</span><span class="p">(</span><span class="n">localtime_s</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tm_</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">time_</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="kt">bool</span> <span class="n">fallback</span><span class="p">(</span><span class="kt">int</span> <span class="n">res</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">res</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="cp">#if !FMT_MSC_VER</span>
+    <span class="kt">bool</span> <span class="n">fallback</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">null</span><span class="o">&lt;&gt;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">using</span> <span class="k">namespace</span> <span class="n">fmt</span><span class="o">::</span><span class="n">internal</span><span class="p">;</span>
+      <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="o">*</span><span class="n">tm</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">localtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">time_</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">tm</span><span class="p">)</span>
+        <span class="n">tm_</span> <span class="o">=</span> <span class="o">*</span><span class="n">tm</span><span class="p">;</span>
+      <span class="k">return</span> <span class="n">tm</span> <span class="o">!=</span> <span class="k">nullptr</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="cp">#endif</span>
+  <span class="p">};</span>
+  <span class="n">dispatcher</span> <span class="nf">lt</span><span class="p">(</span><span class="n">time</span><span class="p">);</span>
+  <span class="c1">// Too big time values may be unsupported.</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">lt</span><span class="p">.</span><span class="n">run</span><span class="p">())</span>
+    <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;time_t value out of range&quot;</span><span class="p">));</span>
+  <span class="k">return</span> <span class="n">lt</span><span class="p">.</span><span class="n">tm_</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Thread-safe replacement for std::gmtime</span>
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="n">gmtime</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">time_t</span> <span class="n">time</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">struct</span> <span class="n">dispatcher</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="kt">time_t</span> <span class="n">time_</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="n">tm_</span><span class="p">;</span>
+
+    <span class="n">dispatcher</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">time_t</span> <span class="n">t</span><span class="p">)</span> <span class="o">:</span> <span class="n">time_</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="p">{}</span>
+
+    <span class="kt">bool</span> <span class="n">run</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">using</span> <span class="k">namespace</span> <span class="n">fmt</span><span class="o">::</span><span class="n">internal</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nf">handle</span><span class="p">(</span><span class="n">gmtime_r</span><span class="p">(</span><span class="o">&amp;</span><span class="n">time_</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">tm_</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="kt">bool</span> <span class="n">handle</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="o">*</span><span class="n">tm</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">tm</span> <span class="o">!=</span> <span class="k">nullptr</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="kt">bool</span> <span class="n">handle</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">null</span><span class="o">&lt;&gt;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">using</span> <span class="k">namespace</span> <span class="n">fmt</span><span class="o">::</span><span class="n">internal</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nf">fallback</span><span class="p">(</span><span class="n">gmtime_s</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tm_</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">time_</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="kt">bool</span> <span class="n">fallback</span><span class="p">(</span><span class="kt">int</span> <span class="n">res</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">res</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="cp">#if !FMT_MSC_VER</span>
+    <span class="kt">bool</span> <span class="n">fallback</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">null</span><span class="o">&lt;&gt;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="o">*</span><span class="n">tm</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">gmtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">time_</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">tm</span><span class="p">)</span>
+        <span class="n">tm_</span> <span class="o">=</span> <span class="o">*</span><span class="n">tm</span><span class="p">;</span>
+      <span class="k">return</span> <span class="n">tm</span> <span class="o">!=</span> <span class="k">nullptr</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="cp">#endif</span>
+  <span class="p">};</span>
+  <span class="n">dispatcher</span> <span class="nf">gt</span><span class="p">(</span><span class="n">time</span><span class="p">);</span>
+  <span class="c1">// Too big time values may be unsupported.</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">gt</span><span class="p">.</span><span class="n">run</span><span class="p">())</span>
+    <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;time_t value out of range&quot;</span><span class="p">));</span>
+  <span class="k">return</span> <span class="n">gt</span><span class="p">.</span><span class="n">tm_</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">namespace</span> <span class="n">internal</span> <span class="p">{</span>
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">strftime</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">str</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">count</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span>
+                            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="o">*</span><span class="n">time</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">strftime</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">time</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">strftime</span><span class="p">(</span><span class="kt">wchar_t</span> <span class="o">*</span><span class="n">str</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">count</span><span class="p">,</span>
+                            <span class="k">const</span> <span class="kt">wchar_t</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="o">*</span><span class="n">time</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">wcsftime</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">time</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span> <span class="c1">// namespace internal</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span> <span class="k">struct</span> <span class="n">formatter</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">tm</span><span class="p">,</span> <span class="n">Char</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ParseContext</span><span class="o">&gt;</span>
+  <span class="k">auto</span> <span class="n">parse</span><span class="p">(</span><span class="n">ParseContext</span> <span class="o">&amp;</span><span class="n">ctx</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">decltype</span><span class="p">(</span><span class="n">ctx</span><span class="p">.</span><span class="n">begin</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">ctx</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="o">!=</span> <span class="n">ctx</span><span class="p">.</span><span class="n">end</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">it</span> <span class="o">==</span> <span class="sc">&#39;:&#39;</span><span class="p">)</span>
+      <span class="o">++</span><span class="n">it</span><span class="p">;</span>
+    <span class="k">auto</span> <span class="n">end</span> <span class="o">=</span> <span class="n">it</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">end</span> <span class="o">!=</span> <span class="n">ctx</span><span class="p">.</span><span class="n">end</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">end</span> <span class="o">!=</span> <span class="sc">&#39;}&#39;</span><span class="p">)</span>
+      <span class="o">++</span><span class="n">end</span><span class="p">;</span>
+    <span class="n">tm_format</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">to_unsigned</span><span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">it</span> <span class="o">+</span> <span class="mi">1</span><span class="p">));</span>
+    <span class="n">tm_format</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">it</span><span class="p">,</span> <span class="n">end</span><span class="p">);</span>
+    <span class="n">tm_format</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="sc">&#39;\0&#39;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">end</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">FormatContext</span><span class="o">&gt;</span>
+  <span class="k">auto</span> <span class="n">format</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="o">&amp;</span><span class="n">tm</span><span class="p">,</span> <span class="n">FormatContext</span> <span class="o">&amp;</span><span class="n">ctx</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">decltype</span><span class="p">(</span><span class="n">ctx</span><span class="p">.</span><span class="n">out</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">basic_memory_buffer</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">buf</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">start</span> <span class="o">=</span> <span class="n">buf</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+    <span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+      <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">size</span> <span class="o">=</span> <span class="n">buf</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span><span class="p">;</span>
+      <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">count</span> <span class="o">=</span>
+          <span class="n">internal</span><span class="o">::</span><span class="n">strftime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">buf</span><span class="p">[</span><span class="n">start</span><span class="p">],</span> <span class="n">size</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">tm_format</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">tm</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">buf</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">start</span> <span class="o">+</span> <span class="n">count</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">size</span> <span class="o">&gt;=</span> <span class="n">tm_format</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">*</span> <span class="mi">256</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// If the buffer is 256 times larger than the format string, assume</span>
+        <span class="c1">// that `strftime` gives an empty result. There doesn&#39;t seem to be a</span>
+        <span class="c1">// better way to distinguish the two cases:</span>
+        <span class="c1">// https://github.com/fmtlib/fmt/issues/367</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">MIN_GROWTH</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+      <span class="n">buf</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="n">buf</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span> <span class="o">+</span> <span class="p">(</span><span class="n">size</span> <span class="o">&gt;</span> <span class="n">MIN_GROWTH</span> <span class="o">?</span> <span class="nl">size</span> <span class="p">:</span> <span class="n">MIN_GROWTH</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">copy</span><span class="p">(</span><span class="n">buf</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">buf</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">ctx</span><span class="p">.</span><span class="n">out</span><span class="p">());</span>
+  <span class="p">}</span>
+
+  <span class="n">basic_memory_buffer</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">tm_format</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">namespace</span> <span class="n">internal</span> <span class="p">{</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Period</span><span class="o">&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">nullptr</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">atto</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;as&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">femto</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;fs&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pico</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;ps&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">nano</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;ns&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">micro</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;µs&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">milli</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;ms&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">centi</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;cs&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">deci</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;ds&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">ratio</span><span class="o">&lt;</span><span class="mi">1</span><span class="o">&gt;&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;s&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">deca</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;das&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">hecto</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;hs&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">kilo</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;ks&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">mega</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;Ms&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">giga</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;Gs&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">tera</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;Ts&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">peta</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;Ps&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">exa</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">&quot;Es&quot;</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">ratio</span><span class="o">&lt;</span><span class="mi">60</span><span class="o">&gt;&gt;</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">&quot;m&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_units</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">ratio</span><span class="o">&lt;</span><span class="mi">3600</span><span class="o">&gt;&gt;</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">&quot;h&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">enum</span> <span class="k">class</span> <span class="nc">numeric_system</span> <span class="p">{</span>
+  <span class="n">standard</span><span class="p">,</span>
+  <span class="c1">// Alternative numeric system, e.g. 十二 instead of 12 in ja_JP locale.</span>
+  <span class="n">alternative</span>
+<span class="p">};</span>
+
+<span class="c1">// Parses a put_time-like format string and invokes handler actions.</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Handler</span><span class="o">&gt;</span>
+<span class="n">FMT_CONSTEXPR</span> <span class="k">const</span> <span class="n">Char</span> <span class="o">*</span>
+<span class="n">parse_chrono_format</span><span class="p">(</span><span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="n">begin</span><span class="p">,</span> <span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="n">end</span><span class="p">,</span> <span class="n">Handler</span> <span class="o">&amp;&amp;</span><span class="n">handler</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">auto</span> <span class="n">ptr</span> <span class="o">=</span> <span class="n">begin</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ptr</span> <span class="o">!=</span> <span class="n">end</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">auto</span> <span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="sc">&#39;}&#39;</span><span class="p">)</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">!=</span> <span class="sc">&#39;%&#39;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="o">++</span><span class="n">ptr</span><span class="p">;</span>
+      <span class="k">continue</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">begin</span> <span class="o">!=</span> <span class="n">ptr</span><span class="p">)</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_text</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">ptr</span><span class="p">);</span>
+    <span class="o">++</span><span class="n">ptr</span><span class="p">;</span> <span class="c1">// consume &#39;%&#39;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ptr</span> <span class="o">==</span> <span class="n">end</span><span class="p">)</span>
+      <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;invalid format&quot;</span><span class="p">));</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="n">ptr</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="sc">&#39;%&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_text</span><span class="p">(</span><span class="n">ptr</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ptr</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;n&#39;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="k">const</span> <span class="kt">char</span> <span class="n">newline</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_text</span><span class="p">(</span><span class="n">newline</span><span class="p">,</span> <span class="n">newline</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">case</span> <span class="sc">&#39;t&#39;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="k">const</span> <span class="kt">char</span> <span class="n">tab</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;</span><span class="se">\t</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_text</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span> <span class="n">tab</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// Day of the week:</span>
+    <span class="k">case</span> <span class="sc">&#39;a&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_abbr_weekday</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;A&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_full_weekday</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;w&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_dec0_weekday</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;u&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_dec1_weekday</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="c1">// Month:</span>
+    <span class="k">case</span> <span class="sc">&#39;b&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_abbr_month</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;B&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_full_month</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="c1">// Hour, minute, second:</span>
+    <span class="k">case</span> <span class="sc">&#39;H&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_24_hour</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;I&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_12_hour</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;M&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_minute</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;S&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_second</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="c1">// Other:</span>
+    <span class="k">case</span> <span class="sc">&#39;c&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_datetime</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;x&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_loc_date</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;X&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_loc_time</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;D&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_us_date</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;F&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_iso_date</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;r&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_12_hour_time</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;R&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_24_hour_time</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;T&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_iso_time</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;p&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_am_pm</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;Q&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_duration_value</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;q&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_duration_unit</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;z&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_utc_offset</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="sc">&#39;Z&#39;</span><span class="o">:</span>
+      <span class="n">handler</span><span class="p">.</span><span class="n">on_tz_name</span><span class="p">();</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="c1">// Alternative representation:</span>
+    <span class="k">case</span> <span class="sc">&#39;E&#39;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">ptr</span> <span class="o">==</span> <span class="n">end</span><span class="p">)</span>
+        <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;invalid format&quot;</span><span class="p">));</span>
+      <span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="n">ptr</span><span class="o">++</span><span class="p">;</span>
+      <span class="k">switch</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="sc">&#39;c&#39;</span><span class="o">:</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_datetime</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">alternative</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="sc">&#39;x&#39;</span><span class="o">:</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_loc_date</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">alternative</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="sc">&#39;X&#39;</span><span class="o">:</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_loc_time</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">alternative</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="k">default</span><span class="o">:</span>
+        <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;invalid format&quot;</span><span class="p">));</span>
+      <span class="p">}</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">case</span> <span class="sc">&#39;O&#39;</span><span class="o">:</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">ptr</span> <span class="o">==</span> <span class="n">end</span><span class="p">)</span>
+        <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;invalid format&quot;</span><span class="p">));</span>
+      <span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="n">ptr</span><span class="o">++</span><span class="p">;</span>
+      <span class="k">switch</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="sc">&#39;w&#39;</span><span class="o">:</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_dec0_weekday</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">alternative</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="sc">&#39;u&#39;</span><span class="o">:</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_dec1_weekday</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">alternative</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="sc">&#39;H&#39;</span><span class="o">:</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_24_hour</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">alternative</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="sc">&#39;I&#39;</span><span class="o">:</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_12_hour</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">alternative</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="sc">&#39;M&#39;</span><span class="o">:</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_minute</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">alternative</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="k">case</span> <span class="sc">&#39;S&#39;</span><span class="o">:</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_second</span><span class="p">(</span><span class="n">numeric_system</span><span class="o">::</span><span class="n">alternative</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="k">default</span><span class="o">:</span>
+        <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;invalid format&quot;</span><span class="p">));</span>
+      <span class="p">}</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span><span class="o">:</span>
+      <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;invalid format&quot;</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="n">begin</span> <span class="o">=</span> <span class="n">ptr</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">begin</span> <span class="o">!=</span> <span class="n">ptr</span><span class="p">)</span>
+    <span class="n">handler</span><span class="p">.</span><span class="n">on_text</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">ptr</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">ptr</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">struct</span> <span class="n">chrono_format_checker</span> <span class="p">{</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">report_no_date</span><span class="p">()</span> <span class="p">{</span> <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;no date&quot;</span><span class="p">));</span> <span class="p">}</span>
+
+  <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="n">on_text</span><span class="p">(</span><span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="p">,</span> <span class="k">const</span> <span class="n">Char</span> <span class="o">*</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_abbr_weekday</span><span class="p">()</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_full_weekday</span><span class="p">()</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_dec0_weekday</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_dec1_weekday</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_abbr_month</span><span class="p">()</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_full_month</span><span class="p">()</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">on_24_hour</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_12_hour</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_minute</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_second</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_datetime</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_loc_date</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_loc_time</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_us_date</span><span class="p">()</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_iso_date</span><span class="p">()</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">on_12_hour_time</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_24_hour_time</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_iso_time</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_am_pm</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_duration_value</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_duration_unit</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_utc_offset</span><span class="p">()</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+  <span class="n">FMT_NORETURN</span> <span class="kt">void</span> <span class="n">on_tz_name</span><span class="p">()</span> <span class="p">{</span> <span class="n">report_no_date</span><span class="p">();</span> <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="kt">bool</span> <span class="n">isnan</span><span class="p">(</span><span class="n">T</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="kt">bool</span> <span class="n">isnan</span><span class="p">(</span><span class="n">T</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">isnan</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="kt">bool</span> <span class="n">isfinite</span><span class="p">(</span><span class="n">T</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="kt">bool</span> <span class="n">isfinite</span><span class="p">(</span><span class="n">T</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Converts value to int and checks that it&#39;s in the range [0, upper).</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="kt">int</span> <span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">T</span> <span class="n">value</span><span class="p">,</span> <span class="kt">int</span> <span class="n">upper</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">FMT_ASSERT</span><span class="p">(</span><span class="n">value</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="n">upper</span><span class="p">,</span> <span class="s">&quot;invalid value&quot;</span><span class="p">);</span>
+  <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">upper</span><span class="p">;</span>
+  <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="o">!</span><span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="kt">int</span> <span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">T</span> <span class="n">value</span><span class="p">,</span> <span class="kt">int</span> <span class="n">upper</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">FMT_ASSERT</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isnan</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">||</span>
+                 <span class="p">(</span><span class="n">value</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">upper</span><span class="p">)),</span>
+             <span class="s">&quot;invalid value&quot;</span><span class="p">);</span>
+  <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">upper</span><span class="p">;</span>
+  <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="n">T</span> <span class="n">mod</span><span class="p">(</span><span class="n">T</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">x</span> <span class="o">%</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="n">T</span> <span class="n">mod</span><span class="p">(</span><span class="n">T</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">fmod</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">y</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="c1">// If T is an integral type, maps T to its unsigned counterpart, otherwise</span>
+<span class="c1">// leaves it unchanged (unlike std::make_unsigned).</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">INTEGRAL</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">make_unsigned_or_unchanged</span> <span class="p">{</span>
+  <span class="k">using</span> <span class="n">type</span> <span class="o">=</span> <span class="n">T</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span> <span class="k">struct</span> <span class="n">make_unsigned_or_unchanged</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="nb">true</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">using</span> <span class="n">type</span> <span class="o">=</span> <span class="k">typename</span> <span class="n">std</span><span class="o">::</span><span class="n">make_unsigned</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">type</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cp">#if FMT_SAFE_DURATION_CAST</span>
+<span class="c1">// throwing version of safe_duration_cast</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">To</span><span class="p">,</span> <span class="k">typename</span> <span class="n">FromRep</span><span class="p">,</span> <span class="k">typename</span> <span class="n">FromPeriod</span><span class="o">&gt;</span>
+<span class="n">To</span> <span class="n">fmt_safe_duration_cast</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">FromRep</span><span class="p">,</span> <span class="n">FromPeriod</span><span class="o">&gt;</span> <span class="n">from</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">ec</span><span class="p">;</span>
+  <span class="n">To</span> <span class="n">to</span> <span class="o">=</span> <span class="n">safe_duration_cast</span><span class="o">::</span><span class="n">safe_duration_cast</span><span class="o">&lt;</span><span class="n">To</span><span class="o">&gt;</span><span class="p">(</span><span class="n">from</span><span class="p">,</span> <span class="n">ec</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ec</span><span class="p">)</span>
+    <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="s">&quot;cannot format duration&quot;</span><span class="p">));</span>
+  <span class="k">return</span> <span class="n">to</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">#endif</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Rep</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Period</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">milli</span><span class="o">&gt;</span>
+<span class="n">get_milliseconds</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span> <span class="n">d</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// this may overflow and/or the result may not fit in the</span>
+  <span class="c1">// target type.</span>
+<span class="cp">#if FMT_SAFE_DURATION_CAST</span>
+  <span class="k">using</span> <span class="n">CommonSecondsType</span> <span class="o">=</span>
+      <span class="k">typename</span> <span class="n">std</span><span class="o">::</span><span class="n">common_type</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">d</span><span class="p">),</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">seconds</span><span class="o">&gt;::</span><span class="n">type</span><span class="p">;</span>
+  <span class="k">const</span> <span class="k">auto</span> <span class="n">d_as_common</span> <span class="o">=</span> <span class="n">fmt_safe_duration_cast</span><span class="o">&lt;</span><span class="n">CommonSecondsType</span><span class="o">&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+  <span class="k">const</span> <span class="k">auto</span> <span class="n">d_as_whole_seconds</span> <span class="o">=</span>
+      <span class="n">fmt_safe_duration_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">seconds</span><span class="o">&gt;</span><span class="p">(</span><span class="n">d_as_common</span><span class="p">);</span>
+  <span class="c1">// this conversion should be nonproblematic</span>
+  <span class="k">const</span> <span class="k">auto</span> <span class="n">diff</span> <span class="o">=</span> <span class="n">d_as_common</span> <span class="o">-</span> <span class="n">d_as_whole_seconds</span><span class="p">;</span>
+  <span class="k">const</span> <span class="k">auto</span> <span class="n">ms</span> <span class="o">=</span>
+      <span class="n">fmt_safe_duration_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">milli</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">diff</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">ms</span><span class="p">;</span>
+<span class="cp">#else</span>
+  <span class="k">auto</span> <span class="n">s</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">seconds</span><span class="o">&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">milliseconds</span><span class="o">&gt;</span><span class="p">(</span><span class="n">d</span> <span class="o">-</span> <span class="n">s</span><span class="p">);</span>
+<span class="cp">#endif</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Rep</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Period</span><span class="p">,</span>
+          <span class="n">FMT_ENABLE_IF</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">milli</span><span class="o">&gt;</span>
+<span class="n">get_milliseconds</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span> <span class="n">d</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">using</span> <span class="n">common_type</span> <span class="o">=</span> <span class="k">typename</span> <span class="n">std</span><span class="o">::</span><span class="n">common_type</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">intmax_t</span><span class="o">&gt;::</span><span class="n">type</span><span class="p">;</span>
+  <span class="k">auto</span> <span class="n">ms</span> <span class="o">=</span> <span class="n">mod</span><span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="n">count</span><span class="p">()</span> <span class="o">*</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">common_type</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Period</span><span class="o">::</span><span class="n">num</span><span class="p">)</span> <span class="o">/</span>
+                    <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">common_type</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Period</span><span class="o">::</span><span class="n">den</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">,</span>
+                <span class="mi">1000</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">milli</span><span class="o">&gt;</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ms</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Rep</span><span class="p">,</span> <span class="k">typename</span> <span class="n">OutputIt</span><span class="o">&gt;</span>
+<span class="n">OutputIt</span> <span class="n">format_chrono_duration_value</span><span class="p">(</span><span class="n">OutputIt</span> <span class="n">out</span><span class="p">,</span> <span class="n">Rep</span> <span class="n">val</span><span class="p">,</span> <span class="kt">int</span> <span class="n">precision</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">precision</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">format_to</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="s">&quot;{:.{}f}&quot;</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">precision</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nf">format_to</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;::</span><span class="n">value</span> <span class="o">?</span> <span class="s">&quot;{:g}&quot;</span> <span class="o">:</span> <span class="s">&quot;{}&quot;</span><span class="p">,</span>
+                   <span class="n">val</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Period</span><span class="p">,</span> <span class="k">typename</span> <span class="n">OutputIt</span><span class="o">&gt;</span>
+<span class="k">static</span> <span class="n">OutputIt</span> <span class="n">format_chrono_duration_unit</span><span class="p">(</span><span class="n">OutputIt</span> <span class="n">out</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">unit</span> <span class="o">=</span> <span class="n">get_units</span><span class="o">&lt;</span><span class="n">Period</span><span class="o">&gt;</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">format_to</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="s">&quot;{}&quot;</span><span class="p">,</span> <span class="n">unit</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">Period</span><span class="o">::</span><span class="n">den</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">format_to</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="s">&quot;[{}]s&quot;</span><span class="p">,</span> <span class="n">Period</span><span class="o">::</span><span class="n">num</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nf">format_to</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="s">&quot;[{}/{}]s&quot;</span><span class="p">,</span> <span class="n">Period</span><span class="o">::</span><span class="n">num</span><span class="p">,</span> <span class="n">Period</span><span class="o">::</span><span class="n">den</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">FormatContext</span><span class="p">,</span> <span class="k">typename</span> <span class="n">OutputIt</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Rep</span><span class="p">,</span>
+          <span class="k">typename</span> <span class="n">Period</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">chrono_formatter</span> <span class="p">{</span>
+  <span class="n">FormatContext</span> <span class="o">&amp;</span><span class="n">context</span><span class="p">;</span>
+  <span class="n">OutputIt</span> <span class="n">out</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">precision</span><span class="p">;</span>
+  <span class="c1">// rep is unsigned to avoid overflow.</span>
+  <span class="k">using</span> <span class="n">rep</span> <span class="o">=</span>
+      <span class="n">conditional_t</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">is_integral</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;::</span><span class="n">value</span> <span class="o">&amp;&amp;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">Rep</span><span class="p">)</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">),</span>
+                    <span class="kt">unsigned</span><span class="p">,</span> <span class="k">typename</span> <span class="n">make_unsigned_or_unchanged</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;::</span><span class="n">type</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="n">rep</span> <span class="n">val</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">seconds</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">rep</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="n">seconds</span> <span class="n">s</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">milliseconds</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">rep</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">milli</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="kt">bool</span> <span class="n">negative</span><span class="p">;</span>
+
+  <span class="k">using</span> <span class="n">char_type</span> <span class="o">=</span> <span class="k">typename</span> <span class="n">FormatContext</span><span class="o">::</span><span class="n">char_type</span><span class="p">;</span>
+
+  <span class="k">explicit</span> <span class="nf">chrono_formatter</span><span class="p">(</span><span class="n">FormatContext</span> <span class="o">&amp;</span><span class="n">ctx</span><span class="p">,</span> <span class="n">OutputIt</span> <span class="n">o</span><span class="p">,</span>
+                            <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span> <span class="n">d</span><span class="p">)</span>
+      <span class="o">:</span> <span class="n">context</span><span class="p">(</span><span class="n">ctx</span><span class="p">),</span> <span class="n">out</span><span class="p">(</span><span class="n">o</span><span class="p">),</span> <span class="n">val</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">rep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="n">count</span><span class="p">())),</span>
+        <span class="n">negative</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="n">count</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">val</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">-</span> <span class="n">val</span><span class="p">;</span>
+      <span class="n">negative</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// this may overflow and/or the result may not fit in the</span>
+    <span class="c1">// target type.</span>
+<span class="cp">#if FMT_SAFE_DURATION_CAST</span>
+    <span class="c1">// might need checked conversion (rep!=Rep)</span>
+    <span class="k">auto</span> <span class="n">tmpval</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">fmt_safe_duration_cast</span><span class="o">&lt;</span><span class="n">seconds</span><span class="o">&gt;</span><span class="p">(</span><span class="n">tmpval</span><span class="p">);</span>
+<span class="cp">#else</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration_cast</span><span class="o">&lt;</span><span class="n">seconds</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span><span class="p">(</span><span class="n">val</span><span class="p">));</span>
+<span class="cp">#endif</span>
+  <span class="p">}</span>
+
+  <span class="c1">// returns true if nan or inf, writes to out.</span>
+  <span class="kt">bool</span> <span class="nf">handle_nan_inf</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">isfinite</span><span class="p">(</span><span class="n">val</span><span class="p">))</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">val</span><span class="p">))</span> <span class="p">{</span>
+      <span class="n">write_nan</span><span class="p">();</span>
+      <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// must be +-inf</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">val</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">write_pinf</span><span class="p">();</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">write_ninf</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="n">Rep</span> <span class="nf">hour</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">mod</span><span class="p">((</span><span class="n">s</span><span class="p">.</span><span class="n">count</span><span class="p">()</span> <span class="o">/</span> <span class="mi">3600</span><span class="p">),</span> <span class="mi">24</span><span class="p">));</span> <span class="p">}</span>
+
+  <span class="n">Rep</span> <span class="nf">hour12</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+    <span class="n">Rep</span> <span class="n">hour</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">mod</span><span class="p">((</span><span class="n">s</span><span class="p">.</span><span class="n">count</span><span class="p">()</span> <span class="o">/</span> <span class="mi">3600</span><span class="p">),</span> <span class="mi">12</span><span class="p">));</span>
+    <span class="k">return</span> <span class="n">hour</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="o">?</span> <span class="mi">12</span> <span class="o">:</span> <span class="n">hour</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="n">Rep</span> <span class="nf">minute</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">mod</span><span class="p">((</span><span class="n">s</span><span class="p">.</span><span class="n">count</span><span class="p">()</span> <span class="o">/</span> <span class="mi">60</span><span class="p">),</span> <span class="mi">60</span><span class="p">));</span> <span class="p">}</span>
+  <span class="n">Rep</span> <span class="nf">second</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">mod</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">count</span><span class="p">(),</span> <span class="mi">60</span><span class="p">));</span> <span class="p">}</span>
+
+  <span class="n">std</span><span class="o">::</span><span class="n">tm</span> <span class="n">time</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+    <span class="k">auto</span> <span class="n">time</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">tm</span><span class="p">();</span>
+    <span class="n">time</span><span class="p">.</span><span class="n">tm_hour</span> <span class="o">=</span> <span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">hour</span><span class="p">(),</span> <span class="mi">24</span><span class="p">);</span>
+    <span class="n">time</span><span class="p">.</span><span class="n">tm_min</span> <span class="o">=</span> <span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">minute</span><span class="p">(),</span> <span class="mi">60</span><span class="p">);</span>
+    <span class="n">time</span><span class="p">.</span><span class="n">tm_sec</span> <span class="o">=</span> <span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">second</span><span class="p">(),</span> <span class="mi">60</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">time</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">write_sign</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">negative</span><span class="p">)</span> <span class="p">{</span>
+      <span class="o">*</span><span class="n">out</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;-&#39;</span><span class="p">;</span>
+      <span class="n">negative</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">write</span><span class="p">(</span><span class="n">Rep</span> <span class="n">value</span><span class="p">,</span> <span class="kt">int</span> <span class="n">width</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">write_sign</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+      <span class="k">return</span> <span class="n">write_nan</span><span class="p">();</span>
+    <span class="n">uint32_or_64_or_128_t</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">n</span> <span class="o">=</span>
+        <span class="n">to_unsigned</span><span class="p">(</span><span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">max_value</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">()));</span>
+    <span class="kt">int</span> <span class="n">num_digits</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">count_digits</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">width</span> <span class="o">&gt;</span> <span class="n">num_digits</span><span class="p">)</span>
+      <span class="n">out</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">fill_n</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">width</span> <span class="o">-</span> <span class="n">num_digits</span><span class="p">,</span> <span class="sc">&#39;0&#39;</span><span class="p">);</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">format_decimal</span><span class="o">&lt;</span><span class="n">char_type</span><span class="o">&gt;</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">num_digits</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">write_nan</span><span class="p">()</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">copy_n</span><span class="p">(</span><span class="s">&quot;nan&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">out</span><span class="p">);</span> <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">write_pinf</span><span class="p">()</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">copy_n</span><span class="p">(</span><span class="s">&quot;inf&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">out</span><span class="p">);</span> <span class="p">}</span>
+  <span class="kt">void</span> <span class="n">write_ninf</span><span class="p">()</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">copy_n</span><span class="p">(</span><span class="s">&quot;-inf&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">out</span><span class="p">);</span> <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">format_localized</span><span class="p">(</span><span class="k">const</span> <span class="n">tm</span> <span class="o">&amp;</span><span class="n">time</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">isnan</span><span class="p">(</span><span class="n">val</span><span class="p">))</span>
+      <span class="k">return</span> <span class="n">write_nan</span><span class="p">();</span>
+    <span class="k">auto</span> <span class="n">locale</span> <span class="o">=</span> <span class="n">context</span><span class="p">.</span><span class="n">locale</span><span class="p">().</span><span class="k">template</span> <span class="n">get</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">locale</span><span class="o">&gt;</span><span class="p">();</span>
+    <span class="k">auto</span> <span class="o">&amp;</span><span class="n">facet</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">use_facet</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">time_put</span><span class="o">&lt;</span><span class="n">char_type</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">locale</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">basic_ostringstream</span><span class="o">&lt;</span><span class="n">char_type</span><span class="o">&gt;</span> <span class="n">os</span><span class="p">;</span>
+    <span class="n">os</span><span class="p">.</span><span class="n">imbue</span><span class="p">(</span><span class="n">locale</span><span class="p">);</span>
+    <span class="n">facet</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="n">os</span><span class="p">,</span> <span class="n">os</span><span class="p">,</span> <span class="sc">&#39; &#39;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">time</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">format</span> <span class="o">+</span> <span class="n">std</span><span class="o">::</span><span class="n">strlen</span><span class="p">(</span><span class="n">format</span><span class="p">));</span>
+    <span class="k">auto</span> <span class="n">str</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">str</span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">copy</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">str</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">out</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_text</span><span class="p">(</span><span class="k">const</span> <span class="n">char_type</span> <span class="o">*</span><span class="n">begin</span><span class="p">,</span> <span class="k">const</span> <span class="n">char_type</span> <span class="o">*</span><span class="n">end</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">copy</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">out</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// These are not implemented because durations don&#39;t have date information.</span>
+  <span class="kt">void</span> <span class="n">on_abbr_weekday</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_full_weekday</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_dec0_weekday</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_dec1_weekday</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_abbr_month</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_full_month</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_datetime</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_loc_date</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_loc_time</span><span class="p">(</span><span class="n">numeric_system</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_us_date</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_iso_date</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_utc_offset</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="kt">void</span> <span class="n">on_tz_name</span><span class="p">()</span> <span class="p">{}</span>
+
+  <span class="kt">void</span> <span class="n">on_24_hour</span><span class="p">(</span><span class="n">numeric_system</span> <span class="n">ns</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">handle_nan_inf</span><span class="p">())</span>
+      <span class="k">return</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">ns</span> <span class="o">==</span> <span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">write</span><span class="p">(</span><span class="n">hour</span><span class="p">(),</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">time</span> <span class="o">=</span> <span class="n">tm</span><span class="p">();</span>
+    <span class="n">time</span><span class="p">.</span><span class="n">tm_hour</span> <span class="o">=</span> <span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">hour</span><span class="p">(),</span> <span class="mi">24</span><span class="p">);</span>
+    <span class="n">format_localized</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="s">&quot;%OH&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_12_hour</span><span class="p">(</span><span class="n">numeric_system</span> <span class="n">ns</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">handle_nan_inf</span><span class="p">())</span>
+      <span class="k">return</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">ns</span> <span class="o">==</span> <span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">write</span><span class="p">(</span><span class="n">hour12</span><span class="p">(),</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">time</span> <span class="o">=</span> <span class="n">tm</span><span class="p">();</span>
+    <span class="n">time</span><span class="p">.</span><span class="n">tm_hour</span> <span class="o">=</span> <span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">hour12</span><span class="p">(),</span> <span class="mi">12</span><span class="p">);</span>
+    <span class="n">format_localized</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="s">&quot;%OI&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_minute</span><span class="p">(</span><span class="n">numeric_system</span> <span class="n">ns</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">handle_nan_inf</span><span class="p">())</span>
+      <span class="k">return</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">ns</span> <span class="o">==</span> <span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">write</span><span class="p">(</span><span class="n">minute</span><span class="p">(),</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">time</span> <span class="o">=</span> <span class="n">tm</span><span class="p">();</span>
+    <span class="n">time</span><span class="p">.</span><span class="n">tm_min</span> <span class="o">=</span> <span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">minute</span><span class="p">(),</span> <span class="mi">60</span><span class="p">);</span>
+    <span class="n">format_localized</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="s">&quot;%OM&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_second</span><span class="p">(</span><span class="n">numeric_system</span> <span class="n">ns</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">handle_nan_inf</span><span class="p">())</span>
+      <span class="k">return</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">ns</span> <span class="o">==</span> <span class="n">numeric_system</span><span class="o">::</span><span class="n">standard</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">write</span><span class="p">(</span><span class="n">second</span><span class="p">(),</span> <span class="mi">2</span><span class="p">);</span>
+<span class="cp">#if FMT_SAFE_DURATION_CAST</span>
+      <span class="c1">// convert rep-&gt;Rep</span>
+      <span class="k">using</span> <span class="n">duration_rep</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span><span class="p">;</span>
+      <span class="k">using</span> <span class="n">duration_Rep</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span><span class="p">;</span>
+      <span class="k">auto</span> <span class="n">tmpval</span> <span class="o">=</span> <span class="n">fmt_safe_duration_cast</span><span class="o">&lt;</span><span class="n">duration_Rep</span><span class="o">&gt;</span><span class="p">(</span><span class="n">duration_rep</span><span class="p">{</span><span class="n">val</span><span class="p">});</span>
+<span class="cp">#else</span>
+      <span class="k">auto</span> <span class="n">tmpval</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+<span class="cp">#endif</span>
+      <span class="k">auto</span> <span class="n">ms</span> <span class="o">=</span> <span class="n">get_milliseconds</span><span class="p">(</span><span class="n">tmpval</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">ms</span> <span class="o">!=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">milliseconds</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="p">{</span>
+        <span class="o">*</span><span class="n">out</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;.&#39;</span><span class="p">;</span>
+        <span class="n">write</span><span class="p">(</span><span class="n">ms</span><span class="p">.</span><span class="n">count</span><span class="p">(),</span> <span class="mi">3</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">auto</span> <span class="n">time</span> <span class="o">=</span> <span class="n">tm</span><span class="p">();</span>
+    <span class="n">time</span><span class="p">.</span><span class="n">tm_sec</span> <span class="o">=</span> <span class="n">to_nonnegative_int</span><span class="p">(</span><span class="n">second</span><span class="p">(),</span> <span class="mi">60</span><span class="p">);</span>
+    <span class="n">format_localized</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="s">&quot;%OS&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_12_hour_time</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">handle_nan_inf</span><span class="p">())</span>
+      <span class="k">return</span><span class="p">;</span>
+
+    <span class="n">format_localized</span><span class="p">(</span><span class="n">time</span><span class="p">(),</span> <span class="s">&quot;%r&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_24_hour_time</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">handle_nan_inf</span><span class="p">())</span> <span class="p">{</span>
+      <span class="o">*</span><span class="n">out</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;:&#39;</span><span class="p">;</span>
+      <span class="n">handle_nan_inf</span><span class="p">();</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">write</span><span class="p">(</span><span class="n">hour</span><span class="p">(),</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="o">*</span><span class="n">out</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;:&#39;</span><span class="p">;</span>
+    <span class="n">write</span><span class="p">(</span><span class="n">minute</span><span class="p">(),</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_iso_time</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">on_24_hour_time</span><span class="p">();</span>
+    <span class="o">*</span><span class="n">out</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;:&#39;</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">handle_nan_inf</span><span class="p">())</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="n">write</span><span class="p">(</span><span class="n">second</span><span class="p">(),</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_am_pm</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">handle_nan_inf</span><span class="p">())</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="n">format_localized</span><span class="p">(</span><span class="n">time</span><span class="p">(),</span> <span class="s">&quot;%p&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_duration_value</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">handle_nan_inf</span><span class="p">())</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="n">write_sign</span><span class="p">();</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">format_chrono_duration_value</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">precision</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kt">void</span> <span class="n">on_duration_unit</span><span class="p">()</span> <span class="p">{</span> <span class="n">out</span> <span class="o">=</span> <span class="n">format_chrono_duration_unit</span><span class="o">&lt;</span><span class="n">Period</span><span class="o">&gt;</span><span class="p">(</span><span class="n">out</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">};</span>
+<span class="p">}</span> <span class="c1">// namespace internal</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Rep</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Period</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">formatter</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">Char</span><span class="o">&gt;</span> <span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+  <span class="n">basic_format_specs</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">specs</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">precision</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">arg_ref_type</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">arg_ref</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="n">arg_ref_type</span> <span class="n">width_ref</span><span class="p">;</span>
+  <span class="n">arg_ref_type</span> <span class="n">precision_ref</span><span class="p">;</span>
+  <span class="k">mutable</span> <span class="n">basic_string_view</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">format_str</span><span class="p">;</span>
+  <span class="k">using</span> <span class="n">duration</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="n">Rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span><span class="p">;</span>
+
+  <span class="k">struct</span> <span class="n">spec_handler</span> <span class="p">{</span>
+    <span class="n">formatter</span> <span class="o">&amp;</span><span class="n">f</span><span class="p">;</span>
+    <span class="n">basic_format_parse_context</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">context</span><span class="p">;</span>
+    <span class="n">basic_string_view</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">format_str</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Id</span><span class="o">&gt;</span> <span class="n">FMT_CONSTEXPR</span> <span class="n">arg_ref_type</span> <span class="n">make_arg_ref</span><span class="p">(</span><span class="n">Id</span> <span class="n">arg_id</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">context</span><span class="p">.</span><span class="n">check_arg_id</span><span class="p">(</span><span class="n">arg_id</span><span class="p">);</span>
+      <span class="k">return</span> <span class="nf">arg_ref_type</span><span class="p">(</span><span class="n">arg_id</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">FMT_CONSTEXPR</span> <span class="n">arg_ref_type</span> <span class="n">make_arg_ref</span><span class="p">(</span><span class="n">basic_string_view</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">arg_id</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">context</span><span class="p">.</span><span class="n">check_arg_id</span><span class="p">(</span><span class="n">arg_id</span><span class="p">);</span>
+      <span class="k">return</span> <span class="nf">arg_ref_type</span><span class="p">(</span><span class="n">arg_id</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">FMT_CONSTEXPR</span> <span class="n">arg_ref_type</span> <span class="n">make_arg_ref</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">auto_id</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="n">arg_ref_type</span><span class="p">(</span><span class="n">context</span><span class="p">.</span><span class="n">next_arg_id</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">on_error</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">msg</span><span class="p">)</span> <span class="p">{</span> <span class="n">FMT_THROW</span><span class="p">(</span><span class="n">format_error</span><span class="p">(</span><span class="n">msg</span><span class="p">));</span> <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">on_fill</span><span class="p">(</span><span class="n">Char</span> <span class="n">fill</span><span class="p">)</span> <span class="p">{</span> <span class="n">f</span><span class="p">.</span><span class="n">specs</span><span class="p">.</span><span class="n">fill</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">fill</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">on_align</span><span class="p">(</span><span class="n">align_t</span> <span class="n">align</span><span class="p">)</span> <span class="p">{</span> <span class="n">f</span><span class="p">.</span><span class="n">specs</span><span class="p">.</span><span class="n">align</span> <span class="o">=</span> <span class="n">align</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">on_width</span><span class="p">(</span><span class="kt">int</span> <span class="n">width</span><span class="p">)</span> <span class="p">{</span> <span class="n">f</span><span class="p">.</span><span class="n">specs</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">on_precision</span><span class="p">(</span><span class="kt">int</span> <span class="n">_precision</span><span class="p">)</span> <span class="p">{</span> <span class="n">f</span><span class="p">.</span><span class="n">precision</span> <span class="o">=</span> <span class="n">_precision</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">end_precision</span><span class="p">()</span> <span class="p">{}</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Id</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="n">on_dynamic_width</span><span class="p">(</span><span class="n">Id</span> <span class="n">arg_id</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">f</span><span class="p">.</span><span class="n">width_ref</span> <span class="o">=</span> <span class="n">make_arg_ref</span><span class="p">(</span><span class="n">arg_id</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Id</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="n">on_dynamic_precision</span><span class="p">(</span><span class="n">Id</span> <span class="n">arg_id</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">f</span><span class="p">.</span><span class="n">precision_ref</span> <span class="o">=</span> <span class="n">make_arg_ref</span><span class="p">(</span><span class="n">arg_id</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">};</span>
+
+  <span class="k">using</span> <span class="n">iterator</span> <span class="o">=</span> <span class="k">typename</span> <span class="n">basic_format_parse_context</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="n">parse_range</span> <span class="p">{</span>
+    <span class="n">iterator</span> <span class="n">begin</span><span class="p">;</span>
+    <span class="n">iterator</span> <span class="n">end</span><span class="p">;</span>
+  <span class="p">};</span>
+
+  <span class="n">FMT_CONSTEXPR</span> <span class="n">parse_range</span> <span class="nf">do_parse</span><span class="p">(</span><span class="n">basic_format_parse_context</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">ctx</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">auto</span> <span class="n">begin</span> <span class="o">=</span> <span class="n">ctx</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">end</span> <span class="o">=</span> <span class="n">ctx</span><span class="p">.</span><span class="n">end</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">begin</span> <span class="o">==</span> <span class="n">end</span> <span class="o">||</span> <span class="o">*</span><span class="n">begin</span> <span class="o">==</span> <span class="sc">&#39;}&#39;</span><span class="p">)</span>
+      <span class="k">return</span> <span class="p">{</span><span class="n">begin</span><span class="p">,</span> <span class="n">begin</span><span class="p">};</span>
+    <span class="n">spec_handler</span> <span class="n">handler</span><span class="p">{</span><span class="o">*</span><span class="k">this</span><span class="p">,</span> <span class="n">ctx</span><span class="p">,</span> <span class="n">format_str</span><span class="p">};</span>
+    <span class="n">begin</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">parse_align</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">handler</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">begin</span> <span class="o">==</span> <span class="n">end</span><span class="p">)</span>
+      <span class="k">return</span> <span class="p">{</span><span class="n">begin</span><span class="p">,</span> <span class="n">begin</span><span class="p">};</span>
+    <span class="n">begin</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">parse_width</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">handler</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">begin</span> <span class="o">==</span> <span class="n">end</span><span class="p">)</span>
+      <span class="k">return</span> <span class="p">{</span><span class="n">begin</span><span class="p">,</span> <span class="n">begin</span><span class="p">};</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">begin</span> <span class="o">==</span> <span class="sc">&#39;.&#39;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_floating_point</span><span class="o">&lt;</span><span class="n">Rep</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">begin</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">parse_precision</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">handler</span><span class="p">);</span>
+      <span class="k">else</span>
+        <span class="n">handler</span><span class="p">.</span><span class="n">on_error</span><span class="p">(</span><span class="s">&quot;precision not allowed for this argument type&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">parse_chrono_format</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">internal</span><span class="o">::</span><span class="n">chrono_format_checker</span><span class="p">());</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">begin</span><span class="p">,</span> <span class="n">end</span><span class="p">};</span>
+  <span class="p">}</span>
+
+<span class="k">public</span><span class="o">:</span>
+  <span class="n">formatter</span><span class="p">()</span> <span class="o">:</span> <span class="n">precision</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="n">FMT_CONSTEXPR</span> <span class="k">auto</span> <span class="n">parse</span><span class="p">(</span><span class="n">basic_format_parse_context</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">ctx</span><span class="p">)</span>
+      <span class="o">-&gt;</span> <span class="k">decltype</span><span class="p">(</span><span class="n">ctx</span><span class="p">.</span><span class="n">begin</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">auto</span> <span class="n">range</span> <span class="o">=</span> <span class="n">do_parse</span><span class="p">(</span><span class="n">ctx</span><span class="p">);</span>
+    <span class="n">format_str</span> <span class="o">=</span> <span class="n">basic_string_view</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="o">&amp;*</span><span class="n">range</span><span class="p">.</span><span class="n">begin</span><span class="p">,</span> <span class="n">internal</span><span class="o">::</span><span class="n">to_unsigned</span><span class="p">(</span><span class="n">range</span><span class="p">.</span><span class="n">end</span> <span class="o">-</span> <span class="n">range</span><span class="p">.</span><span class="n">begin</span><span class="p">));</span>
+    <span class="k">return</span> <span class="n">range</span><span class="p">.</span><span class="n">end</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">FormatContext</span><span class="o">&gt;</span>
+  <span class="k">auto</span> <span class="n">format</span><span class="p">(</span><span class="k">const</span> <span class="n">duration</span> <span class="o">&amp;</span><span class="n">d</span><span class="p">,</span> <span class="n">FormatContext</span> <span class="o">&amp;</span><span class="n">ctx</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">decltype</span><span class="p">(</span><span class="n">ctx</span><span class="p">.</span><span class="n">out</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">auto</span> <span class="n">begin</span> <span class="o">=</span> <span class="n">format_str</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">end</span> <span class="o">=</span> <span class="n">format_str</span><span class="p">.</span><span class="n">end</span><span class="p">();</span>
+    <span class="c1">// As a possible future optimization, we could avoid extra copying if width</span>
+    <span class="c1">// is not specified.</span>
+    <span class="n">basic_memory_buffer</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">buf</span><span class="p">;</span>
+    <span class="k">auto</span> <span class="n">out</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">back_inserter</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span>
+    <span class="k">using</span> <span class="n">range</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">output_range</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">ctx</span><span class="p">.</span><span class="n">out</span><span class="p">()),</span> <span class="n">Char</span><span class="o">&gt;</span><span class="p">;</span>
+    <span class="n">internal</span><span class="o">::</span><span class="n">basic_writer</span><span class="o">&lt;</span><span class="n">range</span><span class="o">&gt;</span> <span class="n">w</span><span class="p">(</span><span class="n">range</span><span class="p">(</span><span class="n">ctx</span><span class="p">.</span><span class="n">out</span><span class="p">()));</span>
+    <span class="n">internal</span><span class="o">::</span><span class="n">handle_dynamic_spec</span><span class="o">&lt;</span><span class="n">internal</span><span class="o">::</span><span class="n">width_checker</span><span class="o">&gt;</span><span class="p">(</span><span class="n">specs</span><span class="p">.</span><span class="n">width</span><span class="p">,</span>
+                                                           <span class="n">width_ref</span><span class="p">,</span> <span class="n">ctx</span><span class="p">);</span>
+    <span class="n">internal</span><span class="o">::</span><span class="n">handle_dynamic_spec</span><span class="o">&lt;</span><span class="n">internal</span><span class="o">::</span><span class="n">precision_checker</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="n">precision</span><span class="p">,</span> <span class="n">precision_ref</span><span class="p">,</span> <span class="n">ctx</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">begin</span> <span class="o">==</span> <span class="n">end</span> <span class="o">||</span> <span class="o">*</span><span class="n">begin</span> <span class="o">==</span> <span class="sc">&#39;}&#39;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">out</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">format_chrono_duration_value</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">d</span><span class="p">.</span><span class="n">count</span><span class="p">(),</span> <span class="n">precision</span><span class="p">);</span>
+      <span class="n">internal</span><span class="o">::</span><span class="n">format_chrono_duration_unit</span><span class="o">&lt;</span><span class="n">Period</span><span class="o">&gt;</span><span class="p">(</span><span class="n">out</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">internal</span><span class="o">::</span><span class="n">chrono_formatter</span><span class="o">&lt;</span><span class="n">FormatContext</span><span class="p">,</span> <span class="k">decltype</span><span class="p">(</span><span class="n">out</span><span class="p">),</span> <span class="n">Rep</span><span class="p">,</span> <span class="n">Period</span><span class="o">&gt;</span> <span class="n">f</span><span class="p">(</span>
+          <span class="n">ctx</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="n">d</span><span class="p">);</span>
+      <span class="n">f</span><span class="p">.</span><span class="n">precision</span> <span class="o">=</span> <span class="n">precision</span><span class="p">;</span>
+      <span class="n">parse_chrono_format</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">f</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">buf</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">buf</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="n">specs</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">w</span><span class="p">.</span><span class="n">out</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="n">FMT_END_NAMESPACE</span>
+
+<span class="cp">#endif </span><span class="c1">// FMT_CHRONO_H_</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

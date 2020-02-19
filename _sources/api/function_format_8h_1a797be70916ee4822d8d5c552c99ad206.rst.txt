@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a797be70916ee4822d8d5c552c99ad206:
+
+Template Function fmt::v6::internal::is_name_start
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::is_name_start(Char)

@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1a1039b11f80c779f29b7dd7594ac15dd2:
+
+Template Function fmt::v6::internal::decimal_point(locale_ref)
+==============================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::decimal_point(locale_ref)

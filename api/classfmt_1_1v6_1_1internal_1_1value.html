@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Class value &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Class width_checker" href="classfmt_1_1v6_1_1internal_1_1width__checker.html" />
+    <link rel="prev" title="Template Class truncating_iterator_base" href="classfmt_1_1v6_1_1internal_1_1truncating__iterator__base.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Class value</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/classfmt_1_1v6_1_1internal_1_1value.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-class-value">
+<span id="exhale-class-classfmt-1-1v6-1-1internal-1-1value"></span><h1>Template Class value<a class="headerlink" href="#template-class-value" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_core.h.html#file-compiler-util-fmt-core-h"><span class="std std-ref">File core.h</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0EN3fmt2v68internal5valueE">
+<span id="_CPPv3I0EN3fmt2v68internal5valueE"></span><span id="_CPPv2I0EN3fmt2v68internal5valueE"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value"></span>template&lt;typename <code class="sig-name descname">Context</code>&gt;<br /><em class="property">class </em><code class="sig-name descname">value</code><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal5valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal5valueI7ContextE9char_typeE">
+<span id="_CPPv3IEN3fmt2v68internal5valueI7ContextE9char_typeE"></span><span id="_CPPv2IEN3fmt2v68internal5valueI7ContextE9char_typeE"></span>template&lt;&gt;<br /><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a15c9db11ca0213782e9ee54bc506a18f"></span><em class="property">using </em><code class="sig-name descname">char_type</code> = <em class="property">typename</em> Context::char_type<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal5valueI7ContextE9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEi">
+<span id="_CPPv3N3fmt2v68internal5value5valueEi"></span><span id="_CPPv2N3fmt2v68internal5value5valueEi"></span><span id="fmt::v6::internal::value::value__i"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a581b03606bcfee4bd51852bb7d0e3429"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span>int <em>val</em> = 0<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEj">
+<span id="_CPPv3N3fmt2v68internal5value5valueEj"></span><span id="_CPPv2N3fmt2v68internal5value5valueEj"></span><span id="fmt::v6::internal::value::value__unsigned"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a7b0d6553a29402423863a98802501253"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span>unsigned <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEx">
+<span id="_CPPv3N3fmt2v68internal5value5valueEx"></span><span id="_CPPv2N3fmt2v68internal5value5valueEx"></span><span id="fmt::v6::internal::value::value__l-l"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a68136883af2ce560272b24d23dfb7d01"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span>long long <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEx" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEy">
+<span id="_CPPv3N3fmt2v68internal5value5valueEy"></span><span id="_CPPv2N3fmt2v68internal5value5valueEy"></span><span id="fmt::v6::internal::value::value__unsigned-l-l"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a681a17fe11d36ece697916c14284e7ce"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span>unsigned long long <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEy" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueE8int128_t">
+<span id="_CPPv3N3fmt2v68internal5value5valueE8int128_t"></span><span id="_CPPv2N3fmt2v68internal5value5valueE8int128_t"></span><span id="fmt::v6::internal::value::value__int128_t"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a3b9df15798c6ca8ed174f4a80df88707"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1int128__t.html#_CPPv4N3fmt2v68internal8int128_tE" title="fmt::v6::internal::int128_t">int128_t</a> <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueE8int128_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueE9uint128_t">
+<span id="_CPPv3N3fmt2v68internal5value5valueE9uint128_t"></span><span id="_CPPv2N3fmt2v68internal5value5valueE9uint128_t"></span><span id="fmt::v6::internal::value::value__uint128_t"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a6c60f746de1da98a33e34b6435c7d8c4"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1uint128__t.html#_CPPv4N3fmt2v68internal9uint128_tE" title="fmt::v6::internal::uint128_t">uint128_t</a> <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueE9uint128_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEf">
+<span id="_CPPv3N3fmt2v68internal5value5valueEf"></span><span id="_CPPv2N3fmt2v68internal5value5valueEf"></span><span id="fmt::v6::internal::value::value__float"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a4743ed4ed7b9163c864bdf1d8030ee6d"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span>float <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEd">
+<span id="_CPPv3N3fmt2v68internal5value5valueEd"></span><span id="_CPPv2N3fmt2v68internal5value5valueEd"></span><span id="fmt::v6::internal::value::value__double"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1afac461ef9fe8ff5caf8b68756254d43e"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span>double <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEe">
+<span id="_CPPv3N3fmt2v68internal5value5valueEe"></span><span id="_CPPv2N3fmt2v68internal5value5valueEe"></span><span id="fmt::v6::internal::value::value__l-double"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1ab407e4aa6cb3fc500e06fc415f53569d"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span>long double <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEe" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEb">
+<span id="_CPPv3N3fmt2v68internal5value5valueEb"></span><span id="_CPPv2N3fmt2v68internal5value5valueEb"></span><span id="fmt::v6::internal::value::value__b"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a3aa50611d67e628e0953b20539435deb"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span>bool <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueE9char_type">
+<span id="_CPPv3N3fmt2v68internal5value5valueE9char_type"></span><span id="_CPPv2N3fmt2v68internal5value5valueE9char_type"></span><span id="fmt::v6::internal::value::value__char_type"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1ac472826daaed1767251715212bf42f8c"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span><a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueE9char_type" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEPK9char_type">
+<span id="_CPPv3N3fmt2v68internal5value5valueEPK9char_type"></span><span id="_CPPv2N3fmt2v68internal5value5valueEPK9char_type"></span><span id="fmt::v6::internal::value::value__char_typeCP"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a7c3b094f02a3680f373db46c787db481"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEPK9char_type" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueE17basic_string_viewI9char_typeE">
+<span id="_CPPv3N3fmt2v68internal5value5valueE17basic_string_viewI9char_typeE"></span><span id="_CPPv2N3fmt2v68internal5value5valueE17basic_string_viewI9char_typeE"></span><span id="fmt::v6::internal::value::value__basic_string_view:char_type:"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1ad3fcd41bd6e920316c0e31bd9335fec8"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span>basic_string_view&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt; <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueE17basic_string_viewI9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueEPKv">
+<span id="_CPPv3N3fmt2v68internal5value5valueEPKv"></span><span id="_CPPv2N3fmt2v68internal5value5valueEPKv"></span><span id="fmt::v6::internal::value::value__voidCP"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1aaf3a3faa752cb5590012057fe7cf1431"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span><em class="property">const</em> void *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueEPKv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0EN3fmt2v68internal5value5valueERK1T">
+<span id="_CPPv3I0EN3fmt2v68internal5value5valueERK1T"></span><span id="_CPPv2I0EN3fmt2v68internal5value5valueERK1T"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1afbcbedace2bbfe1f9a95bc40543c0c4a"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><code class="sig-name descname">value</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0EN3fmt2v68internal5value5valueERK1T" title="fmt::v6::internal::value::value::T">T</a> &amp;<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal5value5valueERK1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal5value5valueERK14named_arg_baseI9char_typeE">
+<span id="_CPPv3N3fmt2v68internal5value5valueERK14named_arg_baseI9char_typeE"></span><span id="_CPPv2N3fmt2v68internal5value5valueERK14named_arg_baseI9char_typeE"></span><span id="fmt::v6::internal::value::value__named_arg_base:char_type:CR"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a5532b1cbb3a6c3317287cbb4221b72fd"></span><code class="sig-name descname">value</code><span class="sig-paren">(</span><em class="property">const</em> named_arg_base&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt; &amp;<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value5valueERK14named_arg_baseI9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value9int_valueE">
+<span id="_CPPv3N3fmt2v68internal5value9int_valueE"></span><span id="_CPPv2N3fmt2v68internal5value9int_valueE"></span><span id="fmt::v6::internal::value::int_value__i"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1acfbb190260dc943b00b7f6b3d8fcf649"></span>int <code class="sig-name descname">int_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value9int_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value10uint_valueE">
+<span id="_CPPv3N3fmt2v68internal5value10uint_valueE"></span><span id="_CPPv2N3fmt2v68internal5value10uint_valueE"></span><span id="fmt::v6::internal::value::uint_value__unsigned"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1add460747e9a5b3435054119203cec52d"></span>unsigned <code class="sig-name descname">uint_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value10uint_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value15long_long_valueE">
+<span id="_CPPv3N3fmt2v68internal5value15long_long_valueE"></span><span id="_CPPv2N3fmt2v68internal5value15long_long_valueE"></span><span id="fmt::v6::internal::value::long_long_value__l-l"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1af6232312773ed3d1552fcf6ad9f9b675"></span>long long <code class="sig-name descname">long_long_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value15long_long_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value16ulong_long_valueE">
+<span id="_CPPv3N3fmt2v68internal5value16ulong_long_valueE"></span><span id="_CPPv2N3fmt2v68internal5value16ulong_long_valueE"></span><span id="fmt::v6::internal::value::ulong_long_value__unsigned-l-l"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1ab0322ba63bbb7a95429a7cc085e4f8f3"></span>unsigned long long <code class="sig-name descname">ulong_long_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value16ulong_long_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value12int128_valueE">
+<span id="_CPPv3N3fmt2v68internal5value12int128_valueE"></span><span id="_CPPv2N3fmt2v68internal5value12int128_valueE"></span><span id="fmt::v6::internal::value::int128_value__int128_t"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a1a6e43bddf058f094db9749190324425"></span><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1int128__t.html#_CPPv4N3fmt2v68internal8int128_tE" title="fmt::v6::internal::int128_t">int128_t</a> <code class="sig-name descname">int128_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value12int128_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value13uint128_valueE">
+<span id="_CPPv3N3fmt2v68internal5value13uint128_valueE"></span><span id="_CPPv2N3fmt2v68internal5value13uint128_valueE"></span><span id="fmt::v6::internal::value::uint128_value__uint128_t"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1aac437fd87b3ae383e7d14d0956e07d1f"></span><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1uint128__t.html#_CPPv4N3fmt2v68internal9uint128_tE" title="fmt::v6::internal::uint128_t">uint128_t</a> <code class="sig-name descname">uint128_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value13uint128_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value10bool_valueE">
+<span id="_CPPv3N3fmt2v68internal5value10bool_valueE"></span><span id="_CPPv2N3fmt2v68internal5value10bool_valueE"></span><span id="fmt::v6::internal::value::bool_value__b"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a87c192e06b9f4159b81057b2e1dbaac7"></span>bool <code class="sig-name descname">bool_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value10bool_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value10char_valueE">
+<span id="_CPPv3N3fmt2v68internal5value10char_valueE"></span><span id="_CPPv2N3fmt2v68internal5value10char_valueE"></span><span id="fmt::v6::internal::value::char_value__char_type"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1af5ffe71b3efa90e21d99ac0f75375c6b"></span><a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> <code class="sig-name descname">char_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value10char_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value11float_valueE">
+<span id="_CPPv3N3fmt2v68internal5value11float_valueE"></span><span id="_CPPv2N3fmt2v68internal5value11float_valueE"></span><span id="fmt::v6::internal::value::float_value__float"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a2bdd95a968975e29504762f8f97686e3"></span>float <code class="sig-name descname">float_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value11float_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value12double_valueE">
+<span id="_CPPv3N3fmt2v68internal5value12double_valueE"></span><span id="_CPPv2N3fmt2v68internal5value12double_valueE"></span><span id="fmt::v6::internal::value::double_value__double"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a32560bb92051876dc9f3819d21b822af"></span>double <code class="sig-name descname">double_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value12double_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value17long_double_valueE">
+<span id="_CPPv3N3fmt2v68internal5value17long_double_valueE"></span><span id="_CPPv2N3fmt2v68internal5value17long_double_valueE"></span><span id="fmt::v6::internal::value::long_double_value__l-double"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1afde9633308c1fd507242b3f54a7996ab"></span>long double <code class="sig-name descname">long_double_value</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value17long_double_valueE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value7pointerE">
+<span id="_CPPv3N3fmt2v68internal5value7pointerE"></span><span id="_CPPv2N3fmt2v68internal5value7pointerE"></span><span id="fmt::v6::internal::value::pointer__voidCP"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a1faccb732c75b9ab912c0edd1b6ae738"></span><em class="property">const</em> void *<code class="sig-name descname">pointer</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value7pointerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value6stringE">
+<span id="_CPPv3N3fmt2v68internal5value6stringE"></span><span id="_CPPv2N3fmt2v68internal5value6stringE"></span><span id="fmt::v6::internal::value::string__string_value:char_type:"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a4a13bb82cff35b6c702e5b4df794aeea"></span>string_value&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt; <code class="sig-name descname">string</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value6customE">
+<span id="_CPPv3N3fmt2v68internal5value6customE"></span><span id="_CPPv2N3fmt2v68internal5value6customE"></span><span id="fmt::v6::internal::value::custom__custom_value:Context:"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1ad3260f54ee85e3182abbd82511329936"></span>custom_value&lt;Context&gt; <code class="sig-name descname">custom</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value6customE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5value9named_argE">
+<span id="_CPPv3N3fmt2v68internal5value9named_argE"></span><span id="_CPPv2N3fmt2v68internal5value9named_argE"></span><span id="fmt::v6::internal::value::named_arg__named_arg_base:char_type:CP"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1aec4352067fc1d343acc5c1b4e578ed4d"></span><em class="property">const</em> named_arg_base&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt; *<code class="sig-name descname">named_arg</code><a class="headerlink" href="#_CPPv4N3fmt2v68internal5value9named_argE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3fmt2v68internal5valueUt1_6E">
+<span id="_CPPv3N3fmt2v68internal5valueUt1_6E"></span><span class="target" id="classfmt_1_1v6_1_1internal_1_1value_1a8c468225e4e30748808328a6a48f8811"></span><em class="property">union</em> fmt::v6::internal::value::<strong>[anonymous]</strong> <strong>[anonymous]</strong><a class="headerlink" href="#_CPPv4N3fmt2v68internal5valueUt1_6E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1width__checker.html" class="btn btn-neutral float-right" title="Template Class width_checker" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classfmt_1_1v6_1_1internal_1_1truncating__iterator__base.html" class="btn btn-neutral float-left" title="Template Class truncating_iterator_base" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

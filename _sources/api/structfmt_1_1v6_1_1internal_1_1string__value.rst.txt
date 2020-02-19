@@ -1,0 +1,16 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1string__value:
+
+Template Struct string_value
+============================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::string_value
+   :members:
+   :protected-members:
+   :undoc-members:

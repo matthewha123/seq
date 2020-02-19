@@ -1,0 +1,13 @@
+.. _exhale_typedef_core_8h_1a201ff17a0aab14ec0f5ba3cc5e3b3fff:
+
+Typedef fmt::v6::internal::has_fallback_formatter
+=================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::internal::has_fallback_formatter

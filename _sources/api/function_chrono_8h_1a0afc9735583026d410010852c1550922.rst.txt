@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a0afc9735583026d410010852c1550922:
+
+Template Function fmt::v6::internal::mod
+========================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::mod(T, int)

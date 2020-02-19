@@ -1,0 +1,13 @@
+.. _exhale_define_format-inl_8h_1a4aa79926398ee27fe7d6db8b0dd54edf:
+
+Define FMT_TRY
+==============
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_TRY

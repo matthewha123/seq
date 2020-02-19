@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1a5126ff01030f035283ab891ec7957d40:
+
+Template Function fmt::v6::arg(S, internal::named_arg<T, Char>)
+===============================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::arg(S, internal::named_arg<T, Char>)

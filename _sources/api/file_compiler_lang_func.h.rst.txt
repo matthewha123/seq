@@ -1,0 +1,75 @@
+
+.. _file_compiler_lang_func.h:
+
+File func.h
+===========
+
+|exhale_lsh| :ref:`Parent directory <dir_compiler_lang>` (``compiler/lang``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``compiler/lang/func.h``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_compiler_lang_func.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``lang/stmt.h`` (:ref:`file_compiler_lang_stmt.h`)
+
+- ``types/func.h`` (:ref:`file_compiler_types_func.h`)
+
+- ``types/generic.h`` (:ref:`file_compiler_types_generic.h`)
+
+- ``types/types.h`` (:ref:`file_compiler_types_types.h`)
+
+- ``unordered_map``
+
+- ``util/common.h`` (:ref:`file_compiler_util_common.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_compiler_lang_patterns.h`
+
+- :ref:`file_compiler_lang_seq.h`
+
+- :ref:`file_compiler_lang_var.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_seq`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classseq_1_1BaseFunc`
+
+- :ref:`exhale_class_classseq_1_1BaseFuncLite`
+
+- :ref:`exhale_class_classseq_1_1Func`
+

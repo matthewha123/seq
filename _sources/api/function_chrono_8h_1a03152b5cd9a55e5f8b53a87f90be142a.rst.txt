@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a03152b5cd9a55e5f8b53a87f90be142a:
+
+Function fmt::v6::internal::get_units< std::peta >
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_units< std::peta >()

@@ -1,0 +1,399 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template Struct arg_mapper &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template Struct arg_ref" href="structfmt_1_1v6_1_1internal_1_1arg__ref.html" />
+    <link rel="prev" title="Struct arg_map::entry" href="structfmt_1_1v6_1_1internal_1_1arg__map_1_1entry.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="doxygen.html">Compiler API</a> &raquo;</li>
+        
+      <li>Template Struct arg_mapper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/structfmt_1_1v6_1_1internal_1_1arg__mapper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="template-struct-arg-mapper">
+<span id="exhale-struct-structfmt-1-1v6-1-1internal-1-1arg-mapper"></span><h1>Template Struct arg_mapper<a class="headerlink" href="#template-struct-arg-mapper" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_compiler_util_fmt_core.h.html#file-compiler-util-fmt-core-h"><span class="std std-ref">File core.h</span></a></p></li>
+</ul>
+<div class="section" id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4I0EN3fmt2v68internal10arg_mapperE">
+<span id="_CPPv3I0EN3fmt2v68internal10arg_mapperE"></span><span id="_CPPv2I0EN3fmt2v68internal10arg_mapperE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper"></span>template&lt;typename <code class="sig-name descname">Context</code>&gt;<br /><em class="property">struct </em><code class="sig-name descname">arg_mapper</code><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal10arg_mapperE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv4IEN3fmt2v68internal10arg_mapperI7ContextE9char_typeE">
+<span id="_CPPv3IEN3fmt2v68internal10arg_mapperI7ContextE9char_typeE"></span><span id="_CPPv2IEN3fmt2v68internal10arg_mapperI7ContextE9char_typeE"></span>template&lt;&gt;<br /><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1aaf788bb4bebf8e3f8f2f9ef2987fedf7"></span><em class="property">using </em><code class="sig-name descname">char_type</code> = <em class="property">typename</em> Context::char_type<a class="headerlink" href="#_CPPv4IEN3fmt2v68internal10arg_mapperI7ContextE9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEa">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEa"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEa"></span><span id="fmt::v6::internal::arg_mapper::map__signed-c"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a607fc10758419b38fba648c4ce4ea305"></span>int <code class="sig-name descname">map</code><span class="sig-paren">(</span>signed char <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEa" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEh">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEh"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEh"></span><span id="fmt::v6::internal::arg_mapper::map__unsigned-c"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1aa743f14cdf33040ddfa2c5fee9929ca1"></span>unsigned <code class="sig-name descname">map</code><span class="sig-paren">(</span>unsigned char <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEh" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEs">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEs"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEs"></span><span id="fmt::v6::internal::arg_mapper::map__short"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1aad933c226ebe564eb129b9e46c277695"></span>int <code class="sig-name descname">map</code><span class="sig-paren">(</span>short <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEs" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEt">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEt"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEt"></span><span id="fmt::v6::internal::arg_mapper::map__unsigned-short"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a07f7150eae8255dfac2df633b1ce09ef"></span>unsigned <code class="sig-name descname">map</code><span class="sig-paren">(</span>unsigned short <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEt" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEi">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEi"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEi"></span><span id="fmt::v6::internal::arg_mapper::map__i"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1ab183568406ed327c8a0b6c6eb6eee294"></span>int <code class="sig-name descname">map</code><span class="sig-paren">(</span>int <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEj">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEj"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEj"></span><span id="fmt::v6::internal::arg_mapper::map__unsigned"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1ac2137b21988185de531a679e8fb3b3df"></span>unsigned <code class="sig-name descname">map</code><span class="sig-paren">(</span>unsigned <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEl">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEl"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEl"></span><span id="fmt::v6::internal::arg_mapper::map__l"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1afbb8d7a8bcfc77a3250cd0269dc4f7e7"></span><a class="reference internal" href="typedef_core_8h_1ae4e8c7425dbd630330fbfbe6cf2ae2f9.html#_CPPv4N3fmt2v68internal9long_typeE" title="fmt::v6::internal::long_type">long_type</a> <code class="sig-name descname">map</code><span class="sig-paren">(</span>long <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEl" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEm">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEm"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEm"></span><span id="fmt::v6::internal::arg_mapper::map__unsigned-l"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a6c61d4dec162d6fae951641a1764389d"></span><a class="reference internal" href="typedef_core_8h_1a6940a48bb049eaa01366b76d11b9caf1.html#_CPPv4N3fmt2v68internal10ulong_typeE" title="fmt::v6::internal::ulong_type">ulong_type</a> <code class="sig-name descname">map</code><span class="sig-paren">(</span>unsigned long <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEm" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEx">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEx"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEx"></span><span id="fmt::v6::internal::arg_mapper::map__l-l"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a89a3152e15fb47ee5f6b23548bbf06a1"></span>long long <code class="sig-name descname">map</code><span class="sig-paren">(</span>long long <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEx" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEy">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEy"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEy"></span><span id="fmt::v6::internal::arg_mapper::map__unsigned-l-l"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a482c2f71bbc764db1d9da0e9e830ea6d"></span>unsigned long long <code class="sig-name descname">map</code><span class="sig-paren">(</span>unsigned long long <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEy" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapE8int128_t">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapE8int128_t"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapE8int128_t"></span><span id="fmt::v6::internal::arg_mapper::map__int128_t"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1ad01c8dfe7ffb3c9b551998939923732d"></span><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1int128__t.html#_CPPv4N3fmt2v68internal8int128_tE" title="fmt::v6::internal::int128_t">int128_t</a> <code class="sig-name descname">map</code><span class="sig-paren">(</span><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1int128__t.html#_CPPv4N3fmt2v68internal8int128_tE" title="fmt::v6::internal::int128_t">int128_t</a> <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapE8int128_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapE9uint128_t">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapE9uint128_t"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapE9uint128_t"></span><span id="fmt::v6::internal::arg_mapper::map__uint128_t"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a289df85c7a7a7458a348cb985a46cfa0"></span><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1uint128__t.html#_CPPv4N3fmt2v68internal9uint128_tE" title="fmt::v6::internal::uint128_t">uint128_t</a> <code class="sig-name descname">map</code><span class="sig-paren">(</span><a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1uint128__t.html#_CPPv4N3fmt2v68internal9uint128_tE" title="fmt::v6::internal::uint128_t">uint128_t</a> <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapE9uint128_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEb">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEb"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEb"></span><span id="fmt::v6::internal::arg_mapper::map__b"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a633ba52a57c7a04c7d298aefa3c8f7d3"></span>bool <code class="sig-name descname">map</code><span class="sig-paren">(</span>bool <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXN7is_charI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE9char_type1T">
+<span id="_CPPv3I0_11enable_if_tIXN7is_charI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE1T"></span><span id="_CPPv2I0_11enable_if_tIX(is_char<T>::value)EiEEN3fmt2v68internal10arg_mapper3mapE1T"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a65327ad12415e301f15f30684ce0aed6"></span>template&lt;typename <code class="sig-name descname">T</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(<a class="reference internal" href="structfmt_1_1v6_1_1is__char.html#_CPPv4I0EN3fmt2v67is_charE" title="fmt::v6::is_char">is_char</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXN7is_charI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE9char_type1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value), int&gt; = 0&gt;<br /><a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> <code class="sig-name descname">map</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0_11enable_if_tIXN7is_charI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE9char_type1T" title="fmt::v6::internal::arg_mapper::map::T">T</a> <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXN7is_charI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE9char_type1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEf">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEf"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEf"></span><span id="fmt::v6::internal::arg_mapper::map__float"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a757c22a720a68ab51c2d882bc536fd41"></span>float <code class="sig-name descname">map</code><span class="sig-paren">(</span>float <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEf" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEd">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEd"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEd"></span><span id="fmt::v6::internal::arg_mapper::map__double"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a5f6a22c8fbdc9b9aa98c4c4cdea6abd8"></span>double <code class="sig-name descname">map</code><span class="sig-paren">(</span>double <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEe">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEe"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEe"></span><span id="fmt::v6::internal::arg_mapper::map__l-double"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a5613b47b2c3ebc20b2aee4ed18bda1ad"></span>long double <code class="sig-name descname">map</code><span class="sig-paren">(</span>long double <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEe" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEP9char_type">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEP9char_type"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEP9char_type"></span><span id="fmt::v6::internal::arg_mapper::map__char_typeP"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1ae386ddb4cf82756c632dfdf1dbc8b92a"></span><em class="property">const</em> <a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> *<code class="sig-name descname">map</code><span class="sig-paren">(</span><a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEP9char_type" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEPK9char_type">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEPK9char_type"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEPK9char_type"></span><span id="fmt::v6::internal::arg_mapper::map__char_typeCP"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a12918d418e37a1ccb6e68647b7cc40d8"></span><em class="property">const</em> <a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> *<code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a> *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEPK9char_type" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T">
+<span id="_CPPv3I0_11enable_if_tIXN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span id="_CPPv2I0_11enable_if_tIX(is_string<T>::value)EiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a1fa72a630ced51fb2b2b6d49de953752"></span>template&lt;typename <code class="sig-name descname">T</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(<a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1is__string.html#_CPPv4I0EN3fmt2v68internal9is_stringE" title="fmt::v6::internal::is_string">is_string</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value), int&gt; = 0&gt;<br />basic_string_view&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt; <code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a> &amp;<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEntN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T">
+<span id="_CPPv3I0_11enable_if_tIXaaNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEntN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span id="_CPPv2I0_11enable_if_tIX(std::is_constructible<basic_string_view<char_type>, T>::value && !is_string<T>::value)EiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a1fa72a630ced51fb2b2b6d49de953752"></span>template&lt;typename <code class="sig-name descname">T</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(std::is_constructible&lt;basic_string_view&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt;, <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEntN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value &amp;&amp; !<a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1is__string.html#_CPPv4I0EN3fmt2v68internal9is_stringE" title="fmt::v6::internal::is_string">is_string</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEntN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value), int&gt; = 0&gt;<br />basic_string_view&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt; <code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEntN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a> &amp;<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEntN9is_stringI1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEaantN9is_stringI1TE5valueEntN13has_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T">
+<span id="_CPPv3I0_11enable_if_tIXaaNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEaantN9is_stringI1TE5valueEntN13has_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span id="_CPPv2I0_11enable_if_tIX(std::is_constructible<std_string_view<char_type>, T>::value && !std::is_constructible<basic_string_view<char_type>, T>::value && !is_string<T>::value && !has_formatter<T, Context>::value)EiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a1fa72a630ced51fb2b2b6d49de953752"></span>template&lt;typename <code class="sig-name descname">T</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(std::is_constructible&lt;<a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1std__string__view.html#_CPPv4I0EN3fmt2v68internal15std_string_viewE" title="fmt::v6::internal::std_string_view">std_string_view</a>&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt;, <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEaantN9is_stringI1TE5valueEntN13has_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value &amp;&amp; !std::is_constructible&lt;basic_string_view&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt;, <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEaantN9is_stringI1TE5valueEntN13has_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value &amp;&amp; !<a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1is__string.html#_CPPv4I0EN3fmt2v68internal9is_stringE" title="fmt::v6::internal::is_string">is_string</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEaantN9is_stringI1TE5valueEntN13has_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value &amp;&amp; !<a class="reference internal" href="typedef_core_8h_1a968ec6bde8e9db9b16b382392df5d135.html#_CPPv4N3fmt2v613has_formatterE" title="fmt::v6::has_formatter">has_formatter</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEaantN9is_stringI1TE5valueEntN13has_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>, Context&gt;::value), int&gt; = 0&gt;<br />basic_string_view&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt; <code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEaantN9is_stringI1TE5valueEntN13has_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a> &amp;<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXaaNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEaantN9is_stringI1TE5valueEntN13has_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapE17basic_string_viewI9char_typeERK1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEPKa">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEPKa"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEPKa"></span><span id="fmt::v6::internal::arg_mapper::map__signed-cCP"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a3753e5e3fa703702fc25aad8b3e26b61"></span><em class="property">const</em> char *<code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> signed char *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEPKa" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEPKh">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEPKh"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEPKh"></span><span id="fmt::v6::internal::arg_mapper::map__unsigned-cCP"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a48268401fb32ab267268889cdd0c455d"></span><em class="property">const</em> char *<code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> unsigned char *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEPKh" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEPv">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEPv"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEPv"></span><span id="fmt::v6::internal::arg_mapper::map__voidP"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a3de7c9946d394e2c003b444c5263c626"></span><em class="property">const</em> void *<code class="sig-name descname">map</code><span class="sig-paren">(</span>void *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEPv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapEPKv">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapEPKv"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapEPKv"></span><span id="fmt::v6::internal::arg_mapper::map__voidCP"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1ad78f01d68cf6769593b27f8d0cabb44e"></span><em class="property">const</em> void *<code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> void *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapEPKv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N3fmt2v68internal10arg_mapper3mapENSt9nullptr_tE">
+<span id="_CPPv3N3fmt2v68internal10arg_mapper3mapENSt9nullptr_tE"></span><span id="_CPPv2N3fmt2v68internal10arg_mapper3mapENSt9nullptr_tE"></span><span id="fmt::v6::internal::arg_mapper::map__std::nullptr_t"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1abddc6d599256f62555e09b872497574e"></span><em class="property">const</em> void *<code class="sig-name descname">map</code><span class="sig-paren">(</span>std::nullptr_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3fmt2v68internal10arg_mapper3mapENSt9nullptr_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0EN3fmt2v68internal10arg_mapper3mapEiPK1T">
+<span id="_CPPv3I0EN3fmt2v68internal10arg_mapper3mapEPK1T"></span><span id="_CPPv2I0EN3fmt2v68internal10arg_mapper3mapEPK1T"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a18f9eabc05fa2f459e2f6b80e236a067"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br />int <code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0EN3fmt2v68internal10arg_mapper3mapEiPK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a> *<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal10arg_mapper3mapEiPK1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXaaNSt7is_enumI1TE5valueEaantN13has_formatterI1T7ContextE5valueEntN22has_fallback_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapEDaRK1T">
+<span id="_CPPv3I0_11enable_if_tIXaaNSt7is_enumI1TE5valueEaantN13has_formatterI1T7ContextE5valueEntN22has_fallback_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span id="_CPPv2I0_11enable_if_tIX(std::is_enum<T>::value && !has_formatter<T, Context>::value && !has_fallback_formatter<T, Context>::value)EiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a61050ce7ec7988df16250be5086859d2"></span>template&lt;typename <code class="sig-name descname">T</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(std::is_enum&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt7is_enumI1TE5valueEaantN13has_formatterI1T7ContextE5valueEntN22has_fallback_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapEDaRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value &amp;&amp; !<a class="reference internal" href="typedef_core_8h_1a968ec6bde8e9db9b16b382392df5d135.html#_CPPv4N3fmt2v613has_formatterE" title="fmt::v6::has_formatter">has_formatter</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt7is_enumI1TE5valueEaantN13has_formatterI1T7ContextE5valueEntN22has_fallback_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapEDaRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>, Context&gt;::value &amp;&amp; !<a class="reference internal" href="typedef_core_8h_1a201ff17a0aab14ec0f5ba3cc5e3b3fff.html#_CPPv4N3fmt2v68internal22has_fallback_formatterE" title="fmt::v6::internal::has_fallback_formatter">has_fallback_formatter</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt7is_enumI1TE5valueEaantN13has_formatterI1T7ContextE5valueEntN22has_fallback_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapEDaRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>, Context&gt;::value), int&gt; = 0&gt;<br />auto <code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaaNSt7is_enumI1TE5valueEaantN13has_formatterI1T7ContextE5valueEntN22has_fallback_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapEDaRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a> &amp;<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXaaNSt7is_enumI1TE5valueEaantN13has_formatterI1T7ContextE5valueEntN22has_fallback_formatterI1T7ContextE5valueEEiEEN3fmt2v68internal10arg_mapper3mapEDaRK1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T">
+<span id="_CPPv3I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span id="_CPPv2I0_11enable_if_tIX(!is_string<T>::value && !is_char<T>::value && !std::is_constructible<basic_string_view<char_type>, T>::value && (has_formatter<T, Context>::value || (has_fallback_formatter<T, Context>::value && !std::is_constructible<std_string_view<char_type>, T>::value)))EiEEN3fmt2v68internal10arg_mapper3mapERK1T"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a266dd0dc01054dc0a1caf17f063642aa"></span>template&lt;typename <code class="sig-name descname">T</code>, <a class="reference internal" href="typedef_core_8h_1a43da2a686e8ee8b319a4c63faa9f0e70.html#_CPPv4N3fmt2v611enable_if_tE" title="fmt::v6::enable_if_t">enable_if_t</a>&lt;(!<a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1is__string.html#_CPPv4I0EN3fmt2v68internal9is_stringE" title="fmt::v6::internal::is_string">is_string</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value &amp;&amp; !<a class="reference internal" href="structfmt_1_1v6_1_1is__char.html#_CPPv4I0EN3fmt2v67is_charE" title="fmt::v6::is_char">is_char</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value &amp;&amp; !std::is_constructible&lt;basic_string_view&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt;, <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value &amp;&amp; (<a class="reference internal" href="typedef_core_8h_1a968ec6bde8e9db9b16b382392df5d135.html#_CPPv4N3fmt2v613has_formatterE" title="fmt::v6::has_formatter">has_formatter</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>, Context&gt;::value || (<a class="reference internal" href="typedef_core_8h_1a201ff17a0aab14ec0f5ba3cc5e3b3fff.html#_CPPv4N3fmt2v68internal22has_fallback_formatterE" title="fmt::v6::internal::has_fallback_formatter">has_fallback_formatter</a>&lt;<a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>, Context&gt;::value &amp;&amp; !std::is_constructible&lt;<a class="reference internal" href="structfmt_1_1v6_1_1internal_1_1std__string__view.html#_CPPv4I0EN3fmt2v68internal15std_string_viewE" title="fmt::v6::internal::std_string_view">std_string_view</a>&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt;, <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>&gt;::value))), int&gt; = 0&gt;<br /><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a> &amp;<code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a> &amp;<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_11enable_if_tIXaantN9is_stringI1TE5valueEaantN7is_charI1TE5valueEaantNSt16is_constructibleI17basic_string_viewI9char_typeE1TE5valueEooN13has_formatterI1T7ContextE5valueEaaN22has_fallback_formatterI1T7ContextE5valueEntNSt16is_constructibleI15std_string_viewI9char_typeE1TE5valueEEiEEN3fmt2v68internal10arg_mapper3mapERK1TRK1T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4I0EN3fmt2v68internal10arg_mapper3mapERK14named_arg_baseI9char_typeERK9named_argI1T9char_typeE">
+<span id="_CPPv3I0EN3fmt2v68internal10arg_mapper3mapERK9named_argI1T9char_typeE"></span><span id="_CPPv2I0EN3fmt2v68internal10arg_mapper3mapERK9named_argI1T9char_typeE"></span><span class="target" id="structfmt_1_1v6_1_1internal_1_1arg__mapper_1a6349c4bc5c31ffdfb6cb2cfdf10f8d9c"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><em class="property">const</em> named_arg_base&lt;<a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt; &amp;<code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="property">const</em> named_arg&lt;<a class="reference internal" href="#_CPPv4I0EN3fmt2v68internal10arg_mapper3mapEiPK1T" title="fmt::v6::internal::arg_mapper::map::T">T</a>, <a class="reference internal" href="enum_core_8h_1a5c0a00674d31fcf5980a3824b3ebcb66.html#_CPPv4N3fmt2v68internal9char_typeE" title="fmt::v6::internal::char_type">char_type</a>&gt; &amp;<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3fmt2v68internal10arg_mapper3mapERK14named_arg_baseI9char_typeERK9named_argI1T9char_typeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1arg__ref.html" class="btn btn-neutral float-right" title="Template Struct arg_ref" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structfmt_1_1v6_1_1internal_1_1arg__map_1_1entry.html" class="btn btn-neutral float-left" title="Struct arg_map::entry" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

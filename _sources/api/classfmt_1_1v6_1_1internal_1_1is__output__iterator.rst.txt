@@ -1,0 +1,16 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1is__output__iterator:
+
+Template Class is_output_iterator
+=================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::is_output_iterator
+   :members:
+   :protected-members:
+   :undoc-members:

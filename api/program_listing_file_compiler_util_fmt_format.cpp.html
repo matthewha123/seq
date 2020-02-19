@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Program Listing for File format.cpp &mdash; Seq 0.9.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Seq
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Calling Python from Seq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Calling Seq from C/C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">Building from Source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Compiler Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Compiler API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Seq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Program Listing for File format.cpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/program_listing_file_compiler_util_fmt_format.cpp.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-format-cpp">
+<span id="program-listing-file-compiler-util-fmt-format-cpp"></span><h1>Program Listing for File format.cpp<a class="headerlink" href="#program-listing-for-file-format-cpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_compiler_util_fmt_format.cpp.html#file-compiler-util-fmt-format-cpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">compiler/util/fmt/format.cpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Formatting library for C++</span>
+<span class="c1">//</span>
+<span class="c1">// Copyright (c) 2012 - 2016, Victor Zverovich</span>
+<span class="c1">// All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// For the license information refer to format.h.</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;util/fmt/format-inl.h&quot;</span><span class="cp"></span>
+
+<span class="n">FMT_BEGIN_NAMESPACE</span>
+<span class="k">namespace</span> <span class="n">internal</span> <span class="p">{</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">int</span> <span class="n">format_float</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">buf</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">size</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="kt">int</span> <span class="n">precision</span><span class="p">,</span>
+                 <span class="n">T</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+<span class="cp">#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">precision</span> <span class="o">&gt;</span> <span class="mi">100000</span><span class="p">)</span>
+    <span class="k">throw</span> <span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span>
+        <span class="s">&quot;fuzz mode - avoid large allocation inside snprintf&quot;</span><span class="p">);</span>
+<span class="cp">#endif</span>
+  <span class="c1">// Suppress the warning about nonliteral format string.</span>
+  <span class="k">auto</span> <span class="n">snprintf_ptr</span> <span class="o">=</span> <span class="n">FMT_SNPRINTF</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">precision</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="n">snprintf_ptr</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+                       <span class="o">:</span> <span class="n">snprintf_ptr</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">precision</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">struct</span> <span class="n">sprintf_specs</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">precision</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">type</span><span class="p">;</span>
+  <span class="kt">bool</span> <span class="nl">alt</span> <span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+
+  <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Char</span><span class="o">&gt;</span>
+  <span class="k">constexpr</span> <span class="n">sprintf_specs</span><span class="p">(</span><span class="n">basic_format_specs</span><span class="o">&lt;</span><span class="n">Char</span><span class="o">&gt;</span> <span class="n">specs</span><span class="p">)</span>
+      <span class="o">:</span> <span class="n">precision</span><span class="p">(</span><span class="n">specs</span><span class="p">.</span><span class="n">precision</span><span class="p">),</span> <span class="n">type</span><span class="p">(</span><span class="n">specs</span><span class="p">.</span><span class="n">type</span><span class="p">),</span> <span class="n">alt</span><span class="p">(</span><span class="n">specs</span><span class="p">.</span><span class="n">alt</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="k">constexpr</span> <span class="kt">bool</span> <span class="n">has_precision</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">precision</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="c1">// This is deprecated and is kept only to preserve ABI compatibility.</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Double</span><span class="o">&gt;</span>
+<span class="kt">char</span> <span class="o">*</span><span class="n">sprintf_format</span><span class="p">(</span><span class="n">Double</span> <span class="n">value</span><span class="p">,</span> <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">buf</span><span class="p">,</span>
+                     <span class="n">sprintf_specs</span> <span class="n">specs</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Buffer capacity must be non-zero, otherwise MSVC&#39;s vsnprintf_s will fail.</span>
+  <span class="n">FMT_ASSERT</span><span class="p">(</span><span class="n">buf</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&quot;empty buffer&quot;</span><span class="p">);</span>
+
+  <span class="c1">// Build format string.</span>
+  <span class="k">enum</span> <span class="p">{</span> <span class="n">max_format_size</span> <span class="o">=</span> <span class="mi">10</span> <span class="p">};</span> <span class="c1">// longest format: %#-*.*Lg</span>
+  <span class="kt">char</span> <span class="n">format</span><span class="p">[</span><span class="n">max_format_size</span><span class="p">];</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">format_ptr</span> <span class="o">=</span> <span class="n">format</span><span class="p">;</span>
+  <span class="o">*</span><span class="n">format_ptr</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;%&#39;</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">specs</span><span class="p">.</span><span class="n">alt</span> <span class="o">||</span> <span class="o">!</span><span class="n">specs</span><span class="p">.</span><span class="n">type</span><span class="p">)</span>
+    <span class="o">*</span><span class="n">format_ptr</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;#&#39;</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">specs</span><span class="p">.</span><span class="n">precision</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="o">*</span><span class="n">format_ptr</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;.&#39;</span><span class="p">;</span>
+    <span class="o">*</span><span class="n">format_ptr</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;*&#39;</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same</span><span class="o">&lt;</span><span class="n">Double</span><span class="p">,</span> <span class="kt">long</span> <span class="kt">double</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span>
+    <span class="o">*</span><span class="n">format_ptr</span><span class="o">++</span> <span class="o">=</span> <span class="sc">&#39;L&#39;</span><span class="p">;</span>
+
+  <span class="kt">char</span> <span class="n">type</span> <span class="o">=</span> <span class="n">specs</span><span class="p">.</span><span class="n">type</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="sc">&#39;%&#39;</span><span class="p">)</span>
+    <span class="n">type</span> <span class="o">=</span> <span class="sc">&#39;f&#39;</span><span class="p">;</span>
+  <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">type</span> <span class="o">==</span> <span class="sc">&#39;n&#39;</span><span class="p">)</span>
+    <span class="n">type</span> <span class="o">=</span> <span class="sc">&#39;g&#39;</span><span class="p">;</span>
+<span class="cp">#if FMT_MSC_VER</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="sc">&#39;F&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// MSVC&#39;s printf doesn&#39;t support &#39;F&#39;.</span>
+    <span class="n">type</span> <span class="o">=</span> <span class="sc">&#39;f&#39;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="cp">#endif</span>
+  <span class="o">*</span><span class="n">format_ptr</span><span class="o">++</span> <span class="o">=</span> <span class="n">type</span><span class="p">;</span>
+  <span class="o">*</span><span class="n">format_ptr</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+
+  <span class="c1">// Format using snprintf.</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">start</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">decimal_point_pos</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">buffer_size</span> <span class="o">=</span> <span class="n">buf</span><span class="p">.</span><span class="n">capacity</span><span class="p">();</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">buf</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span>
+        <span class="n">format_float</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">buffer_size</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">specs</span><span class="p">.</span><span class="n">precision</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kt">unsigned</span> <span class="n">n</span> <span class="o">=</span> <span class="n">internal</span><span class="o">::</span><span class="n">to_unsigned</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="n">buf</span><span class="p">.</span><span class="n">capacity</span><span class="p">())</span> <span class="p">{</span>
+        <span class="c1">// Find the decimal point.</span>
+        <span class="k">auto</span> <span class="n">p</span> <span class="o">=</span> <span class="n">buf</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">end</span> <span class="o">=</span> <span class="n">p</span> <span class="o">+</span> <span class="n">n</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="sc">&#39;+&#39;</span> <span class="o">||</span> <span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="sc">&#39;-&#39;</span><span class="p">)</span>
+          <span class="o">++</span><span class="n">p</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">specs</span><span class="p">.</span><span class="n">type</span> <span class="o">!=</span> <span class="sc">&#39;a&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">specs</span><span class="p">.</span><span class="n">type</span> <span class="o">!=</span> <span class="sc">&#39;A&#39;</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">while</span> <span class="p">(</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">end</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&gt;=</span> <span class="sc">&#39;0&#39;</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;=</span> <span class="sc">&#39;9&#39;</span><span class="p">)</span>
+            <span class="o">++</span><span class="n">p</span><span class="p">;</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">end</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">p</span> <span class="o">!=</span> <span class="sc">&#39;e&#39;</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">p</span> <span class="o">!=</span> <span class="sc">&#39;E&#39;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">decimal_point_pos</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">specs</span><span class="p">.</span><span class="n">type</span><span class="p">)</span> <span class="p">{</span>
+              <span class="c1">// Keep only one trailing zero after the decimal point.</span>
+              <span class="o">++</span><span class="n">p</span><span class="p">;</span>
+              <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="sc">&#39;0&#39;</span><span class="p">)</span>
+                <span class="o">++</span><span class="n">p</span><span class="p">;</span>
+              <span class="k">while</span> <span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="n">end</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&gt;=</span> <span class="sc">&#39;1&#39;</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;=</span> <span class="sc">&#39;9&#39;</span><span class="p">)</span>
+                <span class="o">++</span><span class="n">p</span><span class="p">;</span>
+              <span class="kt">char</span> <span class="o">*</span><span class="n">where</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
+              <span class="k">while</span> <span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="n">end</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="sc">&#39;0&#39;</span><span class="p">)</span>
+                <span class="o">++</span><span class="n">p</span><span class="p">;</span>
+              <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">==</span> <span class="n">end</span> <span class="o">||</span> <span class="o">*</span><span class="n">p</span> <span class="o">&lt;</span> <span class="sc">&#39;0&#39;</span> <span class="o">||</span> <span class="o">*</span><span class="n">p</span> <span class="o">&gt;</span> <span class="sc">&#39;9&#39;</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="n">end</span><span class="p">)</span>
+                  <span class="n">std</span><span class="o">::</span><span class="n">memmove</span><span class="p">(</span><span class="n">where</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">to_unsigned</span><span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">p</span><span class="p">));</span>
+                <span class="n">n</span> <span class="o">-=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="o">&gt;</span><span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">where</span><span class="p">);</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">buf</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span> <span class="c1">// The buffer is large enough - continue with formatting.</span>
+      <span class="p">}</span>
+      <span class="n">buf</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">// If result is negative we ask to increase the capacity by at least 1,</span>
+      <span class="c1">// but as std::vector, the buffer grows exponentially.</span>
+      <span class="n">buf</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="n">buf</span><span class="p">.</span><span class="n">capacity</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">decimal_point_pos</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span> <span class="c1">// namespace internal</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">char</span> <span class="o">*</span>
+<span class="n">internal</span><span class="o">::</span><span class="n">sprintf_format</span><span class="p">(</span><span class="kt">double</span><span class="p">,</span> <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="p">,</span> <span class="n">sprintf_specs</span><span class="p">);</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">char</span> <span class="o">*</span>
+<span class="n">internal</span><span class="o">::</span><span class="n">sprintf_format</span><span class="p">(</span><span class="kt">long</span> <span class="kt">double</span><span class="p">,</span> <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="p">,</span> <span class="n">sprintf_specs</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="k">struct</span> <span class="n">FMT_API</span> <span class="n">internal</span><span class="o">::</span><span class="n">basic_data</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="c1">// Workaround a bug in MSVC2013 that prevents instantiation of format_float.</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">instantiate_format_float</span><span class="p">)(</span><span class="kt">double</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="n">internal</span><span class="o">::</span><span class="n">float_specs</span><span class="p">,</span>
+                                <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span>
+    <span class="n">internal</span><span class="o">::</span><span class="n">format_float</span><span class="p">;</span>
+
+<span class="cp">#ifndef FMT_STATIC_THOUSANDS_SEPARATOR</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="n">internal</span><span class="o">::</span><span class="n">locale_ref</span><span class="o">::</span><span class="n">locale_ref</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">locale</span> <span class="o">&amp;</span><span class="n">loc</span><span class="p">);</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="n">std</span><span class="o">::</span><span class="n">locale</span> <span class="n">internal</span><span class="o">::</span><span class="n">locale_ref</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">locale</span><span class="o">&gt;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="cp">#endif</span>
+
+<span class="c1">// Explicit instantiations for char.</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">internal</span><span class="o">::</span><span class="n">grouping_impl</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">locale_ref</span><span class="p">);</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">char</span> <span class="n">internal</span><span class="o">::</span><span class="n">thousands_sep_impl</span><span class="p">(</span><span class="n">locale_ref</span><span class="p">);</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">char</span> <span class="n">internal</span><span class="o">::</span><span class="n">decimal_point_impl</span><span class="p">(</span><span class="n">locale_ref</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">void</span> <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;::</span><span class="n">append</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="p">,</span>
+                                                     <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">void</span> <span class="n">internal</span><span class="o">::</span><span class="n">arg_map</span><span class="o">&lt;</span><span class="n">format_context</span><span class="o">&gt;::</span><span class="n">init</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">basic_format_args</span><span class="o">&lt;</span><span class="n">format_context</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">args</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span>
+    <span class="n">internal</span><span class="o">::</span><span class="n">vformat</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">string_view</span><span class="p">,</span> <span class="n">basic_format_args</span><span class="o">&lt;</span><span class="n">format_context</span><span class="o">&gt;</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="n">format_context</span><span class="o">::</span><span class="n">iterator</span>
+<span class="n">internal</span><span class="o">::</span><span class="n">vformat_to</span><span class="p">(</span><span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="p">,</span> <span class="n">string_view</span><span class="p">,</span>
+                     <span class="n">basic_format_args</span><span class="o">&lt;</span><span class="n">format_context</span><span class="o">&gt;</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">int</span> <span class="n">internal</span><span class="o">::</span><span class="n">snprintf_float</span><span class="p">(</span><span class="kt">double</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span>
+                                              <span class="n">internal</span><span class="o">::</span><span class="n">float_specs</span><span class="p">,</span>
+                                              <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="p">);</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">int</span> <span class="n">internal</span><span class="o">::</span><span class="n">snprintf_float</span><span class="p">(</span><span class="kt">long</span> <span class="kt">double</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span>
+                                              <span class="n">internal</span><span class="o">::</span><span class="n">float_specs</span><span class="p">,</span>
+                                              <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="p">);</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">int</span> <span class="n">internal</span><span class="o">::</span><span class="n">format_float</span><span class="p">(</span><span class="kt">double</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="n">internal</span><span class="o">::</span><span class="n">float_specs</span><span class="p">,</span>
+                                            <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="p">);</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">int</span> <span class="n">internal</span><span class="o">::</span><span class="n">format_float</span><span class="p">(</span><span class="kt">long</span> <span class="kt">double</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span>
+                                            <span class="n">internal</span><span class="o">::</span><span class="n">float_specs</span><span class="p">,</span>
+                                            <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="p">);</span>
+
+<span class="c1">// Explicit instantiations for wchar_t.</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">internal</span><span class="o">::</span><span class="n">grouping_impl</span><span class="o">&lt;</span><span class="kt">wchar_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">locale_ref</span><span class="p">);</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">wchar_t</span> <span class="n">internal</span><span class="o">::</span><span class="n">thousands_sep_impl</span><span class="p">(</span><span class="n">locale_ref</span><span class="p">);</span>
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">wchar_t</span> <span class="n">internal</span><span class="o">::</span><span class="n">decimal_point_impl</span><span class="p">(</span><span class="n">locale_ref</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="kt">void</span> <span class="n">internal</span><span class="o">::</span><span class="n">buffer</span><span class="o">&lt;</span><span class="kt">wchar_t</span><span class="o">&gt;::</span><span class="n">append</span><span class="p">(</span><span class="k">const</span> <span class="kt">wchar_t</span> <span class="o">*</span><span class="p">,</span>
+                                                        <span class="k">const</span> <span class="kt">wchar_t</span> <span class="o">*</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="n">FMT_API</span> <span class="n">std</span><span class="o">::</span><span class="n">wstring</span>
+    <span class="n">internal</span><span class="o">::</span><span class="n">vformat</span><span class="o">&lt;</span><span class="kt">wchar_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">wstring_view</span><span class="p">,</span>
+                               <span class="n">basic_format_args</span><span class="o">&lt;</span><span class="n">wformat_context</span><span class="o">&gt;</span><span class="p">);</span>
+<span class="n">FMT_END_NAMESPACE</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, seq-lang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

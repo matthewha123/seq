@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1ab184997b46d0b6bd2b8554d1c6180952:
+
+Template Function fmt::v6::vformat_to(internal::buffer<Char>&, const S&, basic_format_args<buffer_context<Char>>)
+=================================================================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::vformat_to(internal::buffer<Char>&, const S&, basic_format_args<buffer_context<Char>>)

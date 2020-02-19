@@ -1,0 +1,13 @@
+.. _exhale_function_lang_2seq_8h_1afbb75aca7e9f7520bce30d2120747684:
+
+Function seq::config::config
+============================
+
+- Defined in :ref:`file_compiler_lang_seq.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: seq::config::config()

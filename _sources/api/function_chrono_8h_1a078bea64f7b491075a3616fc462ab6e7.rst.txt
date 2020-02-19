@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a078bea64f7b491075a3616fc462ab6e7:
+
+Function fmt::v6::internal::get_units< std::kilo >
+==================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::get_units< std::kilo >()

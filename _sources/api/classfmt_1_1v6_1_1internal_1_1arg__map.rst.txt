@@ -1,0 +1,26 @@
+.. _exhale_class_classfmt_1_1v6_1_1internal_1_1arg__map:
+
+Template Class arg_map
+======================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__map_1_1entry`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::internal::arg_map
+   :members:
+   :protected-members:
+   :undoc-members:

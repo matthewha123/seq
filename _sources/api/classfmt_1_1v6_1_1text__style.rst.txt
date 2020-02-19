@@ -1,0 +1,16 @@
+.. _exhale_class_classfmt_1_1v6_1_1text__style:
+
+Class text_style
+================
+
+- Defined in :ref:`file_compiler_util_fmt_color.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fmt::v6::text_style
+   :members:
+   :protected-members:
+   :undoc-members:

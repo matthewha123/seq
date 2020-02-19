@@ -1,0 +1,13 @@
+.. _exhale_function_chrono_8h_1a60000f39540ddf655837169d508821c0:
+
+Template Function fmt::v6::safe_duration_cast::lossless_integral_conversion
+===========================================================================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::safe_duration_cast::lossless_integral_conversion(const From, int&)

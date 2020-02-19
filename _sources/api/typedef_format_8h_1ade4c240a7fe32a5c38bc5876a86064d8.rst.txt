@@ -1,0 +1,13 @@
+.. _exhale_typedef_format_8h_1ade4c240a7fe32a5c38bc5876a86064d8:
+
+Typedef fmt::v6::basic_writer
+=============================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: fmt::v6::basic_writer

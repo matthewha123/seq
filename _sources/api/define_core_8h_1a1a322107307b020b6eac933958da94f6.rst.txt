@@ -1,0 +1,13 @@
+.. _exhale_define_core_8h_1a1a322107307b020b6eac933958da94f6:
+
+Define FMT_VERSION
+==================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_VERSION

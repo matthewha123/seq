@@ -1,0 +1,26 @@
+.. _exhale_struct_structfmt_1_1v6_1_1internal_1_1arg__ref:
+
+Template Struct arg_ref
+=======================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_union_unionfmt_1_1v6_1_1internal_1_1arg__ref_1_1value`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: fmt::v6::internal::arg_ref
+   :members:
+   :protected-members:
+   :undoc-members:

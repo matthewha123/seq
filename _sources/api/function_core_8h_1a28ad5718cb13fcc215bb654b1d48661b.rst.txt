@@ -1,0 +1,13 @@
+.. _exhale_function_core_8h_1a28ad5718cb13fcc215bb654b1d48661b:
+
+Template Function fmt::v6::internal::make_args_checked
+======================================================
+
+- Defined in :ref:`file_compiler_util_fmt_core.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::make_args_checked(const S&, const remove_reference_t<Args>&...)

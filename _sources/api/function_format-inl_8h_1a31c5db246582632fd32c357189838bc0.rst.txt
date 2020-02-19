@@ -1,0 +1,13 @@
+.. _exhale_function_format-inl_8h_1a31c5db246582632fd32c357189838bc0:
+
+Template Function fmt::v6::internal::format_float
+=================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format-inl.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::format_float(T, int, float_specs, buffer<char>&)

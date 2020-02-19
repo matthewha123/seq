@@ -1,0 +1,13 @@
+.. _exhale_function_format_8h_1ae8f5f12b5182a25e40a28747859a76a6:
+
+Template Function fmt::v6::internal::parse_width
+================================================
+
+- Defined in :ref:`file_compiler_util_fmt_format.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: fmt::v6::internal::parse_width(const Char *, const Char *, Handler&&)

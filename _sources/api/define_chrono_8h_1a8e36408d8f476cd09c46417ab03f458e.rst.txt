@@ -1,0 +1,13 @@
+.. _exhale_define_chrono_8h_1a8e36408d8f476cd09c46417ab03f458e:
+
+Define FMT_SAFE_DURATION_CAST
+=============================
+
+- Defined in :ref:`file_compiler_util_fmt_chrono.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: FMT_SAFE_DURATION_CAST
